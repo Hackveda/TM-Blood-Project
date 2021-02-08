@@ -1,0 +1,63 @@
+{% extends 'patient/base2.html' %}
+{% load widget_tweaks %}
+{% load static %}
+{% block content %}
+<section class="section-form">
+      <div class="section-form-heading">
+        <h1 class="heading-secondary u-margin-top-big u-margin-bottom-small">
+          New Report
+        </h1>
+      </div>
+      <div class="container u-margin-bottom-big GB">
+        <ul class="responsive-table GB">
+          <li class="table-header GB">
+            <div class="col col-1 GB">Label</div>
+            <div class="col col-2 GB">Value</div>
+            <div class="col col-3 GB">Unit</div>
+            <div class="col col-4 GB">Edit/Update</div>
+          </li>
+          {% for item in data %}
+          <li class="table-row GB">
+            <div class="col col-1 GB" data-label="Label">{{item.label|title}}</div>
+            <div class="col col-2 GB" data-label="Value">{{item.value}}</div>
+            <div class="col col-3 GB" data-label="Unit">{{item.unit}}</div>
+
+
+            <div class="col col-4 GB" data-label="Edit"><a href="{% url 'update-test-result' item.id %}" class="btn-text">Edit Label</a></div>
+            
+          </li>
+          {% endfor %}
+
+          <center>
+            <a href="{% url 'patient-final-report' patient.id %}">
+              <button class="btn btn--green">
+                Approve
+              </button>
+            </a>
+            <a href="{% url 'create-test-result' patient.id document.id %}">
+              <button class="btn btn--green">
+                ADD LABEL
+              </button>
+            </a>
+            </center>
+
+        </ul>
+        <!--  -->
+        <!-- <div>
+                <div class="row GB">
+                  <div class="col-1-of-4 GB">Col 1 of 4</div>
+                  <div class="col-1-of-4 GB">Col 1 of 4</div>
+                  <div class="col-1-of-4 GB">Col 1 of 4</div>
+                  <div class="col-1-of-4 GB">Col 1 of 4</div>
+                </div>
+              </div> -->
+      </div>
+      <div>
+        <h3>&nbsp;</h3>
+      </div>
+
+      <div>
+        <h3>&nbsp;</h3>
+      </div>
+    </section>
+{% endblock content %}

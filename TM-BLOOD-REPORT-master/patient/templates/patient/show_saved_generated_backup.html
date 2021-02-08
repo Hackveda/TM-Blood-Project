@@ -1,0 +1,125 @@
+{%  extends 'patient/base2.html' %}
+{% load static %}
+{% load widget_tweaks %}
+
+<!-- Mirrored from codervent.com/rocker/white-version/table-data-tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 29 Nov 2019 06:46:28 GMT -->
+{% block content %}
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- Bootstrap core CSS-->
+    <!-- <link href="{% static 'patient/generate_report/assets/css/bootstrap.min.css' %}" rel="stylesheet" /> -->
+    <!--Data Tables -->
+    <!-- <link href="{% static 'patient/generate_report/assets/plugins/bootstrap-datatable/css/dataTables.bootstrap4.min.css' %}" rel="stylesheet" type="text/css"> -->
+    <link
+        href="{% static 'patient/generate_report/assets/plugins/bootstrap-datatable/css/buttons.bootstrap4.min.css' %}"
+        rel="stylesheet" type="text/css">
+    <!-- animate CSS-->
+    <!-- <link href="{% static 'patient/generate_report/assets/css/animate.css' %}" rel="stylesheet" type="text/css" /> -->
+    <!-- Icons CSS-->
+    <!-- <link href="{% static 'patient/generate_report/assets/css/icons.css' %}" rel="stylesheet" type="text/css" /> -->
+    <!-- Custom Style-->
+    <!-- <link href="{% static 'patient/generate_report/assets/css/app-style.css' %}" rel="stylesheet" /> -->
+
+</head>
+
+<body>
+
+    <!-- Start wrapper-->
+    <div class="container">
+
+
+        <table id="example" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Label</th>
+                    {% if not is_single_document %}
+                    {% if doc1_obj %} <th>{{doc1_obj}}</th> {% else %} <th>Old Report</th> {% endif %}
+                    {% endif %}
+                    {% if doc2_obj %}<th>{{doc2_obj}}</th> {% else %} <th>Latest Report</th> {% endif %}
+                    <th>remark</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for testresult in report.generatedreporttestresult_set.all %}
+                {% if label != "doc1_id"  and label != 'doc2_id'  %}
+
+                <tr>
+                    <td>{{testresult.label}}</td>
+                    <td>{{testresult.value1}}</td>
+                    {% if not is_single_document %}
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;{{testresult.value2}}</td>
+                    {% endif %}
+                    <td >{{testresult.remark}}</td>
+                </tr>
+                {% endif %}
+                {% endfor %}
+
+            </tbody>
+        </table>
+    </div>
+    
+        <!--End content-wrapper-->
+    <!--Start Back To Top Button-->
+    <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
+    <!--End Back To Top Button-->
+    <!--End wrapper-->
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="{% static 'patient/generate_report/assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'patient/generate_report/assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'patient/generate_report/assets/js/bootstrap.min.js' %}"></script>
+    <!-- sidebar-menu js -->
+    <script src="{% static 'patient/generate_report/assets/js/sidebar-menu.js' %}"></script>
+    <!-- Custom scripts -->
+    <script src="{% static 'patient/generate_report/assets/js/app-script.js' %}"></script>
+
+    <!--Data Tables js-->
+    <script
+        src="{% static 'patient/generate_report/assets/plugins/bootstrap-datatable/js/jquery.dataTables.min.js' %}"></script>
+    <script
+        src="{% static 'patient/generate_report/assets/plugins/bootstrap-datatable/js/dataTables.bootstrap4.min.js' %}"></script>
+    <script
+        src="{% static 'patient/generate_report/assets/plugins/bootstrap-datatable/js/dataTables.buttons.min.js' %}"></script>
+    <script
+        src="{% static 'patient/generate_report/assets/plugins/bootstrap-datatable/js/buttons.bootstrap4.min.js' %}"></script>
+    <script src="{% static 'patient/generate_report/assets/plugins/bootstrap-datatable/js/jszip.min.js' %}"></script>
+    <script src="{% static 'patient/generate_report/assets/plugins/bootstrap-datatable/js/pdfmake.min.js' %}"></script>
+    <script src="{% static 'patient/generate_report/assets/plugins/bootstrap-datatable/js/vfs_fonts.js' %}"></script>
+    <script
+        src="{% static 'patient/generate_report/assets/plugins/bootstrap-datatable/js/buttons.html5.min.js' %}"></script>
+    <script
+        src="{% static 'patient/generate_report/assets/plugins/bootstrap-datatable/js/buttons.print.min.js' %}"></script>
+    <script
+        src="{% static 'patient/generate_report/assets/plugins/bootstrap-datatable/js/buttons.colVis.min.js' %}"></script>
+
+    <script>
+        $(document).ready(function () {
+            //Default data table
+            $('#default-datatable').DataTable();
+
+            var table = $('#example').DataTable({
+                lengthChange: false,
+                "bPaginate": false,
+                searching: false, paging: false, info: false,
+                buttons: ['copy', 'excel', 'pdf', 'print']
+            });
+
+            table.buttons().container()
+                .appendTo('#example_wrapper .col-md-6:eq(0)');
+
+        });
+    </script>
+
+
+
+</body>
+
+
+{% endblock content %}
+

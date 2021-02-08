@@ -1,0 +1,47 @@
+{% extends 'patient/base.html' %}
+{% block content %}
+{% load widget_tweaks %}
+{% load static %}
+
+
+<div class="container">
+    <center><h3>{{patient_obj.first_name|title}}'s Final Report</h3></center>
+    <br>
+    <br>
+    <form method="POST">{% csrf_token %}
+        {% csrf_token %}
+        <center>
+
+            {% render_field form.document1 class="input mb-30    lg border-gray focus-heading color-heading placeholder-heading" type="password" name="password" placeholder="Your password" required="required" %} 
+            {% render_field form.document2 class="input mb-30    lg border-gray focus-heading color-heading placeholder-heading" type="password" name="password" placeholder="Your password" required="required" %} 
+            <button type="submit" class="btn lg action-1 w-100 px-0">submit</button>
+        </center>
+    </form>
+    <table id='example' class="table table-striped" >
+        <thead>
+            <tr>
+            <th>Label</th>
+            {% if not is_single_document %}
+            {% if doc1_obj %} <th>{{doc1_obj}}</th> {% else %} <th>Old Report</th> {% endif %}
+            {% endif %}
+            {% if doc2_obj %}<th>{{doc2_obj}}</th> {% else %} <th>Latest Report</th> {% endif %}
+            <th>remark</th>
+        </tr>
+        </thead>
+        {% if table %}
+        {% for label, docs in table.items %}
+{% if not (label=='doc1_id' or label=='doc2_id')  %}asd
+        <tr>
+            <td>{{label}}</td>
+            <td>{{docs.doc1.value}}</td>
+            {% if not is_single_document %}
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;{{docs.doc2.value}}</td>
+            {% endif %}
+            <td {% if not is_single_document %}bgcolor="{{docs.remark_color}}" {% endif %}>{{docs.remark}}</td>
+        </tr>
+{%  endif %}
+        {% endfor %}
+        {% endif %}
+    </table>
+
+    {% endblock content %}

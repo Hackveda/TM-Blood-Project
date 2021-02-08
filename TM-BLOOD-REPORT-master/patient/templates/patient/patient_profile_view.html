@@ -1,0 +1,82 @@
+{%  extends 'patient/base2.html' %}
+{% load static %}
+{% load widget_tweaks %}
+{% block content %}
+<div class="patient_profile">
+     <div class="story GB">
+        <div class="row GB">
+          <div class="col-1-of-2 GB">
+            <figure class="story__shape">
+              <img
+                src="../static/patient/img/customer.png"
+                alt="person on a tour"
+                class="story__img"
+              />
+              <!-- <figcaption class="story__caption">Patinet Name</figcaption> -->
+            </figure>
+            <div class="u-margin-top-small">
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                PATIENT NAME : {{patient.first_name | title}} {{patient.last_name | title}}
+              </h3>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                EMAIL : {{patient.email}}
+              </h3>
+            </div>
+          </div>
+          <div class="col-1-of-2 GB">
+            <div class="story__text">
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                ADDRESS : {{patient.address}}
+              </h3>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                ZIP : {{patient.postal_zip}}
+              </h3>
+              <h3 class="heading-tertiary u-margin-bottom-small">CONTACT : {{patient.phone_number}}</h3>
+              <div class="GB">
+                <a href="{% url 'patient-update' patient.id %}" class="btn-text">Edit profile &rarr;</a>
+              </div>
+              <div class="GB">
+                <a href="{% url 'patient-delete' patient.id %}" class="btn-text">Delete Profile &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row GB">
+          <div class="col-1-of-3 GB">
+            <div>
+              <a href="">
+                <img src="../static/patient/img/add.png" alt="" class="profile__buttons-addimg"
+              /></a>
+              <div class="GB">
+                <a href="{% url 'upload-pdf' patient.id %}" class="btn-text"
+                  >Add New Report &rarr;</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-3 GB">
+            <div class="Gb">
+              <img src="../static/patient/img/file.png" alt="" class="profile__buttons-addimg" />
+              <div class="GB">
+                <a href="{% url 'show-all-report' patient.id %}" class="btn-text"
+                  >View All Reports &rarr;</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-3 GB">
+            <div class="GB">
+              <img src="../static/patient/img/edit.png" alt="" class="profile__buttons-addimg" />
+              <div class="GB">
+                <a href="{% url 'patient-final-report' patient.id %}" class="btn-text"
+                  >Generate Report &rarr;</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% endblock content %}

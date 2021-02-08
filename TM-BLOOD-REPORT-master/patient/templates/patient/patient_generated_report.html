@@ -1,0 +1,414 @@
+{%  extends 'patient/base2.html' %}
+{% load static %}
+{% load widget_tweaks %}
+
+<!-- Mirrored from codervent.com/rocker/white-version/table-data-tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 29 Nov 2019 06:46:28 GMT -->
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    
+   <!-- =======General table start======= -->
+    <section class="section-form__var">
+      <div class="section-form-heading__var GB">
+        <h1 class="heading-secondary u-margin-top-big u-margin-bottom-small">
+          &nbsp;
+        </h1>
+      </div>
+      <div class="container__var u-margin-bottom-big GB">
+        <div>
+          <h2 class="heading-secondary">General Report</h2>
+        </div>
+        <div>
+          <div>
+            <h3>&nbsp;</h3>
+          </div>
+          <form method="POST">{% csrf_token %}
+          <center>
+          {% render_field form.document1 class+="form GB" type="password" name="password" placeholder="Your password" required="required" %}
+          {% render_field form.document2 class+="form GB" type="password" name="password" placeholder="Your password" required="required" %}
+          <button type="submit" class="btn btn--green">submit</button>
+          <h4 >( Select Previous Reports For Comparision )</h4>
+          </center>
+          </form>
+          <div>
+            <h3>&nbsp;</h3>
+          </div>
+        </div>
+          <div>
+          <span class="label__heading"> comaprison color code : </span>
+
+          <span class="label__sub">Low</span>
+          <span class="dot dot__1"></span>
+          <span class="label__sub">Improved,but low</span>
+          <span class="dot dot__2"></span>
+          <span class="label__sub">Needs work</span>
+          <span class="dot dot__3"></span>
+          <span class="label__sub">Improved</span>
+          <span class="dot dot__4"></span>
+          <span class="label__sub">Normal</span>
+          <span class="dot dot__5"></span>
+        </div>
+
+        <ul class="responsive-table__var GB">
+          <li class="table-header__var GB">
+            <div class="col__var col-1__var GB">Label</div>
+            <div class="col__var col-2__var GB">Comparison</div>
+            <div class="col__var col-3__var GB">
+            {% if row_wise_table.documents.1.uploaded_at %}
+            {{row_wise_table.documents.1.uploaded_at}}
+            {% else %}
+            {{"__"}}
+            {% endif %}
+            </div>
+            <div class="col__var col-4__var GB">
+            {% if row_wise_table.documents.2.uploaded_at %}
+            {{row_wise_table.documents.2.uploaded_at}}
+            {% else %}
+            {{"__"}}
+            {% endif %}
+            </div>
+            <div class="col__var col-5__var GB">
+            {% if row_wise_table.documents.3.uploaded_at %}
+            {{row_wise_table.documents.3.uploaded_at}}
+            {% else %}
+            {{"__"}}
+            {% endif %}
+            </div>
+            <div class="col__var col-6__var GB">
+            {% if row_wise_table.documents.4.uploaded_at %}
+            {{row_wise_table.documents.4.uploaded_at}}
+            {% else %}
+            {{"__"}}
+            {% endif %}
+            </div>
+            <div class="col__var col-6__var GB">
+            {% if row_wise_table.documents.5.uploaded_at %}
+            {{row_wise_table.documents.5.uploaded_at}}
+            {% else %}
+            {{"__"}}
+            {% endif %}
+            </div>
+          </li>
+          
+          {% for category in row_wise_table.documents.all_category %}
+            <h3 class="heading-tertiary">{{category}}</h3>
+            {% for key, val in row_wise_table.items %}
+    
+                {% if val.5.category == category or val.4.category == category or val.3.category == category or val.2.category == category or val.1.category == category %}
+                <li class="table-row__var GB">
+                    <div class="col__var col-1__var GB" data-label="Label">{{key}}</div>
+                    <div class="col__var col-2__var comp1 GB" data-label="Comparison">
+                    {% if val.5.remark == '-' or val.5.remark == 'None' %}
+                    {{"__"}}
+                    {% elif val.5.remark %}
+                        {% if val.5.remark_color == '#FFFF00'%}
+                        <span class="dot dot__1 ">
+                        </span>
+                        {% elif val.5.remark_color == '#FE2E2E'%}
+                        <span class="dot dot__2">
+                        </span>
+                        {% elif val.5.remark_color == '#FF0000' or val.5.remark_color == '#800000'%}
+                        <span class="dot dot__3">
+                        </span>
+                        {% elif val.5.remark_color == '#82FA58'%}
+                        <span class="dot dot__4">
+                        </span>
+                        {% elif val.5.remark_color == '#31B404'%}
+                        <span class="dot dot__5">
+                        </span>
+                        {% endif %}
+                    {%else%}
+                    {{"__"}}
+                    {% endif %} 
+                    </div>
+                    <div class="col col-3__var GB" __vardata-label="Date1">
+                    {% if row_wise_table.documents.1.uploaded_at %}
+                    <td bgcolor="{{val.1.remark_color}}" >{{val.1.value}}</td>
+                    {% else %}
+                    {{"__"}}
+                    {%  endif %}
+                    </div>
+
+                    <div class="col col-4__var GB" data-label="Date2">
+                    {% if row_wise_table.documents.2.uploaded_at %}
+                    <td bgcolor="{{val.2.remark_color}}" >{{val.2.value}}</td>
+                    {% else %}
+                    {{"__"}}
+                    {%  endif %}
+                    </div>
+                    
+                    <div class="col col-5__var GB" data-label="Date3">
+                    {% if row_wise_table.documents.3.uploaded_at %}
+                    <td bgcolor="{{val.3.remark_color}}" >{{val.3.value}}</td>
+                    {% else %}
+                    {{"__"}}
+                    {%  endif %}
+                    </div>
+
+                    <div class="col col-6__var GB" data-label="Date4">
+                    {% if row_wise_table.documents.4.uploaded_at %}
+                    <td bgcolor="{{val.4.remark_color}}" >{{val.4.value}}</td>
+                    {% else %}
+                    {{"__"}}
+                    {%  endif %}
+                    </div>
+                    <div class="col col-6__var GB" data-label="Date4">
+                    {% if row_wise_table.documents.5.uploaded_at %}
+                    <td bgcolor="{{val.5.remark_color}}" >{{val.5.value}}</td>
+                    {% else %}
+                    {{"__"}}
+                    {%  endif %}
+                    </div>
+                </li>
+                <div>
+                    <span class="li_comment"> 
+                    {% if val.5.remark == '-' or val.5.remark == '' or val.5.remark == 'None' %}
+                        <td bgcolor="{{val.5.remark_color}}" >COMMENT :👉Can't say anything on the basis of this 😶</td>
+                        {% elif val.5.remark %}
+                        {% if val.5.remark_color == '#FFFF00'%}
+                        <td bgcolor="{{val.5.remark_color}}" >COMMENT :👉This is low, you need improvement 👍</td>
+                        {% elif val.5.remark_color == '#FE2E2E'%}
+                        <td bgcolor="{{val.5.remark_color}}" >COMMENT :👉This is improved a bit but still low, so keep improving  🙌</td>
+                        {% elif val.5.remark_color == '#FF0000' or val.5.remark_color == '#800000'%}
+                        <td bgcolor="{{val.5.remark_color}}" >COMMENT :👉You need work on this 😲</td>
+                        {% elif val.5.remark_color == '#82FA58'%}
+                        <td bgcolor="{{val.5.remark_color}}" >COMMENT :👏👍Improved a lot 👍👏</td>
+                        {% elif val.5.remark_color == '#31B404'%}
+                        <td bgcolor="{{val.5.remark_color}}" >COMMENT :👏👍This is absolutely Normal 😃👍👏</td>
+                        {%else%}
+                        <td bgcolor="{{val.5.remark_color}}" >COMMENT :👉Can't say anything on the basis of this 😶</td>
+                        {% endif %}
+                    {% endif %} 
+                    </span>
+                </div>
+                
+             {% endif %}
+            {% endfor %}
+        {% endfor %}
+        </ul>
+        <!--  -->
+        <!-- <div>
+                <div class="row GB">
+                  <div class="col-1-of-4 GB">Col 1 of 4</div>
+                  <div class="col-1-of-4 GB">Col 1 of 4</div>
+                  <div class="col-1-of-4 GB">Col 1 of 4</div>
+                  <div class="col-1-of-4 GB">Col 1 of 4</div>
+                </div>
+              </div> -->
+      </div>
+      <div>
+        <h3>&nbsp;</h3>
+      </div>
+    </section>
+    <!-- =======General table end======= -->
+
+    <!-- ===============technical table start================ -->
+
+    <section class="section-form__var">
+      <!-- <div class="section-form-heading__var GB">
+        <h1 class="heading-secondary u-margin-top-big u-margin-bottom-small">
+          &nbsp;
+        </h1>
+      </div> -->
+      <div class="container__var u-margin-bottom-big GB">
+        <div>
+          <h2 class="heading-secondary">Technical Report</h2>
+        </div>
+
+        <ul class="responsive-table__var GB">
+          <li class="table-header__var GB">
+            <div class="col__var col-1__tt__var GB">LABEL</div>
+            <div class="col__var col-2__tt__var GB">NOW</div>
+            <div class="col__var col-3__tt__var GB">BEFORE</div>
+          </li>
+          <!-- ================category label =============== -->
+          <h3 class="heading-tertiary tt_h3_st_1">Improvement Seen</h3>
+            {% for label, val in row_wise_table.items %}
+                {% if val.4.value is not None and val.5.value is not None %}
+                    {% if val.5.remark_color == remark_color.Green or val.5.remark_color == remark_color.Pale_Green  %}
+  
+                <!-- ================category label =============== -->
+                    <li class="table-row__var GB">
+                    <div class="col__var col-1__tt__var GB" data-label="Label">
+                    <td>{{label}}</td>
+                    </div>
+                    <div class="col__var col-2__tt__var GB" data-label="Now">
+                     <td>{{val.5.value}}</td>
+                    </div>
+                    <div class="col col-3__tt__var GB" __vardata-label="Before">
+                    <td >{{val.4.value}}</td>
+                    </div>
+                    </li>
+                    {% endif %}
+  
+                {% endif %}
+
+            {% endfor %}
+
+          
+          <!-- ================category label =============== -->
+          <h3 class="heading-tertiary tt_h3_st_2">More Improvement Needed</h3>
+          <!-- ================category label =============== -->
+          {% for label, val in row_wise_table.items %}
+          {% if val.4.value is not None and val.5.value is not None %}
+          {% if val.5.remark_color == remark_color.Yellow or val.5.remark_color == remark_color.Pale_Yellow  %}
+    
+          <li class="table-row__var GB">
+            <div class="col__var col-1__tt__var GB" data-label="Label">
+              <td>{{label}}</td>
+            </div>
+            <div class="col__var col-2__tt__var comp1 GB" data-label="Now">
+              <td>{{val.5.value}}</td>
+            </div>
+            <div class="col col-3__tt__var GB" __vardata-label="Before">
+              <td >{{val.4.value}}</td>
+            </div>
+          </li>
+          {% endif %}
+          {% endif %}
+          {% endfor %}
+
+          <!-- ================category label =============== -->
+          <h3 class="heading-tertiary tt_h3_st_3">Areas to work on</h3>
+          <!-- ================category label =============== -->
+          
+          {% for label, val in row_wise_table.items %}
+            {% if val.4.value is not None and val.5.value is not None %}
+                {% if val.5.remark_color == remark_color.Red or val.5.remark_color == remark_color.Maroon  %}
+
+                <li class="table-row__var GB">
+                    <div class="col__var col-1__tt__var GB" data-label="Label">
+                    <td>{{label}}</td>
+                    </div>
+                    <div class="col__var col-2__tt__var comp1 GB" data-label="Now">
+                    <td>{{val.5.value}}</td>
+                    </div>
+                    <div class="col col-3__tt__var GB" __vardata-label="Before">
+                    <td>{{val.4.value}}</td>
+                    </div>
+                </li>
+                {% endif %}
+            {% endif %}
+          {% endfor %}
+
+        </ul>
+        <!--  -->
+        <!-- <div>
+                <div class="row GB">
+                  <div class="col-1-of-4 GB">Col 1 of 4</div>
+                  <div class="col-1-of-4 GB">Col 1 of 4</div>
+                  <div class="col-1-of-4 GB">Col 1 of 4</div>
+                  <div class="col-1-of-4 GB">Col 1 of 4</div>
+                </div>
+              </div> -->
+      </div>
+      <div>
+        <h3>&nbsp;</h3>
+      </div>
+    </section>
+    <!-- =======Technical Table end======= -->
+
+    <!-- ===============OVERVIEW table start================ -->
+
+    <section class="section-form__var">
+      <!-- <div class="section-form-heading__var GB">
+        <h1 class="heading-secondary u-margin-top-big u-margin-bottom-small">
+          &nbsp;
+        </h1>
+      </div> -->
+      <div class="container__var u-margin-bottom-big GB">
+        <div>
+          <h2 class="heading-secondary">Overview</h2>
+        </div>
+
+        <ul class="responsive-table__var GB">
+          <!-- Normal_range_start -->
+          <li class="table-header__ot__var_1 GB">
+            <div>
+            <span class="li_comment">
+              🟢 The Below parameters have come Normal Range👏🏻👏🏻
+            </span>
+            </div>
+          </li>
+          {% for key, val in row_wise_table.items %}
+          {% if val.5.remark_color == remark_color.Green or val.5.remark_color == remark_color.Pale_Green  %}
+
+          <li class="table-row__var GB">
+            <div class="col__var col-1__ot__var GB" data-label="Label">
+              {{key}}
+            </div>
+          </li>
+          {% endif %}
+          {% endfor %}
+          <!-- Normal_range_end -->
+          <!-- Normal_range_start -->
+          <li class="table-header__ot__var_2 GB">
+            <div>
+            <span class="li_comment">
+              🟠 The Below Parameters Have All IMPROVED From Before 👏🏻👏🏻
+            </span>
+            </div>
+          </li>
+          {% for key, val in row_wise_table.items %}
+          {% if val.5.remark_color == remark_color.Yellow or val.5.remark_color == remark_color.Pale_Yellow  %}
+
+          <li class="table-row__var GB">
+            <div class="col__var col-1__ot__var GB" data-label="Label">
+              {{key}}
+            </div>
+          </li>
+          {% endif %}
+          {% endfor %}
+          <!-- Normal_range_end -->
+          <!-- Improved__from__before -->
+          <li class="table-header__ot__var_3 GB">
+            <div>
+            <span class="li_comment">
+              🔴The Below Requires Attention 
+            </span>
+            </div>
+          </li>
+          {% for key, val in row_wise_table.items %}
+          {% if val.5.remark_color == remark_color.Red or val.5.remark_color == remark_color.Maroon  %}
+
+          <li class="table-row__var GB">
+            <div class="col__var col-1__ot__var GB" data-label="Label">
+              {{key}}
+            </div>
+          </li>
+          {% endif %}
+          {% endfor %}
+        <!-- Normal_range_end -->
+
+        <center >
+        <a href='{% url 'save2' patient_obj.pk %}'>
+            <button class="btn btn--green">
+             Save Report
+            </button>
+        </a>
+      </center>
+        </ul>
+        <!--  -->
+        <!-- <div>
+                <div class="row GB">
+                  <div class="col-1-of-4 GB">Col 1 of 4</div>
+                  <div class="col-1-of-4 GB">Col 1 of 4</div>
+                  <div class="col-1-of-4 GB">Col 1 of 4</div>
+                  <div class="col-1-of-4 GB">Col 1 of 4</div>
+                </div>
+              </div> -->
+      </div>
+      <div>
+        <h3>&nbsp;</h3>
+      </div>
+    
+    </section>
+    <!-- =======Overview Table end======= -->
+   </body>
+</html>
+{% endblock content %}

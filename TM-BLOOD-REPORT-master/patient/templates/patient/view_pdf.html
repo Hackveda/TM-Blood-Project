@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>aman</h1>
+{{doc_obj.document.url}}
+<a href="{{doc_obj.document.url}}">link</a>
+<hr>
+<body>
+    <object data="{{doc_obj.document.url}}" type="application/pdf" width="50%" height="750px">
+        <embed src="{{  doc_obj.document.url }}" type="application/pdf">
+            <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://yoursite.com/the.pdf">Download PDF</a>.</p>
+        </embed>
+    </object>
+</body>
+</html>
