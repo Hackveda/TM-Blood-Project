@@ -21,7 +21,7 @@ from .create_pdf import run as create_PDF
 from django.core.paginator import Paginator
 
 # app import
-from .models import AlternateLabel, Category, Label, Document, Patient, TestResult, GeneratedReportTestResult , FinalGeneratedReport
+from .models import *
 from .forms import DocumentForm, GeneratedReportForm
 
 # utility import
@@ -118,7 +118,7 @@ class DocumentUploadView(LoginRequiredMixin, View):
             try:
                 path = document_object.document.path
                 # sending respone to process.py and parsing it to object
-                res = process_main(path)
+                res = process_main(path,document_object.report)
                 res = eval(res) # evaluating response
                 for response in res:
                     name = response['name']
@@ -129,12 +129,22 @@ class DocumentUploadView(LoginRequiredMixin, View):
                         alternate_label= AlternateLabel.objects.filter(name__iexact=name).first()
                         #log(f'got alternate label, {alternate_label}, {AlternateLabel.objects.filter(name__iexact=name)}')
                         #log(f'this is name value unit {alternate_label}, {name} , {value}, {unit}, {alternate_label}')
+                        if(unit!=alternate_label.label.primary_unit):
+                            try:
+                                comp_obj = Comparison.objects.filter(from_unit=unit.lower(),to_unit=alternate_label.label.primary_unit.lower()).first()
+                                value=float(value)
+                                value = value*comp_obj.multiplier + comp_obj.adder
+                                value = round(value,2)
+                                value=str(value)
+                            except Exception as e:
+                                print(alternate_label,unit,e)
+                                continue
 
                         test_result = TestResult.objects.create(
                             patient = patient,
                             label = alternate_label.label,
                             value = value,
-                            unit = unit,
+                            unit = alternate_label.label.primary_unit,
                             document = document_object,
                         )
                         #log('saving label')
@@ -142,9 +152,9 @@ class DocumentUploadView(LoginRequiredMixin, View):
                     except Exception as e:
                         #log(f'DocumentUploadView, post 1 {e}')
                         #log(f'{e}')
-                        print('error')
+                        print('error1',e)
             except Exception as e:
-                print('error')
+                print('error2',e)
                 #log(f'{e}')
 
             return redirect(reverse('display-response', kwargs={'patient_id':patient.id, 'document_id':document_object.id}))
@@ -192,14 +202,14 @@ class TestResultCreateView(LoginRequiredMixin, View):
         except Exception as e :
             print(e)
             patient = pk
-    
+
         context = {
             'form':form,
             'patient':patient,
             'document':document
         }
         return render(request, self.template_name, context)
-    
+
     def post(self, request,  patient_id=None, document_id=None):
         patient = Patient.objects.get(pk=patient_id)
         document = Document.objects.get(pk=document_id)
@@ -426,7 +436,7 @@ class GeneratedReportSaveView(LoginRequiredMixin, View):
         row_wise_table=request.session['table_for_pdf']
         #range=0
         patient_dict = {'id':patient_obj.id,'name':patient_obj.first_name,'contact':patient_obj.phone_number}
-        create_PDF(row_wise_table,final_report.id,patient_dict)        
+        create_PDF(row_wise_table,final_report.id,patient_dict)
         #return redirect('patient-home')
         return redirect(reverse('patient-profile', kwargs={'pk':pk}))
 
@@ -475,9 +485,9 @@ class ShowSavedGeneratedReportView(View):
         return render(request, template_name=self.template_name, context=context)
 
 
-class ShowAllReportView(LoginRequiredMixin, View):        
+class ShowAllReportView(LoginRequiredMixin, View):
     template_name = 'patient/show_all_report.html'
-    
+
     def get(self, request, pk):
         patient = Patient.objects.get(pk=pk)
         gen_rep = FinalGeneratedReport.objects.filter(patient__pk=pk).order_by('-created_time')
@@ -880,7 +890,6 @@ class GeneratedReportView(LoginRequiredMixin, View):
         'remark_color': self.remark_color,
         }
         request.session['table_for_pdf'] = row_wise_table
-        # create_PDF(row_wise_table,patient_obj.id)
         return render(request, self.template_name, context)
 
     def post(self, request, pk):
@@ -908,7 +917,6 @@ class GeneratedReportView(LoginRequiredMixin, View):
             'remark_color': self.remark_color,
             }
             request.session['table_for_pdf'] = row_wise_table
-            # create_PDF(row_wise_table,patient_obj.id)
             return render(request,self.template_name, context )
         return render(request, self.template_name, context)
 
@@ -948,9 +956,9 @@ class PatientSearchView(LoginRequiredMixin, ListView):
     form_class = PatientSearchForm
     form = PatientSearchForm()
     template_name = 'patient/patient_search_form.html'
-    
-    def get(self, request, *args, **kwargs):  
-        patient_list2 = Patient.objects.all()   
+
+    def get(self, request, *args, **kwargs):
+        patient_list2 = Patient.objects.all()
         paginator = Paginator(patient_list2, 5)
         page_number = request.GET.get('page')
         page_obj = paginator.get_page(page_number)
@@ -1043,5 +1051,3 @@ class ViewPdfView(LoginRequiredMixin, View):
     def get(self, request, pk):
         context = { 'doc_obj':  Document.objects.get(pk=pk)}
         return render(request, self.template_name, context)
-
-
