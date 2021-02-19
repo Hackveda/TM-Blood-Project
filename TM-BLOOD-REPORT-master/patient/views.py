@@ -22,7 +22,7 @@ from django.core.paginator import Paginator
 
 # app import
 from .models import *
-from .forms import DocumentForm, GeneratedReportForm
+from .forms import DocumentForm, GeneratedReportForm , ComparisonForm
 
 # utility import
 from .process import main as process_main
@@ -1051,3 +1051,46 @@ class ViewPdfView(LoginRequiredMixin, View):
     def get(self, request, pk):
         context = { 'doc_obj':  Document.objects.get(pk=pk)}
         return render(request, self.template_name, context)
+
+class CreateComparisonView(LoginRequiredMixin, View):
+    template_name = 'patient/create_comparison.html'
+
+    def get(self, request):
+        form = ComparisonForm()
+        context = {
+            'form':form,
+        }
+        return render(request, self.template_name, context)
+
+    def post(self, request):
+        form = ComparisonForm(request.POST)
+        if form.is_valid():
+            from_unit=form.cleaned_data['from_unit']
+            to_unit=form.cleaned_data['to_unit']
+            multiplier=form.cleaned_data['multiplier']
+            adder=form.cleaned_data['adder']
+            try:
+                comparison_object=Comparison,objects.filter(from_unit=from_unit,to_unit=to_unit)[0]
+                comparison_object.adder=adder
+                comparison_object.multiplier=multiplier
+            except:
+                comparison_object = Comparison.objects.create(from_unit=from_unit,to_unit=to_unit,multiplier=multiplier,adder=adder)
+            comparison_object.save()
+
+            try:
+                comparison_object=Comparison,objects.filter(to_unit=from_unit,from_unit=to_unit)[0]
+                comparison_object.adder=-1*adder/multiplier
+                comparison_object.multiplier=1/multiplier
+            except:
+                comparison_object = Comparison.objects.create(to_unit=from_unit,from_unit=to_unit,multiplier=1/multiplier,adder=-1*adder/multiplier)
+            comparison_object.save()
+
+            # print(type(form.from))
+            # new_obj=Comparison.objects.create(from = comparison_object.to, to = comparison_object.from, multiplier=1/comparison_object.multiplier,adder=-1*(comparison_object.adder)/(comparison_object.multiplier))
+            # new_obj.save()
+            return redirect('patient-home')
+
+        else:
+            print('--none--'*10)
+            print(form.errors)
+            return reverse('patient-home')
