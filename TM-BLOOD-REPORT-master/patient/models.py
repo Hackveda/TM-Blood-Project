@@ -146,11 +146,11 @@ class GeneratedReportTestResult(models.Model):
     category = models.ForeignKey(to='Category', on_delete=models.SET_NULL, null=True)
 
 
-    value1 = models.CharField(max_length=10, blank=True, null=True)
-    value2 = models.CharField(max_length=10, blank=True, null=True)
-    value3 = models.CharField(max_length=10, blank=True, null=True)
-    value4 = models.CharField(max_length=10, blank=True, null=True)
-    value5 = models.CharField(max_length=10, blank=True, null=True)
+    value1 = models.CharField(max_length=50, blank=True, null=True)
+    value2 = models.CharField(max_length=50, blank=True, null=True)
+    value3 = models.CharField(max_length=50, blank=True, null=True)
+    value4 = models.CharField(max_length=50, blank=True, null=True)
+    value5 = models.CharField(max_length=50, blank=True, null=True)
     remark = models.CharField(max_length=255,null=True, blank=True)
 
     color1 = models.CharField(max_length=255, blank=True, null=True)

@@ -1161,6 +1161,8 @@ class CreateLabelView(LoginRequiredMixin,View):
                         a1=conv_obj.adder
                         conv_obj_list = Conversion.objects.filter(to_unit=label_obj.primary_unit)
                         for i in conv_obj_list:
+                            if i==conv_obj:
+                                continue
                             a2=i.adder
                             m2=i.multiplier
                             m=m1*m2
@@ -1176,10 +1178,35 @@ class CreateLabelView(LoginRequiredMixin,View):
                             except:
                                 conv_obj = Conversion.objects.create(to_unit=i.from_unit,from_unit=primary_unit,multiplier=1/m,adder=-1*a/m)
                                 conv_obj.save()
+
+
+                        # changing data of previous reports
+                        testresult_list = GeneratedReportTestResult.objects.filter(label=label_obj)
+                        for i in testresult_list:
+                            if(i.value1):
+                                i.value1=str(float(i.value1)*m1+a1)
+                            if(i.value2):
+                                i.value2=str(float(i.value2)*m1+a1)
+                            if(i.value3):
+                                i.value3=str(float(i.value3)*m1+a1)
+                            if(i.value4):
+                                i.value4=str(float(i.value4)*m1+a1)
+                            if(i.value5):
+                                i.value5=str(float(i.value5)*m1+a1)
+                            i.save()
+
+                        testresult_list = TestResult.objects.filter(label=label_obj)
+                        for i in testresult_list:
+                            i.value=str(float(i.value)*m1+a1)
+                            i.unit=primary_unit
+                            print(i.document.name,i.value,i.unit)
+                            i.save()
+
                         label_obj.upper_range=upper_range
                         label_obj.lower_range=lower_range
                         label_obj.category=category
                         label_obj.primary_unit=primary_unit
+
 
                     except Exception as e:
                         print(e)
