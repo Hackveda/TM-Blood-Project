@@ -1,9 +1,16 @@
 from django import forms
 from pkg_resources import require
-from .models import Document, Patient , TestResult , Conversion , Label
+from .models import Document, Patient , TestResult , Conversion , Label , Category
 
 # thirdparty import
 from bootstrap_datepicker_plus import DatePickerInput
+
+class LabelCreationForm(forms.Form):
+    name=forms.CharField(label='name',max_length=55,required=True)
+    lower_range=forms.FloatField(label='lower_range',required=True)
+    upper_range=forms.FloatField(label='upper_range',required=True)
+    primary_unit=forms.CharField(label='primary_unit',max_length=55,required=True)
+    category=forms.ModelChoiceField(queryset=Category.objects.all())
 
 class TestResultForm(forms.Form):
     label=forms.ModelChoiceField(queryset=Label.objects.all())

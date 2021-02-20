@@ -94,6 +94,8 @@ class Label(models.Model):
         return f"{self.name}"
 
 
+
+
 class AlternateLabel(models.Model):
     name = models.CharField(max_length=55, blank=False, unique = False)
     label = models.ForeignKey(to=Label, on_delete=models.CASCADE)
@@ -102,10 +104,10 @@ class AlternateLabel(models.Model):
         unique_together  =('name', 'report')
 
     def __str__(self) -> str:
-        return f"{self.name} {self.report.name}"
+        return f"{self.name}"
 
     def __repr__(self) -> str:
-        return f"{self.name} {self.report.name}"
+        return f"{self.name}"
 
 class TestResult(models.Model):
     patient = models.ForeignKey(to=Patient, on_delete=models.CASCADE, unique=False)

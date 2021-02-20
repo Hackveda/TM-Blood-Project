@@ -19,10 +19,11 @@ from django.utils.timezone import make_aware
 from django.core import serializers
 from .create_pdf import run as create_PDF
 from django.core.paginator import Paginator
+from django.contrib import messages
 
 # app import
 from .models import *
-from .forms import DocumentForm, GeneratedReportForm , ConversionForm , TestResultForm
+from .forms import DocumentForm, GeneratedReportForm , ConversionForm , TestResultForm , LabelCreationForm
 
 # utility import
 from .process import main as process_main
@@ -1084,6 +1085,7 @@ class CreateConversionView(LoginRequiredMixin, View):
         context = {
             'form':form,
         }
+
         return render(request, self.template_name, context)
 
     def post(self, request):
@@ -1118,3 +1120,75 @@ class CreateConversionView(LoginRequiredMixin, View):
             print('--none--'*10)
             print(form.errors)
             return reverse('patient-home')
+
+
+
+class CreateLabelView(LoginRequiredMixin,View):
+    template_name = 'patient/create_Label.html'
+
+    def get(self, request):
+        form = LabelCreationForm()
+        context = {
+            'form':form,
+        }
+        print(111111111111111111111111111111111)
+        print("in get")
+        return render(request, self.template_name, context=context)
+
+
+    def post(self, request):
+
+        print(111111111111111111111111111111111)
+        print("in post")
+        form = LabelCreationForm(request.POST)
+        if form.is_valid():
+            name=form.cleaned_data['name']
+            upper_range=float(form.cleaned_data['upper_range'])
+            lower_range=float(form.cleaned_data['lower_range'])
+            primary_unit=form.cleaned_data['primary_unit']
+            category=form.cleaned_data['category']
+            try:
+                label_obj = Label.objects.filter(name=name)[0]
+                if label_obj.primary_unit == primary_unit:
+                    label_obj.upper_range=upper_range
+                    label_obj.lower_range=lower_range
+                    label_obj.category=category
+                    label_obj.primary_unit=primary_unit
+                else:
+                    try:
+                        conv_obj=Conversion.objects.filter(from_unit=label_obj.primary_unit,to_unit=primary_unit)[0]
+                        m1=conv_obj.multiplier
+                        a1=conv_obj.adder
+                        conv_obj_list = Conversion.objects.filter(to_unit=label_obj.primary_unit)
+                        for i in conv_obj_list:
+                            a2=i.adder
+                            m2=i.multiplier
+                            m=m1*m2
+                            a=a1+m1*a2
+                            try:
+                                Conversion.objects.filter(from_unit=i.from_unit,to_unit=primary_unit)[0]
+                            except:
+                                conv_obj = Conversion.objects.create(from_unit=i.from_unit,to_unit=primary_unit,multiplier=m,adder=a)
+                                conv_obj.save()
+
+                            try:
+                                Conversion.objects.filter(to_unit=i.from_unit,from_unit=primary_unit)[0]
+                            except:
+                                conv_obj = Conversion.objects.create(to_unit=i.from_unit,from_unit=primary_unit,multiplier=1/m,adder=-1*a/m)
+                                conv_obj.save()
+                        label_obj.upper_range=upper_range
+                        label_obj.lower_range=lower_range
+                        label_obj.category=category
+                        label_obj.primary_unit=primary_unit
+
+                    except Exception as e:
+                        print(e)
+                        messages.info(request, 'Conversion from '+label_obj.primary_unit+" to "+primary_unit + " not found. First add a conversion. ")
+                        return redirect('create-labels')
+
+            except:
+                label_obj = Label.objects.create(name=name,upper_range=upper_range,lower_range=lower_range,primary_unit=primary_unit,category=category)
+
+            label_obj.save()
+
+        return redirect('patient-home')
