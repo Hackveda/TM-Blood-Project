@@ -74,7 +74,7 @@ class Label(models.Model):
     name = models.CharField(max_length=55, blank=True, unique=True)
     lower_range = models.FloatField(null=True, blank=True)
     upper_range = models.FloatField(null=True, blank=True)
-    primary_unit = models.CharField(max_length=55,default=1)
+    primary_unit = models.CharField(max_length=55)
     category = models.ForeignKey('Category', default=1, on_delete=models.SET_NULL, null=True)
 
 
@@ -82,7 +82,6 @@ class Label(models.Model):
         obj, created = Category.objects.get_or_create(name='Other', priority=0)
         if created:
             self.category = obj
-            self.primary_unit = "NA"
         super(Label, self).save(*args, **kwargs)
 
 
@@ -100,7 +99,7 @@ class AlternateLabel(models.Model):
     label = models.ForeignKey(to=Label, on_delete=models.CASCADE)
     report = models.ForeignKey(to=Report, on_delete=models.SET_NULL,null=True)
     class Meta:
-        unique_together  =('name', 'label')
+        unique_together  =('name', 'report')
 
     def __str__(self) -> str:
         return f"{self.name} {self.report.name}"
@@ -178,19 +177,12 @@ class Category(models.Model):
         return self.name
 
 
-class Comparison(models.Model):
+class Conversion(models.Model):
     from_unit = models.CharField(max_length=55)
     to_unit = models.CharField(max_length=55)
     multiplier = models.FloatField(blank=True,null=True)
     adder = models.FloatField(blank=True,null=True)
 
-    # def save(self, *args, **kwargs):
-    #     obj, created = Comparison.objects.get_or_create(from_unit=self.to_unit,to_unit=self.from_unit)
-    #     if obj.multiplier==1/self.multiplier and obj.adder == -1*self.adder/self.multiplier:
-    #         return
-    #     obj.multiplier=1/self.multiplier
-    #     obj.adder = -1*self.adder/self.multiplier
-    #     super(Comparison, self).save(*args, **kwargs)
 
 
     def __str__(self) -> str:

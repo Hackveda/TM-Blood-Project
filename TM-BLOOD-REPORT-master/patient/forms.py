@@ -1,11 +1,16 @@
 from django import forms
 from pkg_resources import require
-from .models import Document, Patient , TestResult , Comparison
+from .models import Document, Patient , TestResult , Conversion , Label
 
 # thirdparty import
 from bootstrap_datepicker_plus import DatePickerInput
 
-class ComparisonForm(forms.Form):
+class TestResultForm(forms.Form):
+    label=forms.ModelChoiceField(queryset=Label.objects.all())
+    unit=forms.CharField(label='unit',max_length=55,required=True)
+    value=forms.FloatField(label='value',required=True)
+
+class ConversionForm(forms.Form):
     from_unit = forms.CharField(label='from_unit', max_length=55, required=True)
     to_unit = forms.CharField(label='to_unit', max_length=55, required=True)
     multiplier = forms.FloatField(label='multiplier',required=True)

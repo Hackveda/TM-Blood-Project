@@ -38,7 +38,7 @@ from .views import  (
     FinalGeneratedReportDetailView,
     ViewPdfView,
     ShowSavedGeneratedReportView,
-    CreateComparisonView,
+    CreateConversionView,
 )
 
 urlpatterns = [
@@ -62,7 +62,7 @@ urlpatterns = [
     path('showall/<int:pk>', ShowAllReportView.as_view(), name='show-all-report'),
     path('showsavedreport/<int:pk>/<int:patient_id>', ShowSavedGeneratedReportView.as_view(), name='show-saved-report'),
     path('showpdf/<int:pk>', ViewPdfView.as_view(), name='show-pdf'),
-    path('createcomparison',CreateComparisonView.as_view(),name='create-comparison'),
+    path('createconversion',CreateConversionView.as_view(),name='create-conversion'),
     # path('save/<int:patient_id>/<int:doc1_id>/<int:doc2_id>/<str:table>/', GeneratedReportSaveView.as_view(), name='save'),
 
 ]

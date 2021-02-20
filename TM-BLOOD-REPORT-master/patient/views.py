@@ -22,7 +22,7 @@ from django.core.paginator import Paginator
 
 # app import
 from .models import *
-from .forms import DocumentForm, GeneratedReportForm , ComparisonForm
+from .forms import DocumentForm, GeneratedReportForm , ConversionForm , TestResultForm
 
 # utility import
 from .process import main as process_main
@@ -131,7 +131,7 @@ class DocumentUploadView(LoginRequiredMixin, View):
                         #log(f'this is name value unit {alternate_label}, {name} , {value}, {unit}, {alternate_label}')
                         if(unit!=alternate_label.label.primary_unit):
                             try:
-                                comp_obj = Comparison.objects.filter(from_unit=unit.lower(),to_unit=alternate_label.label.primary_unit.lower()).first()
+                                comp_obj = Conversion.objects.filter(from_unit=unit.lower(),to_unit=alternate_label.label.primary_unit.lower()).first()
                                 value=float(value)
                                 value = value*comp_obj.multiplier + comp_obj.adder
                                 value = round(value,2)
@@ -179,14 +179,38 @@ class DiaplayResponseView(LoginRequiredMixin,View):
         return render(request, self.template_name, context )
 
 
-class TestResultUpdateView(LoginRequiredMixin, UpdateView):
-    model = TestResult
-    fields = ['label', 'value', 'unit']
+class TestResultUpdateView(LoginRequiredMixin, View):
     template_name = 'patient/test_result_update_form.html'
-    context_object_name = 'form'
 
-    def get_success_url(self):
-        return reverse('display-response', kwargs={'patient_id':self.object.patient.id, 'document_id':self.object.document.id})
+    def get(self, request,pk, *args, **kwargs):
+        form = TestResultForm()
+        context = {
+            'form':form,
+        }
+        return render(request, self.template_name, context)
+
+    def post(self, request,pk, *args, **kwargs):
+        form = TestResultForm(request.POST)
+        testresult=TestResult.objects.get(id=pk)
+        if form.is_valid():
+            unit=form.cleaned_data['unit']
+            label=form.cleaned_data['label']
+            value=float(form.cleaned_data['value'])
+            print(unit,label,label.primary_unit,value)
+            try:
+                label_obj=label
+                conv_obj= Conversion.objects.filter(from_unit=unit,to_unit=label_obj.primary_unit)[0]
+                value=value*conv_obj.multiplier+conv_obj.adder
+                unit=conv_obj.to_unit
+                testresult.unit=unit
+                testresult.value=value
+                testresult.label=label
+                testresult.save()
+                print(pk)
+            except Exception as e:
+                print("Conversion element not found")
+                print(e)
+        return redirect(reverse('display-response', kwargs={'patient_id':testresult.patient.id, 'document_id':testresult.document.id}))
 
 class TestResultCreateView(LoginRequiredMixin, View):
     template_name = 'patient/test_result_create_form.html'
@@ -1052,41 +1076,41 @@ class ViewPdfView(LoginRequiredMixin, View):
         context = { 'doc_obj':  Document.objects.get(pk=pk)}
         return render(request, self.template_name, context)
 
-class CreateComparisonView(LoginRequiredMixin, View):
-    template_name = 'patient/create_comparison.html'
+class CreateConversionView(LoginRequiredMixin, View):
+    template_name = 'patient/create_Conversion.html'
 
     def get(self, request):
-        form = ComparisonForm()
+        form = ConversionForm()
         context = {
             'form':form,
         }
         return render(request, self.template_name, context)
 
     def post(self, request):
-        form = ComparisonForm(request.POST)
+        form = ConversionForm(request.POST)
         if form.is_valid():
             from_unit=form.cleaned_data['from_unit']
             to_unit=form.cleaned_data['to_unit']
             multiplier=form.cleaned_data['multiplier']
             adder=form.cleaned_data['adder']
             try:
-                comparison_object=Comparison,objects.filter(from_unit=from_unit,to_unit=to_unit)[0]
-                comparison_object.adder=adder
-                comparison_object.multiplier=multiplier
+                conversion_object=Conversion.objects.filter(from_unit=from_unit,to_unit=to_unit)[0]
+                conversion_object.adder=adder
+                conversion_object.multiplier=multiplier
             except:
-                comparison_object = Comparison.objects.create(from_unit=from_unit,to_unit=to_unit,multiplier=multiplier,adder=adder)
-            comparison_object.save()
+                conversion_object = Conversion.objects.create(from_unit=from_unit,to_unit=to_unit,multiplier=multiplier,adder=adder)
+            conversion_object.save()
 
             try:
-                comparison_object=Comparison,objects.filter(to_unit=from_unit,from_unit=to_unit)[0]
-                comparison_object.adder=-1*adder/multiplier
-                comparison_object.multiplier=1/multiplier
+                conversion_object=Conversion.objects.filter(to_unit=from_unit,from_unit=to_unit)[0]
+                conversion_object.adder=-1*adder/multiplier
+                conversion_object.multiplier=1/multiplier
             except:
-                comparison_object = Comparison.objects.create(to_unit=from_unit,from_unit=to_unit,multiplier=1/multiplier,adder=-1*adder/multiplier)
-            comparison_object.save()
+                conversion_object = Conversion.objects.create(to_unit=from_unit,from_unit=to_unit,multiplier=1/multiplier,adder=-1*adder/multiplier)
+            conversion_object.save()
 
             # print(type(form.from))
-            # new_obj=Comparison.objects.create(from = comparison_object.to, to = comparison_object.from, multiplier=1/comparison_object.multiplier,adder=-1*(comparison_object.adder)/(comparison_object.multiplier))
+            # new_obj=conversion.objects.create(from = conversion_object.to, to = conversion_object.from, multiplier=1/conversion_object.multiplier,adder=-1*(conversion_object.adder)/(conversion_object.multiplier))
             # new_obj.save()
             return redirect('patient-home')
 
