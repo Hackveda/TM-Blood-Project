@@ -2,8 +2,6 @@
 *.blood_app/*
 *.json
 .vscode/*
-*.sqlite3
-/db.sqlite3
 
 # all migration files except initial
 */migrations/*
@@ -30,12 +28,6 @@ patient/static/patient/scss/framework.scss
 patient/static/patient/scss/index.php
 patient/static/patient/scss/layout.scss
 patient/static/patient/scss/variables.scss
-db.sqlite3
 out_to_read.txt
 out.txt
 document.pdf
-.*.sqlite3
-db.sqlite3
-db.sqlite3
-db.sqlite3
-media/
