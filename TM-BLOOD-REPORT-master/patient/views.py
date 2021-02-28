@@ -185,8 +185,10 @@ class TestResultUpdateView(LoginRequiredMixin, View):
 
     def get(self, request,pk, *args, **kwargs):
         form = TestResultForm()
+        obj=TestResult.objects.filter(id=pk)[0]
         context = {
             'form':form,
+            'obj':obj,
         }
         return render(request, self.template_name, context)
 
@@ -198,6 +200,13 @@ class TestResultUpdateView(LoginRequiredMixin, View):
             label=form.cleaned_data['label']
             value=float(form.cleaned_data['value'])
             print(unit,label,label.primary_unit,value)
+            if(unit==label.primary_unit):
+                testresult.unit=unit
+                testresult.value=value
+                testresult.label=label
+                testresult.save()
+                return redirect(reverse('display-response', kwargs={'patient_id':testresult.patient.id, 'document_id':testresult.document.id}))
+
             try:
                 label_obj=label
                 conv_obj= Conversion.objects.filter(from_unit=unit,to_unit=label_obj.primary_unit)[0]
@@ -246,7 +255,16 @@ class TestResultCreateView(LoginRequiredMixin, View):
             if TestResult.objects.filter(label=document_object.label, document=document_object.document):
                 pass
             else:
-                document_object.save()
+                try:
+                    if(document_object.label.primary_unit!=document_object.unit):
+                        label_obj=document_object.label
+                        unit=document_object.unit
+                        conv_obj= Conversion.objects.filter(from_unit=unit,to_unit=label_obj.primary_unit)[0]
+                        document_object.value=value*conv_obj.multiplier+conv_obj.adder
+                        document_object.unit=conv_obj.to_unit
+                    document_object.save()
+                except:
+                    pass
             return redirect(reverse('display-response', kwargs={'patient_id':patient.id, 'document_id':document.id}))
 
         else:
@@ -1131,15 +1149,11 @@ class CreateLabelView(LoginRequiredMixin,View):
         context = {
             'form':form,
         }
-        print(111111111111111111111111111111111)
-        print("in get")
         return render(request, self.template_name, context=context)
 
 
     def post(self, request):
 
-        print(111111111111111111111111111111111)
-        print("in post")
         form = LabelCreationForm(request.POST)
         if form.is_valid():
             name=form.cleaned_data['name']
@@ -1206,7 +1220,6 @@ class CreateLabelView(LoginRequiredMixin,View):
                         label_obj.lower_range=lower_range
                         label_obj.category=category
                         label_obj.primary_unit=primary_unit
-
 
                     except Exception as e:
                         print(e)
