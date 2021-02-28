@@ -27,7 +27,7 @@ class ConversionForm(forms.Form):
 class DocumentForm(forms.ModelForm):
     class Meta:
         model = Document
-        fields = ('name', 'document', 'report')
+        fields = ('name', 'document', 'report', 'uploaded_at')
 
 class LabelForm(forms.ModelForm):
     class Meta:

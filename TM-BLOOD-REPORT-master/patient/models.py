@@ -55,7 +55,7 @@ class Document(models.Model):
     name = models.CharField(max_length=15, blank=True)
     report = models.ForeignKey(to = Report,on_delete=models.SET_NULL,null=True)
     document = models.FileField(upload_to='documents/')
-    uploaded_at = models.DateField(auto_now_add=True)
+    uploaded_at = models.DateField(auto_now_add=False)
     patient = models.ForeignKey(to=Patient, on_delete=models.CASCADE, unique=False)
 
     class Meta:
