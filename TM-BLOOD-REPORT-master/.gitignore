@@ -12,7 +12,6 @@ patient/migrations/0001_initial.py
 patient/static/patient/css/framework.css
 patient/static/patient/css/framework.min.css
 patient/static/patient/css/index.php
-patient/static/patient/css/style.css
 patient/static/patient/css/style.min.css
 patient/static/patient/i/fa-angle-down-dark.png
 patient/static/patient/i/fa-angle-down-white.png
@@ -30,7 +29,6 @@ patient/static/patient/js/script.js
 patient/static/patient/scss/framework.scss
 patient/static/patient/scss/index.php
 patient/static/patient/scss/layout.scss
-patient/static/patient/scss/style.scss
 patient/static/patient/scss/variables.scss
 db.sqlite3
 out_to_read.txt
