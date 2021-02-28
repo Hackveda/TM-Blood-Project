@@ -275,11 +275,11 @@ class TestResultCreateView(LoginRequiredMixin, View):
 
 class AlternateLabelCreateView(LoginRequiredMixin, CreateView):
     model = AlternateLabel
-    fields = ['label', 'name']
+    fields = ['label', 'name' , 'report']
     template_name = 'patient/add_alternate_keyword.html'
 
     def get_success_url(self) -> str:
-        return reverse('create-alternate-label')
+        return reverse('patient-home')
 
 class GeneratedReportSaveView(LoginRequiredMixin, View):
 
