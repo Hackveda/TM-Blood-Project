@@ -19,10 +19,11 @@ from django.utils.timezone import make_aware
 from django.core import serializers
 from .create_pdf import run as create_PDF
 from django.core.paginator import Paginator
+from django.contrib import messages
 
 # app import
-from .models import AlternateLabel, Category, Label, Document, Patient, TestResult, GeneratedReportTestResult , FinalGeneratedReport
-from .forms import DocumentForm, GeneratedReportForm
+from .models import *
+from .forms import DocumentForm, GeneratedReportForm , ConversionForm , TestResultForm , LabelCreationForm
 
 # utility import
 from .process import main as process_main
@@ -118,7 +119,7 @@ class DocumentUploadView(LoginRequiredMixin, View):
             try:
                 path = document_object.document.path
                 # sending respone to process.py and parsing it to object
-                res = process_main(path)
+                res = process_main(path,document_object.report)
                 res = eval(res) # evaluating response
                 for response in res:
                     name = response['name']
@@ -129,12 +130,22 @@ class DocumentUploadView(LoginRequiredMixin, View):
                         alternate_label= AlternateLabel.objects.filter(name__iexact=name).first()
                         #log(f'got alternate label, {alternate_label}, {AlternateLabel.objects.filter(name__iexact=name)}')
                         #log(f'this is name value unit {alternate_label}, {name} , {value}, {unit}, {alternate_label}')
+                        if(unit!=alternate_label.label.primary_unit):
+                            try:
+                                comp_obj = Conversion.objects.filter(from_unit=unit.lower(),to_unit=alternate_label.label.primary_unit.lower()).first()
+                                value=float(value)
+                                value = value*comp_obj.multiplier + comp_obj.adder
+                                value = round(value,2)
+                                value=str(value)
+                            except Exception as e:
+                                print(alternate_label,unit,e)
+                                continue
 
                         test_result = TestResult.objects.create(
                             patient = patient,
                             label = alternate_label.label,
                             value = value,
-                            unit = unit,
+                            unit = alternate_label.label.primary_unit,
                             document = document_object,
                         )
                         #log('saving label')
@@ -142,9 +153,9 @@ class DocumentUploadView(LoginRequiredMixin, View):
                     except Exception as e:
                         #log(f'DocumentUploadView, post 1 {e}')
                         #log(f'{e}')
-                        print('error')
+                        print('error1',e)
             except Exception as e:
-                print('error')
+                print('error2',e)
                 #log(f'{e}')
 
             return redirect(reverse('display-response', kwargs={'patient_id':patient.id, 'document_id':document_object.id}))
@@ -169,14 +180,47 @@ class DiaplayResponseView(LoginRequiredMixin,View):
         return render(request, self.template_name, context )
 
 
-class TestResultUpdateView(LoginRequiredMixin, UpdateView):
-    model = TestResult
-    fields = ['label', 'value', 'unit']
+class TestResultUpdateView(LoginRequiredMixin, View):
     template_name = 'patient/test_result_update_form.html'
-    context_object_name = 'form'
 
-    def get_success_url(self):
-        return reverse('display-response', kwargs={'patient_id':self.object.patient.id, 'document_id':self.object.document.id})
+    def get(self, request,pk, *args, **kwargs):
+        form = TestResultForm()
+        obj=TestResult.objects.filter(id=pk)[0]
+        context = {
+            'form':form,
+            'obj':obj,
+        }
+        return render(request, self.template_name, context)
+
+    def post(self, request,pk, *args, **kwargs):
+        form = TestResultForm(request.POST)
+        testresult=TestResult.objects.get(id=pk)
+        if form.is_valid():
+            unit=form.cleaned_data['unit']
+            label=form.cleaned_data['label']
+            value=float(form.cleaned_data['value'])
+            print(unit,label,label.primary_unit,value)
+            if(unit==label.primary_unit):
+                testresult.unit=unit
+                testresult.value=value
+                testresult.label=label
+                testresult.save()
+                return redirect(reverse('display-response', kwargs={'patient_id':testresult.patient.id, 'document_id':testresult.document.id}))
+
+            try:
+                label_obj=label
+                conv_obj= Conversion.objects.filter(from_unit=unit,to_unit=label_obj.primary_unit)[0]
+                value=value*conv_obj.multiplier+conv_obj.adder
+                unit=conv_obj.to_unit
+                testresult.unit=unit
+                testresult.value=value
+                testresult.label=label
+                testresult.save()
+                print(pk)
+            except Exception as e:
+                print("Conversion element not found")
+                print(e)
+        return redirect(reverse('display-response', kwargs={'patient_id':testresult.patient.id, 'document_id':testresult.document.id}))
 
 class TestResultCreateView(LoginRequiredMixin, View):
     template_name = 'patient/test_result_create_form.html'
@@ -192,14 +236,14 @@ class TestResultCreateView(LoginRequiredMixin, View):
         except Exception as e :
             print(e)
             patient = pk
-    
+
         context = {
             'form':form,
             'patient':patient,
             'document':document
         }
         return render(request, self.template_name, context)
-    
+
     def post(self, request,  patient_id=None, document_id=None):
         patient = Patient.objects.get(pk=patient_id)
         document = Document.objects.get(pk=document_id)
@@ -211,7 +255,16 @@ class TestResultCreateView(LoginRequiredMixin, View):
             if TestResult.objects.filter(label=document_object.label, document=document_object.document):
                 pass
             else:
-                document_object.save()
+                try:
+                    if(document_object.label.primary_unit!=document_object.unit):
+                        label_obj=document_object.label
+                        unit=document_object.unit
+                        conv_obj= Conversion.objects.filter(from_unit=unit,to_unit=label_obj.primary_unit)[0]
+                        document_object.value=value*conv_obj.multiplier+conv_obj.adder
+                        document_object.unit=conv_obj.to_unit
+                    document_object.save()
+                except:
+                    pass
             return redirect(reverse('display-response', kwargs={'patient_id':patient.id, 'document_id':document.id}))
 
         else:
@@ -426,7 +479,7 @@ class GeneratedReportSaveView(LoginRequiredMixin, View):
         row_wise_table=request.session['table_for_pdf']
         #range=0
         patient_dict = {'id':patient_obj.id,'name':patient_obj.first_name,'contact':patient_obj.phone_number}
-        create_PDF(row_wise_table,final_report.id,patient_dict)        
+        create_PDF(row_wise_table,final_report.id,patient_dict)
         #return redirect('patient-home')
         return redirect(reverse('patient-profile', kwargs={'pk':pk}))
 
@@ -475,9 +528,9 @@ class ShowSavedGeneratedReportView(View):
         return render(request, template_name=self.template_name, context=context)
 
 
-class ShowAllReportView(LoginRequiredMixin, View):        
+class ShowAllReportView(LoginRequiredMixin, View):
     template_name = 'patient/show_all_report.html'
-    
+
     def get(self, request, pk):
         patient = Patient.objects.get(pk=pk)
         gen_rep = FinalGeneratedReport.objects.filter(patient__pk=pk).order_by('-created_time')
@@ -880,7 +933,6 @@ class GeneratedReportView(LoginRequiredMixin, View):
         'remark_color': self.remark_color,
         }
         request.session['table_for_pdf'] = row_wise_table
-        # create_PDF(row_wise_table,patient_obj.id)
         return render(request, self.template_name, context)
 
     def post(self, request, pk):
@@ -908,7 +960,6 @@ class GeneratedReportView(LoginRequiredMixin, View):
             'remark_color': self.remark_color,
             }
             request.session['table_for_pdf'] = row_wise_table
-            # create_PDF(row_wise_table,patient_obj.id)
             return render(request,self.template_name, context )
         return render(request, self.template_name, context)
 
@@ -948,9 +999,9 @@ class PatientSearchView(LoginRequiredMixin, ListView):
     form_class = PatientSearchForm
     form = PatientSearchForm()
     template_name = 'patient/patient_search_form.html'
-    
-    def get(self, request, *args, **kwargs):  
-        patient_list2 = Patient.objects.all()   
+
+    def get(self, request, *args, **kwargs):
+        patient_list2 = Patient.objects.all()
         paginator = Paginator(patient_list2, 5)
         page_number = request.GET.get('page')
         page_obj = paginator.get_page(page_number)
@@ -1044,4 +1095,140 @@ class ViewPdfView(LoginRequiredMixin, View):
         context = { 'doc_obj':  Document.objects.get(pk=pk)}
         return render(request, self.template_name, context)
 
+class CreateConversionView(LoginRequiredMixin, View):
+    template_name = 'patient/create_Conversion.html'
 
+    def get(self, request):
+        form = ConversionForm()
+        context = {
+            'form':form,
+        }
+
+        return render(request, self.template_name, context)
+
+    def post(self, request):
+        form = ConversionForm(request.POST)
+        if form.is_valid():
+            from_unit=form.cleaned_data['from_unit']
+            to_unit=form.cleaned_data['to_unit']
+            multiplier=form.cleaned_data['multiplier']
+            adder=form.cleaned_data['adder']
+            try:
+                conversion_object=Conversion.objects.filter(from_unit=from_unit,to_unit=to_unit)[0]
+                conversion_object.adder=adder
+                conversion_object.multiplier=multiplier
+            except:
+                conversion_object = Conversion.objects.create(from_unit=from_unit,to_unit=to_unit,multiplier=multiplier,adder=adder)
+            conversion_object.save()
+
+            try:
+                conversion_object=Conversion.objects.filter(to_unit=from_unit,from_unit=to_unit)[0]
+                conversion_object.adder=-1*adder/multiplier
+                conversion_object.multiplier=1/multiplier
+            except:
+                conversion_object = Conversion.objects.create(to_unit=from_unit,from_unit=to_unit,multiplier=1/multiplier,adder=-1*adder/multiplier)
+            conversion_object.save()
+
+            # print(type(form.from))
+            # new_obj=conversion.objects.create(from = conversion_object.to, to = conversion_object.from, multiplier=1/conversion_object.multiplier,adder=-1*(conversion_object.adder)/(conversion_object.multiplier))
+            # new_obj.save()
+            return redirect('patient-home')
+
+        else:
+            print('--none--'*10)
+            print(form.errors)
+            return reverse('patient-home')
+
+
+
+class CreateLabelView(LoginRequiredMixin,View):
+    template_name = 'patient/create_Label.html'
+
+    def get(self, request):
+        form = LabelCreationForm()
+        context = {
+            'form':form,
+        }
+        return render(request, self.template_name, context=context)
+
+
+    def post(self, request):
+
+        form = LabelCreationForm(request.POST)
+        if form.is_valid():
+            name=form.cleaned_data['name']
+            upper_range=float(form.cleaned_data['upper_range'])
+            lower_range=float(form.cleaned_data['lower_range'])
+            primary_unit=form.cleaned_data['primary_unit']
+            category=form.cleaned_data['category']
+            try:
+                label_obj = Label.objects.filter(name=name)[0]
+                if label_obj.primary_unit == primary_unit:
+                    label_obj.upper_range=upper_range
+                    label_obj.lower_range=lower_range
+                    label_obj.category=category
+                    label_obj.primary_unit=primary_unit
+                else:
+                    try:
+                        conv_obj=Conversion.objects.filter(from_unit=label_obj.primary_unit,to_unit=primary_unit)[0]
+                        m1=conv_obj.multiplier
+                        a1=conv_obj.adder
+                        conv_obj_list = Conversion.objects.filter(to_unit=label_obj.primary_unit)
+                        for i in conv_obj_list:
+                            if i==conv_obj:
+                                continue
+                            a2=i.adder
+                            m2=i.multiplier
+                            m=m1*m2
+                            a=a1+m1*a2
+                            try:
+                                Conversion.objects.filter(from_unit=i.from_unit,to_unit=primary_unit)[0]
+                            except:
+                                conv_obj = Conversion.objects.create(from_unit=i.from_unit,to_unit=primary_unit,multiplier=m,adder=a)
+                                conv_obj.save()
+
+                            try:
+                                Conversion.objects.filter(to_unit=i.from_unit,from_unit=primary_unit)[0]
+                            except:
+                                conv_obj = Conversion.objects.create(to_unit=i.from_unit,from_unit=primary_unit,multiplier=1/m,adder=-1*a/m)
+                                conv_obj.save()
+
+
+                        # changing data of previous reports
+                        testresult_list = GeneratedReportTestResult.objects.filter(label=label_obj)
+                        for i in testresult_list:
+                            if(i.value1):
+                                i.value1=str(float(i.value1)*m1+a1)
+                            if(i.value2):
+                                i.value2=str(float(i.value2)*m1+a1)
+                            if(i.value3):
+                                i.value3=str(float(i.value3)*m1+a1)
+                            if(i.value4):
+                                i.value4=str(float(i.value4)*m1+a1)
+                            if(i.value5):
+                                i.value5=str(float(i.value5)*m1+a1)
+                            i.save()
+
+                        testresult_list = TestResult.objects.filter(label=label_obj)
+                        for i in testresult_list:
+                            i.value=str(float(i.value)*m1+a1)
+                            i.unit=primary_unit
+                            print(i.document.name,i.value,i.unit)
+                            i.save()
+
+                        label_obj.upper_range=upper_range
+                        label_obj.lower_range=lower_range
+                        label_obj.category=category
+                        label_obj.primary_unit=primary_unit
+
+                    except Exception as e:
+                        print(e)
+                        messages.info(request, 'Conversion from '+label_obj.primary_unit+" to "+primary_unit + " not found. First add a conversion. ")
+                        return redirect('create-labels')
+
+            except:
+                label_obj = Label.objects.create(name=name,upper_range=upper_range,lower_range=lower_range,primary_unit=primary_unit,category=category)
+
+            label_obj.save()
+
+        return redirect('patient-home')
