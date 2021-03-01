@@ -279,7 +279,7 @@ class AlternateLabelCreateView(LoginRequiredMixin, CreateView):
     template_name = 'patient/add_alternate_keyword.html'
 
     def get_success_url(self) -> str:
-        return redirect('patient-home')
+        return reverse('patient-home')
 
 class GeneratedReportSaveView(LoginRequiredMixin, View):
 
