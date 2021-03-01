@@ -1096,7 +1096,7 @@ class ViewPdfView(LoginRequiredMixin, View):
         return render(request, self.template_name, context)
 
 class CreateConversionView(LoginRequiredMixin, View):
-    template_name = 'patient/create_Conversion.html'
+    template_name = 'patient/create_conversion.html'
 
     def get(self, request):
         form = ConversionForm()
@@ -1142,7 +1142,7 @@ class CreateConversionView(LoginRequiredMixin, View):
 
 
 class CreateLabelView(LoginRequiredMixin,View):
-    template_name = 'patient/create_Label.html'
+    template_name = 'patient/create_label.html'
 
     def get(self, request):
         form = LabelCreationForm()
