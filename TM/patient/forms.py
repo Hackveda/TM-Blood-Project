@@ -13,7 +13,6 @@ class LabelCreationForm(forms.Form):
     category=forms.ModelChoiceField(queryset=Category.objects.all())
 
 class TestResultForm(forms.Form):
-    label=forms.ModelChoiceField(queryset=Label.objects.all())
     unit=forms.CharField(label='unit',max_length=55,required=True)
     value=forms.FloatField(label='value',required=True)
 
