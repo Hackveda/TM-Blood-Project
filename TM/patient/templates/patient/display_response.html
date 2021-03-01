@@ -23,7 +23,7 @@
             <div class="col col-3 GB" data-label="Unit">{{item.unit}}</div>
 
 
-            <div class="col col-4 GB" data-label="Edit"><a href="{% url 'update-test-result' item.id %}" class="btn-text">Edit Label</a></div>
+            <div class="col col-4 GB" data-label="Edit"><a href="{% url 'update-test-result' item.id %}" class="btn-text">Edit Test Result</a></div>
             
           </li>
           {% endfor %}
@@ -36,7 +36,7 @@
             </a>
             <a href="{% url 'create-test-result' patient.id document.id %}">
               <button class="btn btn--green">
-                ADD LABEL
+                ADD TEST RESULT
               </button>
             </a>
             </center>
