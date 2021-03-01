@@ -1231,4 +1231,4 @@ class CreateLabelView(LoginRequiredMixin,View):
 
             label_obj.save()
 
-        return reverse('create-labels')
+        return redirect('create-labels')
