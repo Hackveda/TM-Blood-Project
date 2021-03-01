@@ -279,7 +279,7 @@ class AlternateLabelCreateView(LoginRequiredMixin, CreateView):
     template_name = 'patient/add_alternate_keyword.html'
 
     def get_success_url(self) -> str:
-        return reverse('patient-home')
+        return reverse('create-alternate-label')
 
 class GeneratedReportSaveView(LoginRequiredMixin, View):
 
@@ -1132,12 +1132,12 @@ class CreateConversionView(LoginRequiredMixin, View):
             # print(type(form.from))
             # new_obj=conversion.objects.create(from = conversion_object.to, to = conversion_object.from, multiplier=1/conversion_object.multiplier,adder=-1*(conversion_object.adder)/(conversion_object.multiplier))
             # new_obj.save()
-            return redirect('patient-home')
+            return redirect('create-conversion')
 
         else:
             print('--none--'*10)
             print(form.errors)
-            return reverse('patient-home')
+            return reverse('create-conversion')
 
 
 
@@ -1231,4 +1231,4 @@ class CreateLabelView(LoginRequiredMixin,View):
 
             label_obj.save()
 
-        return redirect('patient-home')
+        return reverse('create-labels')
