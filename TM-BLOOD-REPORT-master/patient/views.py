@@ -197,7 +197,7 @@ class TestResultUpdateView(LoginRequiredMixin, View):
         testresult=TestResult.objects.get(id=pk)
         if form.is_valid():
             unit=form.cleaned_data['unit']
-            label=form.cleaned_data['label']
+            label=testresult.label
             value=float(form.cleaned_data['value'])
             print(unit,label,label.primary_unit,value)
             if(unit==label.primary_unit):
@@ -260,7 +260,7 @@ class TestResultCreateView(LoginRequiredMixin, View):
                         label_obj=document_object.label
                         unit=document_object.unit
                         conv_obj= Conversion.objects.filter(from_unit=unit,to_unit=label_obj.primary_unit)[0]
-                        document_object.value=value*conv_obj.multiplier+conv_obj.adder
+                        document_object.value=float(document_object.value)*conv_obj.multiplier+conv_obj.adder
                         document_object.unit=conv_obj.to_unit
                     document_object.save()
                 except:

@@ -10,7 +10,7 @@
       <div class="story GB">
 	  	<form method="POST">{% csrf_token %}
         <div class=" GB ">
-          {% render_field form.label class+="form__input"  name="label" placeholder="label" value=obj.label.id required="required" %}   Last label = {{obj.label}} <br>
+      {{obj.label}} <br>
 		  {% render_field form.value type="text" name="value" placeholder="Value" value=obj.value required="required" class+="form__input" %}
 		  {% render_field form.unit type="text" name="unit" placeholder="Unit" value=obj.unit required="required" class+="form__input" %}
         </div>

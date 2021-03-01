@@ -18,6 +18,10 @@ class Report(models.Model):
     def __repr__(self) -> str:
         return f"{self.name}"
 
+    def save(self, *args, **kwargs):
+        self.name=self.name.upper()
+        super(Report, self).save(*args, **kwargs)
+
 
 # Create your models here.
 class Patient(models.Model):

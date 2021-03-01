@@ -2,6 +2,8 @@
 *.blood_app/*
 *.json
 .vscode/*
+*sqlite3
+/db.sqlite3
 
 # all migration files except initial
 */migrations/*
@@ -31,3 +33,4 @@ patient/static/patient/scss/variables.scss
 out_to_read.txt
 out.txt
 document.pdf
+db.sqlite3
