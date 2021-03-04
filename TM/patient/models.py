@@ -17,7 +17,7 @@ class Report(models.Model):
 
     def __repr__(self) -> str:
         return f"{self.name}"
-        
+
     def save(self, *args, **kwargs):
             self.name=self.name.upper()
             super(Report, self).save(*args, **kwargs)
@@ -43,10 +43,7 @@ class Patient(models.Model):
         self.last_name = self.last_name.title()
         super(Patient, self).save(*args, **kwargs)
 
-    def delete(self, *args, **kwargs):
-        for i in FinalGeneratedReport.objects.filter(patient=self):
-            os.remove(settings.MEDIA_ROOT.replace('/','//')+"//Generated_reports//"+str(i.id)+".pdf")
-        super(Patient, self).delete(*args, **kwargs)
+
 
     def __str__(self) -> str:
         return f"{self.first_name} {self.last_name}"
@@ -81,11 +78,11 @@ class Label(models.Model):
     category = models.ForeignKey('Category', default=1, on_delete=models.SET_NULL, null=True)
 
 
-    def save(self, *args, **kwargs):
-        obj, created = Category.objects.get_or_create(name='Other', priority=0)
-        if created:
-            self.category = obj
-        super(Label, self).save(*args, **kwargs)
+    # def save(self, *args, **kwargs):
+    #     obj, created = Category.objects.get_or_create(name='Other', priority=0)
+    #     if created:
+    #         self.category = obj
+    #     super(Label, self).save(*args, **kwargs)
 
 
     # value = models.CharField(max_length=55, blank=True)
@@ -112,12 +109,18 @@ class AlternateLabel(models.Model):
     def __repr__(self) -> str:
         return f"{self.name}"
 
+    def save(self, *args, **kwargs):
+        self.name = self.name.lower()
+        super(AlternateLabel, self).save(*args, **kwargs)
+
 class TestResult(models.Model):
     patient = models.ForeignKey(to=Patient, on_delete=models.CASCADE, unique=False)
     label = models.ForeignKey(to=Label, on_delete=models.CASCADE)
     value = models.CharField(max_length=10, blank=True)
     unit = models.CharField(max_length=55, blank=True)
     document = models.ForeignKey(to=Document, on_delete=models.CASCADE)
+    lower_range = models.CharField(max_length=55,blank = True)
+    upper_range = models.CharField(max_length=55,blank = True)
 
     class Meta:
         unique_together = ('patient', 'document', 'label')
@@ -141,6 +144,10 @@ class FinalGeneratedReport(models.Model):
 
     def __str__(self):
         return f"{self.patient}  "
+
+    def delete(self, *args, **kwargs):
+        os.remove(settings.MEDIA_ROOT.replace('/','//')+"//Generated_reports//"+str(self.id)+".pdf")
+        super(FinalGeneratedReport, self).delete(*args, **kwargs)
 
 
 class GeneratedReportTestResult(models.Model):

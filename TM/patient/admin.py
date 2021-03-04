@@ -16,8 +16,8 @@ admin.site.register(Label)
 
 @admin.register(AlternateLabel)
 class AlternateLabelAdmin(admin.ModelAdmin):
-    list_display = ('name', 'label')
-    list_filter = ('label',)
+    list_display = ('name', 'label', 'report')
+    list_filter = ('label','report')
     search_fields = ['name']
     pass
 

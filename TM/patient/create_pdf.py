@@ -19,6 +19,8 @@ def hex_to_rgb(value):
         return(155/255,205/255,102/255)
     elif (value.lower()=='#800000' or value.lower()=='800000'): #Maroon high
         return(255/255,100/255,100/255)
+    elif (value.lower()=='#7b1beb' or value.lower()=='7b1beb'): #Purple different
+        return(123/255,27/255,235/255)
     if(value==''):
         value='b7dEE8'
     value = value.lstrip('#')
@@ -85,6 +87,8 @@ def extract(data):
         except:
             new_data[data[key][str(5)]['category']]=[]
             # new_data[data[key][int(5)]['category']]=[]
+        for i in range(len(data[key])):
+            print(key,data[key][str(5-i)]['remark_color'])
         new_dict={'label':key,'remark':data[key][str(5-i)]['remark'],'color':[hex_to_rgb(data[key][str(5-i)]['remark_color']) for i in range(len(data[key]))],'values':[data[key][str(5-i)]['value'] for i in range(len(data[key]))]}
         # new_dict={'label':key,'remark':data[key][int(5-i)]['remark'],'color':[hex_to_rgb(data[key][int(5-i)]['remark_color']) for i in range(len(data[key]))],'values':[data[key][int(5-i)]['value'] for i in range(len(data[key]))]}
         new_dict['comment_color']=data[key][str(5)]['remark_color']
@@ -467,6 +471,7 @@ def create_overview_report(pdf,patient,data):
 
 def run(data,user_id, patient):
     # print("saved pdf at " +settings.MEDIA_ROOT)
+    print("creating pdf")
     pdf = canvas.Canvas(settings.MEDIA_ROOT.replace('/','//')+"//Generated_reports//"+str(user_id)+".pdf",bottomup=0)
     # pdf = canvas.Canvas("latest.pdf",bottomup=0)
     # pdf.showPage()
