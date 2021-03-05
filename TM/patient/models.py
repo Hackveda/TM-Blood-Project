@@ -17,7 +17,7 @@ class Report(models.Model):
 
     def __repr__(self) -> str:
         return f"{self.name}"
-        
+
     def save(self, *args, **kwargs):
             self.name=self.name.upper()
             super(Report, self).save(*args, **kwargs)
@@ -44,9 +44,12 @@ class Patient(models.Model):
         super(Patient, self).save(*args, **kwargs)
 
     def delete(self, *args, **kwargs):
+        for i in Document.objects.filter(patient = self):
+            i.delete()
         for i in FinalGeneratedReport.objects.filter(patient=self):
-            os.remove(settings.MEDIA_ROOT.replace('/','//')+"//Generated_reports//"+str(i.id)+".pdf")
+            i.delete()
         super(Patient, self).delete(*args, **kwargs)
+
 
     def __str__(self) -> str:
         return f"{self.first_name} {self.last_name}"
@@ -72,19 +75,18 @@ class Document(models.Model):
     def __repr__(self) -> str:
         return f'{self.name}'
 
+    def delete(self, using=None, keep_parents=False):
+        self.document.storage.delete(self.document.name)
+        super().delete()
+
 
 class Label(models.Model):
     name = models.CharField(max_length=55, blank=True, unique=True)
-    lower_range = models.FloatField(null=True, blank=True)
-    upper_range = models.FloatField(null=True, blank=True)
-    primary_unit = models.CharField(max_length=55)
     category = models.ForeignKey('Category', default=1, on_delete=models.SET_NULL, null=True)
 
 
     def save(self, *args, **kwargs):
-        obj, created = Category.objects.get_or_create(name='Other', priority=0)
-        if created:
-            self.category = obj
+        self.name = self.name.upper()
         super(Label, self).save(*args, **kwargs)
 
 
@@ -112,12 +114,18 @@ class AlternateLabel(models.Model):
     def __repr__(self) -> str:
         return f"{self.name}"
 
+    def save(self, *args, **kwargs):
+        self.name = self.name.lower()
+        super(AlternateLabel, self).save(*args, **kwargs)
+
 class TestResult(models.Model):
     patient = models.ForeignKey(to=Patient, on_delete=models.CASCADE, unique=False)
     label = models.ForeignKey(to=Label, on_delete=models.CASCADE)
     value = models.CharField(max_length=10, blank=True)
     unit = models.CharField(max_length=55, blank=True)
     document = models.ForeignKey(to=Document, on_delete=models.CASCADE)
+    lower_range = models.CharField(max_length=55,blank = True)
+    upper_range = models.CharField(max_length=55,blank = True)
 
     class Meta:
         unique_together = ('patient', 'document', 'label')
@@ -141,6 +149,14 @@ class FinalGeneratedReport(models.Model):
 
     def __str__(self):
         return f"{self.patient}  "
+
+    def delete(self,*args, **kwargs):
+        print("11111"*50)
+        try:
+            os.remove(settings.MEDIA_ROOT.replace('/','//')+"//Generated_reports//"+str(self.id)+".pdf")
+        except:
+            print("remove   "+settings.MEDIA_ROOT.replace('/','//')+"//Generated_reports//"+str(self.id)+".pdf")
+        super(FinalGeneratedReport, self).delete(*args, **kwargs)
 
 
 class GeneratedReportTestResult(models.Model):
@@ -180,18 +196,3 @@ class Category(models.Model):
 
     def __repr__(self) -> str:
         return self.name
-
-
-class Conversion(models.Model):
-    from_unit = models.CharField(max_length=55)
-    to_unit = models.CharField(max_length=55)
-    multiplier = models.FloatField(blank=True,null=True)
-    adder = models.FloatField(blank=True,null=True)
-
-
-
-    def __str__(self) -> str:
-        return self.from_unit + " - " + self.to_unit
-
-    def __repr__(self) -> str:
-        return self.from_unit + " - " + self.to_unit

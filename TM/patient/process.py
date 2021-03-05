@@ -4,6 +4,7 @@ import json
 import re
 import urllib.request
 import textract
+import pickle
 #sys.path.append("~/django/TM-BLOOD-REPORT/patient/")
 from .models import AlternateLabel
 # GLOBAL VARS | KEEP DEBUG FALSE IN PRODUCTION
@@ -112,12 +113,12 @@ def clean_response(response_dict : dict) -> dict:
 # DATABASE | DO NOT MODIFY THIS LIST | Only add new items
 units_list = ['pmol/l', 'pg/mL', 'ng/dL', 'ug/dL', 'U/mL', 'ulU/mL', 'ng/mL', 'ng/L', 'gm/dL', '%',
               '103/mm3', 'mm/hr', 'Secs', 'mg/L', 'mg/dL', 'g/dL', 'U/L', '/cumm', '/Cu mm', '1000/cumm',
-              '1st hour', '10^12/L', 'fl', 'Pg', 'gms/dl', 'U/I', 'ng/ml', 'meq/L', 'uIU/ml', 'uU/ml',
+              '1st hour', '10^12/l', 'fl', 'Pg', 'gms/dl', 'U/I', 'ng/ml', 'meq/L', 'uIU/ml', 'uU/ml',
               'mU/L', 'pg/ml', 'nmol/L', 'umol/L', 'IU/mL', 'Thousand/uL', '/100 WBC', 'Million/uL',
               'mm/hr', 'mili/cu.mm', '1043/1', 'x103/pl', 'mm/hour', 'mmol/L', 'Cells/ul',
               'Ru/ml', 'AU/ml', 'mgs/dl', 'mill/cu.mm', 'cells/mm3', 'mm 1st Hr', 'x', '10^3/Î¼I',
               '1000 / micL', 'mm/1hrs', '10~12/L', '10^12/L', 'mIU/mL', 'Gm%', 'mm/Ist hr', 'Millions/cmm',
-              'cc%', 'pgm', 'MEq/L'] +  ['/cmm', '/cu mm', 'IU/L', 'mm/Ist hr.', 'gm/ dl', 'meq /l']
+              'cc%', 'pgm', 'MEq/L'] +  ['/cmm', '/cu mm', 'IU/L', 'mm/Ist hr.', 'gm/ dl', 'meq /l','/cu.mm','cells/cu.mm','Cells/cu.mm']
 
 # these are the units which are being read wrong by textract
 wrong_interpreted_units = [
@@ -137,6 +138,7 @@ wrong_interpreted_units = [
   'ua', # U/
   'plu/ml', # ulu/ml
   'plu/mi', # ulu/ml
+  '104 12/l'
 ]
 units_list += wrong_interpreted_units
 wrong_units = {
@@ -162,6 +164,7 @@ wrong_units = {
   'millions/emm':'millions/cmm',
   'dl gm/': 'gm/dl', # dur to ordering issue
   '/l meq' : 'meg /l', # due to ordering issue,
+  '104 12/l': '10^12/l',
 }
 
 # dict of names which are being extracted wrong all the time.
@@ -299,37 +302,48 @@ result_list = []
 # Read the pdf and extract sentences
 file = pdf_url
 '''
-def main(file_path,report, keyword=None):
+def main(file_path,report=None, keyword=None):
   print("Main Started")
   input_data = ['mean corp hb ( mch)', 'absolute neutrophils', 'mean corp hb conc', 'folate, serum', 'eosinophil', '(glycated hba1c)/ hba1c', 'hdl cholesterol', 'esr', 'fasting', 'tsh, serum', 'lh', 'blood sugar', 'urea nitrogen', 'total proteins serum', 'red blood cell count', 'glycosylate d hemoglobin', 'serum g. o. t./ast', 'total protein', 'rdw', 'absolute eosinophil count blood', 'serum triglycerides', 'serum potassium', 'free t3', 'fsh', 'sgpt', 'sodium', 'serum cholestrol', 'cho / hdl cholesterol ratio', 'ferritin', '25-hydroxy, vitamin d', 'iron', 'neutrophil', 'neutrophils', 'triglycerides', 'estradiol', 'ldl cholesterol', 'serum sodium', 'hdl cholestrol ratio', 'tri-iodo thyroxine', 'packed cell volume', 'hematocrit', 'bilirubin', 'cholestrol, serum', 'vldl cholesterol', 'serum g. p. t. /alt', 'sgpt - alanine transaminas e', 'hba1c', 'alkaline phosphatase', 'packed cells ume', 'glucose', 'mcv', 'absolute monocytes', 'e.s.r.', 'bilirubin (indirect )', 'hemoglobin', 'blood urea nitrogen', 'chloride', 'mean corp volume', 'erythrocyte sedimentation rate', 'magnesium', 'sgot- asparttate transaminas e', 'a:g ratio', 'bilirubin unconjugated (indirect)', 'bilirubin (total)', 'total leucocytes count', 'ft3 serum', 'polymorphs', 'basophil', 'blood glucose pp', 'serum uric acid', 'serum vldl', 'mch', 'vitamin d3 level', 'rbc count', 'blood urea', 'uric acid', 'albumin', 'monocytes', 'tibc', 'eosinophils', 'serum alkaline phosphatase', 'tsh', 'alt', 'potassium', 'fasting glucose', 'mch, blood', 'rbc', 'serum l.d.l.cholestrol', 'lymphocyte', 'absolute neutrophil count', 'serum bilirubin', 'bilirubin conjugated(direct)', 'ige serum', 'serum albumin', 'vitamin d total(250h vitd3 and 250h vitd2)', 'serum tsh', 'ldl / hdl ratio', 'absolute basophils', 'free t4', 'uibc', 'e.s.r', 'cholesterol / hdl ratio', 'insulin fasting', 'serum creatinine', 'lymphocytes', 'pcv', 'mpv', 'tlc', 'sgot', 'white blood cell count', 'ggtp', 'platelets count', 'globulin', 'wbc count', 'urea serum', 'gamma g.t.', 'platelet count', 'calcium', 'cholesterol', 'insulin pp', 'bilirubin (direct)', 'basophils', 'ast', 'haemoglobin', 'folate', 'ldl / hdl cholesterol ratio', 'vitamin b12', 'vitamin d, 25-hydroxy, serum', 'insulin (pp)', 'mchc', 'creatinine serum', 'absolute lymphocytes', 'monocyte', 'vitamin b-12 level']
-  input_data += ['HAEMOGLOBIN', 'TOTAL LEUCOCYTE COUNT (WBC)', 'RED BLOOD CELL COUNT', 'PACKED CELL VOLUME( HEMATOCRIT)', 'MEAN CORPUSCULAR VOLUME (MCV)', 'MEAN CORPUSULAR HB (MCH)', 'MEAN CORPUSULAR HB CONC (MCHC)', 'MEAN PLATELETS VOLUME (MPV )', 'HEMOGLOBIN DISTRIBUTION WIDTH (HDW)', 'CORPUSCULAR HAEMOGLOBIN', 'CHCM', 'PLATELET DISTRIBUTION WIDTH(PDW)', 'PCT', 'PLATELET COUNT', 'ESR', 'NEUTROPHILS %', 'LYMPHOCYTES %', 'MONOCYTES %', 'EOSINOPHILS %', 'BASOPHILS %', 'LARGE UNSTAINED CELLS (LUC)', 'RED CELL DISTRIBUTION WIDTH (RDW-CV)', 'RDW-SD', 'NEUTROPHILS', 'LYMPHOCYTES', 'MONOCYTES', 'ABSOLUTE EOSINOPHILS COUNT  %', 'BASOPHILS', 'CHOLESTEROL', 'TRIGLYCERIDES', 'H.D.L. CHOLESTEROL', 'L.D.L. CHOLESTEROL (DIRECT)', 'SERUM VLDL CHOLESTEROL', 'NON H.D.L. CHOLESTEROL', 'SERUM CHOLESTEROL-HDL RATIO', 'LDL/HDL CHOLESTEROL RATIO', 'UREA', 'BLOOD UREA NITROGEN (BUN)', 'CREATININE, SERUM', 'URIC ACID', 'UREA / CREATININE RATIO', 'BUN / CREATININE RATIO', 'CYSTATIN C', 'BLOOD KETONE', 'IONIZED CALCIUM', 'TOTAL CALCIUM', 'ZINC, SERUM', 'MERCURY', 'CAESIUM', 'BERYLLIUM', 'ARSENIC', 'PHOSPHORUS', 'SODIUM', 'POTTASIUM', 'CHLORIDE', 'MAGNESIUM', 'BILIRUBIN (TOTAL)', 'BILIRUBIN (DIRECT)', 'BILIRUBIN (INDIRECT)', 'S.G.O.T.', 'S.G.P.T.', 'ALKALINE PHOSPHATASE', 'G.G.T.P.', 'IRON SERUM', 'SERUM TOTAL PROTEINS', 'SERUM ALBUMIN', 'SERUM GLOBULIN', 'GLOBULIN', 'PANCREATIC ALFA AMYLASE', 'C.P.K.', 'IMMUNOGLOUBLIN lgG, SERUM', 'IMMUNOGLOUBLIN lgM, SERUM', 'IMMUNOGLOUBLIN lgE, SERUM', 'IMMUNOGLOUBLIN lgA, SERUM', 'IRON', 'TOTAL IRON BINDING CAPACITY (TIBC)', 'TRANSFEERRIN', 'TRANSFERRIN SATURATION', 'UNSATURATED IRON BINDING CAPACITY (UIBC)', 'FERRITIN, SERUM', 'TRANSFERRIN', 'FREE TRIJODOTHYRONINE [FT3],Serum', 'FREE THYROXINE [FT4],Serum', 'T.S.H.[ULTRA]', 'ANTI- THYROGLOBULIN ANTIBODIES', 'ANTI- THYROID PEROXIDASE', 'TESTOSTERONE LEVEL (TOTAL)', 'ESTRADIOL LEVEL', 'CORTISOL LEVEL(Morning)', 'ENHANCED ESTRADIOL ( eE2)', 'PARATHYROID HORMONE LEVEL , SERUM', 'VITAMIN B-12 LEVEL, SERUM(ECLIA)', 'VITAMIN D-3 LEVEL, SERUM (ECLIA)', 'VITAMIN D', 'FOLIC ACID LEVEL', '25-OH VITAMIN D', 'FOLATE', 'AVG SUGAR', 'BLOOD GLUCOSE (FASTING)', 'HBA1C', 'MEAN PLASMA GLUCOSE', 'INSULIN LEVEL ( FASTING ) PLASMA', 'INSULIN LEVEL ( POSTPRANDOIAL ) PLASMA', 'AVERAGE BLOOD GLUCOSE (ABG)', 'LIPASE', 'FASTING BLOOD SUGAR']
+  input_data += ['HAEMOGLOBIN', 'TOTAL LEUCOCYTE COUNT (WBC)', 'RED BLOOD CELL COUNT', 'PACKED CELL VOLUME( HEMATOCRIT)', 'MEAN CORPUSCULAR VOLUME (MCV)', 'MEAN CORPUSULAR HB (MCH)', 'MEAN CORPUSULAR HB CONC (MCHC)', 'MEAN PLATELETS VOLUME (MPV )', 'HEMOGLOBIN DISTRIBUTION WIDTH (HDW)', 'CORPUSCULAR HAEMOGLOBIN', 'CHCM', 'PLATELET DISTRIBUTION WIDTH(PDW)', 'PCT', 'PLATELET COUNT', 'ESR', 'NEUTROPHILS %', 'LYMPHOCYTES %', 'MONOCYTES %', 'EOSINOPHILS %', 'BASOPHILS %', 'LARGE UNSTAINED CELLS (LUC)', 'RED CELL DISTRIBUTION WIDTH (RDW-CV)', 'RDW-SD', 'NEUTROPHILS', 'LYMPHOCYTES', 'MONOCYTES', 'ABSOLUTE EOSINOPHILS COUNT  %', 'BASOPHILS', 'CHOLESTEROL', 'TRIGLYCERIDES', 'H.D.L. CHOLESTEROL', 'L.D.L. CHOLESTEROL (DIRECT)', 'SERUM VLDL CHOLESTEROL', 'NON H.D.L. CHOLESTEROL', 'SERUM CHOLESTEROL-HDL RATIO', 'LDL/HDL CHOLESTEROL RATIO', 'UREA', 'BLOOD UREA NITROGEN (BUN)', 'CREATININE, SERUM', 'URIC ACID', 'UREA / CREATININE RATIO', 'BUN / CREATININE RATIO', 'CYSTATIN C', 'BLOOD KETONE', 'IONIZED CALCIUM', 'TOTAL CALCIUM', 'ZINC, SERUM', 'MERCURY', 'CAESIUM', 'BERYLLIUM', 'ARSENIC', 'PHOSPHORUS', 'SODIUM', 'POTTASIUM', 'CHLORIDE', 'MAGNESIUM', 'BILIRUBIN (TOTAL)', 'BILIRUBIN (DIRECT)', 'BILIRUBIN (INDIRECT)', 'S.G.O.T.', 'S.G.P.T.', 'ALKALINE PHOSPHATASE', 'G.G.T.P.', 'IRON SERUM', 'SERUM TOTAL PROTEINS', 'SERUM ALBUMIN', 'SERUM GLOBULIN', 'GLOBULIN', 'PANCREATIC ALFA AMYLASE', 'C.P.K.', 'IMMUNOGLOUBLIN lgG, SERUM', 'IMMUNOGLOUBLIN lgM, SERUM', 'IMMUNOGLOUBLIN lgE, SERUM', 'IMMUNOGLOUBLIN lgA, SERUM', 'IRON', 'TOTAL IRON BINDING CAPACITY (TIBC)', 'TRANSFEERRIN', 'TRANSFERRIN SATURATION', 'UNSATURATED IRON BINDING CAPACITY (UIBC)', 'FERRITIN, SERUM', 'TRANSFERRIN', 'FREE TRIJODOTHYRONINE [FT3],Serum', 'FREE THYROXINE [FT4],Serum', 'T.S.H.[ULTRA]', 'ANTI- THYROGLOBULIN ANTIBODIES', 'ANTI- THYROID PEROXIDASE', 'TESTOSTERONE LEVEL (TOTAL)', 'ESTRADIOL LEVEL', 'CORTISOL LEVEL(Morning)', 'ENHANCED ESTRADIOL ( eE2)', 'PARATHYROID HORMONE LEVEL , SERUM', 'VITAMIN B-12 LEVEL, SERUM(ECLIA)', 'VITAMIN D-3 LEVEL, SERUM (ECLIA)', 'VITAMIN D total(250h vitd3 and 250h vitd2) ', 'FOLIC ACID LEVEL', '25-OH VITAMIN D', 'FOLATE', 'AVG SUGAR', 'BLOOD GLUCOSE (FASTING)', 'HBA1C', 'MEAN PLASMA GLUCOSE', 'INSULIN LEVEL ( FASTING ) PLASMA', 'INSULIN LEVEL ( POSTPRANDOIAL ) PLASMA', 'AVERAGE BLOOD GLUCOSE (ABG)', 'LIPASE', 'FASTING BLOOD SUGAR']
   #input_data = [item.name for item in AlternateLabel.objects.all()]
-  input_data = [item.name for item in AlternateLabel.objects.filter(report=report)]
-  print(input_data)
-  print('888888888888888'*100)
-  print("Main 2")
-  # print('we are using this input Data', input_data)
-  input_data = list(set(input_data))
-  text = textract.process(file_path, method="tesseract")
-  decoded_text = text.decode('utf-8')
-  #print("Decoded Text: ", decoded_text)
-  x=decoded_text.split("\n")
-  print("X", x)
-  # Reading out_to_read.txt line by line and saving to my_test list
+  input_data=['® total leucocyte count','haemoglobin']
+  if report:
+      input_data = [item.name for item in AlternateLabel.objects.filter(report=report)]
+      print(input_data)
+      print('888888888888888'*100)
+      print("Main 2")
+      # print('we are using this input Data', input_data)
+      input_data = list(set(input_data))
+      text = textract.process(file_path, method="tesseract")
+      decoded_text = text.decode('utf-8')
+      #print("Decoded Text: ", decoded_text)
+      x=decoded_text.split("\n")
+      # print("X", x)
+      # Reading out_to_read.txt line by line and saving to my_test list
 
-  #%%
-  try:
-    if DEBUG:
-      with open('out.txt', 'w') as writefile:
-        writefile.write(text.decode('utf-8'))
-  # print('888888888888888'*100)
-  except Exception as e:
-    print("Exception Debug: ", e)
-  for i in range(len(x)):
-      x[i]=x[i].lower()
-      x[i]=x[i].strip()
-  my_text=x
-  print("My_text", my_text)
+      #%%
+      try:
+        if DEBUG:
+          with open('out.txt', 'w') as writefile:
+            writefile.write(text.decode('utf-8'))
+      # print('888888888888888'*100)
+      except Exception as e:
+        print("Exception Debug: ", e)
+      for i in range(len(x)):
+          x[i]=x[i].lower()
+          x[i]=x[i].strip()
+      my_text=x
+      # print("My_text", my_text)
+      for i in range(len(my_text)):
+          my_text[i]=my_text[i].replace("%"," % ")
+          print(my_text[i])
+      pickling_on = open("dang_dta.pickle","wb")
+      pickle.dump(my_text, pickling_on)
+      pickling_on.close()
+  else:
+      pickle_off = open("dang_dta.pickle", 'rb')
+      my_text=pickle.load(pickle_off)
   result_list = []
   #%%
   for keyword in input_data:
@@ -337,7 +351,7 @@ def main(file_path,report, keyword=None):
     # read the keyword from pdf data
     # keyword_list = keyword.split(",")
     #main_key = keyword_list[0]
-
+    # print(keyword)
     value_found = ""
     unit = ""
 
@@ -367,6 +381,7 @@ def main(file_path,report, keyword=None):
         tag = tag.lower()
 
         # if tag in sent:
+        # print(keyword)
         if sent.startswith(tag):
 
           # finding if there is any refrence of tag in present line
@@ -376,6 +391,8 @@ def main(file_path,report, keyword=None):
 
           # find if there is any xx.xx type number after keyword
           # assuming there is always .0 at the end of value
+
+
           line = re.search('(\d+(\.\d+)?)|(\.?\d+)|(\,?\d+)',second_half_of_line)
 
           # if there is no floating point number in line then line is useless
@@ -432,7 +449,30 @@ def main(file_path,report, keyword=None):
             main_key = original_keywrd
 
             # saving response
-            temp_response = {"name":main_key.lower(), "Value":value_found.lower(), "Unit":unit.lower(), "ReadIndex":second_half_of_line.lower(), "TempSent":second_half_of_line.lower()}
+            second_half_of_line=second_half_of_line[second_half_of_line.find(value_found)+len(value_found):]
+            spl=second_half_of_line.find("yrs")
+            if(spl==-1):
+                spl=second_half_of_line.find("years")
+                if spl==-1:
+                    spl=second_half_of_line.find("year")
+            if(spl==-1):
+                spl=0
+            new_second_half_of_line=second_half_of_line[spl:]
+            range1 = re.search('((\d+(\.\d+)?)|(\.?\d+)|(\,?\d+))(\ *)(\-)(\ *)((\d+(\.\d+)?)|(\.?\d+)|(\,?\d+))|((\<)(\ *)(\=?)(\ *)(((\d+(\.\d+)?)|(\.?\d+)|(\,?\d+))))|((\>)(\ *)(\=?)(\ *)(((\d+(\.\d+)?)|(\.?\d+)|(\,?\d+))))|((((\d+(\.\d+)?)|(\.?\d+)|(\,?\d+)))(\ *)(\=?)(\ *)(\<))|((((\d+(\.\d+)?)|(\.?\d+)|(\,?\d+)))(\ *)(\=?)(\ *)(\>))', new_second_half_of_line).group(0)
+            range1=range1.replace(" ","")
+            if range1[0]=='<':
+                range1=['0',range1[1:]]
+            elif range1[0]=='>':
+                range1=[range1[1:],'']
+            elif range1[-1]=='<':
+                range1=[range1[0:-1],'']
+            elif range1[-1]=='>':
+                range1=['0',range1[0:-1]]
+            else:
+                range1=range1.split("-")
+            temp_response = {"name":main_key.lower(), "Value":value_found.lower(), "Unit":unit.lower(),"Range":range1, "ReadIndex":second_half_of_line.lower(), "TempSent":second_half_of_line.lower()}
+            # print(temp_response)
+            # print(range1)
             result_list.append(temp_response)
             tag_exist = True
           except Exception as e:
@@ -442,23 +482,21 @@ def main(file_path,report, keyword=None):
 
   result_data = {}
   result_data["Response"] = {"Result":result_list}
-
+  print("result list : ",result_list)
+  print("result data  :  ",result_data )
   # filtering out invalid response
   result_data = clean_response(result_data)
-  print(result_data)
+  print("result data 2 : ",result_data)
+  # print(result_data)
   #temp_response = {"name": "Charchit", "Value": "10", "Unit": "mpg"}
   #result_list.append(temp_response)
   #result_data['Response'] = {"Result": result_list}
-  return json.dumps(result_data, ensure_ascii=False)
+  return result_list
   # print(json.dumps(result_data, ensure_ascii=False))
   # if DEBUG:
   #   print('expected output len', len(input_data))
 
 if __name__=="__main__":
-  # if DEBUG:
-  #   with open('APOLO_NOW.json', 'w') as writefile:
-  #     json.dump(result_data, writefile)
-  path = sys.argv[1]
-  #a = main(path)
+  a = main("")
   #print(a)
-  #pass
+  pass

@@ -19,6 +19,8 @@ def hex_to_rgb(value):
         return(155/255,205/255,102/255)
     elif (value.lower()=='#800000' or value.lower()=='800000'): #Maroon high
         return(255/255,100/255,100/255)
+    elif (value.lower()=='#7b1beb' or value.lower()=='7b1beb'): #Purple different
+        return(123/255,27/255,235/255)
     if(value==''):
         value='b7dEE8'
     value = value.lstrip('#')
@@ -60,7 +62,7 @@ def extract1(data):
         elif (colour.lower()=='fe2e2e'):#Pale_Yellow
             new_data[1].append(new_dict)
         elif (colour.lower()=='82fa58'): #Pale_Green
-            new_data[1].append(new_dict)
+            new_data[0].append(new_dict)
         elif (colour.lower()=='31b404'): #Green
             new_data[0].append(new_dict)
         elif (colour.lower()=='800000'): #Maroon
@@ -85,7 +87,9 @@ def extract(data):
         except:
             new_data[data[key][str(5)]['category']]=[]
             # new_data[data[key][int(5)]['category']]=[]
-        new_dict={'label':key,'remark':data[key][str(5-i)]['remark'],'color':[hex_to_rgb(data[key][str(5-i)]['remark_color']) for i in range(len(data[key]))],'values':[data[key][str(5-i)]['value'] for i in range(len(data[key]))]}
+        for i in range(len(data[key])):
+            print(key,data[key][str(5-i)]['remark_color'])
+        new_dict={'label':key,'remark':data[key][str(5-i)]['remark'],'color':[hex_to_rgb(data[key][str(5-i)]['remark_color']) for i in range(len(data[key]))],'values':[data[key][str(5-i)]['value'] for i in range(len(data[key]))],'upper_range':[data[key][str(5-i)]['upper_range'] for i in range(len(data[key]))],'lower_range':[data[key][str(5-i)]['lower_range'] for i in range(len(data[key]))]}
         # new_dict={'label':key,'remark':data[key][int(5-i)]['remark'],'color':[hex_to_rgb(data[key][int(5-i)]['remark_color']) for i in range(len(data[key]))],'values':[data[key][int(5-i)]['value'] for i in range(len(data[key]))]}
         new_dict['comment_color']=data[key][str(5)]['remark_color']
         # new_dict['comment_color']=data[key][int(5)]['remark_color']
@@ -174,34 +178,34 @@ def create_header(pdf,patient,dates):
     pdf.roundRect(20,100,width=100,height=40,radius=5,stroke=0,fill=1)
     pdf.rect(20,100,width=20,height=20,stroke=0,fill=1)
     pdf.rect(20+100-20,100+40-20,width=20,height=20,stroke=0,fill=1)
-    pdf.roundRect(123,100,width=100,height=40,radius=5,stroke=0,fill=1)
-    pdf.rect(123,100,width=20,height=20,stroke=0,fill=1)
-    pdf.rect(123+100-20,100+40-20,width=20,height=20,stroke=0,fill=1)
-    pdf.roundRect(227,100,width=53,height=40,radius=5,stroke=0,fill=1)
-    pdf.rect(227,100,width=20,height=20,stroke=0,fill=1)
-    pdf.rect(227+53-20,100+40-20,width=20,height=20,stroke=0,fill=1)
+    # pdf.roundRect(123,100,width=100,height=40,radius=5,stroke=0,fill=1)
+    # pdf.rect(123,100,width=20,height=20,stroke=0,fill=1)
+    # pdf.rect(123+100-20,100+40-20,width=20,height=20,stroke=0,fill=1)
+    # pdf.roundRect(227,100,width=53,height=40,radius=5,stroke=0,fill=1)
+    # pdf.rect(227,100,width=20,height=20,stroke=0,fill=1)
+    # pdf.rect(227+53-20,100+40-20,width=20,height=20,stroke=0,fill=1)
 
 
-    x=284
+    x=124
     for i in range(5):
         pdf.setFillColorRGB(250/255,241/255,241/255)
-        pdf.roundRect(x,100,width=55,height=38,radius=5,stroke=0,fill=1)
-        x+=343-284
+        pdf.roundRect(x,100,width=55+32,height=38,radius=5,stroke=0,fill=1)
+        x+=343-284 +32
 
     pdf.setFillColorRGB(0, 0, 0)
     pdf.setFont("Helvetica", 14)
     pdf.drawCentredString(70,125,"LABEL")
-    pdf.drawCentredString(173,125,"COMPARISON")
-    pdf.drawCentredString(256,125,"DATE")
+    # pdf.drawCentredString(173,125,"COMPARISON")
+    # pdf.drawCentredString(256,125,"DATE")
 
-    x=284+55/2
+    x=124+(55+32)/2
     pdf.setFont("Helvetica", 12)
     for i in range(5):
-        if(i<5-len(dates)):
+        if(i>=len(dates)):
             pdf.drawCentredString(x,125,"-")
         else:
-            pdf.drawCentredString(x,125,dates[5-i-1][8:10]+"/"+dates[5-i-1][5:7]+"/"+dates[5-i-1][2:4])
-        x+=343-284
+            pdf.drawCentredString(x,125,dates[i][8:10]+"/"+dates[i][5:7]+"/"+dates[i][2:4])
+        x+=343-284 +32
 
 
 def cal_lines(x):
@@ -220,61 +224,61 @@ def cal_lines(x):
         ca-=1
     return new_lines-1 if print_value=="" else new_lines
 
-def write_comment(pdf,y,color):
-    if(color.lower()=="#31b404" or color.lower()=="31b404"):
-        pdf.drawImage(settings.MEDIA_ROOT.replace('/','//')+"//emojis//thumb.PNG",240,y+13,width=10,height=10)
-        # pdf.drawImage("thumb.PNG",240,y+13,width=10,height=10)
-        col = (6/255,62/255,1/255)
-        pdf.setFillColorRGB(col[0],col[1],col[2])
-        pdf.setFont("Helvetica",9)
-        pdf.drawCentredString(200,y+34/2+5,"Normal, Looks good")
-        pdf.drawImage(settings.MEDIA_ROOT.replace('/','//')+"//emojis//thumb.PNG",150,y+13,width=10,height=10)
-        # pdf.drawImage("thumb.PNG",150,y+13,width=10,height=10)
-    elif(color.lower()=="#ff0000" or color.lower()=="ff0000"):
-        pdf.drawImage(settings.MEDIA_ROOT.replace('/','//')+"//emojis//angry.PNG",248,y+13,width=10,height=10)
-        # pdf.drawImage("angry.PNG",248,y+13,width=10,height=10)
-        col = (82/255,4/255,4/255)
-        pdf.setFillColorRGB(col[0],col[1],col[2])
-        pdf.setFont("Helvetica",9)
-        pdf.drawCentredString(200,y+34/2+5,"High, Need Some Work")
-        pdf.drawImage(settings.MEDIA_ROOT.replace('/','//')+"//emojis//angry.PNG",142,y+13,width=10,height=10)
-        # pdf.drawImage("angry.PNG",142,y+13,width=10,height=10)
-    elif(color.lower()=="#fe2e2e" or color.lower()=="fe2e2e"):
-        pdf.drawImage(settings.MEDIA_ROOT.replace('/','//')+"//emojis//happy.PNG",251,y+13,width=11,height=10)
-        # pdf.drawImage("happy.PNG",251,y+13,width=11,height=10)
-        col = (83/255,38/255,0)
-        pdf.setFillColorRGB(col[0],col[1],col[2])
-        pdf.setFont("Helvetica",9)
-        pdf.drawCentredString(200,y+34/2+5,"Improved, Keep Working")
-        pdf.drawImage(settings.MEDIA_ROOT.replace('/','//')+"//emojis//happy.PNG",139,y+13,width=11,height=10)
-        # pdf.drawImage("happy.PNG",139,y+13,width=11,height=10)
-    elif(color.lower()=="#ffff00" or color.lower()=="ffff00"):
-        pdf.drawImage(settings.MEDIA_ROOT.replace('/','//')+"//emojis//sad1.PNG",233,y+13,width=10,height=10)
-        # pdf.drawImage("sad1.PNG",233,y+13,width=10,height=10)
-        col = (98/255,78/255,18/255)
-        pdf.setFillColorRGB(col[0],col[1],col[2])
-        pdf.setFont("Helvetica",9)
-        pdf.drawCentredString(200,y+34/2+5,"Low, Work Hard")
-        pdf.drawImage(settings.MEDIA_ROOT.replace('/','//')+"//emojis//sad1.PNG",157,y+13,width=10,height=10)
-        # pdf.drawImage("sad1.PNG",157,y+13,width=10,height=10)
-    elif(color.lower()=="#82fa58" or color.lower()=="82fa58"):
-        pdf.drawImage(settings.MEDIA_ROOT.replace('/','//')+"//emojis//clap.PNG",246,y+13,width=10,height=10)
-        # pdf.drawImage("clap.PNG",246,y+13,width=10,height=10)
-        col = (44/255,65/255,21/255)
-        pdf.setFillColorRGB(col[0],col[1],col[2])
-        pdf.setFont("Helvetica",9)
-        pdf.drawCentredString(200,y+34/2+5,"Improved, Keep Going")
-        pdf.drawImage(settings.MEDIA_ROOT.replace('/','//')+"//emojis//clap.PNG",144,y+13,width=10,height=10)
-        # pdf.drawImage("clap.PNG",144,y+13,width=10,height=10)
-    else:
-        pdf.drawImage(settings.MEDIA_ROOT.replace('/','//')+"//emojis//sad.PNG",245,y+13,width=10,height=10)
-        # pdf.drawImage("sad.PNG",245,y+13,width=10,height=10)
-        col = (78/255,96/255,101/255)
-        pdf.setFillColorRGB(col[0],col[1],col[2])
-        pdf.setFont("Helvetica",9)
-        pdf.drawCentredString(200,y+34/2+5,"Decreases, Lets Work")
-        pdf.drawImage(settings.MEDIA_ROOT.replace('/','//')+"//emojis//sad.PNG",144,y+13,width=10,height=10)
-        # pdf.drawImage("sad.PNG",144,y+13,width=10,height=10)
+# def write_comment(pdf,y,color):
+#     if(color.lower()=="#31b404" or color.lower()=="31b404"):
+#         pdf.drawImage(settings.MEDIA_ROOT.replace('/','//')+"//emojis//thumb.PNG",240,y+13,width=10,height=10)
+#         # pdf.drawImage("thumb.PNG",240,y+13,width=10,height=10)
+#         col = (6/255,62/255,1/255)
+#         pdf.setFillColorRGB(col[0],col[1],col[2])
+#         pdf.setFont("Helvetica",9)
+#         pdf.drawCentredString(200,y+34/2+5,"Normal, Looks good")
+#         pdf.drawImage(settings.MEDIA_ROOT.replace('/','//')+"//emojis//thumb.PNG",150,y+13,width=10,height=10)
+#         # pdf.drawImage("thumb.PNG",150,y+13,width=10,height=10)
+#     elif(color.lower()=="#ff0000" or color.lower()=="ff0000"):
+#         pdf.drawImage(settings.MEDIA_ROOT.replace('/','//')+"//emojis//angry.PNG",248,y+13,width=10,height=10)
+#         # pdf.drawImage("angry.PNG",248,y+13,width=10,height=10)
+#         col = (82/255,4/255,4/255)
+#         pdf.setFillColorRGB(col[0],col[1],col[2])
+#         pdf.setFont("Helvetica",9)
+#         pdf.drawCentredString(200,y+34/2+5,"High, Need Some Work")
+#         pdf.drawImage(settings.MEDIA_ROOT.replace('/','//')+"//emojis//angry.PNG",142,y+13,width=10,height=10)
+#         # pdf.drawImage("angry.PNG",142,y+13,width=10,height=10)
+#     elif(color.lower()=="#fe2e2e" or color.lower()=="fe2e2e"):
+#         pdf.drawImage(settings.MEDIA_ROOT.replace('/','//')+"//emojis//happy.PNG",251,y+13,width=11,height=10)
+#         # pdf.drawImage("happy.PNG",251,y+13,width=11,height=10)
+#         col = (83/255,38/255,0)
+#         pdf.setFillColorRGB(col[0],col[1],col[2])
+#         pdf.setFont("Helvetica",9)
+#         pdf.drawCentredString(200,y+34/2+5,"Improved, Keep Working")
+#         pdf.drawImage(settings.MEDIA_ROOT.replace('/','//')+"//emojis//happy.PNG",139,y+13,width=11,height=10)
+#         # pdf.drawImage("happy.PNG",139,y+13,width=11,height=10)
+#     elif(color.lower()=="#ffff00" or color.lower()=="ffff00"):
+#         pdf.drawImage(settings.MEDIA_ROOT.replace('/','//')+"//emojis//sad1.PNG",233,y+13,width=10,height=10)
+#         # pdf.drawImage("sad1.PNG",233,y+13,width=10,height=10)
+#         col = (98/255,78/255,18/255)
+#         pdf.setFillColorRGB(col[0],col[1],col[2])
+#         pdf.setFont("Helvetica",9)
+#         pdf.drawCentredString(200,y+34/2+5,"Low, Work Hard")
+#         pdf.drawImage(settings.MEDIA_ROOT.replace('/','//')+"//emojis//sad1.PNG",157,y+13,width=10,height=10)
+#         # pdf.drawImage("sad1.PNG",157,y+13,width=10,height=10)
+#     elif(color.lower()=="#82fa58" or color.lower()=="82fa58"):
+#         pdf.drawImage(settings.MEDIA_ROOT.replace('/','//')+"//emojis//clap.PNG",246,y+13,width=10,height=10)
+#         # pdf.drawImage("clap.PNG",246,y+13,width=10,height=10)
+#         col = (44/255,65/255,21/255)
+#         pdf.setFillColorRGB(col[0],col[1],col[2])
+#         pdf.setFont("Helvetica",9)
+#         pdf.drawCentredString(200,y+34/2+5,"Improved, Keep Going")
+#         pdf.drawImage(settings.MEDIA_ROOT.replace('/','//')+"//emojis//clap.PNG",144,y+13,width=10,height=10)
+#         # pdf.drawImage("clap.PNG",144,y+13,width=10,height=10)
+#     else:
+#         pdf.drawImage(settings.MEDIA_ROOT.replace('/','//')+"//emojis//sad.PNG",245,y+13,width=10,height=10)
+#         # pdf.drawImage("sad.PNG",245,y+13,width=10,height=10)
+#         col = (78/255,96/255,101/255)
+#         pdf.setFillColorRGB(col[0],col[1],col[2])
+#         pdf.setFont("Helvetica",9)
+#         pdf.drawCentredString(200,y+34/2+5,"Decreases, Lets Work")
+#         pdf.drawImage(settings.MEDIA_ROOT.replace('/','//')+"//emojis//sad.PNG",144,y+13,width=10,height=10)
+#         # pdf.drawImage("sad.PNG",144,y+13,width=10,height=10)
 
 
 
@@ -467,6 +471,7 @@ def create_overview_report(pdf,patient,data):
 
 def run(data,user_id, patient):
     # print("saved pdf at " +settings.MEDIA_ROOT)
+    print("creating pdf")
     pdf = canvas.Canvas(settings.MEDIA_ROOT.replace('/','//')+"//Generated_reports//"+str(user_id)+".pdf",bottomup=0)
     # pdf = canvas.Canvas("latest.pdf",bottomup=0)
     # pdf.showPage()
@@ -518,10 +523,7 @@ def run(data,user_id, patient):
             if lines==1:
                 pdf.drawString(x+4,y+11+7,i['label'])
                 pdf.setFont("Helvetica", 7)
-                if(ns and label_obj.upper_range):
-                    pdf.drawString(x+4,y+11+13+7,"Range " +str(label_obj.lower_range)+"-"+str(label_obj.upper_range))
-                else:
-                    pdf.drawString(x+4,y+11+13+7,"Range Not Specified")
+                pdf.drawString(x+4,y+11+13+7,"Range ")
             else :
                 words=i['label'].split()
                 ca=16
@@ -541,38 +543,34 @@ def run(data,user_id, patient):
                 pdf.drawString(x+4,y+temp_y+7+13*(new_lines-1),print_value)
                 if(lines==2):
                     pdf.setFont("Helvetica", 7)
-                    if(ns and label_obj.upper_range):
-                        pdf.drawString(x+4,y+25+13+7,"Range " +str(label_obj.lower_range)+"-"+str(label_obj.upper_range))
-                    else:
-                        pdf.drawString(x+4,y+25+13+7,"Range Not Specified")
+                    pdf.drawString(x+4,y+25+13+7,"Range ")
 
                 else :
                     pdf.setFont("Helvetica", 7)
-                    if(ns and label_obj.upper_range):
-                        pdf.drawString(x+4,y+30+13+7,"Range " +str(label_obj.lower_range)+"-"+str(label_obj.upper_range))
-                    else:
-                        pdf.drawString(x+4,y+30+13+7,"Range Not Specified")
+                    pdf.drawString(x+4,y+30+13+7,"Range ")
 
             # Comment box
-            pdf.setFillColorRGB(i['color'][0][0],i['color'][0][1],i['color'][0][2])
-            pdf.roundRect(124,y+(height/2)-34/2,width=150,height=34,radius=5,stroke=0,fill=1)
-            write_comment(pdf,y+(height/2)-34/2,i['comment_color'])
+            # pdf.setFillColorRGB(i['color'][0][0],i['color'][0][1],i['color'][0][2])
+            # pdf.roundRect(124,y+(height/2)-34/2,width=150,height=34,radius=5,stroke=0,fill=1)
+            # write_comment(pdf,y+(height/2)-34/2,i['comment_color'])
 
-            temp_x=284
+            temp_x=124
             for iter in range(5):
-                if(iter<5-len(dates)):
+                if(iter>=len(dates)):
                     pdf.setFillColorRGB(183/255,222/255,232/255)
                 else:
-                    pdf.setFillColorRGB(i['color'][5-iter-1][0],i['color'][5-iter-1][1],i['color'][5-iter-1][2])
-                pdf.roundRect(temp_x,y+(height/2)-38/2,width=55,height=38,radius=5,stroke=0,fill=1)
+                    pdf.setFillColorRGB(i['color'][iter][0],i['color'][iter][1],i['color'][iter][2])
+                pdf.roundRect(temp_x,y+(height/2)-38/2,width=55+32,height=38,radius=5,stroke=0,fill=1)
                 pdf.setFillColorRGB(20/255,20/255,20/255)
                 pdf.setFont("Helvetica", 14)
-                if(iter<5-len(dates)):
-                    pdf.drawCentredString(temp_x+55/2,y+(height/2)+5,"-")
+                if(iter>=len(dates)):
+                    pdf.drawCentredString(temp_x+(55+32)/2,y+(height/2)+5,"-")
                 else:
-                    pdf.drawCentredString(temp_x+55/2,y+(height/2)+5,str(i['values'][5-iter-1]) if str(i['values'][5-iter-1])!="" else "-")
+                    pdf.drawCentredString(temp_x+(55+32)/2,y+(height/2),str(i['values'][iter]) if str(i['values'][iter])!="" else "-")
+                    pdf.setFont("Helvetica", 6)
+                    pdf.drawCentredString(temp_x+(55+32)/2,y+(height/2)+10,str(i['lower_range'][iter])+" - "+str(i['upper_range'][iter]))
 
-                temp_x+=343-284
+                temp_x+=343-284+32
             y+=height+5
         y+=5
 
