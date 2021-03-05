@@ -197,6 +197,8 @@ class TestResultUpdateView(LoginRequiredMixin, View):
             unit=form.cleaned_data['unit']
             label=testresult.label
             value=float(form.cleaned_data['value'])
+            testresult.upper_range = form.cleaned_data['upper_range'] if form.cleaned_data['upper_range']!="" else None
+            testresult.lower_range = form.cleaned_data['lower_range'] if form.cleaned_data['lower_range']!="" else None
             testresult.unit=unit
             testresult.value=value
             testresult.label=label

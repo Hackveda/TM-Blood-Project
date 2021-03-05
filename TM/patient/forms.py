@@ -11,6 +11,8 @@ class LabelCreationForm(forms.Form):
 
 class TestResultForm(forms.Form):
     unit=forms.CharField(label='unit',max_length=55,required=True)
+    upper_range=forms.CharField(label = 'upper_range',max_length=55)
+    lower_range=forms.CharField(label = 'lower_range',max_length=55)
     value=forms.FloatField(label='value',required=True)
 
 
@@ -23,7 +25,7 @@ class DocumentForm(forms.ModelForm):
 class LabelForm(forms.ModelForm):
     class Meta:
         model = TestResult
-        fields = ('label', 'value','unit')
+        fields = ('label', 'value','unit','upper_range','lower_range')
 
 class GeneratedReportForm(forms.Form):
     document1 = forms.ModelChoiceField(queryset=Document.objects.all())
