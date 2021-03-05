@@ -43,6 +43,12 @@ class Patient(models.Model):
         self.last_name = self.last_name.title()
         super(Patient, self).save(*args, **kwargs)
 
+    def delete(self, *args, **kwargs):
+        for i in Document.objects.filter(patient = self):
+            i.delete()
+        for i in FinalGeneratedReport.objects.filter(patient=self):
+            i.delete()
+        super(Patient, self).delete(*args, **kwargs)
 
 
     def __str__(self) -> str:
@@ -68,6 +74,10 @@ class Document(models.Model):
 
     def __repr__(self) -> str:
         return f'{self.name}'
+
+    def delete(self, using=None, keep_parents=False):
+        self.document.storage.delete(self.document.name)
+        super().delete()
 
 
 class Label(models.Model):
@@ -140,11 +150,13 @@ class FinalGeneratedReport(models.Model):
     def __str__(self):
         return f"{self.patient}  "
 
-    def delete(self):
+    def delete(self,*args, **kwargs):
         print("11111"*50)
-        os.remove(settings.MEDIA_ROOT.replace('/','//')+"//Generated_reports//"+str(self.id)+".pdf")
-        print("remove   "+settings.MEDIA_ROOT.replace('/','//')+"//Generated_reports//"+str(self.id)+".pdf")
-        super(FinalGeneratedReport, self).delete()
+        try:
+            os.remove(settings.MEDIA_ROOT.replace('/','//')+"//Generated_reports//"+str(self.id)+".pdf")
+        except:
+            print("remove   "+settings.MEDIA_ROOT.replace('/','//')+"//Generated_reports//"+str(self.id)+".pdf")
+        super(FinalGeneratedReport, self).delete(*args, **kwargs)
 
 
 class GeneratedReportTestResult(models.Model):
