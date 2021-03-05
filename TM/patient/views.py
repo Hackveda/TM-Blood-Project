@@ -705,7 +705,7 @@ class GeneratedReportView(LoginRequiredMixin, View):
             table[label_name]['category'] = category
             table[label_name]['upper_range'] = upper_range2
             table[label_name]['lower_range'] = lower_range2
-            if is_single_document:
+            if is_single_document or ((doc1 is None) and (doc2 is not None)):
                 try:
                     if upper_range2==None:
                         table[label_name]['remark'] = 'different unit/range'
