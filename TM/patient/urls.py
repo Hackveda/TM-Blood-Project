@@ -38,7 +38,6 @@ from .views import  (
     FinalGeneratedReportDetailView,
     ViewPdfView,
     ShowSavedGeneratedReportView,
-    CreateConversionView,
     CreateLabelView
 )
 
@@ -64,7 +63,6 @@ urlpatterns = [
     path('showsavedreport/<int:pk>/<int:patient_id>', ShowSavedGeneratedReportView.as_view(), name='show-saved-report'),
     path('showpdf/<int:pk>', ViewPdfView.as_view(), name='show-pdf'),
     path('createlabel/',CreateLabelView.as_view(),name='create-labels'),
-    path('createconversion',CreateConversionView.as_view(),name='create-conversion'),
     # path('save/<int:patient_id>/<int:doc1_id>/<int:doc2_id>/<str:table>/', GeneratedReportSaveView.as_view(), name='save'),
 
 ]

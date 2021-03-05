@@ -23,7 +23,7 @@ from django.contrib import messages
 
 # app import
 from .models import *
-from .forms import DocumentForm, GeneratedReportForm , ConversionForm , TestResultForm , LabelCreationForm
+from .forms import DocumentForm, GeneratedReportForm, TestResultForm , LabelCreationForm
 
 # utility import
 from .process import main as process_main
@@ -136,19 +136,6 @@ class DocumentUploadView(LoginRequiredMixin, View):
                         #log('got name value unit')
                         alternate_label= AlternateLabel.objects.filter(name=name,report=document_object.report).first()
                         print(alternate_label)
-                        #log(f'got alternate label, {alternate_label}, {AlternateLabel.objects.filter(name__iexact=name)}')
-                        #log(f'this is name value unit {alternate_label}, {name} , {value}, {unit}, {alternate_label}')
-                        # if(unit!=alternate_label.label.primary_unit):
-                        #     try:
-                        #         comp_obj = Conversion.objects.filter(from_unit=unit.lower(),to_unit=alternate_label.label.primary_unit.lower()).first()
-                        #         value=float(value)
-                        #         value = value*comp_obj.multiplier + comp_obj.adder
-                        #         value = round(value,2)
-                        #         value=str(value)
-                        #     except Exception as e:
-                        #         print(alternate_label,unit,e)
-                        #         continue
-
                         test_result = TestResult.objects.create(
                             patient = patient,
                             label = alternate_label.label,
@@ -210,28 +197,12 @@ class TestResultUpdateView(LoginRequiredMixin, View):
             unit=form.cleaned_data['unit']
             label=testresult.label
             value=float(form.cleaned_data['value'])
-            print(unit,label,label.primary_unit,value)
-            if(unit==label.primary_unit):
-                testresult.unit=unit
-                testresult.value=value
-                testresult.label=label
-                testresult.save()
-                return redirect(reverse('display-response', kwargs={'patient_id':testresult.patient.id, 'document_id':testresult.document.id}))
+            testresult.unit=unit
+            testresult.value=value
+            testresult.label=label
+            testresult.save()
+            return redirect(reverse('display-response', kwargs={'patient_id':testresult.patient.id, 'document_id':testresult.document.id}))
 
-            try:
-                label_obj=label
-                conv_obj= Conversion.objects.filter(from_unit=unit,to_unit=label_obj.primary_unit)[0]
-                value=value*conv_obj.multiplier+conv_obj.adder
-                unit=conv_obj.to_unit
-                testresult.unit=unit
-                testresult.value=value
-                testresult.label=label
-                testresult.save()
-                print(pk)
-            except Exception as e:
-                print("Conversion element not found")
-                print(e)
-        return redirect(reverse('display-response', kwargs={'patient_id':testresult.patient.id, 'document_id':testresult.document.id}))
 
 class TestResultCreateView(LoginRequiredMixin, View):
     template_name = 'patient/test_result_create_form.html'
@@ -266,16 +237,7 @@ class TestResultCreateView(LoginRequiredMixin, View):
             if TestResult.objects.filter(label=document_object.label, document=document_object.document):
                 pass
             else:
-                try:
-                    if(document_object.label.primary_unit!=document_object.unit):
-                        label_obj=document_object.label
-                        unit=document_object.unit
-                        conv_obj= Conversion.objects.filter(from_unit=unit,to_unit=label_obj.primary_unit)[0]
-                        document_object.value=float(document_object.value)*conv_obj.multiplier+conv_obj.adder
-                        document_object.unit=conv_obj.to_unit
-                    document_object.save()
-                except:
-                    pass
+                document_object.save()
             return redirect(reverse('display-response', kwargs={'patient_id':patient.id, 'document_id':document.id}))
 
         else:
@@ -795,7 +757,7 @@ class GeneratedReportView(LoginRequiredMixin, View):
                             print('this is single high remark color', table[label_name]['remark_color'])
 
                     elif doc1_value < lower_range1:
-                        if upper_range2==None or doc1_unit!=doc2_unit:
+                        if upper_range2==None:
                             table[label_name]['remark'] = 'different range/unit'
                             table[label_name]['remark_color'] = remark_color['Purple']
                         elif doc2_value <lower_range2:
@@ -818,7 +780,7 @@ class GeneratedReportView(LoginRequiredMixin, View):
 
                     # if value was normal
                     elif doc1_value<=upper_range1:
-                        if upper_range2==None or doc1_unit!=doc2_unit:
+                        if upper_range2==None:
                             table[label_name]['remark'] = 'different range/unit'
                             table[label_name]['remark_color'] = remark_color['Purple']
                         elif doc2_value <lower_range2:
@@ -841,7 +803,7 @@ class GeneratedReportView(LoginRequiredMixin, View):
 
                     # if value was high
                     else:
-                        if upper_range2==None or doc1_unit!=doc2_unit:
+                        if upper_range2==None:
                             table[label_name]['remark'] = 'different range/unit'
                             table[label_name]['remark_color'] = remark_color['Purple']
 
@@ -1173,50 +1135,6 @@ class ViewPdfView(LoginRequiredMixin, View):
         context = { 'doc_obj':  Document.objects.get(pk=pk)}
         return render(request, self.template_name, context)
 
-class CreateConversionView(LoginRequiredMixin, View):
-    template_name = 'patient/create_conversion.html'
-
-    def get(self, request):
-        form = ConversionForm()
-        context = {
-            'form':form,
-        }
-
-        return render(request, self.template_name, context)
-
-    def post(self, request):
-        form = ConversionForm(request.POST)
-        if form.is_valid():
-            from_unit=form.cleaned_data['from_unit']
-            to_unit=form.cleaned_data['to_unit']
-            multiplier=form.cleaned_data['multiplier']
-            adder=form.cleaned_data['adder']
-            try:
-                conversion_object=Conversion.objects.filter(from_unit=from_unit,to_unit=to_unit)[0]
-                conversion_object.adder=adder
-                conversion_object.multiplier=multiplier
-            except:
-                conversion_object = Conversion.objects.create(from_unit=from_unit,to_unit=to_unit,multiplier=multiplier,adder=adder)
-            conversion_object.save()
-
-            try:
-                conversion_object=Conversion.objects.filter(to_unit=from_unit,from_unit=to_unit)[0]
-                conversion_object.adder=-1*adder/multiplier
-                conversion_object.multiplier=1/multiplier
-            except:
-                conversion_object = Conversion.objects.create(to_unit=from_unit,from_unit=to_unit,multiplier=1/multiplier,adder=-1*adder/multiplier)
-            conversion_object.save()
-
-            # print(type(form.from))
-            # new_obj=conversion.objects.create(from = conversion_object.to, to = conversion_object.from, multiplier=1/conversion_object.multiplier,adder=-1*(conversion_object.adder)/(conversion_object.multiplier))
-            # new_obj.save()
-            return redirect('create-conversion')
-
-        else:
-            print('--none--'*10)
-            print(form.errors)
-            return reverse('create-conversion')
-
 
 
 class CreateLabelView(LoginRequiredMixin,View):
@@ -1235,77 +1153,11 @@ class CreateLabelView(LoginRequiredMixin,View):
         form = LabelCreationForm(request.POST)
         if form.is_valid():
             name=form.cleaned_data['name']
-            upper_range=float(form.cleaned_data['upper_range'])
-            lower_range=float(form.cleaned_data['lower_range'])
-            primary_unit=form.cleaned_data['primary_unit']
             category=form.cleaned_data['category']
             try:
                 label_obj = Label.objects.filter(name=name)[0]
-                if label_obj.primary_unit == primary_unit:
-                    label_obj.upper_range=upper_range
-                    label_obj.lower_range=lower_range
-                    label_obj.category=category
-                    label_obj.primary_unit=primary_unit
-                else:
-                    try:
-                        conv_obj=Conversion.objects.filter(from_unit=label_obj.primary_unit,to_unit=primary_unit)[0]
-                        m1=conv_obj.multiplier
-                        a1=conv_obj.adder
-                        conv_obj_list = Conversion.objects.filter(to_unit=label_obj.primary_unit)
-                        for i in conv_obj_list:
-                            if i==conv_obj:
-                                continue
-                            a2=i.adder
-                            m2=i.multiplier
-                            m=m1*m2
-                            a=a1+m1*a2
-                            try:
-                                Conversion.objects.filter(from_unit=i.from_unit,to_unit=primary_unit)[0]
-                            except:
-                                conv_obj = Conversion.objects.create(from_unit=i.from_unit,to_unit=primary_unit,multiplier=m,adder=a)
-                                conv_obj.save()
-
-                            try:
-                                Conversion.objects.filter(to_unit=i.from_unit,from_unit=primary_unit)[0]
-                            except:
-                                conv_obj = Conversion.objects.create(to_unit=i.from_unit,from_unit=primary_unit,multiplier=1/m,adder=-1*a/m)
-                                conv_obj.save()
-
-
-                        # changing data of previous reports
-                        testresult_list = GeneratedReportTestResult.objects.filter(label=label_obj)
-                        for i in testresult_list:
-                            if(i.value1):
-                                i.value1=str(float(i.value1)*m1+a1)
-                            if(i.value2):
-                                i.value2=str(float(i.value2)*m1+a1)
-                            if(i.value3):
-                                i.value3=str(float(i.value3)*m1+a1)
-                            if(i.value4):
-                                i.value4=str(float(i.value4)*m1+a1)
-                            if(i.value5):
-                                i.value5=str(float(i.value5)*m1+a1)
-                            i.save()
-
-                        testresult_list = TestResult.objects.filter(label=label_obj)
-                        for i in testresult_list:
-                            i.value=str(float(i.value)*m1+a1)
-                            i.unit=primary_unit
-                            print(i.document.name,i.value,i.unit)
-                            i.save()
-
-                        label_obj.upper_range=upper_range
-                        label_obj.lower_range=lower_range
-                        label_obj.category=category
-                        label_obj.primary_unit=primary_unit
-
-                    except Exception as e:
-                        print(e)
-                        messages.info(request, 'Conversion from '+label_obj.primary_unit+" to "+primary_unit + " not found. First add a conversion. ")
-                        return redirect('create-labels')
-
             except:
-                label_obj = Label.objects.create(name=name,upper_range=upper_range,lower_range=lower_range,primary_unit=primary_unit,category=category)
+                label_obj = Label.objects.create(name=name,category=category)
 
             label_obj.save()
 

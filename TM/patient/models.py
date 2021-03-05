@@ -72,9 +72,6 @@ class Document(models.Model):
 
 class Label(models.Model):
     name = models.CharField(max_length=55, blank=True, unique=True)
-    lower_range = models.FloatField(null=True, blank=True)
-    upper_range = models.FloatField(null=True, blank=True)
-    primary_unit = models.CharField(max_length=55)
     category = models.ForeignKey('Category', default=1, on_delete=models.SET_NULL, null=True)
 
 
@@ -187,18 +184,3 @@ class Category(models.Model):
 
     def __repr__(self) -> str:
         return self.name
-
-
-class Conversion(models.Model):
-    from_unit = models.CharField(max_length=55)
-    to_unit = models.CharField(max_length=55)
-    multiplier = models.FloatField(blank=True,null=True)
-    adder = models.FloatField(blank=True,null=True)
-
-
-
-    def __str__(self) -> str:
-        return self.from_unit + " - " + self.to_unit
-
-    def __repr__(self) -> str:
-        return self.from_unit + " - " + self.to_unit
