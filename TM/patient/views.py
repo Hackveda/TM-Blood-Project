@@ -728,6 +728,10 @@ class GeneratedReportView(LoginRequiredMixin, View):
             # remark is Increase or decrease if seconds report values increases or decreases
             # if only single report contains that value then, it is empty
 
+            lower_range1 = None
+            lower_range2 = None
+            upper_range1 = None
+            upper_range2 = None
             if doc1:
                 lower_range1 = doc1.get('lower_range',0)
                 upper_range1 = doc1.get('upper_range',0)
@@ -737,7 +741,8 @@ class GeneratedReportView(LoginRequiredMixin, View):
 
             table[label_name]['value'] = doc2_value
             table[label_name]['category'] = category
-
+            table[label_name]['upper_range'] = upper_range2
+            table[label_name]['lower_range'] = lower_range2
             if is_single_document:
                 try:
                     if upper_range2==None:
@@ -772,7 +777,7 @@ class GeneratedReportView(LoginRequiredMixin, View):
 
                 try:
                     # previos value was low
-                    if lower_range1==None:
+                    if upper_range1==None:
                         if upper_range2==None:
                             table[label_name]['remark'] = 'different unit/range'
                             table[label_name]['remark_color'] = remark_color['Purple']
@@ -790,7 +795,7 @@ class GeneratedReportView(LoginRequiredMixin, View):
                             print('this is single high remark color', table[label_name]['remark_color'])
 
                     elif doc1_value < lower_range1:
-                        if upper_range2==None:
+                        if upper_range2==None or doc1_unit!=doc2_unit:
                             table[label_name]['remark'] = 'different range/unit'
                             table[label_name]['remark_color'] = remark_color['Purple']
                         elif doc2_value <lower_range2:
@@ -813,7 +818,7 @@ class GeneratedReportView(LoginRequiredMixin, View):
 
                     # if value was normal
                     elif doc1_value<=upper_range1:
-                        if upper_range2==None:
+                        if upper_range2==None or doc1_unit!=doc2_unit:
                             table[label_name]['remark'] = 'different range/unit'
                             table[label_name]['remark_color'] = remark_color['Purple']
                         elif doc2_value <lower_range2:
@@ -836,7 +841,7 @@ class GeneratedReportView(LoginRequiredMixin, View):
 
                     # if value was high
                     else:
-                        if upper_range2==None:
+                        if upper_range2==None or doc1_unit!=doc2_unit:
                             table[label_name]['remark'] = 'different range/unit'
                             table[label_name]['remark_color'] = remark_color['Purple']
 
@@ -921,6 +926,8 @@ class GeneratedReportView(LoginRequiredMixin, View):
                     'remark': table_new[index]['col'][label.name].get('remark', ''),
                     'remark_color': table_new[index]['col'][label.name].get('remark_color', ''),
                     'category': table_new[index]['col'][label.name].get('category', ''),
+                    'upper_range': table_new[index]['col'][label.name].get('upper_range', ''),
+                    'lower_range': table_new[index]['col'][label.name].get('lower_range', ''),
                 } for index in table_new.keys()
             }
         row_wise_table['documents'] = {}

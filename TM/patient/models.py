@@ -78,11 +78,9 @@ class Label(models.Model):
     category = models.ForeignKey('Category', default=1, on_delete=models.SET_NULL, null=True)
 
 
-    # def save(self, *args, **kwargs):
-    #     obj, created = Category.objects.get_or_create(name='Other', priority=0)
-    #     if created:
-    #         self.category = obj
-    #     super(Label, self).save(*args, **kwargs)
+    def save(self, *args, **kwargs):
+        self.name = self.name.upper()
+        super(Label, self).save(*args, **kwargs)
 
 
     # value = models.CharField(max_length=55, blank=True)
@@ -145,9 +143,11 @@ class FinalGeneratedReport(models.Model):
     def __str__(self):
         return f"{self.patient}  "
 
-    def delete(self, *args, **kwargs):
+    def delete(self):
+        print("11111"*50)
         os.remove(settings.MEDIA_ROOT.replace('/','//')+"//Generated_reports//"+str(self.id)+".pdf")
-        super(FinalGeneratedReport, self).delete(*args, **kwargs)
+        print("remove   "+settings.MEDIA_ROOT.replace('/','//')+"//Generated_reports//"+str(self.id)+".pdf")
+        super(FinalGeneratedReport, self).delete()
 
 
 class GeneratedReportTestResult(models.Model):
