@@ -517,8 +517,8 @@ class ShowAllReportView(LoginRequiredMixin, View):
         page_obj2 = paginator2.get_page(page_number)
         context = {
             'patient':patient,
-            'generated_reports':FinalGeneratedReport.objects.filter(patient__pk=pk).order_by('-created_time'),
-            'reports': patient.document_set.all().order_by('-uploaded_at'),
+            'generated_reports':FinalGeneratedReport.objects.filter(patient__pk=pk).order_by('created_time'),
+            'reports': patient.document_set.all().order_by('uploaded_at'),
             'page_obj1':page_obj1,
             'page_obj2':page_obj2
         }
