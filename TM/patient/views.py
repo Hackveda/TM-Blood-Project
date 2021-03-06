@@ -508,8 +508,8 @@ class ShowAllReportView(LoginRequiredMixin, View):
 
     def get(self, request, pk):
         patient = Patient.objects.get(pk=pk)
-        gen_rep = FinalGeneratedReport.objects.filter(patient__pk=pk).order_by('-created_time')
-        report1 = patient.document_set.all().order_by('-uploaded_at')
+        gen_rep = FinalGeneratedReport.objects.filter(patient__pk=pk).order_by('-pk')
+        report1 = patient.document_set.all().order_by('-pk')
         paginator1 = Paginator(gen_rep, 5)
         paginator2 = Paginator(report1, 5)
         page_number = request.GET.get('page')
@@ -517,8 +517,8 @@ class ShowAllReportView(LoginRequiredMixin, View):
         page_obj2 = paginator2.get_page(page_number)
         context = {
             'patient':patient,
-            'generated_reports':FinalGeneratedReport.objects.filter(patient__pk=pk).order_by('-created_time'),
-            'reports': patient.document_set.all().order_by('-uploaded_at'),
+            'generated_reports':FinalGeneratedReport.objects.filter(patient__pk=pk).order_by('-pk'),
+            'reports': patient.document_set.all().order_by('-pk'),
             'page_obj1':page_obj1,
             'page_obj2':page_obj2
         }
