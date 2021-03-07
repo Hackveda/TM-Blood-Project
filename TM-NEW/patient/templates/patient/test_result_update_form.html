@@ -1,0 +1,25 @@
+{% extends 'patient/base2.html' %}
+{% load static %}
+{% load widget_tweaks %}
+
+
+
+
+{% block content %}
+<div class="patient_profile">
+      <div class="story GB">
+	  	<form method="POST">{% csrf_token %}
+        <div class=" GB ">
+          {% render_field form.label class+="form__input"  name="label" placeholder="label" value=obj.label.id required="required" %}   Last label = {{obj.label}} <br>
+		  {% render_field form.value type="text" name="value" placeholder="Value" value=obj.value required="required" class+="form__input" %}
+		  {% render_field form.unit type="text" name="unit" placeholder="Unit" value=obj.unit required="required" class+="form__input" %}
+        </div>
+		<div class="form__group u-margin-top-medium">
+            <button class="btn btn--green">
+              Save
+            </button>
+        </div>
+		</form>
+      </div>
+</div>
+{% endblock %}

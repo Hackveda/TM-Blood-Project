@@ -1,0 +1,26 @@
+{% extends 'patient/base2.html' %}
+{% load static %}
+{% load widget_tweaks %}
+
+
+
+
+{% block content %}
+<div class="patient_profile">
+      <div class="story GB">
+	  	<form method="POST">{% csrf_token %}
+        <div class=" GB ">
+          {% render_field form.name type="text" name="from_unit" placeholder="Name" required="required" class+="form__input" %}
+		      {% render_field form.label type="text" name="to" placeholder="To" required="required" class+="form__input" %}
+          {% render_field form.report type="text" name="multiplier" placeholder="multiplier" required="required" class+="form__input" %}
+
+        </div>
+		<div class="form__group u-margin-top-medium">
+            <button class="btn btn--green">
+              Save
+            </button>
+        </div>
+		</form>
+      </div>
+</div>
+{% endblock %}

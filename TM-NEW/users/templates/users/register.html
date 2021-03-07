@@ -1,0 +1,17 @@
+{% block content %}
+
+<div class="content-section">
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+</div>
+<button type="submit" class="btn btn-primary">Sign Up</button>
+</form>
+<div class="border-top pt-3">
+    <small class="text-muted">
+        Already Have an account?
+        <a href="{% url 'users-login' %}">login</a>
+    </small>
+</div>
+</div>
+{% endblock %}

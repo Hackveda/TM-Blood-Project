@@ -1,0 +1,21 @@
+Watching for file changes with StatReloader
+2020-09-12 09:01:38,120 INFO Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+patient.Patient.alternate_number: (fields.W122) 'max_length' is ignored when used with IntegerField.
+	HINT: Remove 'max_length' from field
+patient.Patient.phone_number: (fields.W122) 'max_length' is ignored when used with IntegerField.
+	HINT: Remove 'max_length' from field
+patient.Patient.postal_zip: (fields.W122) 'max_length' is ignored when used with IntegerField.
+	HINT: Remove 'max_length' from field
+
+System check identified 3 issues (0 silenced).
+2020-09-12 09:02:28,613 DEBUG Using selector: EpollSelector
+Performing system checks...
+
+September 12, 2020 - 09:01:45
+Django version 3.0.3, using settings 'main.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+2020-09-12 09:02:28,782 DEBUG Using selector: EpollSelector

@@ -1,0 +1,171 @@
+{% extends 'patient/base2.html' %}
+{% load static %}
+{% load widget_tweaks %}
+{% block content %}
+<html lang="en">
+  <head>
+    <title>Add patient</title>
+  </head>
+  <body>
+   
+    <div class="patient_form">
+      <div class="row GB">
+        <div class="book GB">
+          <div class="book__form GB">
+            <form method="post" class="form GB">{% csrf_token %}
+              <div class="u-margin-bottom-medium GB">
+                <h2 class="heading-secondary">Edit Patient</h2>
+              </div>
+
+              <div class="form__group GB">
+                <!--<input
+                  type="text"
+                  class="form__input"
+                  placeholder="First Name"
+                  id="first"
+                  required
+                />-->
+                {% render_field form.first_name class+="form__input" placeholder='First Name' type="text" name="firstname" required="required" %}
+                {{ form.first_name.errors}}
+                <label for="first" class="form__label">First Name</label>
+              </div>
+
+              <div class="form__group GB">
+                <!--<input
+                  type="text"
+                  class="form__input"
+                  placeholder="Last Name"
+                  id="last"
+                  required
+                />-->
+                {% render_field form.last_name  class+="form__input" placeholder='Last Name' type="text" name="lastname" required="required" %}
+                {{ form.last_name.errors}}
+                <label for="last" class="form__label">Last Name</label>
+              </div>
+
+              <!--<div class="form__group u-margin-bottom-medium">
+                <p class="form__radio-paragraph">Gender</p>
+                <div class="form__radio-group">
+                  <input
+                    type="radio"
+                    class="form__radio-input"
+                    id="small"
+                    name="gender"
+                  />
+                  <label for="small" class="form__radio-label">
+                    <span class="form__radio-btn"></span>
+                    Male</label
+                  >
+                </div>
+                <div class="form__radio-group">
+                  <input
+                    type="radio"
+                    class="form__radio-input"
+                    id="large"
+                    name="gender"
+                  />
+                  <label for="large" class="form__radio-label">
+                    <span class="form__radio-btn"></span>
+                    Female</label
+                  >
+                </div>
+              </div>-->
+
+              <div class="form__group">
+                <!--<input
+                  type="text"
+                  class="form__input"
+                  placeholder="Address"
+                  id="address"
+                  required
+                />-->
+                {% render_field form.address placeholder="Address" type="text" name="address" required="required" class="form__input" %}
+							  {{ form.address.errors}}
+                <label for="address" class="form__label">Address</label>
+              </div>
+
+              <div class="form__group">
+                <!--<input
+                  type="text"
+                  class="form__input"
+                  placeholder="City"
+                  id="address"
+                  required
+                />-->
+                {% render_field form.city placeholder="City" type="text" name="city" required="required" class="form__input" %}
+							  {{ form.city.errors}}
+                <label for="address" class="form__label">City</label>
+              </div>
+
+              <div class="form__group">
+                <!--<input
+                  type="text"
+                  class="form__input"
+                  placeholder="Country"
+                  id="address"
+                  required
+                />-->
+                {% render_field form.country placeholder="Country" type="text" name="country" required="required" class="form__input"  %}
+								{{ form.country.errors}}
+                <label for="address" class="form__label">Country</label>
+              </div>
+
+              <div class="form__group">
+                <!--<input
+                  type="number"
+                  class="form__input"
+                  placeholder="Postal/Zip"
+                  id="address"
+                  required
+                />-->
+                {% render_field form.postal_zip placeholder="Postal/Zip" type="text" name="zip" required="required" class="form__input" %}
+							  {{ form.postal_zip.errors}}
+                <label for="address" class="form__label">Postal/Zip</label>
+              </div>
+        
+              <div class="form__group">
+                <!--<input
+                  type="email"
+                  class="form__input"
+                  placeholder="Email Address"
+                  id="eamil"
+                  required
+                />-->
+                {% render_field form.email placeholder="Email Address" type="email" name="email1" required="required" class="form__input" %}
+                {{ form.email.errors}}
+                <label for="email" class="form__label">Email Address</label>
+              </div>
+
+              <div class="form__group">
+                <!--<input
+                  type="number"
+                  class="form__input"
+                  placeholder="Contact Number"
+                  id="contact number"
+                  required
+                />-->
+                {% render_field form.phone_number placeholder="Contact Number" type="text" name="number" required="required" class="form__input" %}
+                {{ form.phone_number.errors}}
+                <label for="contact number" class="form__label"
+                  >Contact Number</label
+                >
+              </div>
+
+              <div class="form__group">
+                <button type = "submit" class="btn btn--green">
+                  Edit patient
+                </button>
+                <button class="btn btn--green" onclick = "window.location.href='{% url 'patient-profile' patient.id %}'">
+                  CANCEL
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
+
+{% endblock content %}

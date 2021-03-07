@@ -1,0 +1,13 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+appdirs = "==1.4.4"
+argcomplete = "==1.10.0"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"

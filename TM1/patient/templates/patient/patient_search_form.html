@@ -1,0 +1,93 @@
+{% extends 'patient/base2.html' %}
+{% load static %}
+{% load widget_tweaks %}
+
+<!--django-bootstrap-datepicker-plus-->
+{% load bootstrap4 %} {# import bootstrap4/bootstrap3 #}
+{% bootstrap_css %} {# Embed Bootstrap CSS #}
+{% bootstrap_javascript jquery='full' %} {# Embed Bootstrap JS+jQuery #}
+{{ form.media }} {# Adds date-picker required JS and CSS #}
+
+
+{% block content %}
+
+<section class="section-form__apt">
+      <div class="section-form-heading__apt GB">
+        <h1 class="heading-secondary u-margin-top-big u-margin-bottom-small">
+          &nbsp;
+        </h1>
+      </div>
+
+      <div class="container__apt u-margin-bottom-big GB">
+        <!-- search profile -->
+        <div class="search_profile u-margin-top-medium u-margin-bottom-small">
+          <form class="example" method="POST">{% csrf_token %}
+            <!--<input type="text" placeholder="Search Patient" name="search" />-->
+            {% render_field form.name type="text" name="search" label='Search' placeholder='Search Patient ' %}
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <!-- search profile -->
+        <ul class="responsive-table__apt GB">
+          <li class="table-header__apt GB">
+            <div class="col__apt col-1__apt GB">Full Name</div>
+            <div class="col__apt col-2__apt GB">Email Address</div>
+            <div class="col__apt col-3__apt GB">Phone No.</div>
+            <div class="col__apt col-4__apt GB">Profile</div>
+          </li>
+          
+         {% for patient in page_obj %}
+          <li class="table-row__apt GB">
+            <div class="col__apt col-1__apt GB" data-label="Name">
+              {{patient.first_name | title }} {{patient.last_name | title }}
+            </div>
+            <div class="col__apt col-2__apt comp1 GB" data-label="Email">
+              {{patient.email}}
+            </div>
+            <div class="col col-3__apt GB" data-label="Date1">
+              {{patient.phone_number}}
+            </div>
+            <div class="GB" data-label="Profile">
+              <a class="btn-text" href="{% url 'patient-profile' patient.id %}">profile</a>
+            </div>
+          </li>
+          {% endfor %}
+          <div class="pagination" style="display : grid; text-align : right; ">
+          <span class="step-links">
+            {% if page_obj.has_previous %}
+                <a style="padding:0px 10px;margin:0px 5px 0px 10px;" class="btn-text" href="?page=1">&laquo; first</a>
+                <a style="padding:0px 10px;margin:0px 10px 0px 5px;" class="btn-text" href="?page={{ page_obj.previous_page_number }}">previous</a>
+            {% endif %}
+
+            <span class="current">
+                Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+            </span>
+
+            {% if page_obj.has_next %}
+                <a style="padding:0px 10px;margin:0px 5px 0px 10px;" class="btn-text" href="?page={{ page_obj.next_page_number }}">next</a>
+                <a style="padding:0px 10px;margin:0px 10px 0px 5px;" class="btn-text" href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+            {% endif %}
+          </span>
+        </div>
+        <center>
+          <button class="btn btn--green" onclick = "window.location.href='{% url 'patient-home' %}';">
+          BACK
+          </button>
+        </center>
+        </ul>
+        <!--  -->
+        <!-- <div>
+                <div class="row GB">
+                  <div class="col-1-of-4 GB">Col 1 of 4</div>
+                  <div class="col-1-of-4 GB">Col 1 of 4</div>
+                  <div class="col-1-of-4 GB">Col 1 of 4</div>
+                  <div class="col-1-of-4 GB">Col 1 of 4</div>
+                </div>
+              </div> -->
+      </div>
+      <div>
+        <h3>&nbsp;</h3>
+      </div>
+    </section>
+
+{% endblock content %}

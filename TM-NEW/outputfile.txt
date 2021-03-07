@@ -1,0 +1,18 @@
+Watching for file changes with StatReloader
+2020-09-12 09:03:56,270 INFO Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+patient.Patient.alternate_number: (fields.W122) 'max_length' is ignored when used with IntegerField.
+	HINT: Remove 'max_length' from field
+patient.Patient.phone_number: (fields.W122) 'max_length' is ignored when used with IntegerField.
+	HINT: Remove 'max_length' from field
+patient.Patient.postal_zip: (fields.W122) 'max_length' is ignored when used with IntegerField.
+	HINT: Remove 'max_length' from field
+
+System check identified 3 issues (0 silenced).
+[12/Sep/2020 09:04:11] "POST /addpatient/ HTTP/1.1" 200 15767
+[12/Sep/2020 09:04:20] "POST /addpatient/ HTTP/1.1" 200 15767
+[12/Sep/2020 09:04:24] "GET /users/logout/ HTTP/1.1" 302 0
+[12/Sep/2020 09:04:24] "GET / HTTP/1.1" 302 0
+[12/Sep/2020 09:04:24] "GET /users/login/?next=/ HTTP/1.1" 200 11274

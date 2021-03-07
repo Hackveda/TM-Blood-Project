@@ -1,0 +1,6 @@
+Watching for file changes with StatReloader
+2020-09-12 08:59:27,948 INFO Watching for file changes with StatReloader
+2020-09-12 08:59:34,028 DEBUG Using selector: EpollSelector
+Performing system checks...
+
+2020-09-12 08:59:34,194 DEBUG Using selector: EpollSelector

@@ -1,0 +1,125 @@
+{%  extends 'patient/base2.html' %}
+{% load static %}
+{% load widget_tweaks %}
+
+<!-- Mirrored from codervent.com/rocker/white-version/table-data-tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 29 Nov 2019 06:46:28 GMT -->
+{% block content %}
+<!DOCTYPE html>
+    <title>Document</title>
+  </head>
+  <body>
+
+    <!-- ===============technical table start================ -->
+
+    <section class="section-form__var">
+      <div class="section-form-heading__var GB">
+        <h1 class="heading-secondary u-margin-top-big">&nbsp;</h1>
+      </div>
+      <div class="container__var u-margin-bottom-big GB">
+        <div>
+          <h2 class="heading-secondary">History</h2>
+        </div>
+
+        <ul class="responsive-table__var GB">
+          <li class="table-header__var GB">
+            <div class="col__var col-1__tt__var GB">Report Name</div>
+            <div class="col__var col-2__tt__var GB">Date</div>
+            <div class="col__var col-3__tt__var GB">View Report</div>
+          </li>
+          <!-- ================category label =============== -->
+          <h3 class="heading-tertiary tt_h3_st_1">Generated Report</h3>
+          <!-- ================category label =============== -->
+          {% for report in page_obj1 %}
+
+          <li class="table-row__var GB">
+            <div class="col__var col-1__tt__var GB" data-label="Label">
+              {{report}}
+            </div>
+            <div class="col__var col-2__tt__var GB" data-label="Now">
+              {{report.created_time}}
+            </div>
+            <div class="col col-3__tt__var GB"  __vardata-label="Label">
+                <button class = "btn btn--green" onclick="window.location='{% url "show-saved-report" report.id patient.id %}';">
+                    Show Report
+                </button>
+            </div>
+          </li>
+          {% endfor%}
+          <div class="pagination" style = "display:grid; text-align:right;">
+          <span class="step-links" class="form__label">
+            {% if page_obj1.has_previous %}
+              <a class="btn-text" href="?page=1">&laquo; first</a>
+              <a class="btn-text" href="?page={{ page_obj1.previous_page_number }}">previous</a>
+            {% endif %}
+            
+            <span  class="form__group">Page {{ page_obj1.number }} of {{ page_obj1.paginator.num_pages }}.</span>
+
+            {% if page_obj1.has_next %}
+              <a class="btn-text" href="?page={{ page_obj1.next_page_number }}">next</a>
+              <a class="btn-text" href="?page={{ page_obj1.paginator.num_pages }}">last &raquo;</a>
+            {% endif %}
+          </span>
+          </div>
+
+          
+          <!-- ================category label =============== -->
+          <h3 class="heading-tertiary tt_h3_st_2">Uploaded Report</h3>
+          <!-- ================category label =============== -->
+          {% for report in page_obj2 %}
+
+          <li class="table-row__var GB">
+            <div class="col__var col-1__tt__var GB" data-label="Label">
+              {{report | title}}
+            </div>
+            <div class="col__var col-2__tt__var GB" data-label="Now">
+              {{report.uploaded_at}}
+            </div>
+            <div class="col col-3__tt__var GB" __vardata-label="Before">
+              <button class="btn btn--green" onclick="window.location='{{report.document.url}}';">
+                    <td>Show Report</td>
+                </button>
+            </div>
+          </li>
+        {% endfor %}
+        <div class="pagination" style = "display:grid; text-align:right;">
+          <span class="step-links" class="form__label">
+            {% if page_obj2.has_previous %}
+              <a class="btn-text" href="?page=1">&laquo; first</a>
+              <a class="btn-text" href="?page={{ page_obj2.previous_page_number }}">previous</a>
+            {% endif %}
+            
+            <span  class="form__group">Page {{ page_obj2.number }} of {{ page_obj2.paginator.num_pages }}.</span>
+
+            {% if page_obj2.has_next %}
+              <a class="btn-text" href="?page={{ page_obj2.next_page_number }}">next</a>
+              <a class="btn-text" href="?page={{ page_obj2.paginator.num_pages }}">last &raquo;</a>
+            {% endif %}
+          </span>
+          </div>
+    
+        </ul>
+        <!--  -->
+        <!-- <div>
+                <div class="row GB">
+                  <div class="col-1-of-4 GB">Col 1 of 4</div>
+                  <div class="col-1-of-4 GB">Col 1 of 4</div>
+                  <div class="col-1-of-4 GB">Col 1 of 4</div>
+                  <div class="col-1-of-4 GB">Col 1 of 4</div>
+                </div>
+              </div> -->
+              <center>
+              <button class="btn btn--green" onclick = "window.location.href='{% url 'patient-profile' patient.id %}'">
+                BACK
+              </button>
+            </center>
+      </div>
+      <div>
+        <h3>&nbsp;</h3>
+      </div>
+    </section>
+    <!-- =======Technical Table end======= -->
+
+  </body>
+</html>
+
+{% endblock content %}
