@@ -23,7 +23,7 @@ from django.contrib import messages
 
 # app import
 from .models import *
-from .forms import DocumentForm, GeneratedReportForm , ConversionForm , TestResultForm , LabelCreationForm
+from .forms import DocumentForm, GeneratedReportForm, TestResultForm , LabelCreationForm
 
 # utility import
 from .process import main as process_main
@@ -120,33 +120,30 @@ class DocumentUploadView(LoginRequiredMixin, View):
                 path = document_object.document.path
                 # sending respone to process.py and parsing it to object
                 res = process_main(path,document_object.report)
-                res = eval(res) # evaluating response
+                # res = eval(res) # evaluating response'
+                print("res ",res)
                 for response in res:
                     name = response['name']
                     value = response['Value']
                     unit = response['Unit']
+                    range1 = response['Range']
+                    # upper_range = response['upper_range']
+                    # lower_range = response['lower_range']
+                    lower_range=range1[0]
+                    upper_range = range1[1]
+                    print(name,value,unit,range1)
                     try:
                         #log('got name value unit')
-                        alternate_label= AlternateLabel.objects.filter(name__iexact=name).first()
-                        #log(f'got alternate label, {alternate_label}, {AlternateLabel.objects.filter(name__iexact=name)}')
-                        #log(f'this is name value unit {alternate_label}, {name} , {value}, {unit}, {alternate_label}')
-                        if(unit!=alternate_label.label.primary_unit):
-                            try:
-                                comp_obj = Conversion.objects.filter(from_unit=unit.lower(),to_unit=alternate_label.label.primary_unit.lower()).first()
-                                value=float(value)
-                                value = value*comp_obj.multiplier + comp_obj.adder
-                                value = round(value,2)
-                                value=str(value)
-                            except Exception as e:
-                                print(alternate_label,unit,e)
-                                continue
-
+                        alternate_label= AlternateLabel.objects.filter(name=name,report=document_object.report).first()
+                        print(alternate_label)
                         test_result = TestResult.objects.create(
                             patient = patient,
                             label = alternate_label.label,
                             value = value,
-                            unit = alternate_label.label.primary_unit,
+                            unit = unit,
                             document = document_object,
+                            lower_range= lower_range,
+                            upper_range = upper_range,
                         )
                         #log('saving label')
                         test_result.save()
@@ -154,6 +151,7 @@ class DocumentUploadView(LoginRequiredMixin, View):
                         #log(f'DocumentUploadView, post 1 {e}')
                         #log(f'{e}')
                         print('error1',e)
+
             except Exception as e:
                 print('error2',e)
                 #log(f'{e}')
@@ -199,28 +197,14 @@ class TestResultUpdateView(LoginRequiredMixin, View):
             unit=form.cleaned_data['unit']
             label=testresult.label
             value=float(form.cleaned_data['value'])
-            print(unit,label,label.primary_unit,value)
-            if(unit==label.primary_unit):
-                testresult.unit=unit
-                testresult.value=value
-                testresult.label=label
-                testresult.save()
-                return redirect(reverse('display-response', kwargs={'patient_id':testresult.patient.id, 'document_id':testresult.document.id}))
+            testresult.upper_range = form.cleaned_data['upper_range'] if form.cleaned_data['upper_range']!="" else None
+            testresult.lower_range = form.cleaned_data['lower_range'] if form.cleaned_data['lower_range']!="" else None
+            testresult.unit=unit
+            testresult.value=value
+            testresult.label=label
+            testresult.save()
+            return redirect(reverse('display-response', kwargs={'patient_id':testresult.patient.id, 'document_id':testresult.document.id}))
 
-            try:
-                label_obj=label
-                conv_obj= Conversion.objects.filter(from_unit=unit,to_unit=label_obj.primary_unit)[0]
-                value=value*conv_obj.multiplier+conv_obj.adder
-                unit=conv_obj.to_unit
-                testresult.unit=unit
-                testresult.value=value
-                testresult.label=label
-                testresult.save()
-                print(pk)
-            except Exception as e:
-                print("Conversion element not found")
-                print(e)
-        return redirect(reverse('display-response', kwargs={'patient_id':testresult.patient.id, 'document_id':testresult.document.id}))
 
 class TestResultCreateView(LoginRequiredMixin, View):
     template_name = 'patient/test_result_create_form.html'
@@ -255,16 +239,7 @@ class TestResultCreateView(LoginRequiredMixin, View):
             if TestResult.objects.filter(label=document_object.label, document=document_object.document):
                 pass
             else:
-                try:
-                    if(document_object.label.primary_unit!=document_object.unit):
-                        label_obj=document_object.label
-                        unit=document_object.unit
-                        conv_obj= Conversion.objects.filter(from_unit=unit,to_unit=label_obj.primary_unit)[0]
-                        document_object.value=float(document_object.value)*conv_obj.multiplier+conv_obj.adder
-                        document_object.unit=conv_obj.to_unit
-                    document_object.save()
-                except:
-                    pass
+                document_object.save()
             return redirect(reverse('display-response', kwargs={'patient_id':patient.id, 'document_id':document.id}))
 
         else:
@@ -533,8 +508,8 @@ class ShowAllReportView(LoginRequiredMixin, View):
 
     def get(self, request, pk):
         patient = Patient.objects.get(pk=pk)
-        gen_rep = FinalGeneratedReport.objects.filter(patient__pk=pk).order_by('-created_time')
-        report1 = patient.document_set.all().order_by('-uploaded_at')
+        gen_rep = FinalGeneratedReport.objects.filter(patient__pk=pk).order_by('-pk')
+        report1 = patient.document_set.all().order_by('-pk')
         paginator1 = Paginator(gen_rep, 5)
         paginator2 = Paginator(report1, 5)
         page_number = request.GET.get('page')
@@ -542,8 +517,8 @@ class ShowAllReportView(LoginRequiredMixin, View):
         page_obj2 = paginator2.get_page(page_number)
         context = {
             'patient':patient,
-            'generated_reports':FinalGeneratedReport.objects.filter(patient__pk=pk).order_by('-created_time'),
-            'reports': patient.document_set.all().order_by('-uploaded_at'),
+            'generated_reports':FinalGeneratedReport.objects.filter(patient__pk=pk).order_by('-pk'),
+            'reports': patient.document_set.all().order_by('-pk'),
             'page_obj1':page_obj1,
             'page_obj2':page_obj2
         }
@@ -660,7 +635,8 @@ class GeneratedReportView(LoginRequiredMixin, View):
             'Green'         :'#31B404',
             'Pale Green'    :'#82FA58',
             'Red'           :'#FF0000',
-            'Maroon'        :'#800000'
+            'Maroon'        :'#800000',
+            'Purple'        :'#7b1beb',
         }
         # table template to return
         #table = {
@@ -686,13 +662,13 @@ class GeneratedReportView(LoginRequiredMixin, View):
         # storing all values in dict in {label: {value, unit}} format
         if doc1_obj is not None:
             testresult1 = TestResult.objects.filter(document=doc1_obj)
-            result1_labels = {result.label : {'value':float(result.value), 'unit':result.unit} for result in testresult1}
+            result1_labels = {result.label : {'value':float(result.value), 'unit':result.unit, 'upper_range':float(result.upper_range) if result.upper_range!="" else None, 'lower_range':float(result.lower_range)} for result in testresult1}
         else:
             result1_labels = {}
 
         if doc2_obj is not None:
             testresult2 = TestResult.objects.filter(document=doc2_obj)
-            result2_labels = {result.label : {'value':float(result.value), 'unit':result.unit} for result in testresult2}
+            result2_labels = {result.label : {'value':float(result.value), 'unit':result.unit, 'upper_range':float(result.upper_range) if result.upper_range!="" else None, 'lower_range':float(result.lower_range)} for result in testresult2}
         else:
             result2_labels = {}
 
@@ -716,19 +692,31 @@ class GeneratedReportView(LoginRequiredMixin, View):
             # remark is Increase or decrease if seconds report values increases or decreases
             # if only single report contains that value then, it is empty
 
-            lower_range = label.lower_range
-            upper_range = label.upper_range
+            lower_range1 = None
+            lower_range2 = None
+            upper_range1 = None
+            upper_range2 = None
+            if doc1:
+                lower_range1 = doc1.get('lower_range',0)
+                upper_range1 = doc1.get('upper_range',0)
+            if doc2:
+                lower_range2 = doc2.get('lower_range',0)
+                upper_range2 = doc2.get('upper_range',0)
 
             table[label_name]['value'] = doc2_value
             table[label_name]['category'] = category
-
-            if is_single_document:
+            table[label_name]['upper_range'] = upper_range2
+            table[label_name]['lower_range'] = lower_range2
+            if is_single_document or ((doc1 is None) and (doc2 is not None)):
                 try:
-                    if doc2_value < lower_range:
+                    if upper_range2==None:
+                        table[label_name]['remark'] = 'different unit/range'
+                        table[label_name]['remark_color'] = remark_color['Purple']
+                    elif doc2_value < lower_range2:
                         table[label_name]['remark'] = 'Low'
                         table[label_name]['remark_color'] = remark_color['Yellow']
                         print('this is single lower remark color', table[label_name]['remark_color'])
-                    elif lower_range<= doc2_value <= upper_range:
+                    elif lower_range2<= doc2_value <= upper_range2:
                         table[label_name]['remark'] = 'Normal'
                         table[label_name]['remark_color'] = remark_color['Green']
                         print('this is single normal remark color', table[label_name]['remark_color'])
@@ -744,53 +732,104 @@ class GeneratedReportView(LoginRequiredMixin, View):
             elif (doc1 is not None) and (doc2 is not None):
                 doc2_value = doc2.get('value', 0)
                 doc1_value = doc1.get('value', 0)
-                value_change = doc2_value - doc1_value
+                doc2_unit = doc2.get('unit',0)
+                doc1_unit = doc1.get('unit',0)
+                if(doc2_unit==doc1_unit):
+                    value_change = abs(doc2_value - (upper_range2+lower_range2)/2) - abs(doc1_value - (upper_range1+lower_range1)/2)
+                else:
+                    value_change = None
+
                 try:
                     # previos value was low
-                    if doc1_value < label.lower_range:
-                        if value_change<0:                                              # value has gone lower (a)
-                            table[label_name]['remark'] = 'Need work'
-                            table[label_name]['remark_color'] = remark_color['Pale Yellow']
-                        elif value_change==0:                                           # value is same (b)
-                            table[label_name]['remark'] = 'Need work'
+                    if upper_range1==None:
+                        if upper_range2==None:
+                            table[label_name]['remark'] = 'different unit/range'
+                            table[label_name]['remark_color'] = remark_color['Purple']
+                        elif doc2_value < lower_range2:
+                            table[label_name]['remark'] = 'Low'
                             table[label_name]['remark_color'] = remark_color['Yellow']
-                        elif value_change>0 and doc2_value < lower_range:               # val is low but not normal (e)
-                            table[label_name]['remark'] = 'Improved, Need work'
-                            table[label_name]['remark_color'] = remark_color['Pale Green']
-                        elif lower_range <= doc2_value <= upper_range:                  # val is normal (c)
-                            table[label_name]['remark'] = 'Improved'
+                            print('this is single lower remark color', table[label_name]['remark_color'])
+                        elif doc2_value <= upper_range2:
+                            table[label_name]['remark'] = 'Normal'
                             table[label_name]['remark_color'] = remark_color['Green']
-                        elif upper_range < doc2_value:                                  # val has becomne higher (d)
-                            table[label_name]['remark'] = 'Need Work'
+                            print('this is single normal remark color', table[label_name]['remark_color'])
+                        else:
+                            table[label_name]['remark'] = 'High'
+                            table[label_name]['remark_color'] = remark_color['Red']
+                            print('this is single high remark color', table[label_name]['remark_color'])
+
+                    elif doc1_value < lower_range1:
+                        if upper_range2==None:
+                            table[label_name]['remark'] = 'different range/unit'
+                            table[label_name]['remark_color'] = remark_color['Purple']
+                        elif doc2_value <lower_range2:
+                            if value_change==None:
+                                table[label_name]['remark'] = 'different range/unit'
+                                table[label_name]['remark_color'] = remark_color['Purple']
+                            elif value_change<0:                                              # value has gone lower (a)
+                                table[label_name]['remark'] = 'Improved but still out of range'
+                                table[label_name]['remark_color'] = remark_color['Pale Yellow']
+                            elif value_change>=0:                                           # value is same (b)
+                                table[label_name]['remark'] = 'Low'
+                                table[label_name]['remark_color'] = remark_color['Yellow']
+                        elif doc2_value <=upper_range2:
+                            table[label_name]['remark'] = 'Improved'
+                            table[label_name]['remark_color'] = remark_color['Pale Green']
+                        else:
+                            table[label_name]['remark'] = 'High'
                             table[label_name]['remark_color'] = remark_color['Red']
 
+
                     # if value was normal
-                    elif lower_range<=doc1_value<=upper_range:
-                        print('value is normal')
-                        if value_change<0: # val has gone low
-                            table[label_name]['remark'] = 'Need Work'
+                    elif doc1_value<=upper_range1:
+                        if upper_range2==None:
+                            table[label_name]['remark'] = 'different range/unit'
+                            table[label_name]['remark_color'] = remark_color['Purple']
+                        elif doc2_value <lower_range2:
+                            table[label_name]['remark'] = 'Low'
                             table[label_name]['remark_color'] = remark_color['Yellow']
-                        elif lower_range<=doc2_value<=upper_range:
-                            table[label_name]['remark'] = ''
-                            table[label_name]['remark_color'] = remark_color['White']
-                        elif upper_range<doc2_value:
-                            table[label_name]['remark'] = 'Need Work'
+
+                        elif doc2_value <=upper_range2:
+                            if value_change==None:
+                                table[label_name]['remark'] = 'different range/unit'
+                                table[label_name]['remark_color'] = remark_color['Purple']
+                            elif value_change<0:                                              # value has gone lower (a)
+                                table[label_name]['remark'] = 'Improved'
+                                table[label_name]['remark_color'] = remark_color['Pale Green']
+                            elif value_change>=0:                                           # value is same (b)
+                                table[label_name]['remark'] = 'Normal'
+                                table[label_name]['remark_color'] = remark_color['Green']
+                        else:
+                            table[label_name]['remark'] = 'High'
                             table[label_name]['remark_color'] = remark_color['Red']
 
                     # if value was high
-                    elif upper_range<doc1_value:
-                        if value_change>0: # val has gone higher
-                            table[label_name]['remark'] = 'Need Work'
-                            table[label_name]['remark_color'] = remark_color['Maroon']
-                        elif value_change<0 and upper_range<doc2_value: # if val is lower than before still high
-                            table[label_name]['remark'] = 'Improved, Need Work'
-                            table[label_name]['remark_color'] = remark_color['Pale Green']
-                        elif lower_range<=doc2_value<=upper_range:
-                            table[label_name]['remark'] = 'Improved'
-                            table[label_name]['remark_color'] = remark_color['Green']
-                        elif doc2_value < lower_range:
-                            table[label_name]['remark'] = 'Need Work'
+                    else:
+                        if upper_range2==None:
+                            table[label_name]['remark'] = 'different range/unit'
+                            table[label_name]['remark_color'] = remark_color['Purple']
+
+                        elif doc2_value <lower_range2:
+                            table[label_name]['remark'] = 'Low'
                             table[label_name]['remark_color'] = remark_color['Yellow']
+
+                        elif doc2_value <=upper_range2:
+                            table[label_name]['remark'] = 'improved'
+                            table[label_name]['remark_color'] = remark_color['Pale Green']
+
+                        else:
+                            if value_change==None:
+                                table[label_name]['remark'] = 'different range/unit'
+                                table[label_name]['remark_color'] = remark_color['Purple']
+                            elif value_change<0:                                              # value has gone lower (a)
+                                table[label_name]['remark'] = 'Improved but still oy of range'
+                                table[label_name]['remark_color'] = remark_color['Pale Yellow']
+                            elif value_change>=0:                                           # value is same (b)
+                                table[label_name]['remark'] = 'high'
+                                table[label_name]['remark_color'] = remark_color['Red']
+
+                    print(label_name,table[label_name]['remark_color'],"1"*80)
+
                 except Exception as e:
                     table[label_name]['remark'] = '-'
                     print('No lower upper range error',  label_name, e)
@@ -851,6 +890,8 @@ class GeneratedReportView(LoginRequiredMixin, View):
                     'remark': table_new[index]['col'][label.name].get('remark', ''),
                     'remark_color': table_new[index]['col'][label.name].get('remark_color', ''),
                     'category': table_new[index]['col'][label.name].get('category', ''),
+                    'upper_range': table_new[index]['col'][label.name].get('upper_range', ''),
+                    'lower_range': table_new[index]['col'][label.name].get('lower_range', ''),
                 } for index in table_new.keys()
             }
         row_wise_table['documents'] = {}
@@ -886,6 +927,7 @@ class GeneratedReportView(LoginRequiredMixin, View):
             except:
                 pass
         print(green_count, yellow_count, red_count)
+        sectiond_text = ""
         if green_count>red_count and green_count>yellow_count:
             sectiond_text = 'Overall, Very Good Job'
         if green_count<=yellow_count:
@@ -1095,50 +1137,6 @@ class ViewPdfView(LoginRequiredMixin, View):
         context = { 'doc_obj':  Document.objects.get(pk=pk)}
         return render(request, self.template_name, context)
 
-class CreateConversionView(LoginRequiredMixin, View):
-    template_name = 'patient/create_conversion.html'
-
-    def get(self, request):
-        form = ConversionForm()
-        context = {
-            'form':form,
-        }
-
-        return render(request, self.template_name, context)
-
-    def post(self, request):
-        form = ConversionForm(request.POST)
-        if form.is_valid():
-            from_unit=form.cleaned_data['from_unit']
-            to_unit=form.cleaned_data['to_unit']
-            multiplier=form.cleaned_data['multiplier']
-            adder=form.cleaned_data['adder']
-            try:
-                conversion_object=Conversion.objects.filter(from_unit=from_unit,to_unit=to_unit)[0]
-                conversion_object.adder=adder
-                conversion_object.multiplier=multiplier
-            except:
-                conversion_object = Conversion.objects.create(from_unit=from_unit,to_unit=to_unit,multiplier=multiplier,adder=adder)
-            conversion_object.save()
-
-            try:
-                conversion_object=Conversion.objects.filter(to_unit=from_unit,from_unit=to_unit)[0]
-                conversion_object.adder=-1*adder/multiplier
-                conversion_object.multiplier=1/multiplier
-            except:
-                conversion_object = Conversion.objects.create(to_unit=from_unit,from_unit=to_unit,multiplier=1/multiplier,adder=-1*adder/multiplier)
-            conversion_object.save()
-
-            # print(type(form.from))
-            # new_obj=conversion.objects.create(from = conversion_object.to, to = conversion_object.from, multiplier=1/conversion_object.multiplier,adder=-1*(conversion_object.adder)/(conversion_object.multiplier))
-            # new_obj.save()
-            return redirect('create-conversion')
-
-        else:
-            print('--none--'*10)
-            print(form.errors)
-            return reverse('create-conversion')
-
 
 
 class CreateLabelView(LoginRequiredMixin,View):
@@ -1157,77 +1155,11 @@ class CreateLabelView(LoginRequiredMixin,View):
         form = LabelCreationForm(request.POST)
         if form.is_valid():
             name=form.cleaned_data['name']
-            upper_range=float(form.cleaned_data['upper_range'])
-            lower_range=float(form.cleaned_data['lower_range'])
-            primary_unit=form.cleaned_data['primary_unit']
             category=form.cleaned_data['category']
             try:
                 label_obj = Label.objects.filter(name=name)[0]
-                if label_obj.primary_unit == primary_unit:
-                    label_obj.upper_range=upper_range
-                    label_obj.lower_range=lower_range
-                    label_obj.category=category
-                    label_obj.primary_unit=primary_unit
-                else:
-                    try:
-                        conv_obj=Conversion.objects.filter(from_unit=label_obj.primary_unit,to_unit=primary_unit)[0]
-                        m1=conv_obj.multiplier
-                        a1=conv_obj.adder
-                        conv_obj_list = Conversion.objects.filter(to_unit=label_obj.primary_unit)
-                        for i in conv_obj_list:
-                            if i==conv_obj:
-                                continue
-                            a2=i.adder
-                            m2=i.multiplier
-                            m=m1*m2
-                            a=a1+m1*a2
-                            try:
-                                Conversion.objects.filter(from_unit=i.from_unit,to_unit=primary_unit)[0]
-                            except:
-                                conv_obj = Conversion.objects.create(from_unit=i.from_unit,to_unit=primary_unit,multiplier=m,adder=a)
-                                conv_obj.save()
-
-                            try:
-                                Conversion.objects.filter(to_unit=i.from_unit,from_unit=primary_unit)[0]
-                            except:
-                                conv_obj = Conversion.objects.create(to_unit=i.from_unit,from_unit=primary_unit,multiplier=1/m,adder=-1*a/m)
-                                conv_obj.save()
-
-
-                        # changing data of previous reports
-                        testresult_list = GeneratedReportTestResult.objects.filter(label=label_obj)
-                        for i in testresult_list:
-                            if(i.value1):
-                                i.value1=str(float(i.value1)*m1+a1)
-                            if(i.value2):
-                                i.value2=str(float(i.value2)*m1+a1)
-                            if(i.value3):
-                                i.value3=str(float(i.value3)*m1+a1)
-                            if(i.value4):
-                                i.value4=str(float(i.value4)*m1+a1)
-                            if(i.value5):
-                                i.value5=str(float(i.value5)*m1+a1)
-                            i.save()
-
-                        testresult_list = TestResult.objects.filter(label=label_obj)
-                        for i in testresult_list:
-                            i.value=str(float(i.value)*m1+a1)
-                            i.unit=primary_unit
-                            print(i.document.name,i.value,i.unit)
-                            i.save()
-
-                        label_obj.upper_range=upper_range
-                        label_obj.lower_range=lower_range
-                        label_obj.category=category
-                        label_obj.primary_unit=primary_unit
-
-                    except Exception as e:
-                        print(e)
-                        messages.info(request, 'Conversion from '+label_obj.primary_unit+" to "+primary_unit + " not found. First add a conversion. ")
-                        return redirect('create-labels')
-
             except:
-                label_obj = Label.objects.create(name=name,upper_range=upper_range,lower_range=lower_range,primary_unit=primary_unit,category=category)
+                label_obj = Label.objects.create(name=name,category=category)
 
             label_obj.save()
 

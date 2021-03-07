@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # import model
-from .models import Document, Patient, Label, AlternateLabel, TestResult, GeneratedReportTestResult, FinalGeneratedReport, Category ,Conversion ,Report
+from .models import Document, Patient, Label, AlternateLabel, TestResult, GeneratedReportTestResult, FinalGeneratedReport, Category ,Report
 # Register your models here.
 
 admin.site.register(Patient)
@@ -10,14 +10,13 @@ admin.site.register(TestResult)
 admin.site.register(GeneratedReportTestResult)
 admin.site.register(FinalGeneratedReport)
 admin.site.register(Category)
-admin.site.register(Conversion)
 
 admin.site.register(Label)
 
 @admin.register(AlternateLabel)
 class AlternateLabelAdmin(admin.ModelAdmin):
-    list_display = ('name', 'label')
-    list_filter = ('label',)
+    list_display = ('name', 'label', 'report')
+    list_filter = ('label','report')
     search_fields = ['name']
     pass
 

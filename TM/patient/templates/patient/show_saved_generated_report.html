@@ -46,15 +46,15 @@
             <div class="col__var col-1__var GB">Label</div>
             <div class="col__var col-2__var GB">Comparison</div>
             <div class="col__var col-3__var GB">
-            {% if final_generated_report.doc1 %}
-            {{final_generated_report.doc1.uploaded_at}}
+            {% if final_generated_report.doc5 %}
+            {{final_generated_report.doc5.uploaded_at}}
             {% else %}
             {{"__"}}
             {% endif %}
             </div>
             <div class="col__var col-4__var GB">
-            {% if final_generated_report.doc2 %}
-            {{final_generated_report.doc2.uploaded_at}}
+            {% if final_generated_report.doc4 %}
+            {{final_generated_report.doc4.uploaded_at}}
             {% else %}
             {{"__"}}
             {% endif %}
@@ -67,15 +67,15 @@
             {% endif %}
             </div>
             <div class="col__var col-6__var GB">
-            {% if final_generated_report.doc4 %}
-            {{final_generated_report.doc4.uploaded_at}}
+            {% if final_generated_report.doc2 %}
+            {{final_generated_report.doc2.uploaded_at}}
             {% else %}
             {{"__"}}
             {% endif %}
             </div>
             <div class="col__var col-6__var GB">
-            {% if final_generated_report.doc5 %}
-            {{final_generated_report.doc5.uploaded_at}}
+            {% if final_generated_report.doc1 %}
+            {{final_generated_report.doc1.uploaded_at}}
             {% else %}
             {{"__"}}
             {% endif %}
@@ -110,16 +110,16 @@
                     {% endif %}
                     </div>
                     <div class="col col-3__var GB" __vardata-label="Date1">
-                    {% if final_generated_report.doc1  %}
-                    <td bgcolor="{{testresult.color1}}" >{{testresult.value1}}</td>
+                    {% if final_generated_report.doc5  %}
+                    <td bgcolor="{{testresult.color1}}" >{{testresult.value5}}</td>
                     {% else %}
                     {{"__"}}
                     {%  endif %}
                     </div>
 
                     <div class="col col-4__var GB" data-label="Date2">
-                    {% if final_generated_report.doc2 %}
-                    <td bgcolor="{{val.2.remark_color}}" >{{testresult.value2}}</td>
+                    {% if final_generated_report.doc4 %}
+                    <td bgcolor="{{val.4.remark_color}}" >{{testresult.value4}}</td>
                     {% else %}
                     {{"__"}}
                     {%  endif %}
@@ -134,15 +134,15 @@
                     </div>
 
                     <div class="col col-6__var GB" data-label="Date4">
-                    {% if final_generated_report.doc4 %}
-                    <td bgcolor="{{val.4.remark_color}}" >{{testresult.value4}}</td>
+                    {% if final_generated_report.doc2 %}
+                    <td bgcolor="{{val.2.remark_color}}" >{{testresult.value2}}</td>
                     {% else %}
                     {{"__"}}
                     {%  endif %}
                     </div>
                     <div class="col col-6__var GB" data-label="Date4">
-                    {% if final_generated_report.doc5 %}
-                    <td bgcolor="{{val.5.remark_color}}" >{{testresult.value5}}</td>
+                    {% if final_generated_report.doc1 %}
+                    <td bgcolor="{{val.1.remark_color}}" >{{testresult.value1}}</td>
                     {% else %}
                     {{"__"}}
                     {%  endif %}
