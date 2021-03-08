@@ -338,12 +338,12 @@ def main(file_path,report=None, keyword=None):
       for i in range(len(my_text)):
           my_text[i]=my_text[i].replace("%"," % ")
           print(my_text[i])
-      # pickling_on = open("dang_dta.pickle","wb")
-      # pickle.dump(my_text, pickling_on)
-      # pickling_on.close()
-  # else:
-      # pickle_off = open("dang_dta.pickle", 'rb')
-      # my_text=pickle.load(pickle_off)
+      pickling_on = open("dang_dta.pickle","wb")
+      pickle.dump(my_text, pickling_on)
+      pickling_on.close()
+  else:
+      pickle_off = open("dang_dta.pickle", 'rb')
+      my_text=pickle.load(pickle_off)
   result_list = []
   #%%
   for keyword in input_data:
@@ -393,7 +393,7 @@ def main(file_path,report=None, keyword=None):
           # assuming there is always .0 at the end of value
 
 
-          line = re.search('(\d+(\.\d+)?)|(\.?\d+)|(\,?\d+)',second_half_of_line)
+          line = re.search('(\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+)',second_half_of_line)
 
           # if there is no floating point number in line then line is useless
           if line is None:
@@ -401,8 +401,8 @@ def main(file_path,report=None, keyword=None):
 
           try:
             # value_found = re.search('(\d+(\,\d+)?)|(\d+(\.\d+)?)|(\.?\d+)', second_half_of_line).group(0)
-            value_found = re.search('(\d+(\.\d+)?)|(\.?\d+)', second_half_of_line).group(0)
-
+            value_found = re.search('(\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+)', second_half_of_line).group(0)
+            value_found = value_found.replace(",","")
             # Discription of idea for handling units
             # there could be units with space like '/cu mm', to handle those
             # find all the units from units_list that are present in present line
@@ -458,7 +458,7 @@ def main(file_path,report=None, keyword=None):
             if(spl==-1):
                 spl=0
             new_second_half_of_line=second_half_of_line[spl:]
-            range1 = re.search('((\d+(\.\d+)?)|(\.?\d+)|(\,?\d+))(\ *)(\-)(\ *)((\d+(\.\d+)?)|(\.?\d+)|(\,?\d+))|((\<)(\ *)(\=?)(\ *)(((\d+(\.\d+)?)|(\.?\d+)|(\,?\d+))))|((\>)(\ *)(\=?)(\ *)(((\d+(\.\d+)?)|(\.?\d+)|(\,?\d+))))|((((\d+(\.\d+)?)|(\.?\d+)|(\,?\d+)))(\ *)(\=?)(\ *)(\<))|((((\d+(\.\d+)?)|(\.?\d+)|(\,?\d+)))(\ *)(\=?)(\ *)(\>))', new_second_half_of_line).group(0)
+            range1 = re.search('((\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+))(\ *)(\-)(\ *)((\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+))|((\<)(\ *)(\=?)(\ *)(((\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+))))|((\>)(\ *)(\=?)(\ *)(((\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+))))|((((\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+)))(\ *)(\=?)(\ *)(\<))|((((\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+)))(\ *)(\=?)(\ *)(\>))', new_second_half_of_line).group(0)
             range1=range1.replace(" ","")
             if range1[0]=='<':
                 range1=['0',range1[1:]]
