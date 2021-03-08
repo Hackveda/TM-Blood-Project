@@ -338,12 +338,12 @@ def main(file_path,report=None, keyword=None):
       for i in range(len(my_text)):
           my_text[i]=my_text[i].replace("%"," % ")
           print(my_text[i])
-      pickling_on = open("dang_dta.pickle","wb")
-      pickle.dump(my_text, pickling_on)
-      pickling_on.close()
-  else:
-      pickle_off = open("dang_dta.pickle", 'rb')
-      my_text=pickle.load(pickle_off)
+#       pickling_on = open("dang_dta.pickle","wb")
+#       pickle.dump(my_text, pickling_on)
+#       pickling_on.close()
+#   else:
+#       pickle_off = open("dang_dta.pickle", 'rb')
+#       my_text=pickle.load(pickle_off)
   result_list = []
   #%%
   for keyword in input_data:
