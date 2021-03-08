@@ -58,17 +58,14 @@ def remove_invalid_na_unit_response(responses:list):
 def clean_response(response_dict : dict) -> dict:
     """
     cleans the input dict containing response, to return only those results that are valid
-
     definition of valid:
         len(str(name))>0
         len(str(value))>0
         len(str(ReadIndex))>0
         str(value) in str(ReadIndex)
         # str(unit) in str(ReadIndex)  not enforced
-
     possible improvements:
         definition can be improved with stricter restrictions, If unit can be empty or not
-
     """
     result = []
     response = response_dict['Response']['Result']

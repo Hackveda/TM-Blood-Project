@@ -662,13 +662,13 @@ class GeneratedReportView(LoginRequiredMixin, View):
         # storing all values in dict in {label: {value, unit}} format
         if doc1_obj is not None:
             testresult1 = TestResult.objects.filter(document=doc1_obj)
-            result1_labels = {result.label : {'value':float(result.value), 'unit':result.unit, 'upper_range':float(result.upper_range) if result.upper_range!="" else None, 'lower_range':float(result.lower_range)} for result in testresult1}
+            result1_labels = {result.label : {'result_id':result.id,'value':float(result.value), 'unit':result.unit, 'upper_range':float(result.upper_range) if result.upper_range!="" else None, 'lower_range':float(result.lower_range)} for result in testresult1}
         else:
             result1_labels = {}
 
         if doc2_obj is not None:
             testresult2 = TestResult.objects.filter(document=doc2_obj)
-            result2_labels = {result.label : {'value':float(result.value), 'unit':result.unit, 'upper_range':float(result.upper_range) if result.upper_range!="" else None, 'lower_range':float(result.lower_range)} for result in testresult2}
+            result2_labels = {result.label : {'result_id':result.id,'value':float(result.value), 'unit':result.unit, 'upper_range':float(result.upper_range) if result.upper_range!="" else None, 'lower_range':float(result.lower_range)} for result in testresult2}
         else:
             result2_labels = {}
 
@@ -702,6 +702,9 @@ class GeneratedReportView(LoginRequiredMixin, View):
             if doc2:
                 lower_range2 = doc2.get('lower_range',0)
                 upper_range2 = doc2.get('upper_range',0)
+                table[label_name]['result_id'] = doc2.get('result_id',0)
+            else:
+                table[label_name]['result_id'] = 0
 
             table[label_name]['value'] = doc2_value
             table[label_name]['category'] = category
@@ -892,6 +895,7 @@ class GeneratedReportView(LoginRequiredMixin, View):
                     'category': table_new[index]['col'][label.name].get('category', ''),
                     'upper_range': table_new[index]['col'][label.name].get('upper_range', ''),
                     'lower_range': table_new[index]['col'][label.name].get('lower_range', ''),
+                    'result_id': table_new[index]['col'][label.name].get('result_id', 0),
                 } for index in table_new.keys()
             }
         row_wise_table['documents'] = {}
