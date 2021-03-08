@@ -16,7 +16,7 @@ def hex_to_rgb(value):
     elif (value.lower()=='#82fa58' or value.lower()=='82fa58'): #Pale_Green improved keep going
         return(146/255,208/255,80/255)
     elif (value.lower()=='#31b404' or value.lower()=='31b404'): #Green normal
-        return(155/255,205/255,102/255)
+        return(49/255,180/255,4/255)
     elif (value.lower()=='#800000' or value.lower()=='800000'): #Maroon high
         return(255/255,100/255,100/255)
     elif (value.lower()=='#7b1beb' or value.lower()=='7b1beb'): #Purple different
@@ -151,7 +151,7 @@ def create_header(pdf,patient,dates):
     pdf.circle(141,74,COLOR_DESCRIPTION_CIRCLE_RADIUS,stroke=0,fill=1)
     pdf.setFillColorRGB(255/255,100/255,100/255)
     pdf.circle(179,74,COLOR_DESCRIPTION_CIRCLE_RADIUS,stroke=0,fill=1)
-    pdf.setFillColorRGB(118/255,147/255,60/255)
+    pdf.setFillColorRGB(49/255,180/255,4/255)
     pdf.circle(217,74,COLOR_DESCRIPTION_CIRCLE_RADIUS,stroke=0,fill=1)
     pdf.setFillColorRGB(251/255,180/255,120/255)
     pdf.circle(269,74,COLOR_DESCRIPTION_CIRCLE_RADIUS,stroke=0,fill=1)
