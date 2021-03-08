@@ -128,7 +128,7 @@
                     </div>
                     <div class="col col-3__var GB" __vardata-label="Date1">
                     {% if row_wise_table.documents.5.uploaded_at %}
-                    <td bgcolor="{{val.5.remark_color}}" >{{val.5.value}}</td>
+                    <td bgcolor="{{val.5.remark_color}}" ><a href="{% url 'update-test-result' val.5.result_id %}" target="_blank">{{val.5.value}}</a></td>
                     {% else %}
                     {{"__"}}
                     {%  endif %}
@@ -136,7 +136,7 @@
 
                     <div class="col col-4__var GB" data-label="Date2">
                     {% if row_wise_table.documents.4.uploaded_at %}
-                    <td bgcolor="{{val.4.remark_color}}" >{{val.4.value}}</td>
+                    <td bgcolor="{{val.4.remark_color}}" ><a href="{% url 'update-test-result' val.4.result_id %}" target="_blank">{{val.4.value}}</a></td>
                     {% else %}
                     {{"__"}}
                     {%  endif %}
@@ -144,7 +144,7 @@
                     
                     <div class="col col-5__var GB" data-label="Date3">
                     {% if row_wise_table.documents.3.uploaded_at %}
-                    <td bgcolor="{{val.3.remark_color}}" >{{val.3.value}}</td>
+                    <td bgcolor="{{val.3.remark_color}}" ><a href="{% url 'update-test-result' val.3.result_id %}" target="_blank">{{val.3.value}}</a></td>
                     {% else %}
                     {{"__"}}
                     {%  endif %}
@@ -152,14 +152,14 @@
 
                     <div class="col col-6__var GB" data-label="Date4">
                     {% if row_wise_table.documents.2.uploaded_at %}
-                    <td bgcolor="{{val.2.remark_color}}" >{{val.2.value}}</td>
+                    <td bgcolor="{{val.2.remark_color}}" ><a href="{% url 'update-test-result' val.2.result_id %}" target="_blank">{{val.2.value}}</a></td>
                     {% else %}
                     {{"__"}}
                     {%  endif %}
                     </div>
                     <div class="col col-6__var GB" data-label="Date4">
                     {% if row_wise_table.documents.1.uploaded_at %}
-                    <td bgcolor="{{val.1.remark_color}}" >{{val.1.value}}</td>
+                    <td bgcolor="{{val.1.remark_color}}" ><a href="{% url 'update-test-result' val.1.result_id %}" target="_blank">{{val.1.value}}</a></td>
                     {% else %}
                     {{"__"}}
                     {%  endif %}

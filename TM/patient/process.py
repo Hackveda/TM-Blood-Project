@@ -58,17 +58,14 @@ def remove_invalid_na_unit_response(responses:list):
 def clean_response(response_dict : dict) -> dict:
     """
     cleans the input dict containing response, to return only those results that are valid
-
     definition of valid:
         len(str(name))>0
         len(str(value))>0
         len(str(ReadIndex))>0
         str(value) in str(ReadIndex)
         # str(unit) in str(ReadIndex)  not enforced
-
     possible improvements:
         definition can be improved with stricter restrictions, If unit can be empty or not
-
     """
     result = []
     response = response_dict['Response']['Result']
@@ -338,12 +335,12 @@ def main(file_path,report=None, keyword=None):
       for i in range(len(my_text)):
           my_text[i]=my_text[i].replace("%"," % ")
           print(my_text[i])
-      pickling_on = open("dang_dta.pickle","wb")
-      pickle.dump(my_text, pickling_on)
-      pickling_on.close()
-  else:
-      pickle_off = open("dang_dta.pickle", 'rb')
-      my_text=pickle.load(pickle_off)
+#       pickling_on = open("dang_dta.pickle","wb")
+#       pickle.dump(my_text, pickling_on)
+#       pickling_on.close()
+#   else:
+#       pickle_off = open("dang_dta.pickle", 'rb')
+#       my_text=pickle.load(pickle_off)
   result_list = []
   #%%
   for keyword in input_data:
@@ -393,7 +390,7 @@ def main(file_path,report=None, keyword=None):
           # assuming there is always .0 at the end of value
 
 
-          line = re.search('(\d+(\.\d+)?)|(\.?\d+)|(\,?\d+)',second_half_of_line)
+          line = re.search('(\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+)',second_half_of_line)
 
           # if there is no floating point number in line then line is useless
           if line is None:
@@ -401,8 +398,8 @@ def main(file_path,report=None, keyword=None):
 
           try:
             # value_found = re.search('(\d+(\,\d+)?)|(\d+(\.\d+)?)|(\.?\d+)', second_half_of_line).group(0)
-            value_found = re.search('(\d+(\.\d+)?)|(\.?\d+)', second_half_of_line).group(0)
-
+            value_found = re.search('(\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+)', second_half_of_line).group(0)
+            value_found = value_found.replace(",","")
             # Discription of idea for handling units
             # there could be units with space like '/cu mm', to handle those
             # find all the units from units_list that are present in present line
@@ -458,18 +455,22 @@ def main(file_path,report=None, keyword=None):
             if(spl==-1):
                 spl=0
             new_second_half_of_line=second_half_of_line[spl:]
-            range1 = re.search('((\d+(\.\d+)?)|(\.?\d+)|(\,?\d+))(\ *)(\-)(\ *)((\d+(\.\d+)?)|(\.?\d+)|(\,?\d+))|((\<)(\ *)(\=?)(\ *)(((\d+(\.\d+)?)|(\.?\d+)|(\,?\d+))))|((\>)(\ *)(\=?)(\ *)(((\d+(\.\d+)?)|(\.?\d+)|(\,?\d+))))|((((\d+(\.\d+)?)|(\.?\d+)|(\,?\d+)))(\ *)(\=?)(\ *)(\<))|((((\d+(\.\d+)?)|(\.?\d+)|(\,?\d+)))(\ *)(\=?)(\ *)(\>))', new_second_half_of_line).group(0)
-            range1=range1.replace(" ","")
-            if range1[0]=='<':
-                range1=['0',range1[1:]]
-            elif range1[0]=='>':
-                range1=[range1[1:],'']
-            elif range1[-1]=='<':
-                range1=[range1[0:-1],'']
-            elif range1[-1]=='>':
-                range1=['0',range1[0:-1]]
-            else:
-                range1=range1.split("-")
+            try:
+                range1 = re.search('((\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+))(\ *)(\-)(\ *)((\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+))|((\<)(\ *)(\=?)(\ *)(((\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+))))|((\>)(\ *)(\=?)(\ *)(((\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+))))|((((\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+)))(\ *)(\=?)(\ *)(\<))|((((\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+)))(\ *)(\=?)(\ *)(\>))', new_second_half_of_line).group(0)
+                range1=range1.replace(" ","")
+                if range1[0]=='<':
+                    range1=['0',range1[1:]]
+                elif range1[0]=='>':
+                    range1=[range1[1:],'']
+                elif range1[-1]=='<':
+                    range1=[range1[0:-1],'']
+                elif range1[-1]=='>':
+                    range1=['0',range1[0:-1]]
+                else:
+                    range1=range1.split("-")
+            except Exception as e:
+                print(e)
+                range1=['','']
             temp_response = {"name":main_key.lower(), "Value":value_found.lower(), "Unit":unit.lower(),"Range":range1, "ReadIndex":second_half_of_line.lower(), "TempSent":second_half_of_line.lower()}
             # print(temp_response)
             # print(range1)
