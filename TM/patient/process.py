@@ -458,18 +458,22 @@ def main(file_path,report=None, keyword=None):
             if(spl==-1):
                 spl=0
             new_second_half_of_line=second_half_of_line[spl:]
-            range1 = re.search('((\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+))(\ *)(\-)(\ *)((\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+))|((\<)(\ *)(\=?)(\ *)(((\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+))))|((\>)(\ *)(\=?)(\ *)(((\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+))))|((((\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+)))(\ *)(\=?)(\ *)(\<))|((((\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+)))(\ *)(\=?)(\ *)(\>))', new_second_half_of_line).group(0)
-            range1=range1.replace(" ","")
-            if range1[0]=='<':
-                range1=['0',range1[1:]]
-            elif range1[0]=='>':
-                range1=[range1[1:],'']
-            elif range1[-1]=='<':
-                range1=[range1[0:-1],'']
-            elif range1[-1]=='>':
-                range1=['0',range1[0:-1]]
-            else:
-                range1=range1.split("-")
+            try:
+                range1 = re.search('((\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+))(\ *)(\-)(\ *)((\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+))|((\<)(\ *)(\=?)(\ *)(((\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+))))|((\>)(\ *)(\=?)(\ *)(((\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+))))|((((\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+)))(\ *)(\=?)(\ *)(\<))|((((\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+)))(\ *)(\=?)(\ *)(\>))', new_second_half_of_line).group(0)
+                range1=range1.replace(" ","")
+                if range1[0]=='<':
+                    range1=['0',range1[1:]]
+                elif range1[0]=='>':
+                    range1=[range1[1:],'']
+                elif range1[-1]=='<':
+                    range1=[range1[0:-1],'']
+                elif range1[-1]=='>':
+                    range1=['0',range1[0:-1]]
+                else:
+                    range1=range1.split("-")
+            except Exception as e:
+                print(e)
+                range1=['','']
             temp_response = {"name":main_key.lower(), "Value":value_found.lower(), "Unit":unit.lower(),"Range":range1, "ReadIndex":second_half_of_line.lower(), "TempSent":second_half_of_line.lower()}
             # print(temp_response)
             # print(range1)
