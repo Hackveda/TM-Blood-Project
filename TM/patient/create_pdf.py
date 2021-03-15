@@ -145,7 +145,7 @@ def create_header(pdf,patient,dates):
         return
 
     # color discription
-   pdf.setFillColorRGB(146/255,208/255,80/255)
+    pdf.setFillColorRGB(146/255,208/255,80/255)
     pdf.circle(27,74,COLOR_DESCRIPTION_CIRCLE_RADIUS,stroke=0,fill=1)
     pdf.setFillColorRGB(255/255,192/255,0)
     pdf.circle(91,74,COLOR_DESCRIPTION_CIRCLE_RADIUS,stroke=0,fill=1)
