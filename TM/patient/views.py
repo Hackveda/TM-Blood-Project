@@ -636,7 +636,7 @@ class GeneratedReportView(LoginRequiredMixin, View):
             'Pale Green'    :'#82FA58',
             'Red'           :'#FF0000',
             'Maroon'        :'#800000',
-            'Purple'        :'#7b1beb',
+            'Purple'        :'',
         }
         # table template to return
         #table = {
@@ -744,7 +744,7 @@ class GeneratedReportView(LoginRequiredMixin, View):
 
                 try:
                     # previos value was low
-                    if upper_range1==None:
+                    if upper_range1==None or value_change==None:
                         if upper_range2==None:
                             table[label_name]['remark'] = 'different unit/range'
                             table[label_name]['remark_color'] = remark_color['Purple']
