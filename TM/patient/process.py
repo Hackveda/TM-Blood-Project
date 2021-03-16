@@ -115,7 +115,7 @@ units_list = ['pmol/l', 'pg/mL', 'ng/dL', 'ug/dL', 'U/mL', 'ulU/mL', 'ng/mL', 'n
               'mm/hr', 'mili/cu.mm', '1043/1', 'x103/pl', 'mm/hour', 'mmol/L', 'Cells/ul',
               'Ru/ml', 'AU/ml', 'mgs/dl', 'mill/cu.mm', 'cells/mm3', 'mm 1st Hr', 'x', '10^3/Î¼I',
               '1000 / micL', 'mm/1hrs', '10~12/L', '10^12/L', 'mIU/mL', 'Gm%', 'mm/Ist hr', 'Millions/cmm',
-              'cc%', 'pgm', 'MEq/L'] +  ['/cmm', '/cu mm', 'IU/L', 'mm/Ist hr.', 'gm/ dl', 'meq /l','/cu.mm','cells/cu.mm','Cells/cu.mm']
+              'cc%', 'pgm', 'MEq/L'] +  ['/cmm', '/cu mm', 'IU/L', 'mm/Ist hr.', 'gm/ dl', 'meq /l','/cu.mm','cells/cu.mm','Cells/cu.mm','U/L','mg/ dL']
 
 # these are the units which are being read wrong by textract
 wrong_interpreted_units = [
@@ -383,7 +383,8 @@ def main(file_path,report=None, keyword=None):
 
           # finding if there is any refrence of tag in present line
           index = sent.find(tag)
-
+          if(sent[index+len(tag)]=="s"):
+              continue
           second_half_of_line = sent[index + len(tag):].strip()
 
           # find if there is any xx.xx type number after keyword

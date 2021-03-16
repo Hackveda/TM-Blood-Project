@@ -557,6 +557,7 @@ class GeneratedReportView(LoginRequiredMixin, View):
         if doc1_obj is not None:
             testresult1 = TestResult.objects.filter(document=doc1_obj)
             result1_labels = {result.label: {'value':float(result.value), 'unit':result.unit} for result in testresult1}
+            # result1_labels = {result.label : {'result_id':result.id,'value':float(result.value), 'unit':result.unit, 'upper_range':float(result.upper_range) if result.upper_range!="" else None, 'lower_range':float(result.lower_range) if result.lower_range!="" else None} for result in testresult1}
         else:
             result1_labels = {}
 
@@ -564,6 +565,7 @@ class GeneratedReportView(LoginRequiredMixin, View):
         if doc2_obj is not None:
             testresult2 = TestResult.objects.filter(document=doc2_obj)
             result2_labels = {result.label : {'value':float(result.value), 'unit':result.unit} for result in testresult2}
+            # result2_labels = {result.label : {'result_id':result.id,'value':float(result.value), 'unit':result.unit, 'upper_range':float(result.upper_range) if result.upper_range!="" else None, 'lower_range':float(result.lower_range) if result.lower_range!="" else None} for result in testresult2}
         else:
             result2_labels = {}
 
@@ -662,13 +664,15 @@ class GeneratedReportView(LoginRequiredMixin, View):
         # storing all values in dict in {label: {value, unit}} format
         if doc1_obj is not None:
             testresult1 = TestResult.objects.filter(document=doc1_obj)
-            result1_labels = {result.label : {'result_id':result.id,'value':float(result.value), 'unit':result.unit, 'upper_range':float(result.upper_range) if result.upper_range!="" else None, 'lower_range':float(result.lower_range)} for result in testresult1}
+            # result1_labels = {result.label : {'result_id':result.id,'value':float(result.value), 'unit':result.unit, 'upper_range':float(result.upper_range) if result.upper_range!="" else None, 'lower_range':float(result.lower_range)} for result in testresult1}
+            result1_labels = {result.label : {'result_id':result.id,'value':float(result.value), 'unit':result.unit, 'upper_range':float(result.upper_range) if result.upper_range!="" else None, 'lower_range':float(result.lower_range) if result.lower_range!="" else None} for result in testresult1}
         else:
             result1_labels = {}
 
         if doc2_obj is not None:
             testresult2 = TestResult.objects.filter(document=doc2_obj)
-            result2_labels = {result.label : {'result_id':result.id,'value':float(result.value), 'unit':result.unit, 'upper_range':float(result.upper_range) if result.upper_range!="" else None, 'lower_range':float(result.lower_range)} for result in testresult2}
+            # result2_labels = {result.label : {'result_id':result.id,'value':float(result.value), 'unit':result.unit, 'upper_range':float(result.upper_range) if result.upper_range!="" else None, 'lower_range':float(result.lower_range)} for result in testresult2}
+            result2_labels = {result.label : {'result_id':result.id,'value':float(result.value), 'unit':result.unit, 'upper_range':float(result.upper_range) if result.upper_range!="" else None, 'lower_range':float(result.lower_range) if result.lower_range!="" else None} for result in testresult2}
         else:
             result2_labels = {}
 
@@ -738,7 +742,10 @@ class GeneratedReportView(LoginRequiredMixin, View):
                 doc2_unit = doc2.get('unit',0)
                 doc1_unit = doc1.get('unit',0)
                 if(doc2_unit==doc1_unit):
-                    value_change = abs(doc2_value - (upper_range2+lower_range2)/2) - abs(doc1_value - (upper_range1+lower_range1)/2)
+                    try:
+                       value_change = abs(doc2_value - (upper_range2+lower_range2)/2) - abs(doc1_value - (upper_range1+lower_range1)/2)
+                    except:
+                       value_change = None
                 else:
                     value_change = None
 
