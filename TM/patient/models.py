@@ -63,6 +63,7 @@ class Document(models.Model):
     document = models.FileField(upload_to='documents/')
     uploaded_at = models.DateField(auto_now_add=False)
     patient = models.ForeignKey(to=Patient, on_delete=models.CASCADE, unique=False)
+    tesseract_data = models.TextField(blank=True,null=True)
 
     class Meta:
         unique_together = ('name', 'document', 'patient')
@@ -86,7 +87,6 @@ class Label(models.Model):
 
 
     def save(self, *args, **kwargs):
-        self.name = self.name.upper()
         super(Label, self).save(*args, **kwargs)
 
 
@@ -115,7 +115,6 @@ class AlternateLabel(models.Model):
         return f"{self.name}"
 
     def save(self, *args, **kwargs):
-        self.name = self.name.lower()
         super(AlternateLabel, self).save(*args, **kwargs)
 
 class TestResult(models.Model):
@@ -124,8 +123,8 @@ class TestResult(models.Model):
     value = models.CharField(max_length=10, blank=True)
     unit = models.CharField(max_length=55, blank=True)
     document = models.ForeignKey(to=Document, on_delete=models.CASCADE)
-    lower_range = models.CharField(max_length=55,blank = True)
-    upper_range = models.CharField(max_length=55,blank = True)
+    lower_range = models.CharField(max_length=55,blank = True , null = True)
+    upper_range = models.CharField(max_length=55,blank = True,null = True)
 
     class Meta:
         unique_together = ('patient', 'document', 'label')
@@ -196,3 +195,23 @@ class Category(models.Model):
 
     def __repr__(self) -> str:
         return self.name
+
+class Unit(models.Model):
+    name = models.CharField(max_length=55,unique=True,null=False,blank=False)
+    def __str__(self) -> str:
+        return self.name
+
+    def __repr__(self) -> str:
+        return self.name
+
+
+class UnitConvert(models.Model):
+    wrong_name = models.CharField(max_length=55,unique=True,null=False,blank=False)
+    right_name = models.CharField(max_length=55,unique=True,null=False,blank=False)
+    def __str__(self) -> str:
+        return self.wrong_name+" - "+self.right_name
+
+    def __repr__(self) -> str:
+        return self.wrong_name+" - "+self.right_name
+
+

@@ -10,9 +10,9 @@ class LabelCreationForm(forms.Form):
     category=forms.ModelChoiceField(queryset=Category.objects.all())
 
 class TestResultForm(forms.Form):
-    unit=forms.CharField(label='unit',max_length=55,required=True)
-    upper_range=forms.CharField(label = 'upper_range',max_length=55)
-    lower_range=forms.CharField(label = 'lower_range',max_length=55)
+    unit=forms.CharField(label='unit',max_length=55,required = False)
+    upper_range=forms.CharField(label = 'upper_range',max_length=55,required = False)
+    lower_range=forms.CharField(label = 'lower_range',max_length=55,required = False)
     value=forms.FloatField(label='value',required=True)
 
 

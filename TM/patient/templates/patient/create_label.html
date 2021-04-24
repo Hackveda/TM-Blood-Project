@@ -17,7 +17,7 @@
       <div class="story GB">
 	  	<form method="POST">{% csrf_token %}
         <div class=" GB ">
-          {% render_field form.name type="text" name="name" placeholder="Name" required="required" class+="form__input" %}
+          {% render_field form.name type="text" name="name" placeholder="Label Name" required="required" class+="form__input" %}
           <br>Select Category
           {% render_field form.category type="text" name="category" placeholder="Category" required="required" class+="form__input" %}
 

@@ -13,9 +13,9 @@
           <br> Select Label
           {% render_field form.label class+="form__input" type="password" name="password" placeholder="Your password" required="required" %}
 		  {% render_field form.value type="text" name="text1" placeholder="Value" required="required" class+="form__input" %}
-          {% render_field form.unit type="text" name="text2" placeholder="Unit" required="required" class+="form__input" %}
-          {% render_field form.lower_range type="text" name="lower_range" placeholder="Lower Range" value=obj.lower_range required="required" class+="form__input" %}
-          {% render_field form.upper_range type="text" name="upper_range" placeholder="Upper Range" value=obj.upper_range required="required" class+="form__input" %}
+          {% render_field form.unit type="text" name="text2" placeholder="Unit" class+="form__input" %}
+          {% render_field form.lower_range type="text" name="lower_range" placeholder="Lower Range" value=obj.lower_range class+="form__input" %}
+          {% render_field form.upper_range type="text" name="upper_range" placeholder="Upper Range" value=obj.upper_range class+="form__input" %}
 
 
         </div>

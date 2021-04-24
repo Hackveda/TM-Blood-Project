@@ -6,7 +6,7 @@ import urllib.request
 import textract
 import pickle
 #sys.path.append("~/django/TM-BLOOD-REPORT/patient/")
-from .models import AlternateLabel
+from .models import AlternateLabel, Unit , UnitConvert
 # GLOBAL VARS | KEEP DEBUG FALSE IN PRODUCTION
 DEBUG = True
 
@@ -115,7 +115,7 @@ units_list = ['pmol/l', 'pg/mL', 'ng/dL', 'ug/dL', 'U/mL', 'ulU/mL', 'ng/mL', 'n
               'mm/hr', 'mili/cu.mm', '1043/1', 'x103/pl', 'mm/hour', 'mmol/L', 'Cells/ul',
               'Ru/ml', 'AU/ml', 'mgs/dl', 'mill/cu.mm', 'cells/mm3', 'mm 1st Hr', 'x', '10^3/Î¼I',
               '1000 / micL', 'mm/1hrs', '10~12/L', '10^12/L', 'mIU/mL', 'Gm%', 'mm/Ist hr', 'Millions/cmm',
-              'cc%', 'pgm', 'MEq/L'] +  ['/cmm', '/cu mm', 'IU/L', 'mm/Ist hr.', 'gm/ dl', 'meq /l','/cu.mm','cells/cu.mm','Cells/cu.mm','U/L','mg/ dL']
+              'cc%', 'pgm', 'MEq/L'] +  ['/cmm', '/cu mm', 'IU/L', 'mm/Ist hr.', 'gm/ dl', 'meq /l','/cu.mm','cells/cu.mm','Cells/cu.mm','U/L','u/l','mg/ dL']
 
 # these are the units which are being read wrong by textract
 wrong_interpreted_units = [
@@ -135,7 +135,13 @@ wrong_interpreted_units = [
   'ua', # U/
   'plu/ml', # ulu/ml
   'plu/mi', # ulu/ml
-  '104 12/l'
+  '104 12/l',
+  'ut',
+  'uj',
+  '\'st hr',
+  'cellsimm3',
+  'mg/dl.',
+  'ymol/l',
 ]
 units_list += wrong_interpreted_units
 wrong_units = {
@@ -162,6 +168,12 @@ wrong_units = {
   'dl gm/': 'gm/dl', # dur to ordering issue
   '/l meq' : 'meg /l', # due to ordering issue,
   '104 12/l': '10^12/l',
+  'ut':'u/l',
+  'uj':'u/l',
+  '\'st hr':'mm 1st hr',
+  'cellsimm3':'cells/mm3',
+  'mg/dl.':'mg/dl',
+  'ymol/l':'umol/l',
 }
 
 # dict of names which are being extracted wrong all the time.
@@ -299,14 +311,14 @@ result_list = []
 # Read the pdf and extract sentences
 file = pdf_url
 '''
-def main(file_path,report=None, keyword=None):
+def main(file_path,report=None,document_object=None ,keyword=None):
   print("Main Started")
   input_data = ['mean corp hb ( mch)', 'absolute neutrophils', 'mean corp hb conc', 'folate, serum', 'eosinophil', '(glycated hba1c)/ hba1c', 'hdl cholesterol', 'esr', 'fasting', 'tsh, serum', 'lh', 'blood sugar', 'urea nitrogen', 'total proteins serum', 'red blood cell count', 'glycosylate d hemoglobin', 'serum g. o. t./ast', 'total protein', 'rdw', 'absolute eosinophil count blood', 'serum triglycerides', 'serum potassium', 'free t3', 'fsh', 'sgpt', 'sodium', 'serum cholestrol', 'cho / hdl cholesterol ratio', 'ferritin', '25-hydroxy, vitamin d', 'iron', 'neutrophil', 'neutrophils', 'triglycerides', 'estradiol', 'ldl cholesterol', 'serum sodium', 'hdl cholestrol ratio', 'tri-iodo thyroxine', 'packed cell volume', 'hematocrit', 'bilirubin', 'cholestrol, serum', 'vldl cholesterol', 'serum g. p. t. /alt', 'sgpt - alanine transaminas e', 'hba1c', 'alkaline phosphatase', 'packed cells ume', 'glucose', 'mcv', 'absolute monocytes', 'e.s.r.', 'bilirubin (indirect )', 'hemoglobin', 'blood urea nitrogen', 'chloride', 'mean corp volume', 'erythrocyte sedimentation rate', 'magnesium', 'sgot- asparttate transaminas e', 'a:g ratio', 'bilirubin unconjugated (indirect)', 'bilirubin (total)', 'total leucocytes count', 'ft3 serum', 'polymorphs', 'basophil', 'blood glucose pp', 'serum uric acid', 'serum vldl', 'mch', 'vitamin d3 level', 'rbc count', 'blood urea', 'uric acid', 'albumin', 'monocytes', 'tibc', 'eosinophils', 'serum alkaline phosphatase', 'tsh', 'alt', 'potassium', 'fasting glucose', 'mch, blood', 'rbc', 'serum l.d.l.cholestrol', 'lymphocyte', 'absolute neutrophil count', 'serum bilirubin', 'bilirubin conjugated(direct)', 'ige serum', 'serum albumin', 'vitamin d total(250h vitd3 and 250h vitd2)', 'serum tsh', 'ldl / hdl ratio', 'absolute basophils', 'free t4', 'uibc', 'e.s.r', 'cholesterol / hdl ratio', 'insulin fasting', 'serum creatinine', 'lymphocytes', 'pcv', 'mpv', 'tlc', 'sgot', 'white blood cell count', 'ggtp', 'platelets count', 'globulin', 'wbc count', 'urea serum', 'gamma g.t.', 'platelet count', 'calcium', 'cholesterol', 'insulin pp', 'bilirubin (direct)', 'basophils', 'ast', 'haemoglobin', 'folate', 'ldl / hdl cholesterol ratio', 'vitamin b12', 'vitamin d, 25-hydroxy, serum', 'insulin (pp)', 'mchc', 'creatinine serum', 'absolute lymphocytes', 'monocyte', 'vitamin b-12 level']
   input_data += ['HAEMOGLOBIN', 'TOTAL LEUCOCYTE COUNT (WBC)', 'RED BLOOD CELL COUNT', 'PACKED CELL VOLUME( HEMATOCRIT)', 'MEAN CORPUSCULAR VOLUME (MCV)', 'MEAN CORPUSULAR HB (MCH)', 'MEAN CORPUSULAR HB CONC (MCHC)', 'MEAN PLATELETS VOLUME (MPV )', 'HEMOGLOBIN DISTRIBUTION WIDTH (HDW)', 'CORPUSCULAR HAEMOGLOBIN', 'CHCM', 'PLATELET DISTRIBUTION WIDTH(PDW)', 'PCT', 'PLATELET COUNT', 'ESR', 'NEUTROPHILS %', 'LYMPHOCYTES %', 'MONOCYTES %', 'EOSINOPHILS %', 'BASOPHILS %', 'LARGE UNSTAINED CELLS (LUC)', 'RED CELL DISTRIBUTION WIDTH (RDW-CV)', 'RDW-SD', 'NEUTROPHILS', 'LYMPHOCYTES', 'MONOCYTES', 'ABSOLUTE EOSINOPHILS COUNT  %', 'BASOPHILS', 'CHOLESTEROL', 'TRIGLYCERIDES', 'H.D.L. CHOLESTEROL', 'L.D.L. CHOLESTEROL (DIRECT)', 'SERUM VLDL CHOLESTEROL', 'NON H.D.L. CHOLESTEROL', 'SERUM CHOLESTEROL-HDL RATIO', 'LDL/HDL CHOLESTEROL RATIO', 'UREA', 'BLOOD UREA NITROGEN (BUN)', 'CREATININE, SERUM', 'URIC ACID', 'UREA / CREATININE RATIO', 'BUN / CREATININE RATIO', 'CYSTATIN C', 'BLOOD KETONE', 'IONIZED CALCIUM', 'TOTAL CALCIUM', 'ZINC, SERUM', 'MERCURY', 'CAESIUM', 'BERYLLIUM', 'ARSENIC', 'PHOSPHORUS', 'SODIUM', 'POTTASIUM', 'CHLORIDE', 'MAGNESIUM', 'BILIRUBIN (TOTAL)', 'BILIRUBIN (DIRECT)', 'BILIRUBIN (INDIRECT)', 'S.G.O.T.', 'S.G.P.T.', 'ALKALINE PHOSPHATASE', 'G.G.T.P.', 'IRON SERUM', 'SERUM TOTAL PROTEINS', 'SERUM ALBUMIN', 'SERUM GLOBULIN', 'GLOBULIN', 'PANCREATIC ALFA AMYLASE', 'C.P.K.', 'IMMUNOGLOUBLIN lgG, SERUM', 'IMMUNOGLOUBLIN lgM, SERUM', 'IMMUNOGLOUBLIN lgE, SERUM', 'IMMUNOGLOUBLIN lgA, SERUM', 'IRON', 'TOTAL IRON BINDING CAPACITY (TIBC)', 'TRANSFEERRIN', 'TRANSFERRIN SATURATION', 'UNSATURATED IRON BINDING CAPACITY (UIBC)', 'FERRITIN, SERUM', 'TRANSFERRIN', 'FREE TRIJODOTHYRONINE [FT3],Serum', 'FREE THYROXINE [FT4],Serum', 'T.S.H.[ULTRA]', 'ANTI- THYROGLOBULIN ANTIBODIES', 'ANTI- THYROID PEROXIDASE', 'TESTOSTERONE LEVEL (TOTAL)', 'ESTRADIOL LEVEL', 'CORTISOL LEVEL(Morning)', 'ENHANCED ESTRADIOL ( eE2)', 'PARATHYROID HORMONE LEVEL , SERUM', 'VITAMIN B-12 LEVEL, SERUM(ECLIA)', 'VITAMIN D-3 LEVEL, SERUM (ECLIA)', 'VITAMIN D total(250h vitd3 and 250h vitd2) ', 'FOLIC ACID LEVEL', '25-OH VITAMIN D', 'FOLATE', 'AVG SUGAR', 'BLOOD GLUCOSE (FASTING)', 'HBA1C', 'MEAN PLASMA GLUCOSE', 'INSULIN LEVEL ( FASTING ) PLASMA', 'INSULIN LEVEL ( POSTPRANDOIAL ) PLASMA', 'AVERAGE BLOOD GLUCOSE (ABG)', 'LIPASE', 'FASTING BLOOD SUGAR']
   #input_data = [item.name for item in AlternateLabel.objects.all()]
   input_data=['® total leucocyte count','haemoglobin']
   if report:
-      input_data = [item.name for item in AlternateLabel.objects.filter(report=report)]
+      input_data = [item.name.lower() for item in AlternateLabel.objects.filter(report=report)]
       print(input_data)
       print('888888888888888'*100)
       print("Main 2")
@@ -314,6 +326,12 @@ def main(file_path,report=None, keyword=None):
       input_data = list(set(input_data))
       text = textract.process(file_path, method="tesseract")
       decoded_text = text.decode('utf-8')
+      try:
+          document_object.tesseract_data=decoded_text
+          document_object.save()
+      except:
+          pass
+
       #print("Decoded Text: ", decoded_text)
       x=decoded_text.split("\n")
       # print("X", x)
@@ -342,7 +360,22 @@ def main(file_path,report=None, keyword=None):
 #       pickle_off = open("dang_dta.pickle", 'rb')
 #       my_text=pickle.load(pickle_off)
   result_list = []
-  #%%
+  database_unit_list = [i.name.lower() for i in Unit.objects.all()]
+  database_wrong_interpreted_units = [i.wrong_name.lower() for i in UnitConvert.objects.all()]
+  database_unit_list=database_unit_list+database_wrong_interpreted_units
+  global units_list
+  global wrong_units
+  new_units_list=units_list.copy()
+  new_wrong_units=wrong_units.copy()
+  if(len(database_unit_list)>0):
+      new_units_list +=database_unit_list
+  for i in UnitConvert.objects.all():
+      new_wrong_units[i.wrong_name.lower()]=i.right_name.lower()
+  print("@2222222"*50)
+  print("units   ",new_units_list)
+  print("Wrong units", new_wrong_units)
+
+#%%
   for keyword in input_data:
 
     # read the keyword from pdf data
@@ -383,8 +416,11 @@ def main(file_path,report=None, keyword=None):
 
           # finding if there is any refrence of tag in present line
           index = sent.find(tag)
-          if(sent[index+len(tag)]=="s"):
-              continue
+          try:
+             if(sent[index+len(tag)]=="s"):
+               continue
+          except:
+               pass
           second_half_of_line = sent[index + len(tag):].strip()
 
           # find if there is any xx.xx type number after keyword
@@ -414,7 +450,7 @@ def main(file_path,report=None, keyword=None):
 
             # find all units from unit_list that are in seconod_half_of_line and add them to set
             available_units = set()
-            for unit in units_list:
+            for unit in new_units_list:
               if unit in second_half_of_line:
                 available_units.add(unit)
 
@@ -441,7 +477,7 @@ def main(file_path,report=None, keyword=None):
           try:
             # modifing units which are known to be read wrong like emm -> cmm
             # and updating sentence
-            unit, second_half_of_line = replace_wrong_read_units(unit, wrong_units, second_half_of_line)
+            unit, second_half_of_line = replace_wrong_read_units(unit, new_wrong_units, second_half_of_line)
 
             # reverting back to the original keywrd that was changed earlier
             main_key = original_keywrd

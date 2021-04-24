@@ -38,7 +38,9 @@ from .views import  (
     FinalGeneratedReportDetailView,
     ViewPdfView,
     ShowSavedGeneratedReportView,
-    CreateLabelView
+    CreateLabelView,
+    ShowReadDataView
+    
 )
 
 urlpatterns = [
@@ -56,7 +58,7 @@ urlpatterns = [
     path('patientupdate/<int:pk>', PatientUpdateView.as_view(), name='patient-update' ),
     path('patientsearch/', PatientSearchView.as_view(), name='patient-search' ),
     # url(r'^save/(?P<patient_id>[0-9]+)/(?P<doc1_id>[0-9]+)/(?P<doc2_id>[0-9]+)/(?P<table>.*)$', GeneratedReportSaveView.as_view(), name='save'),
-
+    path('tesseractdata/<int:doc_id>',ShowReadDataView.as_view(),name='tesseract-data'),    
     path('deletepatient/<int:pk>', PatientDeleteView.as_view(), name='patient-delete'),
     path('saves/<int:pk>', GeneratedReportSaveView.as_view(), name='save2'),
     path('showall/<int:pk>', ShowAllReportView.as_view(), name='show-all-report'),

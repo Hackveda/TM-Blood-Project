@@ -119,7 +119,7 @@ class DocumentUploadView(LoginRequiredMixin, View):
             try:
                 path = document_object.document.path
                 # sending respone to process.py and parsing it to object
-                res = process_main(path,document_object.report)
+                res = process_main(path,document_object.report,document_object)
                 # res = eval(res) # evaluating response'
                 print("res ",res)
                 for response in res:
@@ -197,8 +197,8 @@ class TestResultUpdateView(LoginRequiredMixin, View):
             unit=form.cleaned_data['unit']
             label=testresult.label
             value=float(form.cleaned_data['value'])
-            testresult.upper_range = form.cleaned_data['upper_range'] if form.cleaned_data['upper_range']!="" else None
-            testresult.lower_range = form.cleaned_data['lower_range'] if form.cleaned_data['lower_range']!="" else None
+            testresult.upper_range = form.cleaned_data['upper_range'] if form.cleaned_data['upper_range']!=None and form.cleaned_data['upper_range']!="" else ''
+            testresult.lower_range = form.cleaned_data['lower_range'] if form.cleaned_data['lower_range']!=None and form.cleaned_data['lower_range']!="" else ''
             testresult.unit=unit
             testresult.value=value
             testresult.label=label
@@ -1175,3 +1175,14 @@ class CreateLabelView(LoginRequiredMixin,View):
             label_obj.save()
 
         return redirect('create-labels')
+
+class ShowReadDataView(LoginRequiredMixin,View):
+    template_name = 'patient/show_tesseract_data.html'
+
+    def get(self, request, doc_id):
+        document_object=Document.objects.filter(id=doc_id)[0]
+        context = {
+            'data':document_object.tesseract_data.split("\n")
+        }
+        return render(request, self.template_name, context=context)
+
