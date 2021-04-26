@@ -311,7 +311,19 @@ result_list = []
 # Read the pdf and extract sentences
 file = pdf_url
 '''
-def main(file_path,report=None,document_object=None ,keyword=None):
+def pdfconvert(filepath):
+  import pdftotext
+
+  # Load your PDF
+  with open(filepath, "rb") as f:
+      pdf = pdftotext.PDF(f)
+
+  pdf_new = ''
+  for i in range(len(pdf)):
+      pdf_new = pdf_new + '#'*40 + pdf[i]
+  return pdf_new
+
+def main(file_path,report=None, extraction_type = None , document_object=None ,keyword=None):
   print("Main Started")
   input_data = ['mean corp hb ( mch)', 'absolute neutrophils', 'mean corp hb conc', 'folate, serum', 'eosinophil', '(glycated hba1c)/ hba1c', 'hdl cholesterol', 'esr', 'fasting', 'tsh, serum', 'lh', 'blood sugar', 'urea nitrogen', 'total proteins serum', 'red blood cell count', 'glycosylate d hemoglobin', 'serum g. o. t./ast', 'total protein', 'rdw', 'absolute eosinophil count blood', 'serum triglycerides', 'serum potassium', 'free t3', 'fsh', 'sgpt', 'sodium', 'serum cholestrol', 'cho / hdl cholesterol ratio', 'ferritin', '25-hydroxy, vitamin d', 'iron', 'neutrophil', 'neutrophils', 'triglycerides', 'estradiol', 'ldl cholesterol', 'serum sodium', 'hdl cholestrol ratio', 'tri-iodo thyroxine', 'packed cell volume', 'hematocrit', 'bilirubin', 'cholestrol, serum', 'vldl cholesterol', 'serum g. p. t. /alt', 'sgpt - alanine transaminas e', 'hba1c', 'alkaline phosphatase', 'packed cells ume', 'glucose', 'mcv', 'absolute monocytes', 'e.s.r.', 'bilirubin (indirect )', 'hemoglobin', 'blood urea nitrogen', 'chloride', 'mean corp volume', 'erythrocyte sedimentation rate', 'magnesium', 'sgot- asparttate transaminas e', 'a:g ratio', 'bilirubin unconjugated (indirect)', 'bilirubin (total)', 'total leucocytes count', 'ft3 serum', 'polymorphs', 'basophil', 'blood glucose pp', 'serum uric acid', 'serum vldl', 'mch', 'vitamin d3 level', 'rbc count', 'blood urea', 'uric acid', 'albumin', 'monocytes', 'tibc', 'eosinophils', 'serum alkaline phosphatase', 'tsh', 'alt', 'potassium', 'fasting glucose', 'mch, blood', 'rbc', 'serum l.d.l.cholestrol', 'lymphocyte', 'absolute neutrophil count', 'serum bilirubin', 'bilirubin conjugated(direct)', 'ige serum', 'serum albumin', 'vitamin d total(250h vitd3 and 250h vitd2)', 'serum tsh', 'ldl / hdl ratio', 'absolute basophils', 'free t4', 'uibc', 'e.s.r', 'cholesterol / hdl ratio', 'insulin fasting', 'serum creatinine', 'lymphocytes', 'pcv', 'mpv', 'tlc', 'sgot', 'white blood cell count', 'ggtp', 'platelets count', 'globulin', 'wbc count', 'urea serum', 'gamma g.t.', 'platelet count', 'calcium', 'cholesterol', 'insulin pp', 'bilirubin (direct)', 'basophils', 'ast', 'haemoglobin', 'folate', 'ldl / hdl cholesterol ratio', 'vitamin b12', 'vitamin d, 25-hydroxy, serum', 'insulin (pp)', 'mchc', 'creatinine serum', 'absolute lymphocytes', 'monocyte', 'vitamin b-12 level']
   input_data += ['HAEMOGLOBIN', 'TOTAL LEUCOCYTE COUNT (WBC)', 'RED BLOOD CELL COUNT', 'PACKED CELL VOLUME( HEMATOCRIT)', 'MEAN CORPUSCULAR VOLUME (MCV)', 'MEAN CORPUSULAR HB (MCH)', 'MEAN CORPUSULAR HB CONC (MCHC)', 'MEAN PLATELETS VOLUME (MPV )', 'HEMOGLOBIN DISTRIBUTION WIDTH (HDW)', 'CORPUSCULAR HAEMOGLOBIN', 'CHCM', 'PLATELET DISTRIBUTION WIDTH(PDW)', 'PCT', 'PLATELET COUNT', 'ESR', 'NEUTROPHILS %', 'LYMPHOCYTES %', 'MONOCYTES %', 'EOSINOPHILS %', 'BASOPHILS %', 'LARGE UNSTAINED CELLS (LUC)', 'RED CELL DISTRIBUTION WIDTH (RDW-CV)', 'RDW-SD', 'NEUTROPHILS', 'LYMPHOCYTES', 'MONOCYTES', 'ABSOLUTE EOSINOPHILS COUNT  %', 'BASOPHILS', 'CHOLESTEROL', 'TRIGLYCERIDES', 'H.D.L. CHOLESTEROL', 'L.D.L. CHOLESTEROL (DIRECT)', 'SERUM VLDL CHOLESTEROL', 'NON H.D.L. CHOLESTEROL', 'SERUM CHOLESTEROL-HDL RATIO', 'LDL/HDL CHOLESTEROL RATIO', 'UREA', 'BLOOD UREA NITROGEN (BUN)', 'CREATININE, SERUM', 'URIC ACID', 'UREA / CREATININE RATIO', 'BUN / CREATININE RATIO', 'CYSTATIN C', 'BLOOD KETONE', 'IONIZED CALCIUM', 'TOTAL CALCIUM', 'ZINC, SERUM', 'MERCURY', 'CAESIUM', 'BERYLLIUM', 'ARSENIC', 'PHOSPHORUS', 'SODIUM', 'POTTASIUM', 'CHLORIDE', 'MAGNESIUM', 'BILIRUBIN (TOTAL)', 'BILIRUBIN (DIRECT)', 'BILIRUBIN (INDIRECT)', 'S.G.O.T.', 'S.G.P.T.', 'ALKALINE PHOSPHATASE', 'G.G.T.P.', 'IRON SERUM', 'SERUM TOTAL PROTEINS', 'SERUM ALBUMIN', 'SERUM GLOBULIN', 'GLOBULIN', 'PANCREATIC ALFA AMYLASE', 'C.P.K.', 'IMMUNOGLOUBLIN lgG, SERUM', 'IMMUNOGLOUBLIN lgM, SERUM', 'IMMUNOGLOUBLIN lgE, SERUM', 'IMMUNOGLOUBLIN lgA, SERUM', 'IRON', 'TOTAL IRON BINDING CAPACITY (TIBC)', 'TRANSFEERRIN', 'TRANSFERRIN SATURATION', 'UNSATURATED IRON BINDING CAPACITY (UIBC)', 'FERRITIN, SERUM', 'TRANSFERRIN', 'FREE TRIJODOTHYRONINE [FT3],Serum', 'FREE THYROXINE [FT4],Serum', 'T.S.H.[ULTRA]', 'ANTI- THYROGLOBULIN ANTIBODIES', 'ANTI- THYROID PEROXIDASE', 'TESTOSTERONE LEVEL (TOTAL)', 'ESTRADIOL LEVEL', 'CORTISOL LEVEL(Morning)', 'ENHANCED ESTRADIOL ( eE2)', 'PARATHYROID HORMONE LEVEL , SERUM', 'VITAMIN B-12 LEVEL, SERUM(ECLIA)', 'VITAMIN D-3 LEVEL, SERUM (ECLIA)', 'VITAMIN D total(250h vitd3 and 250h vitd2) ', 'FOLIC ACID LEVEL', '25-OH VITAMIN D', 'FOLATE', 'AVG SUGAR', 'BLOOD GLUCOSE (FASTING)', 'HBA1C', 'MEAN PLASMA GLUCOSE', 'INSULIN LEVEL ( FASTING ) PLASMA', 'INSULIN LEVEL ( POSTPRANDOIAL ) PLASMA', 'AVERAGE BLOOD GLUCOSE (ABG)', 'LIPASE', 'FASTING BLOOD SUGAR']
@@ -324,8 +336,14 @@ def main(file_path,report=None,document_object=None ,keyword=None):
       print("Main 2")
       # print('we are using this input Data', input_data)
       input_data = list(set(input_data))
-      text = textract.process(file_path, method="tesseract")
-      decoded_text = text.decode('utf-8')
+      if extraction_type == 'tessaract' :
+        print('*'*40+'tessaract')
+        text = textract.process(file_path, method="tesseract")
+        decoded_text = text.decode('utf-8')
+      elif extraction_type == 'pdf2txt' :
+        print('*'*40+'pdf2txt')
+        text = pdfconvert(file_path)
+        decoded_text = text
       try:
           document_object.tesseract_data=decoded_text
           document_object.save()
@@ -427,7 +445,7 @@ def main(file_path,report=None,document_object=None ,keyword=None):
           # assuming there is always .0 at the end of value
 
 
-          line = re.search('(\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+)',second_half_of_line)
+          line = re.search('(\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+)|([negative]{8})|([positive]{8})|([equivocal]{9})',second_half_of_line)
 
           # if there is no floating point number in line then line is useless
           if line is None:
@@ -435,7 +453,7 @@ def main(file_path,report=None,document_object=None ,keyword=None):
 
           try:
             # value_found = re.search('(\d+(\,\d+)?)|(\d+(\.\d+)?)|(\.?\d+)', second_half_of_line).group(0)
-            value_found = re.search('(\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+)', second_half_of_line).group(0)
+            value_found = re.search('(\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+)|([negative]{8})|([positive]{8})|([equivocal]{9})', second_half_of_line).group(0)
             value_found = value_found.replace(",","")
             # Discription of idea for handling units
             # there could be units with space like '/cu mm', to handle those

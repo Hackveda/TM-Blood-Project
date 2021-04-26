@@ -60,6 +60,12 @@ class Patient(models.Model):
 class Document(models.Model):
     name = models.CharField(max_length=15, blank=True)
     report = models.ForeignKey(to = Report,on_delete=models.SET_NULL,null=True)
+    extraction_choice = (
+        ('Tessaract', 'Tessaract'),
+        ('Pdf2txt', 'Pdf2txt')
+    )
+
+    extraction_type = models.CharField(choices=extraction_choice, max_length=50)
     document = models.FileField(upload_to='documents/')
     uploaded_at = models.DateField(auto_now_add=False)
     patient = models.ForeignKey(to=Patient, on_delete=models.CASCADE, unique=False)

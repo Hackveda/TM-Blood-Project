@@ -13,14 +13,14 @@ class TestResultForm(forms.Form):
     unit=forms.CharField(label='unit',max_length=55,required = False)
     upper_range=forms.CharField(label = 'upper_range',max_length=55,required = False)
     lower_range=forms.CharField(label = 'lower_range',max_length=55,required = False)
-    value=forms.FloatField(label='value',required=True)
+    value=forms.CharField(max_length =20 , label='value',required=True)
 
 
 
 class DocumentForm(forms.ModelForm):
     class Meta:
         model = Document
-        fields = ('name', 'document', 'report', 'uploaded_at')
+        fields = ('name', 'document', 'report','extraction_type', 'uploaded_at')
 
 class LabelForm(forms.ModelForm):
     class Meta:
