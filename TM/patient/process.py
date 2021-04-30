@@ -1,3 +1,4 @@
+import os
 import sys
 import json
 import json
@@ -5,6 +6,7 @@ import re
 import urllib.request
 import textract
 import pickle
+from django.conf import settings
 #sys.path.append("~/django/TM-BLOOD-REPORT/patient/")
 from .models import AlternateLabel, Unit , UnitConvert
 # GLOBAL VARS | KEEP DEBUG FALSE IN PRODUCTION
@@ -312,15 +314,28 @@ result_list = []
 file = pdf_url
 '''
 def pdfconvert(filepath):
-  import pdftotext
+  #import pdftotext
 
   # Load your PDF
-  with open(filepath, "rb") as f:
-      pdf = pdftotext.PDF(f)
+  #with open(filepath, "rb") as f:
+   #   pdf = pdftotext.PDF(f)
 
-  pdf_new = ''
-  for i in range(len(pdf)):
-      pdf_new = pdf_new + '#'*40 + pdf[i]
+  #pdf_new = ''
+  #for i in range(len(pdf)):
+   #   pdf_new = pdf_new + '#'*40 + pdf[i]
+  #return pdf_new
+  output_file = settings.MEDIA_ROOT +'/data.txt'
+  #output_file = output_file.replace('/','//')
+  print(output_file)
+  # writing data in variable
+  text = os.popen("pdftotext {}".format(filepath)).read()
+
+  # writing data in file
+  os.system("pdftotext -layout {} {}".format(filepath, output_file))
+
+  with open(output_file,'rb') as f :
+    pdf_new = f.read()
+  print('*'*40,pdf_new)
   return pdf_new
 
 def main(file_path,report=None, extraction_type = None , document_object=None ,keyword=None):
@@ -343,7 +358,7 @@ def main(file_path,report=None, extraction_type = None , document_object=None ,k
       elif extraction_type == 'pdf2txt' :
         print('*'*40+'pdf2txt')
         text = pdfconvert(file_path)
-        decoded_text = text
+        decoded_text = text.decode('utf-8')
       try:
           document_object.tesseract_data=decoded_text
           document_object.save()
