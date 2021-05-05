@@ -16,7 +16,10 @@
     <link rel="stylesheet" href="{% static 'patient/css/icon-font.css' %}" />
     <link rel="stylesheet" href="{% static 'patient/css/style.css' %}" />
     <title>TM Blood Report</title>
-  </head>
+    {% block head %}
+    {% endblock head %}
+   </head>
+  
   <body>
    <!-- ============================================================ -->
     <!-- NAVIGATION-->
