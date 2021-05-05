@@ -460,7 +460,7 @@ def main(file_path,report=None, extraction_type = None , document_object=None ,k
           # assuming there is always .0 at the end of value
 
 
-          line = re.search('(\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+)|([negative]{8})|([positive]{8})|([equivocal]{9})',second_half_of_line)
+          line = re.search('(\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+)|((n|N)(e|E)(g|G)(a|A)(t|T)(i|I)(v|V)(e|E))|((p|P)(o|O)(s|S)(i|I)(t|T)(i|I)(v|V)(e|E))|((e|E)(q|Q)(u|U)(i|I)(v|V)(o|O)(c|C)(a|A)(l|L))',second_half_of_line)
 
           # if there is no floating point number in line then line is useless
           if line is None:
@@ -468,7 +468,7 @@ def main(file_path,report=None, extraction_type = None , document_object=None ,k
 
           try:
             # value_found = re.search('(\d+(\,\d+)?)|(\d+(\.\d+)?)|(\.?\d+)', second_half_of_line).group(0)
-            value_found = re.search('(\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+)|([negative]{8})|([positive]{8})|([equivocal]{9})', second_half_of_line).group(0)
+            value_found = re.search('(\d+((\,)(\d)+)+(\.(\d)+)?)|(\d+(\.\d+)?)|(\.?\d+)|((n|N)(e|E)(g|G)(a|A)(t|T)(i|I)(v|V)(e|E))|((p|P)(o|O)(s|S)(i|I)(t|T)(i|I)(v|V)(e|E))|((e|E)(q|Q)(u|U)(i|I)(v|V)(o|O)(c|C)(a|A)(l|L))', second_half_of_line).group(0)
             value_found = value_found.replace(",","")
             # Discription of idea for handling units
             # there could be units with space like '/cu mm', to handle those

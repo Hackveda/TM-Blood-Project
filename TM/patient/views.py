@@ -716,15 +716,15 @@ class GeneratedReportView(LoginRequiredMixin, View):
             table[label_name]['category'] = category
             table[label_name]['upper_range'] = upper_range2
             table[label_name]['lower_range'] = lower_range2
-            if(doc2_value=="positive"):
+            if(doc2_value.lower()=="positive"):
                 table[label_name]['remark'] = 'Normal'
                 table[label_name]['remark_color'] = remark_color['Green']
                 continue
-            elif (doc2_value=="negative"):
+            elif (doc2_value.lower()=="negative"):
                 table[label_name]['remark'] = 'High'
                 table[label_name]['remark_color'] = remark_color['Red']
                 continue
-            elif (doc2_value=="equivocal"):
+            elif (doc2_value.lower()=="equivocal"):
                 table[label_name]['remark'] = 'Normal'
                 table[label_name]['remark_color'] = remark_color['Green']
                 continue
