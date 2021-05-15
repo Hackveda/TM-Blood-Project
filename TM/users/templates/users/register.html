@@ -1,17 +1,62 @@
+{% extends 'patient/base.html' %}
+{% load static %}
+{% load widget_tweaks %}
 {% block content %}
+<html lang="en">
+  <head>
+    <title>Register</title>
+  </head>
+  <body>
+   
+    <div class="patient_form">
+      <div class="row GB">
+        <div class="book GB">
+          <div class="book__form GB">
+            <form method="post" class="form GB">{% csrf_token %}
+              <div class="u-margin-bottom-medium GB">
+                <h2 class="heading-secondary">Register</h2>
+              </div>
 
-<div class="content-section">
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-</div>
-<button type="submit" class="btn btn-primary">Sign Up</button>
-</form>
-<div class="border-top pt-3">
-    <small class="text-muted">
-        Already Have an account?
-        <a href="{% url 'users-login' %}">login</a>
-    </small>
-</div>
-</div>
-{% endblock %}
+              <div class="form__group GB">
+                {% render_field form.first_name class+="form__input" placeholder='First Name' type="text" name="firstname" required="required" %}
+                <label for="first" class="form__label">First Name</label>
+              </div>
+
+              <div class="form__group GB">
+                {% render_field form.last_name  class+="form__input" placeholder='Last Name' type="text" name="lastname" required="required" %}
+                <label for="last" class="form__label">Last Name</label>
+              </div>
+              <div class="form__group">
+                {% render_field form.username placeholder="Username" type="text" name="username" required="required" class="form__input" %}
+                <label for="address" class="form__label">Username</label>
+              </div>
+              <div class="form__group">
+                {% render_field form.email placeholder="Email Address" type="email" name="email1" required="required" class="form__input" %}
+                <label for="email" class="form__label">Email Address</label>
+              </div>
+              <div class="form__group">
+                {% render_field form.password1 placeholder="Password" type="password" name="password1" required="required" class="form__input" %}
+                <label for="password" class="form__label">Password</label>
+              </div>
+              <div class="form__group">
+                {% render_field form.password2 placeholder="Password" type="password" name="password2" required="required" class="form__input" %}
+                <label for="password" class="form__label">Confrm Password</label>
+              </div>
+              <div class="form__group">
+                <button type = "submit" class="btn btn--green">
+                  Register
+                </button>
+                <button class="btn btn--green" onclick = "window.location.href='{% url 'users-login' %}'">
+                  CANCEL
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
+
+{% endblock content %}

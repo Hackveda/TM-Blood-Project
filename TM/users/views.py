@@ -17,6 +17,7 @@ def register(request):
     if request.method == 'POST':
         print('creating new user')
         form = UserCreationForm(request.POST)
+        print(form)
         print('is form valid', form.is_valid())
         if form.is_valid():
             print('saving new user')
@@ -28,7 +29,10 @@ def register(request):
             return redirect('users-login')
     else:
         form = UserCreationForm()
-    return render(request, 'users/register.html', {'form': form})
+    context = {
+        'form': form ,
+    }
+    return render(request,'users/register.html', context)
 
 
 class LoginView(SuccessMessageMixin, _LoginView):
