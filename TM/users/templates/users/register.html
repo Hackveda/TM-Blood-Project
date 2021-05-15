@@ -35,12 +35,18 @@
                 <label for="email" class="form__label">Email Address</label>
               </div>
               <div class="form__group">
-                {% render_field form.password1 placeholder="Password" type="password" name="password1" required="required" class="form__input" %}
+                <input name="{{form.password1.name}}" id="password1" class="form__input" placeholder="Password" type="password" name="password1" required="required" >
+                {% comment %} {% render_field form.password1 placeholder="Password" type="password" name="password1" required="required" class="form__input" %} {% endcomment %}
                 <label for="password" class="form__label">Password</label>
+                 <input type="checkbox" onclick="Toggle1()">
+                  <b>Show Password</b>
               </div>
               <div class="form__group">
-                {% render_field form.password2 placeholder="Password" type="password" name="password2" required="required" class="form__input" %}
+                <input name="{{form.password2.name}}" id="password2" class="form__input" placeholder="Confirm Password" type="password" name="password2" required="required" >
+                {% comment %} {% render_field form.password2 placeholder="Password" type="password" name="password2" required="required" class="form__input" %} {% endcomment %}
                 <label for="password" class="form__label">Confrm Password</label>
+                <input type="checkbox" onclick="Toggle2()">
+                  <b>Show Password</b>
               </div>
               <div class="form__group">
                 <button type = "submit" class="btn btn--green">
@@ -55,7 +61,27 @@
         </div>
       </div>
     </div>
-    
+    <script>
+    // Change the type of input to password or text
+        function Toggle1() {
+            var temp = document.getElementById("password1");
+            if (temp.type === "password") {
+                temp.type = "text";
+            }
+            else {
+                temp.type = "password";
+            }
+        }
+        function Toggle2() {
+            var temp = document.getElementById("password2");
+            if (temp.type === "password") {
+                temp.type = "text";
+            }
+            else {
+                temp.type = "password";
+            }
+        }
+    </script>
   </body>
 </html>
 
