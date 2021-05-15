@@ -25,6 +25,7 @@
             <div class="col__var col-1__tt__var GB">Report Name</div>
             <div class="col__var col-2__tt__var GB">Date</div>
             <div class="col__var col-3__tt__var GB">View Report</div>
+            <div class="col__var col-4__tt__var GB">Delete</div>
           </li>
           <!-- ================category label =============== -->
           <h3 class="heading-tertiary tt_h3_st_1">Generated Report</h3>
@@ -41,6 +42,11 @@
             <div class="col col-3__tt__var GB"  __vardata-label="Label">
                 <button class = "btn btn--green" onclick="window.location='{% url "show-saved-report" report.id patient.id %}';">
                     Show Report
+                </button>
+            </div>
+            <div class="col col-4__tt__var GB" __vardata-label="Before">
+            <button class = "btn btn--green" onclick="window.location='{% url "final-generated-report-delete" report.id %}';">
+                    Delete Report
                 </button>
             </div>
           </li>
@@ -78,6 +84,11 @@
               <button class="btn btn--green" onclick="window.location='{{report.document.url}}';">
                     <td>Show Report</td>
                 </button>
+           </div>
+           <div class="col col-4__tt__var GB" __vardata-label="Before">
+              <button class="btn btn--green" onclick="window.location='{% url "document-delete" report.id%}';">
+                      <td>Delete Report</td>
+                  </button>
             </div>
           </li>
         {% endfor %}
