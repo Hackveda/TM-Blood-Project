@@ -1,0 +1,1836 @@
+.
+S02 - FPSC SOHNA
+SHANKAR MARKET, NEAR NAGAR PARISHAD
+SHANKAR MARKET, NEAR NAGAR PARISHAD
+SOHN
+GURGAON
+
+Name
+
+: Mr. VIKRANT BERI
+
+Lab No.
+
+:
+
+298921696
+
+Age: 26 Years
+
+A/c Status
+
+:
+
+P
+
+Ref By :
+
+Test Name
+
+Gender:
+
+Male
+
+Dr.Jain
+
+Collected
+Received
+Reported
+
+: 22/4/2021 1:45:00PM
+: 22/4/2021 1:59:24PM
+: 23/4/2021 8:03:35AM
+
+Report Status
+
+: Final
+
+Results
+
+Units
+
+Bio. Ref. Interval
+
+Hemoglobin
+
+16.30
+
+g/dL
+
+13.00 - 17.00
+
+Packed Cell Volume (PCV)
+
+51.90
+
+%
+
+40.00 - 50.00
+
+RBC Count
+
+5.55
+
+mill/mm3
+
+4.50 - 5.50
+
+MCV
+
+93.50
+
+fL
+
+83.00 - 101.00
+
+MCH
+
+29.40
+
+pg
+
+27.00 - 32.00
+
+MCHC
+
+31.40
+
+g/dL
+
+31.50 - 34.50
+
+Red Cell Distribution Width (RDW)
+
+14.90
+
+%
+
+11.60 - 14.00
+
+Total Leukocyte Count (TLC)
+
+5.90
+
+thou/mm3
+
+4.00 - 10.00
+
+Segmented Neutrophils
+
+52.80
+
+%
+
+40.00 - 80.00
+
+Lymphocytes
+
+35.10
+
+%
+
+20.00 - 40.00
+
+Monocytes
+
+8.00
+
+%
+
+2.00 - 10.00
+
+Eosinophils
+
+3.10
+
+%
+
+1.00 - 6.00
+
+Basophils
+
+1.00
+
+%
+
+<2.00
+
+Neutrophils
+
+3.12
+
+thou/mm3
+
+2.00 - 7.00
+
+Lymphocytes
+
+2.07
+
+thou/mm3
+
+1.00 - 3.00
+
+Monocytes
+
+0.47
+
+thou/mm3
+
+0.20 - 1.00
+
+Eosinophils
+
+0.18
+
+thou/mm3
+
+0.02 - 0.50
+
+Basophils
+
+0.06
+
+thou/mm3
+
+0.02 - 0.10
+
+SwasthFit Super 4
+COMPLETE BLOOD COUNT;CBC
+(DC Detection, Flow Cytometry & SLS)
+
+Differential Leucocyte Count (DLC)
+
+Absolute Leucocyte Count
+
+*298921696*
+
+Page 1 of 14
+
+.
+S02 - FPSC SOHNA
+SHANKAR MARKET, NEAR NAGAR PARISHAD
+SHANKAR MARKET, NEAR NAGAR PARISHAD
+SOHN
+GURGAON
+
+Name
+
+: Mr. VIKRANT BERI
+
+Lab No.
+
+:
+
+298921696
+
+Age: 26 Years
+
+A/c Status
+
+:
+
+P
+
+Ref By :
+
+Gender:
+
+Male
+
+Dr.Jain
+
+Collected
+Received
+Reported
+
+: 22/4/2021 1:45:00PM
+: 22/4/2021 1:59:24PM
+: 23/4/2021 8:03:35AM
+
+Report Status
+
+: Final
+
+Test Name
+
+Results
+
+Units
+
+Bio. Ref. Interval
+
+Platelet Count
+
+289.0
+
+thou/mm3
+
+150.00 - 410.00
+
+Mean Platelet Volume
+
+10.5
+
+fL
+
+6.5 - 12.0
+
+Note
+
+1. As per the recommendation of International council for Standardization in Hematology, the differential
+leucocyte counts are additionally being reported as absolute numbers of each cell in per unit volume of
+blood
+2. Test conducted on EDTA whole blood
+
+*298921696*
+
+Page 2 of 14
+
+.
+S02 - FPSC SOHNA
+SHANKAR MARKET, NEAR NAGAR PARISHAD
+SHANKAR MARKET, NEAR NAGAR PARISHAD
+SOHN
+GURGAON
+
+Name
+
+: Mr. VIKRANT BERI
+
+Lab No.
+
+: 298921696
+
+Age: 26 Years
+
+A/c Status
+
+: P
+
+Ref By :
+
+Gender:
+
+Male
+
+Dr.Jain
+
+Test Name
+
+Collected
+Received
+Reported
+
+: 22/4/2021 1:45:00PM
+: 22/4/2021 1:59:24PM
+: 23/4/2021 8:03:35AM
+
+Report Status
+
+: Final
+
+Results
+
+Units
+
+Bio. Ref. Interval
+
+Bilirubin Total
+
+1.15
+
+mg/dL
+
+0.30 - 1.20
+
+Bilirubin Direct
+
+0.18
+
+mg/dL
+
+<0.30
+
+Bilirubin Indirect
+
+0.97
+
+mg/dL
+
+<1.10
+
+AST (SGOT)
+
+28
+
+U/L
+
+<50
+
+ALT (SGPT)
+
+51
+
+U/L
+
+<50
+
+GGTP
+
+42
+
+U/L
+
+<55
+
+Alkaline Phosphatase (ALP)
+
+64
+
+U/L
+
+30 - 120
+
+Total Protein
+
+7.43
+
+g/dL
+
+6.40 - 8.30
+
+Albumin
+
+4.74
+
+g/dL
+
+3.50 - 5.20
+
+A : G Ratio
+
+1.76
+
+Urea
+
+34.50
+
+mg/dL
+
+17.00 - 43.00
+
+Creatinine
+
+0.79
+
+mg/dL
+
+0.67 - 1.17
+
+LIVER & KIDNEY PANEL, SERUM
+(Spectrophotometry, Indirect ISE)
+
+0.90 - 2.00
+
+PatientReportSCSuperPanel.GENERAL_PANEL_ANALYTE_SC (Version: 6)
+
+*298921696*
+
+Page 3 of 14
+
+.
+S02 - FPSC SOHNA
+SHANKAR MARKET, NEAR NAGAR PARISHAD
+SHANKAR MARKET, NEAR NAGAR PARISHAD
+SOHN
+GURGAON
+
+Name
+
+: Mr. VIKRANT BERI
+
+Lab No.
+
+: 298921696
+
+Age: 26 Years
+
+A/c Status
+
+: P
+
+Ref By :
+
+Gender:
+
+Male
+
+Dr.Jain
+
+Test Name
+
+Collected
+Received
+Reported
+
+: 22/4/2021 1:45:00PM
+: 22/4/2021 1:59:24PM
+: 23/4/2021 8:03:35AM
+
+Report Status
+
+: Final
+
+Results
+6.80
+
+Units
+
+Uric Acid
+
+mg/dL
+
+Bio. Ref. Interval
+
+3.50 - 7.20
+
+Calcium, Total
+
+10.01
+
+mg/dL
+
+8.80 - 10.60
+
+Phosphorus
+
+3.50
+
+mg/dL
+
+2.40 - 4.40
+
+Sodium
+
+140.90
+
+mEq/L
+
+136.00 - 146.00
+
+Potassium
+
+4.02
+
+mEq/L
+
+3.50 - 5.10
+
+Chloride
+
+103.30
+
+mEq/L
+
+101.00 - 109.00
+
+PatientReportSCSuperPanel.GENERAL_PANEL_ANALYTE_SC (Version: 6)
+
+*298921696*
+
+Page 4 of 14
+
+.
+S02 - FPSC SOHNA
+SHANKAR MARKET, NEAR NAGAR PARISHAD
+SHANKAR MARKET, NEAR NAGAR PARISHAD
+SOHN
+GURGAON
+
+Name
+
+:
+
+Mr. VIKRANT BERI
+
+Lab No.
+
+:
+
+298921696
+
+Age: 26 Years
+
+A/c Status
+
+:
+
+P
+
+Ref By :
+
+Gender:
+
+Male
+
+Dr.Jain
+
+Test Name
+
+Collected
+Received
+Reported
+
+: 22/4/2021 1:45:00PM
+: 22/4/2021 1:59:24PM
+: 23/4/2021 8:03:35AM
+
+Report Status
+
+: Final
+
+Results
+
+Units
+
+Bio. Ref. Interval
+
+HbA1c
+
+5.3
+
+%
+
+4.00 - 5.60
+
+Estimated average glucose (eAG)
+
+105
+
+mg/dL
+
+HbA1c (GLYCOSYLATED HEMOGLOBIN), BLOOD
+(HPLC)
+
+Interpretation
+HbA1c result is suggestive of non diabetic adults (>=18 years)/ well controlled Diabetes in a known Diabetic
+Note: Presence of Hemoglobin variants and/or conditions that affect red cell turnover must be considered,
+particularly when the HbA1C result does not correlate with the patient’s blood glucose levels.
+--------------------------------------------------------------------------------| FACTORS THAT INTERFERE WITH HbA1C
+| FACTORS THAT AFFECT INTERPRETATION
+|
+| MEASUREMENT
+| OF HBA1C RESULTS
+|
+|--------------------------------------|------------------------------------------|
+| Hemoglobin variants,elevated fetal
+| Any condition that shortens erythrocyte |
+| hemoglobin (HbF) and chemically
+| survival or decreases mean erythrocyte
+|
+| modified derivatives of hemoglobin
+| age (e.g.,recovery from acute blood loss,|
+| (e.g. carbamylated Hb in patients
+| hemolytic anemia, HbSS, HbCC, and HbSC) |
+| with renal failure) can affect the
+| will falsely lower HbA1c test results
+|
+| accuracy of HbA1c measurements
+| regardless of the assay method used.Iron |
+|
+| deficiency anemia is associated with
+|
+|
+| higher HbA1c
+|
+---------------------------------------------------------------------------------
+
+PatientReportSCSuperPanel.HBELECTRO_SC (Version: 7)
+
+*298921696*
+
+Page 5 of 14
+
+.
+
+S02 - FPSC SOHNA
+SHANKAR MARKET, NEAR NAGAR PARISHAD
+SHANKAR MARKET, NEAR NAGAR PARISHAD
+SOHN
+GURGAON
+
+Name
+
+:
+
+Mr. VIKRANT BERI
+
+Lab No.
+
+:
+
+298921696
+
+Age: 26 Years
+
+A/c Status
+
+:
+
+P
+
+Ref By :
+
+Gender:
+
+Male
+
+Dr.Jain
+
+Collected
+Received
+Reported
+
+: 22/4/2021 1:45:00PM
+: 22/4/2021 1:59:24PM
+: 23/4/2021 8:03:35AM
+
+Report Status
+
+: Final
+
+Test Name
+
+Results
+
+Units
+
+Bio. Ref. Interval
+
+GLUCOSE, FASTING (F), PLASMA
+(Hexokinase)
+
+77.00
+
+mg/dL
+
+70.00 - 100.00
+
+VITAMIN B12; CYANOCOBALAMIN, SERUM
+(CLIA)
+
+343.00
+
+pg/mL
+
+211.00 - 911.00
+
+Notes
+
+1. Interpretation of the result should be considered in relation to clinical circumstances.
+2. It is recommended to consider supplementary testing with plasma Methylmalonic acid (MMA) or
+plasma homocysteine levels to determine biochemical cobalamin deficiency in presence of clinical
+suspicion of deficiency but indeterminate levels. Homocysteine levels are more sensitive but MMA is
+more specific
+3. False increase in Vitamin B12 levels may be observed in patients with intrinsic factor blocking
+antibodies, MMA measurement should be considered in such patients
+4. The concentration of Vitamin B12 obtained with different assay methods cannot be used
+interchangeably due to differences in assay methods and reagent specificity
+55.86
+
+VITAMIN D, 25 - HYDROXY, SERUM
+(Chemiluminescence)
+
+nmol/L
+
+Interpretation
+------------------------------------------------------------| LEVEL
+| REFERENCE RANGE | COMMENTS
+|
+|
+| IN nmol/L
+|
+|
+|---------------|-----------------|---------------------------|
+| Deficient
+| < 50
+| High risk for developing |
+|
+|
+| bone disease
+|
+|---------------|-----------------|---------------------------|
+| Insufficient | 50-74
+| Vitamin D concentration
+|
+|
+|
+| which normalizes
+|
+|
+|
+| Parathyroid hormone
+|
+|
+|
+| concentration
+|
+|---------------|-----------------|---------------------------|
+| Sufficient
+| 75-250
+| Optimal concentration
+|
+|
+|
+| for maximal health benefit|
+|---------------|-----------------|---------------------------|
+| Potential
+| >250
+| High risk for toxic
+|
+| intoxication |
+| effects
+|
+-------------------------------------------------------------
+
+Note
+PatientReportSCSuperPanel.SP_GENERAL_TEMPLATE01_SC (Version: 7)
+
+*298921696*
+
+Page 6 of 14
+
+.
+
+S02 - FPSC SOHNA
+SHANKAR MARKET, NEAR NAGAR PARISHAD
+SHANKAR MARKET, NEAR NAGAR PARISHAD
+SOHN
+GURGAON
+
+Name
+
+:
+
+Mr. VIKRANT BERI
+
+Lab No.
+
+:
+
+298921696
+
+Age: 26 Years
+
+A/c Status
+
+:
+
+P
+
+Ref By :
+
+Gender:
+
+Male
+
+Dr.Jain
+
+Test Name
+
+Results
+
+Collected
+Received
+Reported
+
+: 22/4/2021 1:45:00PM
+: 22/4/2021 1:59:24PM
+: 23/4/2021 8:03:35AM
+
+Report Status
+
+: Final
+
+Units
+
+Bio. Ref. Interval
+
+·
+
+The assay measures both D2 (Ergocalciferol) and D3 (Cholecalciferol) metabolites of vitamin D.
+
+·
+
+25 (OH)D is influenced by sunlight, latitude, skin pigmentation, sunscreen use and hepatic function.
+
+·
+
+Optimal calcium absorption requires vitamin D 25 (OH) levels exceeding 75 nmol/L.
+
+·
+
+It shows seasonal variation, with values being 40-50% lower in winter than in summer.
+
+·
+
+Levels vary with age and are increased in pregnancy.
+
+·
+
+A new test Vitamin D, Ultrasensitive by LC-MS/MS is also available
+
+Comments
+
+Vitamin D promotes absorption of calcium and phosphorus and mineralization of bones and teeth. Deficiency
+in children causes Rickets and in adults leads to Osteomalacia. It can also lead to Hypocalcemia and
+Tetany. Vitamin D status is best determined by measurement of 25 hydroxy vitamin D, as it is the major
+circulating form and has longer half life (2-3 weeks) than 1,25 Dihydroxy vitamin D (5-8 hrs).
+Decreased Levels
+·
+
+Inadequate exposure to sunlight
+
+·
+
+Dietary deficiency
+
+·
+
+Vitamin D malabsorption
+
+·
+
+Severe Hepatocellular disease
+
+·
+
+Drugs like Anticonvulsants
+
+·
+
+Nephrotic syndrome
+
+Increased levels
+
+Vitamin D intoxication
+
+PatientReportSCSuperPanel.SP_GENERAL_TEMPLATE01_SC (Version: 7)
+
+*298921696*
+
+Page 7 of 14
+
+.
+S02 - FPSC SOHNA
+SHANKAR MARKET, NEAR NAGAR PARISHAD
+SHANKAR MARKET, NEAR NAGAR PARISHAD
+SOHN
+GURGAON
+
+Name
+
+: Mr. VIKRANT BERI
+
+Lab No.
+
+: 298921696
+
+Age: 26 Years
+
+A/c Status
+
+: P
+
+Ref By :
+
+Gender:
+
+Male
+
+Dr.Jain
+
+Test Name
+
+Collected
+Received
+Reported
+
+: 22/4/2021 1:45:00PM
+: 22/4/2021 1:59:24PM
+: 23/4/2021 8:03:35AM
+
+Report Status
+
+: Final
+
+Results
+
+Units
+
+Bio. Ref. Interval
+
+T3, Total
+
+1.06
+
+ng/mL
+
+0.60 - 1.81
+
+T4, Total
+
+8.30
+
+µg/dL
+
+5.01 - 12.45
+
+TSH
+
+2.02
+
+µIU/mL
+
+0.35 - 5.50
+
+THYROID PROFILE,TOTAL, SERUM
+(Chemiluminescent Immunoassay)
+
+Note
+
+1. TSH levels are subject to circadian variation, reaching peak levels between 2 - 4.a.m. and at a
+minimum between 6-10 pm . The variation is of the order of 50% . hence time of the day has
+influence on the measured serum TSH concentrations.
+2. Alteration in concentration of Thyroid hormone binding protein can profoundly affect Total T3 and/or
+Total T4 levels especially in pregnancy and in patients on steroid therapy.
+3. Unbound fraction ( Free,T4 /Free,T3) of thyroid hormone is biologically active form and correlate
+more closely with clinical status of the patient than total T4/T3 concentration
+4. Values <0.03 uIU/mL need to be clinically correlated due to presence of a rare TSH variant in
+some individuals
+
+PatientReportSCSuperPanel.GENERAL_PANEL_ANALYTE_SC (Version: 6)
+
+*298921696*
+
+Page 8 of 14
+
+.
+
+S02 - FPSC SOHNA
+SHANKAR MARKET, NEAR NAGAR PARISHAD
+SHANKAR MARKET, NEAR NAGAR PARISHAD
+SOHN
+GURGAON
+
+Name
+
+:
+
+Mr. VIKRANT BERI
+
+Lab No.
+
+:
+
+298921696
+
+Age: 26 Years
+
+A/c Status
+
+:
+
+P
+
+Ref By :
+
+Gender:
+
+Male
+
+Dr.Jain
+
+Test Name
+
+Collected
+Received
+Reported
+
+: 22/4/2021 1:45:00PM
+: 22/4/2021 1:59:24PM
+: 23/4/2021 8:03:35AM
+
+Report Status
+
+: Final
+
+Results
+
+Units
+
+Bio. Ref. Interval
+
+Cholesterol, Total
+
+298.00
+
+mg/dL
+
+<200.00
+
+Triglycerides
+
+135.40
+
+mg/dL
+
+<150.00
+
+HDL Cholesterol
+
+62.10
+
+mg/dL
+
+>40.00
+
+LDL Cholesterol, Calculated
+
+208.82
+
+mg/dL
+
+<100.00
+
+VLDL Cholesterol,Calculated
+
+27.08
+
+mg/dL
+
+<30.00
+
+Non-HDL Cholesterol
+
+236
+
+mg/dL
+
+<130
+
+LIPID SCREEN, SERUM
+(Spectrophotometry)
+
+Interpretation
+-----------------------------------------------------------------------------------------------|
+REMARKS
+| TOTAL CHOLESTEROL | TRIGLYCERIDE | LDL CHOLESTEROL | NON HDL CHOLESTEROL |
+|
+| in mg/dL
+| in mg/dL
+| in mg/dL
+| in mg/dL
+|
+|-------------------|--------------------|---------------|-----------------|---------------------|
+|
+Optimal
+|
+<200
+|
+<150
+|
+<100
+|
+<130
+|
+|-------------------|--------------------|---------------|-----------------|---------------------|
+|
+Above Optimal
+|
+|
+|
+100-129
+|
+130 - 159
+|
+|-------------------|--------------------|---------------|-----------------|---------------------|
+|
+Borderline High |
+200-239
+|
+150-199
+|
+130-159
+|
+160 - 189
+|
+|-------------------|--------------------|---------------|-----------------|---------------------|
+|
+High
+|
+>=240
+|
+200-499
+|
+160-189
+|
+190 - 219
+|
+|-------------------|--------------------|---------------|-----------------|---------------------|
+|
+Very High
+|
+|
+>=500
+|
+>=190
+|
+>=220
+|
+------------------------------------------------------------------------------------------------
+
+Note
+
+1. Measurements in the same patient can show physiological & analytical variations. Three serial
+samples 1 week apart are recommended for Total Cholesterol, Triglycerides, HDL& LDL Cholesterol.
+2. NLA-2014 recommends a complete lipoprotein profile as the initial test for evaluating cholesterol.
+PatientReportSCSuperPanel.SP_GENERAL_TEMPLATE01_SC (Version: 7)
+
+*298921696*
+
+Page 9 of 14
+
+.
+
+S02 - FPSC SOHNA
+SHANKAR MARKET, NEAR NAGAR PARISHAD
+SHANKAR MARKET, NEAR NAGAR PARISHAD
+SOHN
+GURGAON
+
+Name
+
+:
+
+Mr. VIKRANT BERI
+
+Lab No.
+
+:
+
+298921696
+
+Age: 26 Years
+
+A/c Status
+
+:
+
+P
+
+Ref By :
+
+Gender:
+
+Male
+
+Dr.Jain
+
+Test Name
+
+Results
+
+Collected
+Received
+Reported
+
+: 22/4/2021 1:45:00PM
+: 22/4/2021 1:59:24PM
+: 23/4/2021 8:03:35AM
+
+Report Status
+
+: Final
+
+Units
+
+Bio. Ref. Interval
+
+3. Friedewald equation to calculate LDL cholesterol is most accurate when Triglyceride level is < 400
+mg/dL. Measurement of Direct LDL cholesterol is recommended when Triglyceride level is > 400
+mg/dL
+4. NLA-2014 identifies Non HDL Cholesterol(an indicator of all atherogeniclipoproteins such as LDL ,
+VLDL, IDL, Lpa, Chylomicron remnants)along with LDL-cholesterol as co- primary target for
+cholesterol lowering therapy. Note that major risk factors can modify treatment goals for LDL &Non
+HDL.
+5. Apolipoprotein B is an optional, secondary lipid target for treatment once LDL & Non HDL goals have
+been achieved
+6. Additional testing for Apolipoprotein B, hsCRP,Lp(a ) & LP-PLA2 should be considered among
+patients with moderate risk for ASCVD for risk refinement
+Treatment Goals as per Lipid Association of India 2016
+---------------------------------------------------------------------------------------------|
+RISK
+|
+TREATMENT GOAL
+|
+CONSIDER THERAPY
+|
+| CATEGORY |-----------------------------------------|-----------------------------------------|
+|
+| LDL CHOLESTEROL | NON HDL CHLOESTEROL | LDL CHOLESTEROL | NON HDL CHLOESTEROL |
+|
+| (LDL-C)(mg/dL) | (NON HDL-C) (mg/dL) | (LDL-C)(mg/dL)
+| (NON HDL-C) (mg/dL) |
+|----------|------------------|----------------------|------------------|----------------------|
+|
+Very
+|
+<50
+|
+<80
+|
+>=50
+|
+>=80
+|
+|
+High
+|
+|
+|
+|
+|
+|----------|------------------|----------------------|------------------|----------------------|
+|
+High
+|
+<70
+|
+<100
+|
+>=70
+|
+>=100
+|
+|----------|------------------|----------------------|------------------|----------------------|
+| Moderate |
+<100
+|
+<130
+|
+>=100
+|
+>=130
+|
+|----------|------------------|----------------------|------------------|----------------------|
+|
+Low
+|
+<100
+|
+<130
+|
+>=130*
+|
+>=160*
+|
+----------------------------------------------------------------------------------------------
+
+*In low risk patient, consider therapy after an initial non-pharmacological intervention for at least 3 months
+
+PatientReportSCSuperPanel.SP_GENERAL_TEMPLATE01_SC (Version: 7)
+
+*298921696*
+
+Page 10 of 14
+
+.
+
+S02 - FPSC SOHNA
+SHANKAR MARKET, NEAR NAGAR PARISHAD
+SHANKAR MARKET, NEAR NAGAR PARISHAD
+SOHN
+GURGAON
+
+Name
+
+:
+
+Mr. VIKRANT BERI
+
+Lab No.
+
+:
+
+298921696
+
+Age: 26 Years
+
+A/c Status
+
+:
+
+P
+
+Ref By :
+
+Gender:
+
+Male
+
+Dr.Jain
+
+Collected
+Received
+Reported
+
+: 22/4/2021 1:45:00PM
+: 22/4/2021 1:59:24PM
+: 23/4/2021 8:03:35AM
+
+Report Status
+
+: Final
+
+Test Name
+
+Results
+
+Units
+
+Bio. Ref. Interval
+
+ERYTHROCYTE SEDIMENTATION RATE (ESR)
+(Capillary photometry)
+
+13
+
+mm/hr
+
+0 - 15
+
+Note
+1.
+2.
+
+C-Reactive Protein (CRP) is the recommended test in acute inflammatory conditions.
+Test conducted on EDTA whole blood at 37 °C.
+8.14
+
+CORTISOL, MORNING, SERUM @
+(CLIA)
+
+µg/dL
+
+4.30 - 22.40
+
+Note: Cortisol is best measured in the morning when evaluating for possible Adrenal Insufficiency and
+
+best measured in the afternoon or evening to differentiate normal and Cushings Syndrome subjects.
+Diurnal rhythmicity of cortisol is increased by systemic disease and stress.
+Clinical Use
+
+* Direct assessment of Adrenal function
+Increased levels: Cushings Syndrome, Ectopic ACTH syndrome, Ectopic CRH syndrome, Adrenal
+
+adenoma / carcinoma, Adrenal micronodular dysplasia, Adrenal macronodular
+hyperplasia, Stress
+Decreased Levels - Addisons disease, Pituitary dysfunction
+
+206.90
+
+FERRITIN, SERUM @
+(CLIA)
+
+Note: Increase in
+serum ferritin due to inflammatory conditions
+diagnostically low result
+
+ng/mL
+
+22.00 - 322.00
+
+(Acute phase response) can mask a
+
+Comments
+Serum ferritin appears to be in equilibrium with tissue ferritin and is a good indicator of storage iron in normal
+subjects and in most disorders. In patients with some hepatocellular diseases, malignancies and
+inflammatory diseases, serum ferritin is a disproportionately
+high estimate of storage iron because serum
+ferritin is an acute phase reactant. In such disorders iron deficiency anemia may exist with a normal serum
+ferritin concentration. In the presence of inflammation, persons with low serum ferritin are likely to respond to
+iron therapy.
+PatientReportSCSuperPanel.SP_GENERAL_TEMPLATE01_SC (Version: 7)
+
+*298921696*
+
+Page 11 of 14
+
+.
+
+S02 - FPSC SOHNA
+SHANKAR MARKET, NEAR NAGAR PARISHAD
+SHANKAR MARKET, NEAR NAGAR PARISHAD
+SOHN
+GURGAON
+
+Name
+
+:
+
+Mr. VIKRANT BERI
+
+Lab No.
+
+:
+
+298921696
+
+Age: 26 Years
+
+A/c Status
+
+:
+
+P
+
+Ref By :
+
+Gender:
+
+Male
+
+Dr.Jain
+
+Test Name
+
+Results
+
+Collected
+Received
+Reported
+
+: 22/4/2021 1:45:00PM
+: 22/4/2021 1:59:24PM
+: 23/4/2021 8:03:35AM
+
+Report Status
+
+: Final
+
+Units
+
+Bio. Ref. Interval
+
+Increased Levels
+·
+Iron overload - Hemochromatosis, Thalassemia & Sideroblastic anemia
+·
+Malignant conditions - Acute myeloblastic & Lymphoblastic leukemia, Hodgkin’s disease & Breast
+carcinoma
+·
+Inflammatory diseases - Pulmonary infections, Osteomyelitis, Chronic UTI, Rheumatoid arthritis,
+SLE, burns
+·
+Acute & Chronic hepatocellular disease
+Decreased Levels
+Iron deficiency anemia
+19.80
+
+HOMOCYSTEINE, QUANTITATIVE, SERUM @
+(CMIA)
+
+umol/L
+
+5.46 - 16.20
+
+Comments
+
+Homocysteine is a sulphur containing amino acid. There is an association between elevated levels of
+circulating homocysteine and various vascular and cardiovascular disorders. Clinically the measurement of
+homocysteine is considered important to diagnose homocystinuria, to identify individuals with or at risk of
+developing cobalamin or folate deficiency & to assess risk factor for Cardiovascular Disease (CVD) for which
+the recommendations are:
+·
+
+Specially useful in young CVD patients ( < 40 yrs)
+
+·
+
+In known cases of CVD, high homocysteine levels should be used as a prognostic marker for CVD
+events and mortality
+
+·
+
+CVD patients with homocysteine levels > 15 umol/L belong to a high risk group
+
+·
+
+Increased homocysteine levels with low vitamin concentrations should be handled as a potential
+vitamin deficiency case.
+
+IRON STUDIES, SERUM
+(Spectrophotometry)
+
+Iron
+
+137.70
+
+µg/dL
+
+65.00 - 175.00
+
+Total Iron Binding Capacity (TIBC)
+
+441.65
+
+µg/dL
+
+250.00 - 425.00
+
+PatientReportSCSuperPanel.SP_GENERAL_TEMPLATE01_SC (Version: 7)
+
+*298921696*
+
+Page 12 of 14
+
+.
+
+S02 - FPSC SOHNA
+SHANKAR MARKET, NEAR NAGAR PARISHAD
+SHANKAR MARKET, NEAR NAGAR PARISHAD
+SOHN
+GURGAON
+
+Name
+
+:
+
+Mr. VIKRANT BERI
+
+Lab No.
+
+:
+
+298921696
+
+Age: 26 Years
+
+A/c Status
+
+:
+
+P
+
+Ref By :
+
+Gender:
+
+Male
+
+Dr.Jain
+
+Collected
+Received
+Reported
+
+: 22/4/2021 1:45:00PM
+: 22/4/2021 1:59:24PM
+: 23/4/2021 8:03:35AM
+
+Report Status
+
+: Final
+
+Test Name
+
+Results
+
+Units
+
+Bio. Ref. Interval
+
+Transferrin Saturation
+
+31.18
+
+%
+
+20.00 - 50.00
+
+Comments
+Iron is an essential trace mineral element which forms an important component of hemoglobin,
+metallocompounds and Vitamin A. Deficiency of iron, leads to
+microcytic hypochromic anemia. The toxic
+effects of iron are deposition of iron in various organs of the body and hemochromatosis.
+Total Iron Binding capacity (TIBC) is a direct measure of the protein Transferrin which transports iron from
+the gut to storage sites in the bone marrow. In iron deficiency anemia, serum iron is reduced and TIBC
+increases.
+Transferrin Saturation occurs in Idiopathic hemochromatosis and Transfusional hemosiderosis where no
+unsaturated iron binding capacity is available for iron mobilization. Similar condition is seen in congenital
+deficiency of Transferrin.
+7.01
+
+PROLACTIN, SERUM
+(Chemiluminescent Immunoassay)
+
+ng/mL
+
+2.10 - 17.70
+
+Note: 1. Since prolactin is secreted in a pulsatile manner and is also influenced by a variety of
+
+physiologic stimuli, it is recommended to test 3 specimens at 20-30 minute intervals after pooling.
+2. Major circulating form of Prolactin is a nonglycosylated monomer, but several forms of Prolactin
+linked with immunoglobulin occur which can give falsely high Prolactin results.
+3. Macroprolactin assay is recommended if prolactin levels are elevated, but signs and symptoms of
+hyperprolactinemia are absent or pituitary imaging studies are normal
+Clinical Use
+·
+·
+
+Diagnosis & management of pituitary adenomas
+Differential diagnosis of male & female hypogonadism
+
+Increased Levels
+·
+·
+·
+
+Physiologic: Sleep, stress, postprandially, pain, coitus
+Systemic disorders: Chest wall or thoracic spinal cord lesions, Primary / Secondary hypothyroidism,
+Adrenal insufficiency, Chronic renal failure, Cirrhosis
+Medications:
+§ Psychiatric medications like Phenothiazine, Haloperidol,
+Risperidone, Domperidone, Fluoexetine, Amitriptylene, MAO inhibitors etc.,
+
+§
+§
+
+Antihypertensives: Alphamethyldopa, Reserpine, Verapamil
+Opiates: Heroin, Methadone, Morphine, Apomorphine
+
+PatientReportSCSuperPanel.SP_GENERAL_TEMPLATE01_SC (Version: 7)
+
+*298921696*
+
+Page 13 of 14
+
+.
+
+S02 - FPSC SOHNA
+SHANKAR MARKET, NEAR NAGAR PARISHAD
+SHANKAR MARKET, NEAR NAGAR PARISHAD
+SOHN
+GURGAON
+
+Name
+
+:
+
+Mr. VIKRANT BERI
+
+Lab No.
+
+:
+
+298921696
+
+Age: 26 Years
+
+A/c Status
+
+:
+
+P
+
+Ref By :
+
+Dr.Jain
+
+Test Name
+
+·
+·
+·
+
+Male
+
+Gender:
+
+Results
+
+Collected
+Received
+Reported
+
+: 22/4/2021 1:45:00PM
+: 22/4/2021 1:59:24PM
+: 23/4/2021 8:03:35AM
+
+Report Status
+
+: Final
+
+Units
+
+Bio. Ref. Interval
+
+§ Cimetidine / Ranitidine
+Prolactin secreting pituitary tumors: Prolactinoma, Acromegaly
+Miscellaneous: Epileptic seizures, Ectopic secretion of prolactin by non-pituitary tumors, pressure /
+transaction of pituitary stalk, macroprolactinemia
+Idiopathic
+
+Decreased levels
+·
+·
+·
+
+Pituitary deficiency: Pituitary necrosis / infarction
+Bromocriptine administration
+Pseudohypoparathyroidism
+
+Dr Himangshu Mazumdar
+MD, Biochemistry
+Senior Consultant - Clinical Chemistry
+& Biochemical Genetics
+NRL - Dr Lal PathLabs Ltd
+
+Dr.Kamal Modi
+MD, Biochemistry
+Consultant Biochemist
+NRL - Dr Lal PathLabs Ltd
+
+Dr Nimmi Kansal
+MD, Biochemistry
+National Head - Clinical Chemistry &
+Biochemical Genetics
+NRL - Dr Lal PathLabs Ltd
+
+Dr Poonam Yadav
+DNB, Pathology
+Chief of Laboratory
+Dr Lal PathLabs Ltd
+
+-------------------------------End of report --------------------------------
+
+IMPORTANT INSTRUCTIONS
+
+*Test results released pertain to the specimen submitted .*All test results are dependent on the quality of the sample received by the Laboratory .
+*Laboratory investigations are only a tool to facilitate in arriving at a diagnosis and should be clinically correlated by the Referring Physician .*Sample
+repeats are accepted on request of Referring Physician within 7 days post reporting.*Report delivery may be delayed due to unforeseen
+circumstances. Inconvenience is regretted.*Certain tests may require further testing at additional cost for derivation of exact value. Kindly submit
+request within 72 hours post reporting.*Test results may show interlaboratory variations .*The Courts/Forum at Delhi shall have exclusive
+jurisdiction in all disputes/claims concerning the test(s) & or results of test(s).*Test results are not valid for medico legal purposes. * Contact
+customer care Tel No. +91-11-39885050 for all queries related to test results.
+(#) Sample drawn from outside source.
+PatientReportSCSuperPanel.SP_GENERAL_TEMPLATE01_SC (Version: 7)
+
+*298921696*
+
+Page 14 of 14
+
+

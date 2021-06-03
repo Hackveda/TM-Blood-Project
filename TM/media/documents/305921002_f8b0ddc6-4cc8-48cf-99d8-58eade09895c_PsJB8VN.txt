@@ -1,0 +1,1239 @@
+.
+L61 - UMANG GUPTA - FPSC RISHIKESH 2
+SHOP NO.-29, DEHRADUN ROAD, NEAR
+ANDRA BANK,RISHIKESH, UK-249201
+
+Name
+
+: Mrs. SHEFALI AGGARWAL
+
+Lab No.
+
+:
+
+305921002
+
+Age: 55 Years
+
+A/c Status
+
+:
+
+P
+
+Ref By :
+
+Test Name
+
+Gender:
+
+Female
+
+SELF
+
+Results
+
+Collected
+Received
+Reported
+
+: 25/5/2021 9:49:00AM
+: 25/5/2021 10:05:14AM
+: 25/5/2021 6:36:05PM
+
+Report Status
+
+: Final
+
+Units
+
+Bio. Ref. Interval
+
+SwasthFit Super 2
+COMPLETE BLOOD COUNT;CBC
+(Impedence, Photometry, Calculated, DHSS, Flow Cytometry & Cytochemistry)
+
+Hemoglobin
+
+11.70
+
+g/dL
+
+12.00 - 15.00
+
+Packed Cell Volume (PCV)
+
+33.40
+
+%
+
+36.00 - 46.00
+
+RBC Count
+
+3.53
+
+mill/mm3
+
+3.80 - 4.80
+
+MCV
+
+95.00
+
+fL
+
+83.00 - 101.00
+
+MCH
+
+33.10
+
+pg
+
+27.00 - 32.00
+
+MCHC
+
+35.00
+
+g/dL
+
+31.50 - 34.50
+
+Red Cell Distribution Width (RDW)
+
+13.90
+
+%
+
+11.60 - 14.00
+
+Total Leukocyte Count (TLC)
+
+3.90
+
+thou/mm3
+
+4.00 - 10.00
+
+Segmented Neutrophils
+
+55.80
+
+%
+
+40.00 - 80.00
+
+Lymphocytes
+
+41.00
+
+%
+
+20.00 - 40.00
+
+Monocytes
+
+1.90
+
+%
+
+2.00 - 10.00
+
+Eosinophils
+
+1.20
+
+%
+
+1.00 - 6.00
+
+Basophils
+
+0.10
+
+%
+
+<2.00
+
+Neutrophils
+
+2.18
+
+thou/mm3
+
+2.00 - 7.00
+
+Lymphocytes
+
+1.60
+
+thou/mm3
+
+1.00 - 3.00
+
+Monocytes
+
+0.07
+
+thou/mm3
+
+0.20 - 1.00
+
+Eosinophils
+
+0.05
+
+thou/mm3
+
+0.02 - 0.50
+
+Basophils
+
+0.00
+
+thou/mm3
+
+0.02 - 0.10
+
+Differential Leucocyte Count (DLC)
+
+Absolute Leucocyte Count
+
+*305921002*
+
+Page 1 of 10
+
+.
+L61 - UMANG GUPTA - FPSC RISHIKESH 2
+SHOP NO.-29, DEHRADUN ROAD, NEAR
+ANDRA BANK,RISHIKESH, UK-249201
+
+Name
+
+: Mrs. SHEFALI AGGARWAL
+
+Lab No.
+
+:
+
+305921002
+
+Age: 55 Years
+
+A/c Status
+
+:
+
+P
+
+Ref By :
+
+Gender:
+
+Female
+
+SELF
+
+Collected
+Received
+Reported
+
+: 25/5/2021 9:49:00AM
+: 25/5/2021 10:05:14AM
+: 25/5/2021 6:36:05PM
+
+Report Status
+
+: Final
+
+Test Name
+
+Results
+
+Units
+
+Bio. Ref. Interval
+
+Platelet Count
+
+171.0
+
+thou/mm3
+
+150.00 - 410.00
+
+Mean Platelet Volume
+
+12.2
+
+fL
+
+6.5 - 12.0
+
+Note
+
+1. As per the recommendation of International council for Standardization in Hematology, the differential
+leucocyte counts are additionally being reported as absolute numbers of each cell in per unit volume of
+blood
+2. Test conducted on EDTA whole blood
+
+*305921002*
+
+Page 2 of 10
+
+.
+L61 - UMANG GUPTA - FPSC RISHIKESH 2
+SHOP NO.-29, DEHRADUN ROAD, NEAR
+ANDRA BANK,RISHIKESH, UK-249201
+
+Name
+
+: Mrs. SHEFALI AGGARWAL
+
+Lab No.
+
+: 305921002
+
+Age: 55 Years
+
+A/c Status
+
+: P
+
+Ref By :
+
+Gender:
+
+Female
+
+SELF
+
+Test Name
+
+Collected
+Received
+Reported
+
+: 25/5/2021 9:49:00AM
+: 25/5/2021 10:05:14AM
+: 25/5/2021 6:36:05PM
+
+Report Status
+
+: Final
+
+Results
+
+Units
+
+Bio. Ref. Interval
+
+Bilirubin Total
+
+0.45
+
+mg/dL
+
+0.30 - 1.20
+
+Bilirubin Direct
+
+0.08
+
+mg/dL
+
+<0.30
+
+Bilirubin Indirect
+
+0.37
+
+mg/dL
+
+<1.10
+
+AST (SGOT)
+
+34
+
+U/L
+
+<35
+
+ALT (SGPT)
+
+31
+
+U/L
+
+<35
+
+GGTP
+
+16
+
+U/L
+
+<38
+
+Alkaline Phosphatase (ALP)
+
+81
+
+U/L
+
+30 - 120
+
+Total Protein
+
+7.77
+
+g/dL
+
+6.40 - 8.30
+
+Albumin
+
+4.13
+
+g/dL
+
+3.50 - 5.20
+
+A : G Ratio
+
+1.13
+
+Urea
+
+22.70
+
+mg/dL
+
+17.00 - 43.00
+
+Creatinine
+
+0.64
+
+mg/dL
+
+0.51 - 0.95
+
+LIVER & KIDNEY PANEL, SERUM
+(Reflectance Photometry,Direct ISE)
+
+0.90 - 2.00
+
+PatientReportSCSuperPanel.GENERAL_PANEL_ANALYTE_SC (Version: 6)
+
+*305921002*
+
+Page 3 of 10
+
+.
+L61 - UMANG GUPTA - FPSC RISHIKESH 2
+SHOP NO.-29, DEHRADUN ROAD, NEAR
+ANDRA BANK,RISHIKESH, UK-249201
+
+Name
+
+: Mrs. SHEFALI AGGARWAL
+
+Lab No.
+
+: 305921002
+
+Age: 55 Years
+
+A/c Status
+
+: P
+
+Ref By :
+
+Gender:
+
+Female
+
+SELF
+
+Test Name
+
+Collected
+Received
+Reported
+
+: 25/5/2021 9:49:00AM
+: 25/5/2021 10:05:14AM
+: 25/5/2021 6:36:05PM
+
+Report Status
+
+: Final
+
+Results
+7.20
+
+Units
+
+Uric Acid
+
+mg/dL
+
+Bio. Ref. Interval
+
+2.60 - 6.00
+
+Calcium, Total
+
+9.80
+
+mg/dL
+
+8.80 - 10.60
+
+Phosphorus
+
+4.11
+
+mg/dL
+
+2.40 - 4.40
+
+Sodium
+
+137.20
+
+mEq/L
+
+136.00 - 146.00
+
+Potassium
+
+4.53
+
+mEq/L
+
+3.50 - 5.10
+
+Chloride
+
+102.70
+
+mEq/L
+
+101.00 - 109.00
+
+PatientReportSCSuperPanel.GENERAL_PANEL_ANALYTE_SC (Version: 6)
+
+*305921002*
+
+Page 4 of 10
+
+.
+L61 - UMANG GUPTA - FPSC RISHIKESH 2
+SHOP NO.-29, DEHRADUN ROAD, NEAR
+ANDRA BANK,RISHIKESH, UK-249201
+
+Name
+
+:
+
+Mrs. SHEFALI AGGARWAL
+
+Lab No.
+
+:
+
+305921002
+
+Age: 55 Years
+
+A/c Status
+
+:
+
+P
+
+Ref By :
+
+Gender:
+
+Female
+
+SELF
+
+Test Name
+
+Collected
+Received
+Reported
+
+: 25/5/2021 9:49:00AM
+: 25/5/2021 10:05:14AM
+: 25/5/2021 6:36:05PM
+
+Report Status
+
+: Final
+
+Results
+
+Units
+
+Bio. Ref. Interval
+
+HbA1c
+
+5.3
+
+%
+
+4.00 - 5.60
+
+Estimated average glucose (eAG)
+
+105
+
+mg/dL
+
+HbA1c (GLYCOSYLATED HEMOGLOBIN), BLOOD
+(HPLC)
+
+Interpretation
+HbA1c result is suggestive of non diabetic adults (>=18 years)/ well controlled Diabetes in a known Diabetic
+Note: Presence of Hemoglobin variants and/or conditions that affect red cell turnover must be considered,
+particularly when the HbA1C result does not correlate with the patient’s blood glucose levels.
+--------------------------------------------------------------------------------| FACTORS THAT INTERFERE WITH HbA1C
+| FACTORS THAT AFFECT INTERPRETATION
+|
+| MEASUREMENT
+| OF HBA1C RESULTS
+|
+|--------------------------------------|------------------------------------------|
+| Hemoglobin variants,elevated fetal
+| Any condition that shortens erythrocyte |
+| hemoglobin (HbF) and chemically
+| survival or decreases mean erythrocyte
+|
+| modified derivatives of hemoglobin
+| age (e.g.,recovery from acute blood loss,|
+| (e.g. carbamylated Hb in patients
+| hemolytic anemia, HbSS, HbCC, and HbSC) |
+| with renal failure) can affect the
+| will falsely lower HbA1c test results
+|
+| accuracy of HbA1c measurements
+| regardless of the assay method used.Iron |
+|
+| deficiency anemia is associated with
+|
+|
+| higher HbA1c
+|
+---------------------------------------------------------------------------------
+
+PatientReportSCSuperPanel.HBELECTRO_SC (Version: 7)
+
+*305921002*
+
+Page 5 of 10
+
+.
+
+L61 - UMANG GUPTA - FPSC RISHIKESH 2
+SHOP NO.-29, DEHRADUN ROAD, NEAR
+ANDRA BANK,RISHIKESH, UK-249201
+
+Name
+
+:
+
+Mrs. SHEFALI AGGARWAL
+
+Lab No.
+
+:
+
+305921002
+
+Age: 55 Years
+
+A/c Status
+
+:
+
+P
+
+Ref By :
+
+Gender:
+
+Female
+
+SELF
+
+Collected
+Received
+Reported
+
+: 25/5/2021 9:49:00AM
+: 25/5/2021 10:05:14AM
+: 25/5/2021 6:36:05PM
+
+Report Status
+
+: Final
+
+Test Name
+
+Results
+
+Units
+
+Bio. Ref. Interval
+
+GLUCOSE, FASTING (F), PLASMA
+(Hexokinase)
+
+107.10
+
+mg/dL
+
+70.00 - 100.00
+
+PatientReportSCSuperPanel.SP_GENERAL_TEMPLATE01_SC (Version: 7)
+
+*305921002*
+
+Page 6 of 10
+
+.
+L61 - UMANG GUPTA - FPSC RISHIKESH 2
+SHOP NO.-29, DEHRADUN ROAD, NEAR
+ANDRA BANK,RISHIKESH, UK-249201
+
+Name
+
+: Mrs. SHEFALI AGGARWAL
+
+Lab No.
+
+: 305921002
+
+Age: 55 Years
+
+A/c Status
+
+: P
+
+Ref By :
+
+Gender:
+
+Female
+
+SELF
+
+Test Name
+
+Collected
+Received
+Reported
+
+: 25/5/2021 9:49:00AM
+: 25/5/2021 10:05:14AM
+: 25/5/2021 6:36:05PM
+
+Report Status
+
+: Final
+
+Results
+
+Units
+
+Bio. Ref. Interval
+
+T3, Total
+
+0.92
+
+ng/mL
+
+0.80 - 2.00
+
+T4, Total
+
+9.14
+
+µg/dL
+
+5.10 - 14.10
+
+TSH
+
+0.48
+
+µIU/mL
+
+0.27 - 4.20
+
+THYROID PROFILE,TOTAL, SERUM
+(ECLIA)
+
+Note
+
+1. TSH levels are subject to circadian variation, reaching peak levels between 2 - 4.a.m. and at a
+minimum between 6-10 pm . The variation is of the order of 50% . hence time of the day has
+influence on the measured serum TSH concentrations.
+2. Alteration in concentration of Thyroid hormone binding protein can profoundly affect Total T3 and/or
+Total T4 levels especially in pregnancy and in patients on steroid therapy.
+3. Unbound fraction ( Free,T4 /Free,T3) of thyroid hormone is biologically active form and correlate
+more closely with clinical status of the patient than total T4/T3 concentration
+4. Values <0.03 uIU/mL need to be clinically correlated due to presence of a rare TSH variant in some
+individuals
+
+Interpretation
+---------------------------------------------------------------| PREGNANCY
+| REFERENCE RANGE FOR
+TSH IN µIU/mL (
+|
+|
+| As per American Thyroid
+Association)
+|
+|--------------------|-------------------------------------------|
+| 1st Trimester
+| 0.100 - 2.500
+|
+|
+|
+|
+| 2nd
+Trimester
+| 0.200 - 3.000
+|
+|
+|
+|
+| 3rd
+Trimester
+| 0.300- 3.000
+|
+----------------------------------------------------------------
+
+PatientReportSCSuperPanel.GENERAL_PANEL_ANALYTE_SC (Version: 6)
+
+*305921002*
+
+Page 7 of 10
+
+.
+
+L61 - UMANG GUPTA - FPSC RISHIKESH 2
+SHOP NO.-29, DEHRADUN ROAD, NEAR
+ANDRA BANK,RISHIKESH, UK-249201
+
+Name
+
+:
+
+Mrs. SHEFALI AGGARWAL
+
+Lab No.
+
+:
+
+305921002
+
+Age: 55 Years
+
+A/c Status
+
+:
+
+P
+
+Ref By :
+
+Gender:
+
+Female
+
+SELF
+
+Test Name
+
+Collected
+Received
+Reported
+
+: 25/5/2021 9:49:00AM
+: 25/5/2021 10:05:14AM
+: 25/5/2021 6:36:05PM
+
+Report Status
+
+: Final
+
+Results
+
+Units
+
+Bio. Ref. Interval
+
+Cholesterol, Total
+
+243.00
+
+mg/dL
+
+<200.00
+
+Triglycerides
+
+142.40
+
+mg/dL
+
+<150.00
+
+HDL Cholesterol
+
+47.00
+
+mg/dL
+
+>50.00
+
+LDL Cholesterol, Calculated
+
+167.52
+
+mg/dL
+
+<100.00
+
+VLDL Cholesterol,Calculated
+
+28.48
+
+mg/dL
+
+<30.00
+
+Non-HDL Cholesterol
+
+196
+
+mg/dL
+
+<130
+
+LIPID SCREEN, SERUM
+(Spectrophotometry)
+
+Interpretation
+-----------------------------------------------------------------------------------------------|
+REMARKS
+| TOTAL CHOLESTEROL | TRIGLYCERIDE | LDL CHOLESTEROL | NON HDL CHOLESTEROL |
+|
+| in mg/dL
+| in mg/dL
+| in mg/dL
+| in mg/dL
+|
+|-------------------|--------------------|---------------|-----------------|---------------------|
+|
+Optimal
+|
+<200
+|
+<150
+|
+<100
+|
+<130
+|
+|-------------------|--------------------|---------------|-----------------|---------------------|
+|
+Above Optimal
+|
+|
+|
+100-129
+|
+130 - 159
+|
+|-------------------|--------------------|---------------|-----------------|---------------------|
+|
+Borderline High |
+200-239
+|
+150-199
+|
+130-159
+|
+160 - 189
+|
+|-------------------|--------------------|---------------|-----------------|---------------------|
+|
+High
+|
+>=240
+|
+200-499
+|
+160-189
+|
+190 - 219
+|
+|-------------------|--------------------|---------------|-----------------|---------------------|
+|
+Very High
+|
+|
+>=500
+|
+>=190
+|
+>=220
+|
+------------------------------------------------------------------------------------------------
+
+Note
+
+1. Measurements in the same patient can show physiological & analytical variations. Three serial
+samples 1 week apart are recommended for Total Cholesterol, Triglycerides, HDL& LDL Cholesterol.
+2. NLA-2014 recommends a complete lipoprotein profile as the initial test for evaluating cholesterol.
+PatientReportSCSuperPanel.SP_GENERAL_TEMPLATE01_SC (Version: 7)
+
+*305921002*
+
+Page 8 of 10
+
+.
+
+L61 - UMANG GUPTA - FPSC RISHIKESH 2
+SHOP NO.-29, DEHRADUN ROAD, NEAR
+ANDRA BANK,RISHIKESH, UK-249201
+
+Name
+
+:
+
+Mrs. SHEFALI AGGARWAL
+
+Lab No.
+
+:
+
+305921002
+
+Age: 55 Years
+
+A/c Status
+
+:
+
+P
+
+Ref By :
+
+Gender:
+
+Female
+
+SELF
+
+Test Name
+
+Results
+
+Collected
+Received
+Reported
+
+: 25/5/2021 9:49:00AM
+: 25/5/2021 10:05:14AM
+: 25/5/2021 6:36:05PM
+
+Report Status
+
+: Final
+
+Units
+
+Bio. Ref. Interval
+
+3. Friedewald equation to calculate LDL cholesterol is most accurate when Triglyceride level is < 400
+mg/dL. Measurement of Direct LDL cholesterol is recommended when Triglyceride level is > 400
+mg/dL
+4. NLA-2014 identifies Non HDL Cholesterol(an indicator of all atherogeniclipoproteins such as LDL ,
+VLDL, IDL, Lpa, Chylomicron remnants)along with LDL-cholesterol as co- primary target for
+cholesterol lowering therapy. Note that major risk factors can modify treatment goals for LDL &Non
+HDL.
+5. Apolipoprotein B is an optional, secondary lipid target for treatment once LDL & Non HDL goals have
+been achieved
+6. Additional testing for Apolipoprotein B, hsCRP,Lp(a ) & LP-PLA2 should be considered among
+patients with moderate risk for ASCVD for risk refinement
+Treatment Goals as per Lipid Association of India 2016
+---------------------------------------------------------------------------------------------|
+RISK
+|
+TREATMENT GOAL
+|
+CONSIDER THERAPY
+|
+| CATEGORY |-----------------------------------------|-----------------------------------------|
+|
+| LDL CHOLESTEROL | NON HDL CHLOESTEROL | LDL CHOLESTEROL | NON HDL CHLOESTEROL |
+|
+| (LDL-C)(mg/dL) | (NON HDL-C) (mg/dL) | (LDL-C)(mg/dL)
+| (NON HDL-C) (mg/dL) |
+|----------|------------------|----------------------|------------------|----------------------|
+|
+Very
+|
+<50
+|
+<80
+|
+>=50
+|
+>=80
+|
+|
+High
+|
+|
+|
+|
+|
+|----------|------------------|----------------------|------------------|----------------------|
+|
+High
+|
+<70
+|
+<100
+|
+>=70
+|
+>=100
+|
+|----------|------------------|----------------------|------------------|----------------------|
+| Moderate |
+<100
+|
+<130
+|
+>=100
+|
+>=130
+|
+|----------|------------------|----------------------|------------------|----------------------|
+|
+Low
+|
+<100
+|
+<130
+|
+>=130*
+|
+>=160*
+|
+----------------------------------------------------------------------------------------------
+
+*In low risk patient, consider therapy after an initial non-pharmacological intervention for at least 3 months
+
+Dr Shubham Agarwal
+MD, Pathology
+Consultant Pathologist
+Dr Lal PathLabs Ltd
+
+-------------------------------End of report --------------------------------
+
+PatientReportSCSuperPanel.SP_GENERAL_TEMPLATE01_SC (Version: 7)
+
+*305921002*
+
+Page 9 of 10
+
+.
+
+L61 - UMANG GUPTA - FPSC RISHIKESH 2
+SHOP NO.-29, DEHRADUN ROAD, NEAR
+ANDRA BANK,RISHIKESH, UK-249201
+
+Name
+
+:
+
+Mrs. SHEFALI AGGARWAL
+
+Lab No.
+
+:
+
+305921002
+
+Age: 55 Years
+
+A/c Status
+
+:
+
+P
+
+Ref By :
+
+Gender:
+
+Female
+
+SELF
+
+Test Name
+
+Results
+
+Collected
+Received
+Reported
+
+: 25/5/2021 9:49:00AM
+: 25/5/2021 10:05:14AM
+: 25/5/2021 6:36:05PM
+
+Report Status
+
+: Final
+
+Units
+
+Bio. Ref. Interval
+
+IMPORTANT INSTRUCTIONS
+
+*Test results released pertain to the specimen submitted .*All test results are dependent on the quality of the sample received by the Laboratory .
+*Laboratory investigations are only a tool to facilitate in arriving at a diagnosis and should be clinically correlated by the Referring Physician .*Sample
+repeats are accepted on request of Referring Physician within 7 days post reporting.*Report delivery may be delayed due to unforeseen
+circumstances. Inconvenience is regretted.*Certain tests may require further testing at additional cost for derivation of exact value. Kindly submit
+request within 72 hours post reporting.*Test results may show interlaboratory variations .*The Courts/Forum at Delhi shall have exclusive
+jurisdiction in all disputes/claims concerning the test(s) & or results of test(s).*Test results are not valid for medico legal purposes. * Contact
+customer care Tel No. +91-11-39885050 for all queries related to test results.
+(#) Sample drawn from outside source.
+
+PatientReportSCSuperPanel.SP_GENERAL_TEMPLATE01_SC (Version: 7)
+
+*305921002*
+
+Page 10 of 10
+
+

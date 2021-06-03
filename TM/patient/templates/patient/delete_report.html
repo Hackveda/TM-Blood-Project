@@ -1,0 +1,15 @@
+{% extends 'patient/base2.html' %}
+{% load static %}
+{% load widget_tweaks %}
+{% block content %}
+<div class="patient_profile">
+    <div class="story GB">
+        <div class="row GB">
+            <form method="post" style ="margin-bottom: 10px ;">{% csrf_token %}
+                <p>Are you sure you want to delete {{ object.name | title}} of {{ object.patient | title}} ?</p>
+                <button type = 'submit' class="btn btn--green"> Submit</button>
+                <button type="button" class="btn btn--green" onclick = "window.location.href='{% url 'show-all-report' object.patient.id %}'">Cancel</button>
+            </form>
+        </div>
+    </div> </div>
+{% endblock content %}

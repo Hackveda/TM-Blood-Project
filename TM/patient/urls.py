@@ -18,30 +18,8 @@ from django.urls import path, include
 from django.conf.urls import url
 
 # views
-from .views import  (
-    HomePageView,
-    DocumentUploadView,
-    DiaplayResponseView,
-    TestResultUpdateView,
-    TestResultCreateView,
-    AlternateLabelCreateView,
-    GeneratedReportView,
-    PatientDeleteView,
-    PatientListView,
-    test_home,
-    PatientCreateView,
-    PatientProfileView,
-    PatientUpdateView,
-    PatientSearchView,
-    GeneratedReportSaveView,
-    ShowAllReportView,
-    FinalGeneratedReportDetailView,
-    ViewPdfView,
-    ShowSavedGeneratedReportView,
-    CreateLabelView,
-    ShowReadDataView
-    
-)
+from .views import *    
+
 
 urlpatterns = [
     path('test', test_home, name='test'),
@@ -65,6 +43,7 @@ urlpatterns = [
     path('showsavedreport/<int:pk>/<int:patient_id>', ShowSavedGeneratedReportView.as_view(), name='show-saved-report'),
     path('showpdf/<int:pk>', ViewPdfView.as_view(), name='show-pdf'),
     path('createlabel/',CreateLabelView.as_view(),name='create-labels'),
-    # path('save/<int:patient_id>/<int:doc1_id>/<int:doc2_id>/<str:table>/', GeneratedReportSaveView.as_view(), name='save'),
-
+    #path('save/<int:patient_id>/<int:doc1_id>/<int:doc2_id>/<str:table>/', GeneratedReportSaveView.as_view(), name='save'),
+    path('deletedocument/<int:pk>', DocumentDeleteView.as_view(), name='document-delete'),
+    path('deletefinalgeneratedreport/<int:pk>', FinalGeneratedReportDeleteView.as_view(), name='final-generated-report-delete'),
 ]

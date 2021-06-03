@@ -1,0 +1,2103 @@
+DIAGNOSTIC REPORT
+CLIENT CODE : C000097359
+
+Cert. No. MC-2015
+
+CLIENT'S NAME AND ADDRESS :
+FPSC HK PATHOLOGY
+SHOP NO.3, DDA MARKET, C-8, VASANT KUNJ
+
+SRL LIMITED
+SRL,REFERENCE LAB, GP-26, MARUTI INDUSTRIAL ESTATE,UDYOG
+VIHAR,SECTOR-18,
+GURGAON, 122015
+HARYANA, INDIA
+Tel : 1800-222-000, 1800-102-8282, Fax : CIN U74899PB1995PLC045956
+Email : connect@srl.in
+
+NEW DELHI 110070
+DELHI INDIA
+9818105133
+
+PATIENT ID :
+
+PATIENT NAME : GAGANMEET SINGH
+ACCESSION NO :
+DRAWN :
+
+0009TJ067147
+
+AGE :
+
+25/10/2020 12:49
+
+REFERRING DOCTOR :
+
+Test Report Status
+
+34 Years
+
+RECEIVED :
+
+SEX : Male
+
+25/10/2020 16:00
+
+GAGAM183186200
+
+DATE OF BIRTH :
+REPORTED :
+
+25/10/2020 19:48
+
+CLIENT PATIENT ID :
+
+SELF
+Results
+
+Preliminary
+
+Biological Reference Interval
+
+Units
+
+COMPLETE CARE PREMIUM WITH SMART
+REPORT
+BLOOD COUNTS
+HEMOGLOBIN
+
+14.0
+
+13.0 - 17.0
+
+g/dL
+
+4.91
+
+4.5 - 5.5
+
+mil/µL
+
+5.20
+
+4.0 - 10.0
+
+thou/µL
+
+267
+
+150 - 410
+
+thou/µL
+
+43.0
+
+40 - 50
+
+%
+
+87.5
+
+83.0 - 101.0
+
+fL
+
+28.4
+
+27.0 - 32.0
+
+pg
+
+32.5
+
+31.5 - 34.5
+
+g/dL
+
+13.6
+
+11.6 - 14.0
+
+%
+
+8.2
+
+6.8 - 10.9
+
+fL
+
+61
+
+40 - 80
+
+%
+
+3.17
+
+2.0 - 7.0
+
+thou/µL
+
+1
+
+1-6
+
+%
+
+0.05
+
+0.02 - 0.50
+
+thou/µL
+
+31
+
+20 - 40
+
+%
+
+1.61
+
+1.0 - 3.0
+
+thou/µL
+
+METHOD : PHOTOMETRIC MEASUREMENT
+
+RED BLOOD CELL COUNT
+METHOD : COULTER IMPEDENCE PRINCIPLE
+
+WHITE BLOOD CELL COUNT
+METHOD : COULTER IMPEDENCE PRINCIPLE
+
+PLATELET COUNT
+METHOD : IMPEDENCE / PLATELET HISTOGRAM
+
+RBC AND PLATELET INDICES
+HEMATOCRIT
+METHOD : CALCULATED PARAMETER
+
+MEAN CORPUSCULAR VOL
+METHOD : DERIVED PARAMETER
+
+MEAN CORPUSCULAR HGB.
+METHOD : CALCULATED PARAMETER
+
+MEAN CORPUSCULAR HEMOGLOBIN
+CONCENTRATION
+METHOD : CALCULATED PARAMETER
+
+RED CELL DISTRIBUTION WIDTH
+METHOD : DERIVED PARAMETER
+
+MEAN PLATELET VOLUME
+METHOD : DERIVED PARAMETER
+
+WBC DIFFERENTIAL COUNT
+SEGMENTED NEUTROPHILS
+METHOD : VCS TECHNOLOGY/ MICROSCOPY
+
+ABSOLUTE NEUTROPHIL COUNT
+METHOD : CALCULATED PARAMETER
+
+EOSINOPHILS
+METHOD : VCS TECHNOLOGY/ MICROSCOPY
+
+ABSOLUTE EOSINOPHIL COUNT
+METHOD : CALCULATED PARAMETER
+
+LYMPHOCYTES
+METHOD : VCS TECHNOLOGY/ MICROSCOPY
+
+ABSOLUTE LYMPHOCYTE COUNT
+
+Page 1 Of 13
+
+DIAGNOSTIC REPORT
+CLIENT CODE : C000097359
+
+Cert. No. MC-2015
+
+CLIENT'S NAME AND ADDRESS :
+FPSC HK PATHOLOGY
+SHOP NO.3, DDA MARKET, C-8, VASANT KUNJ
+
+SRL LIMITED
+SRL,REFERENCE LAB, GP-26, MARUTI INDUSTRIAL ESTATE,UDYOG
+VIHAR,SECTOR-18,
+GURGAON, 122015
+HARYANA, INDIA
+Tel : 1800-222-000, 1800-102-8282, Fax : CIN U74899PB1995PLC045956
+Email : connect@srl.in
+
+NEW DELHI 110070
+DELHI INDIA
+9818105133
+
+PATIENT ID :
+
+PATIENT NAME : GAGANMEET SINGH
+ACCESSION NO :
+DRAWN :
+
+0009TJ067147
+
+AGE :
+
+25/10/2020 12:49
+
+REFERRING DOCTOR :
+
+34 Years
+
+RECEIVED :
+
+SEX : Male
+
+25/10/2020 16:00
+
+DATE OF BIRTH :
+REPORTED :
+
+25/10/2020 19:48
+
+CLIENT PATIENT ID :
+
+SELF
+
+Test Report Status
+
+GAGAM183186200
+
+Results
+
+Preliminary
+
+Biological Reference Interval
+
+Units
+
+METHOD : CALCULATED PARAMETER
+
+MONOCYTES
+
+7
+
+2 - 10
+
+%
+
+0.36
+
+0.2 - 1.0
+
+thou/µL
+
+0
+
+<1-2
+
+%
+
+0.05
+
+0.02 - 0.10
+
+thou/µL
+
+METHOD : VCS TECHNOLOGY/ MICROSCOPY
+
+ABSOLUTE MONOCYTE COUNT
+METHOD : CALCULATED PARAMETER
+
+BASOPHILS
+METHOD : VCS TECHNOLOGY/ MICROSCOPY
+
+ABSOLUTE BASOPHIL COUNT
+METHOD : CALCULATED PARAMETER
+
+DIFFERENTIAL COUNT PERFORMED ON:
+
+EDTA SMEAR
+
+METHOD : AUTOMATED ANALYZER / MICROSCOPY
+DISCLAIMER: THE ABSOLUTE WHITE CELL COUNTS ARE OUTSIDE THE NABL ACCREDITED SCOPE OF THE LABORATORY.
+
+ERYTHRO SEDIMENTATION RATE, BLOOD
+SEDIMENTATION RATE (ESR)
+
+5
+
+0 - 14
+
+mm at 1 hr
+
+METHOD : AUTOMATED (PHOTOMETRICAL CAPILLARY STOPPED FLOW KINETIC ANALYSIS)
+
+PERIPHERAL SMEAR EXAM, EDTA WHOLE BLOOD
+RBC
+
+PREDOMINANTLY NORMOCYTIC NORMOCHROMIC
+
+METHOD : MICROSCOPIC EXAMINATION
+
+WBC
+
+NORMAL IN NUMBER, MORPHOLOGY AND DISTRIBUTION
+
+METHOD : MICROSCOPIC EXAMINATION
+
+PLATELETS
+
+NORMAL IN NUMBER AND MORPHOLOGY.
+
+METHOD : MICROSCOPIC EXAMINATION
+
+GLUCOSE, FASTING, PLASMA
+GLUCOSE, FASTING, PLASMA
+
+85
+
+74 - 99
+
+mg/dL
+
+5.3
+
+Non-diabetic: < 5.7
+Pre-diabetics: 5.7 - 6.4
+Diabetics: > or = 6.5
+ADA Target: 7.0
+Action suggested: > 8.0
+
+%
+
+105.4
+
+< 116.0
+
+mg/dL
+
+Low risk for CAD:
+< 1.00
+Average risk for CAD:
+1.00 - 3.00
+High risk for CAD:
+> 3.00
+
+mg/L
+
+METHOD : SPECTROPHOTOMETRY, HEXOKINASE
+
+GLYCOSYLATED HEMOGLOBIN, EDTA WHOLE BLOOD
+GLYCOSYLATED HEMOGLOBIN (HBA1C)
+
+METHOD : HIGH PERFORMANCE LIQUID CHROMATOGRAPHY (HPLC)
+
+MEAN PLASMA GLUCOSE
+
+HIGH SENSITIVITY C-REACTIVE PROTEIN, SERUM
+HIGH SENSITIVITY CRP
+
+0.5
+
+Page 2 Of 13
+
+DIAGNOSTIC REPORT
+CLIENT CODE : C000097359
+
+Cert. No. MC-2015
+
+CLIENT'S NAME AND ADDRESS :
+FPSC HK PATHOLOGY
+SHOP NO.3, DDA MARKET, C-8, VASANT KUNJ
+
+SRL LIMITED
+SRL,REFERENCE LAB, GP-26, MARUTI INDUSTRIAL ESTATE,UDYOG
+VIHAR,SECTOR-18,
+GURGAON, 122015
+HARYANA, INDIA
+Tel : 1800-222-000, 1800-102-8282, Fax : CIN U74899PB1995PLC045956
+Email : connect@srl.in
+
+NEW DELHI 110070
+DELHI INDIA
+9818105133
+
+PATIENT ID :
+
+PATIENT NAME : GAGANMEET SINGH
+ACCESSION NO :
+DRAWN :
+
+0009TJ067147
+
+AGE :
+
+25/10/2020 12:49
+
+REFERRING DOCTOR :
+
+Test Report Status
+
+34 Years
+
+RECEIVED :
+
+SEX : Male
+
+25/10/2020 16:00
+
+DATE OF BIRTH :
+REPORTED :
+
+25/10/2020 19:48
+
+CLIENT PATIENT ID :
+
+SELF
+
+Preliminary
+
+GAGAM183186200
+
+Results
+
+Biological Reference Interval
+
+Units
+
+METHOD : NEPHELOMETRY
+
+CORTISOL, SERUM
+CORTISOL
+
+15.97
+
+Morning (7 – 9 a.m.):
+5.27 – 22.45
+Afternoon (3 – 5 p.m.):
+3.44 – 16.76
+
+ug/dL
+
+0.9
+
+0.2 - 1.2
+
+mg/dL
+
+0.3
+
+0.01 - 0.30
+
+mg/dL
+
+0.60
+
+0.1 - 1.0
+
+mg/dL
+
+7.0
+
+5.7 - 8.2
+
+g/dL
+
+4.5
+
+3.2 - 4.8
+
+g/dL
+
+2.5
+
+2.0 - 4.1
+
+g/dL
+
+1.8
+
+1.0 - 2.1
+
+RATIO
+
+26
+
+< 34.0
+
+U/L
+
+40
+
+10 - 49
+
+U/L
+
+84
+
+30 - 120
+
+U/L
+
+10
+
+< 73.0
+
+U/L
+
+183
+
+120 - 446
+
+U/L
+
+METHOD : CHEMILUMINESCENCE
+
+LIVER FUNCTION PROFILE, SERUM
+BILIRUBIN, TOTAL
+METHOD : SPECTROPHOTOMETRY, VANADATE OXIDATION
+
+BILIRUBIN, DIRECT
+METHOD : SPECTROPHOTOMETRY, VANADATE OXIDATION
+
+BILIRUBIN, INDIRECT
+METHOD : CALCULATED PARAMETER
+
+TOTAL PROTEIN
+METHOD : SPECTROPHOTOMETRY, BIURET
+
+ALBUMIN
+
+METHOD : SPECTROPHOTOMETRY, BROMOCRESOL GREEN(BCG) - DYE BINDING
+
+GLOBULIN
+METHOD : CALCULATED PARAMETER
+
+ALBUMIN/GLOBULIN RATIO
+METHOD : CALCULATED PARAMETER
+
+ASPARTATE AMINOTRANSFERASE (AST/SGOT)
+METHOD : SPECTROPHOTOMETRY,MODIFIED IFCC
+
+ALANINE AMINOTRANSFERASE (ALT/SGPT)
+METHOD : SPECTROPHOTOMETRY,MODIFIED IFCC
+
+ALKALINE PHOSPHATASE
+METHOD : SPECTROPHOTOMETRY, IFCC STANDARDIZATION
+
+GAMMA GLUTAMYL TRANSFERASE (GGT)
+METHOD : SPECTROPHOTOMETRY,MODIFIED IFCC
+
+LACTATE DEHYDROGENASE
+
+METHOD : SPECTROPHOTOMETRY, LACTATE TO PYRUVATE /NICOTINAMIDE ADENINE DINUCLEOTIDE (NAD).
+
+TOTAL IRON BINDING CAPACITY, SERUM
+IRON
+
+85
+
+65 - 175
+
+µg/dL
+
+261
+
+250 - 425
+
+µg/dL
+
+13 - 45
+
+%
+
+METHOD : SPECTROPHOTOMETRY,FERROZINE
+
+TOTAL IRON BINDING CAPACITY
+
+METHOD : SPECTROPHOTOMETRY,SEQUENTIAL RELEASE AND UPTAKE OF IRON
+
+% SATURATION
+
+32.6
+
+METHOD : CALCULATED PARAMETER
+
+Page 3 Of 13
+
+DIAGNOSTIC REPORT
+CLIENT CODE : C000097359
+
+Cert. No. MC-2015
+
+CLIENT'S NAME AND ADDRESS :
+FPSC HK PATHOLOGY
+SHOP NO.3, DDA MARKET, C-8, VASANT KUNJ
+
+SRL LIMITED
+SRL,REFERENCE LAB, GP-26, MARUTI INDUSTRIAL ESTATE,UDYOG
+VIHAR,SECTOR-18,
+GURGAON, 122015
+HARYANA, INDIA
+Tel : 1800-222-000, 1800-102-8282, Fax : CIN U74899PB1995PLC045956
+Email : connect@srl.in
+
+NEW DELHI 110070
+DELHI INDIA
+9818105133
+
+PATIENT ID :
+
+PATIENT NAME : GAGANMEET SINGH
+ACCESSION NO :
+DRAWN :
+
+0009TJ067147
+
+AGE :
+
+25/10/2020 12:49
+
+REFERRING DOCTOR :
+
+Test Report Status
+
+34 Years
+
+RECEIVED :
+
+SEX : Male
+
+25/10/2020 16:00
+
+DATE OF BIRTH :
+REPORTED :
+
+25/10/2020 19:48
+
+CLIENT PATIENT ID :
+
+SELF
+
+Preliminary
+
+GAGAM183186200
+
+Results
+
+Biological Reference Interval
+
+Units
+
+FERRITIN, SERUM
+FERRITIN
+
+234.8
+
+22 - 322
+
+ng/mL
+
+<3.0
+
+< 30
+
+mg/L
+
+21
+
+UNDEFINED
+
+mg/dL
+
+METHOD : CHEMILUMINESCENCE
+
+MICROALBUMIN, URINE
+SPOT URINE MICROALBUMIN
+METHOD : PEG-ENHANCED IMMUNOTURBIDIMETRIC
+
+CREATININE, URINE
+
+METHOD : JAFFE, ALKALINE PICRATE, KINETIC WITH BLANK RATE CORRECTION
+
+MICROALBUMIN/ CREATININE RATIO
+
+NOT CALCULATED
+
+NORMAL <30.0
+mg/g creat
+MICROALBUMINURIA 30.0-299.0
+CLINICAL ALBUMINURIA
+=or>300.0
+
+METHOD : CALCULATED PARAMETER
+
+Comments
+NOTE: URINE MICROALBUMIN VALUE RECHECKED & IS REPORTED AS
+PARAMETER AND HENCE REPORTED AS NOT CALCULATED.
+
+< 3.0mg/L.URINE MICROALBUMIN/CREATININE RATIO IS A CALCULATED
+
+25 - HYDROXYVITAMIN D, SERUM
+25 - HYDROXYVITAMIN D
+
+52.26
+
+Deficieny < 20.0
+Insufficiency
+20.0 - < 30.0
+Sufficiency
+30.0 - 100.0
+Toxicity
+>100.0
+
+ng/mL
+
+9.0
+
+8.3 - 10.6
+
+mg/dL
+
+419.0
+
+211 - 911
+
+pg/mL
+
+Desirable cholesterol
+level : < 200
+Borderline high
+cholesterol : 200 - 239
+High cholesterol : > or = 240
+Normal: < 150
+Borderline high : 150 - 199
+High: 200 - 499
+Very High : > /= 500
+
+mg/dL
+
+METHOD : CHEMILUMINESCENCE
+
+CALCIUM, SERUM
+CALCIUM
+METHOD : SPECTROPHOTOMETRY, CALORIMETRIC METHOD
+
+VITAMIN B12 LEVEL, SERUM
+VITAMIN B12
+METHOD : CHEMILUMINESCENCE
+
+CORONARY RISK PROFILE (LIPID PROFILE), SERUM
+CHOLESTEROL
+
+158
+
+TRIGLYCERIDES
+
+90
+
+mg/dL
+
+METHOD : SPECTROPHOTOMETRY,GPO-POD METHOD
+
+Page 4 Of 13
+
+DIAGNOSTIC REPORT
+CLIENT CODE : C000097359
+
+Cert. No. MC-2015
+
+CLIENT'S NAME AND ADDRESS :
+FPSC HK PATHOLOGY
+SHOP NO.3, DDA MARKET, C-8, VASANT KUNJ
+
+SRL LIMITED
+SRL,REFERENCE LAB, GP-26, MARUTI INDUSTRIAL ESTATE,UDYOG
+VIHAR,SECTOR-18,
+GURGAON, 122015
+HARYANA, INDIA
+Tel : 1800-222-000, 1800-102-8282, Fax : CIN U74899PB1995PLC045956
+Email : connect@srl.in
+
+NEW DELHI 110070
+DELHI INDIA
+9818105133
+
+PATIENT ID :
+
+PATIENT NAME : GAGANMEET SINGH
+ACCESSION NO :
+DRAWN :
+
+0009TJ067147
+
+AGE :
+
+25/10/2020 12:49
+
+REFERRING DOCTOR :
+
+34 Years
+
+RECEIVED :
+
+SEX : Male
+
+25/10/2020 16:00
+
+DATE OF BIRTH :
+REPORTED :
+
+Preliminary
+
+HDL CHOLESTEROL
+
+25/10/2020 19:48
+
+CLIENT PATIENT ID :
+
+SELF
+
+Test Report Status
+
+GAGAM183186200
+
+Results
+
+49
+
+Biological Reference Interval
+
+Low HDL cholesterol
+< 40
+High HDL cholesterol
+> or = 60
+
+Units
+
+mg/dL
+
+METHOD : SPECTROPHOTOMETRY, HOMOGENEOUS DIRECT ENZYMATIC COLORIMETRIC
+
+DIRECT LDL CHOLESTEROL
+
+104.00
+
+High Adult Optimal:
+
+mg/dL
+
+< 100
+Near Optimal:
+100 - 129
+Borderline High: 130 - 159
+High: 160 - 189
+Very High: > or = 190
+METHOD : SPECTROPHOTOMETRY, ELIMINATION / CATALASE
+
+NON HDL CHOLESTEROL
+
+109
+
+Desirable : < 130
+Above Desirable : 130 -159
+Borderline High : 160 - 189
+High : 190 - 219
+Very high : > or = 220
+
+mg/dL
+
+METHOD : CALCULATED PARAMETER
+
+CHOL/HDL RATIO
+
+3.2
+
+Low Low Risk : 3.3 - 4.4
+
+Average Risk : 4.5 - 7.0
+Moderate Risk : 7.1 - 11.0
+High Risk : > 11.0
+METHOD : CALCULATED PARAMETER
+
+LDL/HDL RATIO
+
+2.1
+
+Desirable/Low Risk:
+0.5 - 3.0
+Borderline/Moderate Risk:
+3.1 - 6.0
+High Risk: > 6.0
+
+18.0
+
+< or = 30
+
+METHOD : CALCULATED PARAMETER
+
+VERY LOW DENSITY LIPOPROTEIN
+
+mg/dL
+
+METHOD : CALCULATED PARAMETER
+
+SERUM BLOOD UREA NITROGEN
+BLOOD UREA NITROGEN
+
+5.5
+
+Low 6 - 20
+
+mg/dL
+
+0.83
+
+Low 0.90 - 1.30
+
+mg/dL
+
+METHOD : SPECTROPHOTOMETRY, UREASE WITH GLDH
+
+CREATININE, SERUM
+CREATININE
+
+METHOD : JAFFE, ALKALINE PICRATE, KINETIC WITH BLANK RATE CORRECTION
+
+BUN/CREAT RATIO
+BUN/CREAT RATIO
+
+6.63
+
+Low 10 - 20
+
+METHOD : CALCULATED PARAMETER
+
+URIC ACID, SERUM
+URIC ACID
+
+6.6
+
+3.7 - 9.2
+
+mg/dL
+
+Page 5 Of 13
+
+DIAGNOSTIC REPORT
+CLIENT CODE : C000097359
+
+Cert. No. MC-2015
+
+CLIENT'S NAME AND ADDRESS :
+FPSC HK PATHOLOGY
+SHOP NO.3, DDA MARKET, C-8, VASANT KUNJ
+
+SRL LIMITED
+SRL,REFERENCE LAB, GP-26, MARUTI INDUSTRIAL ESTATE,UDYOG
+VIHAR,SECTOR-18,
+GURGAON, 122015
+HARYANA, INDIA
+Tel : 1800-222-000, 1800-102-8282, Fax : CIN U74899PB1995PLC045956
+Email : connect@srl.in
+
+NEW DELHI 110070
+DELHI INDIA
+9818105133
+
+PATIENT ID :
+
+PATIENT NAME : GAGANMEET SINGH
+ACCESSION NO :
+DRAWN :
+
+0009TJ067147
+
+AGE :
+
+25/10/2020 12:49
+
+REFERRING DOCTOR :
+
+Test Report Status
+
+34 Years
+
+RECEIVED :
+
+SEX : Male
+
+25/10/2020 16:00
+
+GAGAM183186200
+
+DATE OF BIRTH :
+REPORTED :
+
+25/10/2020 19:48
+
+CLIENT PATIENT ID :
+
+SELF
+Results
+
+Preliminary
+
+Biological Reference Interval
+
+Units
+
+METHOD : SPECTROPHOTOMETRY, URICASE/PEROXIDASE
+
+TOTAL PROTEIN, SERUM
+TOTAL PROTEIN
+
+7.0
+
+5.7 - 8.2
+
+g/dL
+
+4.5
+
+3.2 - 4.8
+
+g/dL
+
+2.5
+
+2.0 - 4.1
+
+g/dL
+
+137
+
+136 - 145
+
+mmol/L
+
+3.5 - 5.1
+
+mmol/L
+
+High 98 - 107
+
+mmol/L
+
+METHOD : SPECTROPHOTOMETRY, BIURET
+
+ALBUMIN, SERUM
+ALBUMIN
+
+METHOD : SPECTROPHOTOMETRY, BROMOCRESOL GREEN(BCG) - DYE BINDING
+
+GLOBULIN
+GLOBULIN
+METHOD : CALCULATED PARAMETER
+
+ELECTROLYTES (NA/K/CL), SERUM
+SODIUM
+
+METHOD : INDIRECT INTEGRATED MULTISENSOR TECHNOLOGY (IMT).
+
+POTASSIUM
+
+4.4
+
+METHOD : INDIRECT INTEGRATED MULTISENSOR TECHNOLOGY (IMT).
+
+CHLORIDE
+
+109
+
+URINALYSIS
+COLOR
+
+PALE YELLOW
+
+APPEARANCE
+
+CLEAR
+
+PH
+
+7.0
+
+4.7 - 7.5
+
+SPECIFIC GRAVITY
+
+<=1.005
+
+1.003 - 1.035
+
+GLUCOSE
+
+NOT DETECTED
+
+NOT DETECTED
+
+PROTEIN
+
+NOT DETECTED
+
+NOT DETECTED
+
+KETONES
+
+NOT DETECTED
+
+NOT DETECTED
+
+BLOOD
+
+NOT DETECTED
+
+NOT DETECTED
+
+BILIRUBIN
+
+NOT DETECTED
+
+NOT DETECTED
+
+UROBILINOGEN
+
+NORMAL
+
+NORMAL
+
+NITRITE
+
+NOT DETECTED
+
+NOT DETECTED
+
+WBC
+
+1-2
+
+0-5
+
+/HPF
+
+EPITHELIAL CELLS
+
+0-1
+
+0-5
+
+/HPF
+
+RED BLOOD CELLS
+
+NOT DETECTED
+
+NOT DETECTED
+
+/HPF
+
+CASTS
+
+NOT DETECTED
+
+CRYSTALS
+
+NOT DETECTED
+
+BACTERIA
+
+NOT DETECTED
+
+NOT DETECTED
+
+METHOD : DIP STICK/MICRO SCOPY/REFLECTANCE SPECTROPHOTOMETRY
+
+Page 6 Of 13
+
+DIAGNOSTIC REPORT
+CLIENT CODE : C000097359
+
+Cert. No. MC-2015
+
+CLIENT'S NAME AND ADDRESS :
+FPSC HK PATHOLOGY
+SHOP NO.3, DDA MARKET, C-8, VASANT KUNJ
+
+SRL LIMITED
+SRL,REFERENCE LAB, GP-26, MARUTI INDUSTRIAL ESTATE,UDYOG
+VIHAR,SECTOR-18,
+GURGAON, 122015
+HARYANA, INDIA
+Tel : 1800-222-000, 1800-102-8282, Fax : CIN U74899PB1995PLC045956
+Email : connect@srl.in
+
+NEW DELHI 110070
+DELHI INDIA
+9818105133
+
+PATIENT ID :
+
+PATIENT NAME : GAGANMEET SINGH
+ACCESSION NO :
+DRAWN :
+
+0009TJ067147
+
+AGE :
+
+25/10/2020 12:49
+
+REFERRING DOCTOR :
+
+34 Years
+
+RECEIVED :
+
+SEX : Male
+
+DATE OF BIRTH :
+
+25/10/2020 16:00
+
+REPORTED :
+
+25/10/2020 19:48
+
+CLIENT PATIENT ID :
+
+SELF
+
+Test Report Status
+
+GAGAM183186200
+
+Results
+
+Preliminary
+
+Biological Reference Interval
+
+Units
+
+Comments
+NOTE :MICROSCOPIC EXAMINATION OF URINE IS PERFORMED ON CENTRIFUGED
+IN NORMAL URINE SAMPLES CAST AND CRYSTALS ARE NOT DETECTED.
+
+URINARY SEDIMENT.
+
+APOLIPOPROTEIN - B, SERUM
+APOLIPOPROTEIN - B
+
+0.64
+
+0.53 - 1.73
+
+g/L
+
+6.62
+
+S:
+> 5.38
+RBC:
+280 – 791
+
+ng/mL
+
+3.30
+
+2.3 - 4.2
+
+pg/mL
+
+1.36
+
+0.89 - 1.76
+
+ng/dL
+
+0.55 - 4.78
+
+µIU/mL
+
+METHOD : NEPHELOMETRY
+
+FOLIC ACID, SERUM
+FOLIC ACID
+
+METHOD : CHEMILUMINESCENCE
+
+TOTAL IGE, SERUM
+
+RESULT PENDING
+
+FREE TRIIODOTHYRONINE (FT3), SERUM
+FREE TRIIODOTHYRONINE (FT3)
+FREE THYROXINE (FT4), SERUM
+FREE THYROXINE (FT4)
+
+TSH 3RD GENERATION ULTRA( TSH3 - UL), SERUM
+TSH 3RD GENERATION
+
+1.931
+
+Interpretation(s)
+BLOOD COUNTS-The cell morphology is well preserved for 24hrs. However after 24-48 hrs a progressive increase in MCV and HCT is observed leading to a decrease in MCHC.
+A direct smear is recommended for an accurate differential count and for examination of RBC morphology.
+RBC AND PLATELET INDICES-The cell morphology is well preserved for 24hrs. However after 24-48 hrs a progressive increase in MCV and HCT is observed leading to a
+decrease in MCHC. A direct smear is recommended for an accurate differential count and for examination of RBC morphology.
+ERYTHRO SEDIMENTATION RATE, BLOOD-Erythrocyte sedimentation rate (ESR) is a non - specific phenomena and is clinically useful in the diagnosis and monitoring of
+disorders associated with an increased production of acute phase reactants. The ESR is increased in pregnancy from about the 3rd month and returns to normal by the 4th
+week post partum. ESR is influenced by age, sex, menstrual cycle and drugs (eg. corticosteroids, contraceptives). It is especially low (0 -1mm) in polycythaemia,
+hypofibrinogenemia or congestive cardiac failure and when there are abnormalities of the red cells such as poikilocytosis, spherocytosis or sickle cells.
+Reference :
+1. Nathan and Oski’s Haematology of Infancy and Childhood, 5th edition
+2. Paediatric reference intervals. AACC Press, 7th edition. Edited by S. Soldin
+3. The reference for the adult reference range is “Practical Haematology by Dacie and Lewis, 10th Edition”
+GLUCOSE, FASTING, PLASMA-ADA 2012 guidelines for adults as follows:
+Pre-diabetics: 100 - 125 mg/dL
+Diabetic: > or = 126 mg/dL
+(Ref: Tietz 4th Edition & ADA 2012 Guidelines)
+GLYCOSYLATED HEMOGLOBIN, EDTA WHOLE BLOODGlycosylated hemoglobin (GHb) has been firmly established as an index of long-term blood glucose concentrations and as a measure of the risk for the development of
+complications in patients with diabetes mellitus. Formation of GHb is essentially irreversible, and the concentration in the blood depends on both the life span of the red blood
+cell (average 120 days) and the blood glucose concentration. Because the rate of formation of GHb is directly proportional to the concentration of glucose in the blood, the
+GHb concentration represents the integrated values for glucose over the preceding 6-8 weeks.
+Any condition that alters the life span of the red blood cells has the potential to alter the GHb level. Samples from patients with hemolytic anemias will exhibit decreased
+glycated hemoglobin values due to the shortened life span of the red cells. This effect will depend upon the severity of the anemia. Samples from patients with polycythemia
+or post-splenectomy may exhibit increased glycated hemoglobin values due to a somewhat longer life span of the red cells.
+Glycosylated hemoglobins results from patients with HbSS, HbCC, and HbSC and HbD must be interpreted with caution, given the pathological processes, including anemia,
+increased red cell turnover, transfusion requirements, that adversely impact HbA1c as a marker of long-term glycemic control. In these conditions, alternative forms of
+testing such as glycated serum protein (fructosamine) should be considered.
+"Targets should be individualized More or less stringent glycemic goals may be appropriate for individual patients. Goals should be individualized based on duration of
+diabetes, age/life expectancy, comorbid conditions, known CVD or advanced microvascular complications, hypoglycemia unawareness, and individual patient considerations.’’
+
+Page 7 Of 13
+
+DIAGNOSTIC REPORT
+CLIENT CODE : C000097359
+
+Cert. No. MC-2015
+
+CLIENT'S NAME AND ADDRESS :
+FPSC HK PATHOLOGY
+SHOP NO.3, DDA MARKET, C-8, VASANT KUNJ
+
+SRL LIMITED
+SRL,REFERENCE LAB, GP-26, MARUTI INDUSTRIAL ESTATE,UDYOG
+VIHAR,SECTOR-18,
+GURGAON, 122015
+HARYANA, INDIA
+Tel : 1800-222-000, 1800-102-8282, Fax : CIN U74899PB1995PLC045956
+Email : connect@srl.in
+
+NEW DELHI 110070
+DELHI INDIA
+9818105133
+
+PATIENT ID :
+
+PATIENT NAME : GAGANMEET SINGH
+ACCESSION NO :
+DRAWN :
+
+0009TJ067147
+
+AGE :
+
+25/10/2020 12:49
+
+REFERRING DOCTOR :
+
+Test Report Status
+
+34 Years
+
+RECEIVED :
+
+SEX : Male
+
+25/10/2020 16:00
+
+DATE OF BIRTH :
+REPORTED :
+
+25/10/2020 19:48
+
+CLIENT PATIENT ID :
+
+SELF
+
+Preliminary
+
+GAGAM183186200
+
+Results
+
+Biological Reference Interval
+
+Units
+
+References
+1. Tietz Textbook of Clinical Chemistry and Molecular Diagnostics, edited by Carl A Burtis, Edward R.Ashwood, David E Bruns, 4th Edition, Elsevier publication, 2006,
+879-884.
+2. Forsham PH. Diabetes Mellitus:A rational plan for management. Postgrad Med 1982, 71,139-154.
+3. Mayer TK, Freedman ZR: Protein glycosylation in Diabetes Mellitus: A review of laboratory measurements and their clinical utility. Clin Chim Acta 1983, 127, 147-184.
+HIGH SENSITIVITY C-REACTIVE PROTEIN, SERUMHigh sensitivity CRP measurements may be used as an independent risk marker for the identification of individuals at risk for future cardiovascular disease. Measurement of
+hs- CRP, when used in conjunction with traditional clinical laboratory evaluation of acute coronary syndromes, may be useful as an independent marker of prognosis for
+recurrent events, in patients with stable coronary disease or acute coronary syndromes.
+When using this assay for risk assessment, patients with persistently unexplained, marked elevation of hs- CRP (> 10mg/l) after repeated testing should be evaluated for non
+cardiovascular etiologies. In Rheumatic and other inflammatory diseases, value of CRP less than 10 mg/l is considered satisfactory. More than 10 mg/l suggests disease
+activity. Patients with evidence of active infection, systemic inflammatory processes or trauma should not be tested for cardiovascular disease risk assessment until these
+conditions have abated
+Hs- CRP levels should not be substituted for assessment of traditional cardiovascular risk factors.
+Turbidity and particles in the sample may interfere with the determination. Patient samples which contain heterophilic antibodies could react in immunoassays to give a falsely
+elevated or depressed result.
+Results of this test should always be interpreted in conjunction with the patient’s medical history, clinical presentation and other findings.
+References:
+1. Teitz textbook of clinical chemistry and Molecular diagnostics, edited by Carl A Burtis, Edward R. Ashrwood, David E Bruns, 4th edition, Elseiver publication, 2006,962-966
+2. Parson TA, Mensah GA, et al. Marker of inflammation and cardiovascular disease: application to clinical and public health practice. Circulation 2003,107,499-511
+3. Rheumatoid arthritis disease activity measures: American College of Rheumatology recommendations for use in clinical practice: Jacyln Anderson, Liron Caplin et al, Wiley
+online, 2012.
+CORTISOL, SERUM-Cortisol is the primary glucocorticoid hormone synthesized and secreted by the adrenal cortex. It is essential for life because it regulates carbohydrate,
+protein, and lipid metabolism, maintains normal blood pressure, and inhibits allergic and inflammatory reactions. Cortisol is synthesized and secreted by the cortex of the
+adrenal gland under the direction of adrenocorticotropic hormone. Increased ACTH levels stimulate cortisol secretion. The increased cortisol levels inhibit CRH secretion, which
+subsequently inhibits ACTH secretion. This negative feedback mechanism results in decreased cortisol levels.
+Circulating cortisol levels follow a diurnal pattern in healthy individuals. Levels are highest in the morning after waking and lowest in the evening. Disorders of the
+hypothalamic-pituitaryadrenal axis override this diurnal pattern. Decreased cortisol levels are induced by either primary or secondary adrenal insufficiency. Addison’s disease
+is caused by primary adrenal insufficiency due to metabolic errors or destruction of the adrenal cortex. Secondary adrenal insufficiency is caused by pituitary destruction or
+failure, resulting in loss of ACTH stimulation of the adrenal gland. Cushing’s syndrome is caused by increased levels of cortisol due to either primary or secondary adrenal
+hyperfunction. Causes of primary adrenal hyperfunction are adrenal tumors and nodular adrenal hyperplasia. Secondary adrenal hyperfunction is caused by pituitary
+overproduction of ACTH or ectopic production of ACTH by a tumor. Increased cortisol levels are induced by pregnancy and by stress due to depression, trauma, surgery,
+hypoglycemia, alcoholism, uncontrolled diabetes, and starvation.
+A 24-hour urinary cortisol measurement is the method of choice in the initial screening for Cushing’s syndrome because it provides the best assessment of cortisol production.
+Urinary cortisol is not subject to the diurnal pattern of secretion and accurately differentiates healthy persons from patients with Cushing’s syndrome.
+Limitations
+Circulating cortisol results from patients receiving Prednisolone or Prednisone therapy may be falsely elevated.
+Heterophilic antibodies in human serum can react with reagent immunoglobulins, interfering with in vitro immunoassays. Patients routinely exposed to animals or to animal
+serum products can be prone to this interference and anomalous values may be observed.
+Reference:
+1. Pudek MR. Adrenal hormones. In: Kaplan LA, Pesce AJ, editors. Clinical chemistry: therapy, analysis, and correlation. St. Louis: CV Mosby, 1989. p.672–81.
+2. Whitley RJ, Meikle AW, Watts NB. Endocrinology, part VI: adrenocortical steroids. In: Burtis CA, Ashwood ER, editors. Textbook of clinical chemistry, 2nd ed. Philadelphia:
+WB Saunders, 1994. p.1808–21.
+3. Chodosh LA, Daniels GH. Addison’s disease. Endocrinologist 1993 3(3):166–81.
+4. Miller J, Crapo L. The biochemical diagnosis of hypercortisolism. Endocrinologist
+1994 4(1):7–16.
+LIVER FUNCTION PROFILE, SERUM-LIVER FUNCTION PROFILE
+Bilirubin is a yellowish pigment found in bile and is a breakdown product of normal heme catabolism. Bilirubin is excreted in bile and urine, and elevated levels may give
+yellow discoloration in jaundice.Elevated levels results from increased bilirubin production (eg, hemolysis and ineffective erythropoiesis), decreased bilirubin excretion (eg,
+obstruction and hepatitis), and abnormal bilirubin metabolism (eg, hereditary and neonatal jaundice). Conjugated (direct) bilirubin is elevated more than unconjugated
+(indirect) bilirubin in Viral hepatitis, Drug reactions, Alcoholic liver disease Conjugated (direct) bilirubin is also elevated more than unconjugated (indirect) bilirubin when
+there is some kind of blockage of the bile ducts like in Gallstones getting into the bile ducts, tumors &Scarring of the bile ducts. Increased unconjugated (indirect) bilirubin
+may be a result of Hemolytic or pernicious anemia, Transfusion reaction & a common metabolic condition termed Gilbert syndrome, due to low levels of the enzyme that
+attaches sugar molecules to bilirubin.
+AST is an enzyme found in various parts of the body. AST is found in the liver, heart, skeletal muscle, kidneys, brain, and red blood cells, and it is commonly measured
+clinically as a marker for liver health. AST levels increase during chronic viral hepatitis, blockage of the bile duct, cirrhosis of the liver,liver cancer,kidney failure,hemolytic
+anemia,pancreatitis,hemochromatosis. AST levels may also increase after a heart attack or strenuous activity.ALT test measures the amount of this enzyme in the blood.ALT
+is found mainly in the liver, but also in smaller amounts in the kidneys,heart,muscles, and pancreas.It is commonly measured as a part of a diagnostic evaluation of
+hepatocellular injury, to determine liver health.AST levels increase during acute hepatitis,sometimes due to a viral infection,ischemia to the liver,chronic hepatitis,obstruction
+of bile ducts,cirrhosis.
+ALP is a protein found in almost all body tissues.Tissues with higher amounts of ALP include the liver,bile ducts and bone.Elevated ALP levels are seen in Biliary obstruction,
+Osteoblastic bone tumors, osteomalacia, hepatitis, Hyperparathyroidism, Leukemia, Lymphoma, Paget''''''''s disease,Rickets,Sarcoidosis etc. Lower-than-normal ALP levels
+seen in Hypophosphatasia,Malnutrition,Protein deficiency,Wilson''''''''s disease.GGT is an enzyme found in cell membranes of many tissues mainly in the liver,kidney and
+
+Page 8 Of 13
+
+DIAGNOSTIC REPORT
+CLIENT CODE : C000097359
+
+Cert. No. MC-2015
+
+CLIENT'S NAME AND ADDRESS :
+FPSC HK PATHOLOGY
+SHOP NO.3, DDA MARKET, C-8, VASANT KUNJ
+
+SRL LIMITED
+SRL,REFERENCE LAB, GP-26, MARUTI INDUSTRIAL ESTATE,UDYOG
+VIHAR,SECTOR-18,
+GURGAON, 122015
+HARYANA, INDIA
+Tel : 1800-222-000, 1800-102-8282, Fax : CIN U74899PB1995PLC045956
+Email : connect@srl.in
+
+NEW DELHI 110070
+DELHI INDIA
+9818105133
+
+PATIENT ID :
+
+PATIENT NAME : GAGANMEET SINGH
+ACCESSION NO :
+DRAWN :
+
+0009TJ067147
+
+AGE :
+
+25/10/2020 12:49
+
+REFERRING DOCTOR :
+
+Test Report Status
+
+34 Years
+
+RECEIVED :
+
+SEX : Male
+
+25/10/2020 16:00
+
+DATE OF BIRTH :
+REPORTED :
+
+25/10/2020 19:48
+
+CLIENT PATIENT ID :
+
+SELF
+
+Preliminary
+
+GAGAM183186200
+
+Results
+
+Biological Reference Interval
+
+Units
+
+pancreas.It is also found in other tissues including intestine,spleen,heart, brain and seminal vesicles.The highest concentration is in the kidney,but the liver is considered the
+source of normal enzyme activity.Serum GGT has been widely used as an index of liver dysfunction.Elevated serum GGT activity can be found in diseases of the liver,biliary
+system and pancreas.Conditions that increase serum GGT are obstructive liver disease,high alcohol consumption and use of enzyme-inducing drugs etc.Serum total
+protein,also known as total protein,is a biochemical test for measuring the total amount of protein in serum.Protein in the plasma is made up of albumin and
+globulin.Higher-than-normal levels may be due to:Chronic inflammation or infection,including HIV and hepatitis B or C,Multiple myeloma,Waldenstrom''''''''s
+disease.Lower-than-normal levels may be due to: Agammaglobulinemia,Bleeding (hemorrhage),Burns,Glomerulonephritis,Liver disease, Malabsorption,Malnutrition,Nephrotic
+syndrome,Protein-losing enteropathy etc.Human serum albumin is the most abundant protein in human blood plasma.It is produced in the liver.Albumin constitutes about
+half of the blood serum protein.Low blood albumin levels (hypoalbuminemia) can be caused by:Liver disease like cirrhosis of the liver, nephrotic syndrome,protein-losing
+enteropathy,Burns,hemodilution,increased vascular permeability or decreased lymphatic clearance,malnutrition and wasting etc
+TOTAL IRON BINDING CAPACITY, SERUM-Total iron binding capacity (TIBC) measures the blood’s capacity to bind iron with transferrin and thus is an indirect way of
+assessing transferrin level.
+Taken together with serum iron and percent transferrin saturation this test is performed when they is a concern about anemia, iron deficiency or iron deficiency anemia.
+However, because the liver produces transferrin, alterations in liver function (such as cirrhosis, hepatitis, or liver failure) must be considered when performing this test.
+Increased in:
+- iron deficiency
+- acute and chronic blood loss
+- acute liver damage
+- progesterone birth control pills
+Decreased in:
+- hemochromatosis
+- cirrhosis of the liver
+- thalassemia
+- anemias of infection and chronic diseases
+- nephrosis
+- hyperthyroidism
+The percent Transferrin saturation = Serum Iron/TIBC x 100
+Unsaturated Binding Capacity (UIBC)=TIBC - Serum Iron.
+Limitations: Estrogens and oral contraceptives increase TIBC and Asparaginase, chloramphenicol, corticotropin, cortisone and testosterone decrease the TIBC level.
+Reference:
+1.Tietz Textbook of Clinical Chemistry and Molecular Diagnostics, edited by Carl A Burtis, Edward R.Ashwood, David E Bruns, 4th Edition, Elsevier publication, 2006, 563,
+1314-1315.
+2. Wallach’s Interpretation of Diagnostic tests, 9th Edition, Ed Mary A Williamson and L Michael Snyder. Pub Lippincott Williams and Wilkins, 2011, 234-235.
+FERRITIN, SERUM-Ferritin is a high-molecular-weight protein that contains approximately 20% iron. It occurs normally in almost all tissues of the body but especially in
+hepatocytes and reticuloendothelial cells, where it serves as an iron reserve. When needed, the iron molecules are released from the apoferritin shell and bind to transferrin,
+the circulating plasma protein that transports iron to the erythropoietic cells.
+A low serum ferritin value is thought to be the best laboratory indicator of iron depletion. Virtually all patients with low serum iron and low ferritin have iron deficiency. Serum
+Ferritin concentration, when considered with other factors such as serum iron, iron-binding capacity and tissue iron stores is valuable in the diagnosis of iron deficiency
+anemia, anemia of chronic infection and conditions such as thalassemia and hemochromatosis that are associated with iron overload. It is particularly useful in distinguishing
+between iron-deficiency anemia (serum ferritin levels diminished) and "anemia of chronic disease" (serum ferritin levels usually normal or elevated).
+Ferritin is an acute phase reactant. It can be found to be elevated in the following conditions and do not reflect actual body iron stores: 1.Inflammation 2.Significant tissue
+destruction 3.Liver diseases 4.Malignancies such as acute leukemia and Hodgkin''''''''''''''''s disease 5.Therapy with iron supplements.
+Interferences:
+Heterophilic antibodies in human serum can react with reagent immunoglobulins, interfering with in vitro immunoassays. Patients routinely exposed to animals or to animal
+serum products can be prone to this interference and anomalous values may be observed.
+MICROALBUMIN, URINEMicroalbuminuria is defined as an increase in urinary excretion of albumin above the reference interval for healthy nondiabetic subjects but at a concentration
+that is generally detectable by crude clinical tests such as dipstics designed to measure total protein.the diagnosis of microalbuminuria requires demonstartion
+of increased albumin secretion in atleasy two out of three urine samples collected in the absence of infection or an acute metabolic crisis.
+It is now considered a clinically important indicator of detiriorating renal function in diabetic subjects..in .diabetic..patients. Regular screening of urinary albumin
+secretion is valuable in monitoring both type 1 and type 2 diabetes.
+Screening should comence 5 years after diagnosis in patients with type 1 diabetes and at diagnosis in patients with type 2 diabetes without proteinuria.
+Screening is not indicated in patients with established proteinuria. All the patients with diabetes mellitus should be screened on annual basis upto the age of
+75 years.
+It is important to consider causes of increased albumin excretion, specially in cases of type 1 diabetes present for less than 5 years. These can include
+nondiabetic renal disease, menstural contamination, vaginal discharge, uncontrolled hypertension , urinary tract infection, heart failure, and strenous exercise.
+25 - HYDROXYVITAMIN D, SERUMNote: Our Vitamin D assays is standardized to be in alignment with the ID-LC/MS/MS 25(OH)vitamin D Reference Method Procedure (RMP), the reference procedure for the
+Vitamin D Standardization Program (VDSP). The VDSP, a collaboration of the National Institutes of Health Office of Dietary Supplements, National Institute of Technology and
+Standards, Centers for Disease Control and Ghent University, is an initiative to standardize 25(OH)vitamin D measurement across methods
+
+Page 9 Of 13
+
+DIAGNOSTIC REPORT
+CLIENT CODE : C000097359
+
+Cert. No. MC-2015
+
+CLIENT'S NAME AND ADDRESS :
+FPSC HK PATHOLOGY
+SHOP NO.3, DDA MARKET, C-8, VASANT KUNJ
+
+SRL LIMITED
+SRL,REFERENCE LAB, GP-26, MARUTI INDUSTRIAL ESTATE,UDYOG
+VIHAR,SECTOR-18,
+GURGAON, 122015
+HARYANA, INDIA
+Tel : 1800-222-000, 1800-102-8282, Fax : CIN U74899PB1995PLC045956
+Email : connect@srl.in
+
+NEW DELHI 110070
+DELHI INDIA
+9818105133
+
+PATIENT ID :
+
+PATIENT NAME : GAGANMEET SINGH
+ACCESSION NO :
+DRAWN :
+
+0009TJ067147
+
+AGE :
+
+25/10/2020 12:49
+
+REFERRING DOCTOR :
+
+Test Report Status
+
+34 Years
+
+RECEIVED :
+
+SEX : Male
+
+25/10/2020 16:00
+
+DATE OF BIRTH :
+REPORTED :
+
+25/10/2020 19:48
+
+CLIENT PATIENT ID :
+
+SELF
+
+Preliminary
+
+GAGAM183186200
+
+Results
+
+Biological Reference Interval
+
+Units
+
+CALCIUM, SERUM-Commom causes of decreased value of calcium (hypocalcemia) are chronic renal failure, hypomagnesemia and hypoalbuminemia.
+Hypercalcemia (increased value of calcium) can be caused by increased intestinal absorbtion (vitamin d intoxication), increased skeletal reasorption (immobilization),
+or a combination of mechanisms (primary hyperparathyroidism). Primary hyperparathyroidism and malignancy accounts for 90-95% of all cases of hypercalcemia.
+Values of total calcium is affected by serum proteins, particularly albumin thus, latter’s value should be taken into account when interpreting serum calcium
+levels. The following regression equation may be helpful.
+Corrected total calcium (mg/dl)= total calcium (mg/dl) + 0.8 (4- albumin [g/dl])*
+because regression equations vary among group of patients in different physiological and pathological conditions, mathematical corrections are only
+approximations. The possible mathematical corrections should be replaced by direct determination of free calcium by ISE (available with srl) a common and
+important source of preanalytical error in the measurement of calcium is prolonged torniquet application during sampling. Thus, this along with fist clenching
+should be avoided before phlebotomy.
+CORONARY RISK PROFILE (LIPID PROFILE), SERUM-Serum cholesterol is a blood test that can provide valuable information for the risk of coronary artery disease This test
+can help determine your risk of the build up of plaques in your arteries that can lead to narrowed or blocked arteries throughout your body (atherosclerosis). High cholesterol
+levels usually don''''''''''''''''t cause any signs or symptoms, so a cholesterol test is an important tool. High cholesterol levels often are a significant risk factor for heart disease
+and important for diagnosis of hyperlipoproteinemia, atherosclerosis, hepatic and thyroid diseases.
+Serum Triglyceride are a type of fat in the blood. When you eat, your body converts any calories it doesn''''''''''''''''t need into triglycerides, which are stored in fat cells. High
+triglyceride levels are associated with several factors, including being overweight, eating too many sweets or drinking too much alcohol, smoking, being sedentary, or having
+diabetes with elevated blood sugar levels. Analysis has proven useful in the diagnosis and treatment of patients with diabetes mellitus, nephrosis, liver obstruction, other
+diseases involving lipid metabolism, and various endocrine disorders. In conjunction with high density lipoprotein and total serum cholesterol, a triglyceride determination
+provides valuable information for the assessment of coronary heart disease risk.It is done in fasting state.
+High-density lipoprotein (HDL) cholesterol. This is sometimes called the ""good"" cholesterol because it helps carry away LDL cholesterol, thus keeping arteries open and
+blood flowing more freely.HDL cholesterol is inversely related to the risk for cardiovascular disease. It increases following regular exercise, moderate alcohol consumption
+and with oral estrogen therapy. Decreased levels are associated with obesity, stress, cigarette smoking and diabetes mellitus.
+SERUM LDL The small dense LDL test can be used to determine cardiovascular risk in individuals with metabolic syndrome or established/progressing coronary artery disease,
+individuals with triglyceride levels between 70 and 140 mg/dL, as well as individuals with a diet high in trans-fat or carbohydrates. Elevated sdLDL levels are associated with
+metabolic syndrome and an ‘atherogenic lipoprotein profile’, and are a strong, independent predictor of cardiovascular disease.
+Elevated levels of LDL arise from multiple sources. A major factor is sedentary lifestyle with a diet high in saturated fat. Insulin-resistance and pre-diabetes have also been
+implicated, as has genetic predisposition. Measurement of sdLDL allows the clinician to get a more comprehensive picture of lipid risk factors and tailor treatment accordingly.
+Reducing LDL levels will reduce the risk of CVD and MI.
+Recommendations:
+Results of Lipids should always be interpreted in conjunction with the patient’s medical history, clinical presentation and other findings.
+NON FASTING LIPID PROFILE includes Total Cholesterol, HDL Cholesterol and calculated non-HDL Cholesterol. It does not include triglycerides and may be best used in
+patients for whom fasting is difficult.
+SERUM BLOOD UREA NITROGEN-Causes of Increased levels
+Pre renal
+• High protein diet, Increased protein catabolism, GI haemorrhage, Cortisol, Dehydration, CHF Renal
+• Renal Failure
+Post Renal
+• Malignancy, Nephrolithiasis, Prostatism
+Causes of decreased levels
+• Liver disease
+• SIADH.
+CREATININE, SERUM-Higher than normal level may be due to:
+• Blockage in the urinary tract
+• Kidney problems, such as kidney damage or failure, infection, or reduced blood flow
+• Loss of body fluid (dehydration)
+• Muscle problems, such as breakdown of muscle fibers
+• Problems during pregnancy, such as seizures (eclampsia)), or high blood pressure caused by pregnancy (preeclampsia)
+Lower than normal level may be due to:
+• Myasthenia Gravis
+• Muscular dystrophy
+URIC ACID, SERUM-Causes of Increased levels
+Dietary
+• High Protein Intake.
+• Prolonged Fasting,
+• Rapid weight loss.
+Gout
+Lesch nyhan syndrome.
+Type 2 DM.
+
+Page 10 Of 13
+
+DIAGNOSTIC REPORT
+CLIENT CODE : C000097359
+
+Cert. No. MC-2015
+
+CLIENT'S NAME AND ADDRESS :
+FPSC HK PATHOLOGY
+SHOP NO.3, DDA MARKET, C-8, VASANT KUNJ
+
+SRL LIMITED
+SRL,REFERENCE LAB, GP-26, MARUTI INDUSTRIAL ESTATE,UDYOG
+VIHAR,SECTOR-18,
+GURGAON, 122015
+HARYANA, INDIA
+Tel : 1800-222-000, 1800-102-8282, Fax : CIN U74899PB1995PLC045956
+Email : connect@srl.in
+
+NEW DELHI 110070
+DELHI INDIA
+9818105133
+
+PATIENT ID :
+
+PATIENT NAME : GAGANMEET SINGH
+ACCESSION NO :
+DRAWN :
+
+0009TJ067147
+
+AGE :
+
+25/10/2020 12:49
+
+REFERRING DOCTOR :
+
+Test Report Status
+
+34 Years
+
+RECEIVED :
+
+SEX : Male
+
+25/10/2020 16:00
+
+DATE OF BIRTH :
+REPORTED :
+
+25/10/2020 19:48
+
+CLIENT PATIENT ID :
+
+SELF
+
+Preliminary
+
+GAGAM183186200
+
+Results
+
+Biological Reference Interval
+
+Units
+
+Metabolic syndrome.
+Causes of decreased levels
+• Low Zinc Intake
+• OCP’s
+• Multiple Sclerosis
+Nutritional tips to manage increased Uric acid levels
+• Drink plenty of fluids
+• Limit animal proteins
+• High Fibre foods
+• Vit C Intake
+• Antioxidant rich foods
+TOTAL PROTEIN, SERUM-Serum total protein,also known as total protein, is a biochemical test for measuring the total amount of protein in serum..Protein in the plasma is
+made up of albumin and globulin
+Higher-than-normal levels may be due to: Chronic inflammation or infection, including HIV and hepatitis B or C, Multiple myeloma, Waldenstrom''''''''s disease
+Lower-than-normal levels may be due to: Agammaglobulinemia, Bleeding (hemorrhage),Burns,Glomerulonephritis, Liver disease, Malabsorption, Malnutrition, Nephrotic
+syndrome,Protein-losing enteropathy etc.
+ALBUMIN, SERUM-Human serum albumin is the most abundant protein in human blood plasma. It is produced in the liver. Albumin constitutes about half of the blood serum
+protein. Low blood albumin levels (hypoalbuminemia) can be caused by: Liver disease like cirrhosis of the liver, nephrotic syndrome, protein-losing enteropathy, Burns,
+hemodilution, increased vascular permeability or decreased lymphatic clearance,malnutrition and wasting etc.
+ELECTROLYTES (NA/K/CL), SERUM-ELECTROLYTES (NA/K/CL), SERUM
+Sodium levels are Increased in dehydration, cushing''''''''s syndrome, aldosteronism & decreased in Addison''''''''s disease, hypopituitarism,liver disease. Hypokalemia (low K)
+is common in vomiting, diarrhea, alcoholism, folic acid deficiency and primary aldosteronism. Hyperkalemia may be seen in end-stage renal failure, hemolysis, trauma,
+Addison''''''''s disease, metabolic acidosis, acute starvation, dehydration, and with rapid K infusion.Chloride is increased in dehydration, renal tubular acidosis (hyperchloremia
+metabolic acidosis), acute renal failure, metabolic acidosis associated with prolonged diarrhea and loss of sodium bicarbonate, diabetes insipidus, adrenocortical hyperfuction,
+salicylate intoxication and with excessive infusion of isotonic saline or extremely high dietary intake of salt.Chloride is decreased in overhydration, chronic respiratory acidosis,
+salt-losing nephritis, metabolic alkalosis, congestive heart failure, Addisonian crisis, certain types of metabolic acidosis, persistent gastric secretion and prolonged vomiting,
+URINALYSIS-Routine urine analysis assists in screening and diagnosis of various metabolic, urological, kidney and liver disorders
+Protein: Elevated proteins can be an early sign of kidney disease. Urinary protein excretion can also be temporarily elevated by strenuous exercise, orthostatic proteinuria,
+dehydration, urinary tract infections and acute illness with fever
+Glucose: Uncontrolled diabetes mellitus can lead to presence of glucose in urine. Other causes include pregnancy, hormonal disturbances, liver disease and certain
+medications.
+Ketones: Uncontrolled diabetes mellitus can lead to presence of ketones in urine. Ketones can also be seen in starvation, frequent vomiting, pregnancy and strenuous
+exercise.
+Blood: Occult blood can occur in urine as intact erythrocytes or haemoglobin, which can occur in various urological, nephrological and bleeding disorders.
+Leukocytes: An increase in leukocytes is an indication of inflammation in urinary tract or kidneys. Most common cause is bacterial urinary tract infection.
+Nitrite: Many bacteria give positive results when their number is high. Nitrite concentration during infection increases with length of time the urine specimen is retained in
+bladder prior to collection.
+pH: The kidneys play an important role in maintaining acid base balance of the body. Conditions of the body producing acidosis/ alkalosis or ingestion of certain type of food
+can affect the pH of urine.
+Specific gravity: Specific gravity gives an indication of how concentrated the urine is. Increased specific gravity is seen in conditions like dehydration, glycosuria and
+proteinuria while decreased specific gravity is seen in excessive fluid intake, renal failure and diabetes insipidus.
+Bilirubin: In certain liver diseases such as biliary obstruction or hepatitis, bilirubin gets excreted in urine.
+Urobilinogen: Positive results are seen in liver diseases like hepatitis and cirrhosis and in cases of hemolytic anemia
+APOLIPOPROTEIN - B, SERUM-Apolipoproteins are carrier proteins that combine with lipids to form lipoprotein particles, which have hydrophobic lipids at the core and
+hydrophilic side chains made of amino acids. There are several classes of lipoproteins ranging in density, from VLDL, or very low density lipoproteins, to VHDL, or very high
+density lipoproteins. There are nine different apolipoproteins that are found in human body, and they can act as signals, that cause lipoproteins to act on certain tissues or
+that activate enzymes that act on those lipoproteins
+Apolipoprotein B (Apo B) is a major protein component of low-density lipoprotein (LDL) comprising >90% of the LDL proteins and constituting 20% to 25% of the total weight
+of LDL. Increased plasma concentration of Apo B-containing lipoproteins is associated with an increased risk of developing atherosclerotic disease.
+Abetalipoproteinemia and severe hypobetalipoproteinemia can cause malabsorption of food lipids and polyneuropathy. In patients with hyperapobetalipoproteinemia (HALB),
+a disorder associated with increased risk of developing CHD and with an estimated prevalence of 30% in patients with premature CHD, Apo B is increased disproportionately
+in relation to LDL cholesterol. Apo B quantitation is required to identify these patients and is necessary in distinguishing HALB from another common lipoprotein abnormality,
+familial combined hyperlipidemia . Elevated levels of apolipoprotein B are more powerful indicators of disease than cholesterol or LDL in angiographic coronary artery disease.
+FOLIC ACID, SERUM-Folates are compounds of pteroylglutamic acid (PGA) that function as coenzymes in metabolic reactions involving the transfer of single-carbon units from
+a donor to a recipient compound. Folate, with vitamin B12, is essential for DNA synthesis, which is required for normal red blood cell maturation. Human obtain folate from
+dietary sources including fruits, green and leafy vegetables, yeast, and organ meats. Folate is absorbed through the small intestine and stored in the liver.
+Low folate intake, malabsorption as result of gastrointestinal diseases, pregnancy, and drugs such as phenytoin are causes of folate deficiency. Folate deficiency is also
+associated with chronic alcoholism. Folate and vitamin B12 deficiency impair DNA synthesis, causing macrocytic anemias. These anemias are characterized by abnormal
+maturation of red blood cell precursors in the bone marrow, the presence of megaloblasts, and decreased red blood cell survival.
+
+Page 11 Of 13
+
+DIAGNOSTIC REPORT
+CLIENT CODE : C000097359
+
+Cert. No. MC-2015
+
+CLIENT'S NAME AND ADDRESS :
+FPSC HK PATHOLOGY
+SHOP NO.3, DDA MARKET, C-8, VASANT KUNJ
+
+SRL LIMITED
+SRL,REFERENCE LAB, GP-26, MARUTI INDUSTRIAL ESTATE,UDYOG
+VIHAR,SECTOR-18,
+GURGAON, 122015
+HARYANA, INDIA
+Tel : 1800-222-000, 1800-102-8282, Fax : CIN U74899PB1995PLC045956
+Email : connect@srl.in
+
+NEW DELHI 110070
+DELHI INDIA
+9818105133
+
+PATIENT ID :
+
+PATIENT NAME : GAGANMEET SINGH
+ACCESSION NO :
+DRAWN :
+
+0009TJ067147
+
+AGE :
+
+25/10/2020 12:49
+
+REFERRING DOCTOR :
+
+Test Report Status
+
+34 Years
+
+RECEIVED :
+
+SEX : Male
+
+25/10/2020 16:00
+
+GAGAM183186200
+
+DATE OF BIRTH :
+REPORTED :
+
+25/10/2020 19:48
+
+CLIENT PATIENT ID :
+
+SELF
+
+Preliminary
+
+Results
+
+Biological Reference Interval
+
+Units
+
+Since both folate and vitamin B12 deficiency can cause macrocytic anemia, appropriate treatment depends on the differential diagnosis of the deficiency. Serum folate
+measurement provides an early index of folate status. However, folate is much more concentrated in red blood cells than in serum so the red blood cell folate measurement
+more closely reflects tissue stores. Red blood cell folate concentration is considered the most reliable indicator of folate status.
+Methotrexate and Leucovorin interfere with folate measurement because these drugs cross-react with folate binding proteins.
+FREE TRIIODOTHYRONINE (FT3), SERUM-The guidelines for age related reference ranges for FT3.
+--------------------------------------------------------------------------------------------------------Cord Blood
+1.5 - 3.9 pg/mL
+Children
+2.1 - 4.4 pg/mL
+Pregnancy
+2.0 - 3.8 pg/mL
+--------------------------------------------------------------------------------------------------------FREE THYROXINE (FT4), SERUM-The guidlines for age related reference ranges for FT4.
+--------------------------------------------------------------------------------------------------------New Born (1-4 days)
+2.2 - 5.3 ng/dL
+Children
+0.8 - 2.7 ng/dL
+Pregnancy
+1st Trimester
+0.7 - 2.0 ng/dL
+2nd & 3rd Trimester
+0.5 - 1.6 ng/dL
+--------------------------------------------------------------------------------------------------------TSH 3RD GENERATION ULTRA( TSH3 - UL), SERUM-Comment: The Biological Reference Interval of TSH-3rd Generation Ultra [TSH3-UL] is not established for age less than 2
+years.
+Below mentioned are the guidelines for Pregnancy related reference ranges for TSH.
+--------------------------------------------------------------------------------------------------------Levels in
+TSH
+Pregnancy
+(µIU/mL)
+First Trimester
+0.1 - 2.5
+.
+2nd Trimester
+0.2 – 3.0
+.
+3rd Trimester
+0.3 – 3.0
+-------------------------------------------------------------------------------------------------------
+
+**End Of Report**
+Please visit www.srlworld.com for related Test Information for this accession
+
+Dr. Arpita Roy, MD
+Section Head Flowcytometry &
+Head QA
+
+Dr. Aarti Khanna Nagpal, DNB
+Head-Haematology
+
+Dr Shakti Aggarwal, MD
+Head - Clinical Chemistry
+
+Dr. Ajay Gupta
+Section Head
+
+Page 12 Of 13
+
+DIAGNOSTIC REPORT
+CLIENT CODE : C000097359
+
+Cert. No. MC-2015
+
+CLIENT'S NAME AND ADDRESS :
+FPSC HK PATHOLOGY
+SHOP NO.3, DDA MARKET, C-8, VASANT KUNJ
+
+SRL LIMITED
+SRL,REFERENCE LAB, GP-26, MARUTI INDUSTRIAL ESTATE,UDYOG
+VIHAR,SECTOR-18,
+GURGAON, 122015
+HARYANA, INDIA
+Tel : 1800-222-000, 1800-102-8282, Fax : CIN U74899PB1995PLC045956
+Email : connect@srl.in
+
+NEW DELHI 110070
+DELHI INDIA
+9818105133
+
+PATIENT ID :
+
+PATIENT NAME : GAGANMEET SINGH
+ACCESSION NO :
+DRAWN :
+
+0009TJ067147
+
+AGE :
+
+25/10/2020 12:49
+
+REFERRING DOCTOR :
+
+Test Report Status
+
+34 Years
+
+RECEIVED :
+
+SEX : Male
+
+25/10/2020 16:00
+
+DATE OF BIRTH :
+REPORTED :
+
+25/10/2020 19:48
+
+CLIENT PATIENT ID :
+
+SELF
+
+Preliminary
+
+GAGAM183186200
+
+Results
+
+Biological Reference Interval
+
+Units
+
+CONDITIONS OF LABORATORY TESTING & REPORTING
+1. It is presumed that the test sample belongs to the patient
+5. The results of a laboratory test are dependent on the
+named or identified in the test requisition form.
+quality of the sample as well as the assay technology.
+2. All Tests are performed and reported as per the
+6. Result delays could be because of uncontrolled
+turnaround time stated in the SRL Directory of services
+circumstances. e.g. assay run failure.
+(DOS).
+7. Tests parameters marked by asterisks are excluded from
+3. SRL confirms that all tests have been performed or
+the “scope" of NABL accredited tests. (If laboratory is
+assayed with highest quality standards, clinical safety &
+accredited).
+technical integrity.
+8. Laboratory results should be correlated with clinical
+4. A requested test might not be performed if:
+information to determine Final diagnosis.
+a. Specimen received is insufficient or inappropriate
+9. Test results are not valid for Medico- legal purposes.
+specimen quality is unsatisfactory
+10. In case of queries or unexpected test results please call
+b. Incorrect specimen type
+at SRL customer care (Toll free: 1800-222-000). Post proper
+c. Request for testing is withdrawn by the ordering doctor
+investigation repeat analysis may be carried out.
+or patient
+d. There is a discrepancy between the label on the
+specimen container and the name on the test requisition
+form
+SRL Limited
+Fortis Hospital, Sector 62, Phase VIII,
+Mohali 160062
+
+Page 13 Of 13
+
+

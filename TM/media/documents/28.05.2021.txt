@@ -1,0 +1,2538 @@
+Laboratory Investigation Report
+Patient Name
+
+: Mrs. Indu Nagpal
+
+Centre
+
+: 903 - Max Lab, Sector 40, Gurugram
+
+Age/Gender
+
+: 51 Y 6 M 2 D /F
+
+OP/IP No
+
+:/
+
+Max ID/Mobile
+
+: ML00234145/9811333921
+
+Collection Date/Time : 28/May/2021 11:05AM
+
+Lab ID
+
+: 0591052101036~2
+
+Receiving Date
+
+: 28/May/2021
+
+Ref Doctor
+
+: SELF
+
+Reporting Date
+
+: 28/May/2021
+
+Serology Elisa
+
+IgE (Immunoglobulin-E)*, Serum
+FEIA
+
+Date
+Immunoglobulin-IgE
+
+28/May/2021
+11:05AM
+
+Unit
+
+Bio Ref
+Interval
+
+14.2
+
+kUA/L
+
+0-64
+
+Comment Total IgE is an in vitro test system for the quantitative measurement of circulating
+total IgE in human serum or plasma. It is intended for in vitro diagnostic use as an aid in the
+clinical diagnosis of IgE mediated allergic disorders in conjunction with other clinical findings,
+and is to be used in clinical laboratories. A definite clinical diagnosis should not be made as a result of single test only, but should be made by taking into account
+clinical history and other laboratory findings.
+
+Kindly correlate with clinical findings
+*** End Of Report ***
+
+Page 1 of 23
+
+SIN No:B2B798100, Test Performed at :910 - Max Hospital - Saket M S S H, Press Enclave Road, Mandir Marg, Saket, New Delhi, Delhi 110017
+Booking Centre :903 - Max Lab, Sector 40, Gurugram, H.No C 2 GF Sector 40,Gurgaon, 9971264353
+
+Laboratory Investigation Report
+Patient Name
+
+: Mrs. Indu Nagpal
+
+Centre
+
+: 903 - Max Lab, Sector 40, Gurugram
+
+Age/Gender
+
+: 51 Y 6 M 2 D /F
+
+OP/IP No
+
+:/
+
+Max ID/Mobile
+
+: ML00234145/9811333921
+
+Collection Date/Time : 28/May/2021 11:05AM
+
+Lab ID
+
+: 0591052101036~2
+
+Receiving Date
+
+: 28/May/2021
+
+Ref Doctor
+
+: SELF
+
+Reporting Date
+
+: 28/May/2021
+
+Clinical Biochemistry
+Test Name
+
+Result
+
+Unit
+
+Bio Ref Interval
+
+mg/dL
+mg/dL
+mg/dL
+
+70 - 400
+700 - 1600
+40 - 230
+
+Immunoglobulin Profile (IgG + IgA + IgM), Serum*
+Immunoturbidimetric
+
+Immunoglobulin IgA
+Immunoglobulin IgG
+Immunoglobulin IgM
+
+186.14
+822.91
+99.02
+
+Page 2 of 23
+
+SIN No:B2B798100, Test Performed at :910 - Max Hospital - Saket M S S H, Press Enclave Road, Mandir Marg, Saket, New Delhi, Delhi 110017
+Booking Centre :903 - Max Lab, Sector 40, Gurugram, H.No C 2 GF Sector 40,Gurgaon, 9971264353
+
+Laboratory Investigation Report
+Patient Name
+
+: Mrs. Indu Nagpal
+
+Centre
+
+: 903 - Max Lab, Sector 40, Gurugram
+
+Age/Gender
+
+: 51 Y 6 M 2 D /F
+
+OP/IP No
+
+:/
+
+Max ID/Mobile
+
+: ML00234145/9811333921
+
+Collection Date/Time : 28/May/2021 11:05AM
+
+Lab ID
+
+: 0591052101036~2
+
+Receiving Date
+
+: 28/May/2021
+
+Ref Doctor
+
+: SELF
+
+Reporting Date
+
+: 28/May/2021
+
+Clinical Biochemistry
+
+Homocysteine, Quantitative*, Serum
+
+Date
+Homocysteine,
+Quantitative
+
+28/May/2021
+11:05AM
+
+Unit
+
+Bio Ref
+Interval
+
+11.3
+
+µmol/L
+
+3 - 12
+
+Enzymatic Kinetic
+
+Interpretation Measurement of Homocysteine is considered important to diagnose homocystinuria, to identify individuals with or at a risk of developing
+cobalamin or folate deficiency, and to assess Homocysteine as a risk factor for cardiovascular disease (CVD) and other disorders.
+
+Page 3 of 23
+
+SIN No:B2B798100, Test Performed at :910 - Max Hospital - Saket M S S H, Press Enclave Road, Mandir Marg, Saket, New Delhi, Delhi 110017
+Booking Centre :903 - Max Lab, Sector 40, Gurugram, H.No C 2 GF Sector 40,Gurgaon, 9971264353
+
+Laboratory Investigation Report
+Patient Name
+
+: Mrs. Indu Nagpal
+
+Centre
+
+: 903 - Max Lab, Sector 40, Gurugram
+
+Age/Gender
+
+: 51 Y 6 M 2 D /F
+
+OP/IP No
+
+:/
+
+Max ID/Mobile
+
+: ML00234145/9811333921
+
+Collection Date/Time : 28/May/2021 10:53AM
+
+Lab ID
+
+: 0591052101036~2
+
+Receiving Date
+
+: 28/May/2021
+
+Ref Doctor
+
+: SELF
+
+Reporting Date
+
+: 28/May/2021
+
+Clinical Biochemistry
+WellWise Exclusive Profile-Female
+
+Iron and Total Iron Binding Capacity, Serum*
+
+Date
+Iron
+
+28/May/2021 24/Nov/18
+10:53AM
+10:45AM
+
+Unit
+
+Bio Ref Interval
+
+25.1
+
+18.5
+
+μg/dL
+
+60 - 180
+
+401
+
+464
+
+μg/dL
+
+155 - 355
+
+426
+
+483
+
+μg/dL
+
+215 - 535
+
+5.89
+
+3.83
+
+%
+
+17 - 37
+
+TPTZ- No deproteinization
+
+UIBC
+Nitroso - PSAP
+
+Total Iron Binding
+Capacity
+Calculated
+
+Transferrin Saturation
+Calculated
+
+Page 4 of 23
+
+SIN No:B2B798100, Test Performed at :585 - Max Hospital - Gurugram, Opposite HUDA City Centre Metro Station, B - Block
+Booking Centre :903 - Max Lab, Sector 40, Gurugram, H.No C 2 GF Sector 40,Gurgaon, 9971264353
+
+Laboratory Investigation Report
+Patient Name
+
+: Mrs. Indu Nagpal
+
+Centre
+
+: 903 - Max Lab, Sector 40, Gurugram
+
+Age/Gender
+
+: 51 Y 6 M 2 D /F
+
+OP/IP No
+
+:/
+
+Max ID/Mobile
+
+: ML00234145/9811333921
+
+Collection Date/Time : 28/May/2021 10:53AM
+
+Lab ID
+
+: 0591052101036~2
+
+Receiving Date
+
+: 28/May/2021
+
+Ref Doctor
+
+: SELF
+
+Reporting Date
+
+: 28/May/2021
+
+Clinical Biochemistry
+WellWise Exclusive Profile-Female
+
+Glycosylated Haemoglobin (HbA1C),EDTA Routine*
+HPLC
+
+Date
+Glycosylated
+Haemoglobin(Hb A1c)
+Glycosylated
+Haemoglobin(Hb A1c)
+IFCC
+Average Glucose Value
+For the Last 3 Months
+Average Glucose Value
+For the Last 3 Months
+IFCC
+
+28/May/2021 17/May/20 24/Nov/18
+10:53AM
+09:50AM 10:45AM
+
+Unit
+
+Bio Ref Interval
+
+8.9
+
+12.6
+
+8.9
+
+%
+
+< 5.7
+
+73.76
+
+114.21
+
+73.76
+
+mmol/mol < 39.0
+
+208.73
+
+314.92
+
+208.73
+
+mg/dL
+
+11.56
+
+17.44
+
+11.56
+
+mmol/L
+
+Interpretation The following HbA1c ranges recommended by the American Diabetes Assocation(ADA) may be used as an aid in the diagnosis of diabetes
+mellitus.
+HbA1C(NGSP %)
+
+HbA1C(IFCC mmol/mol)
+
+Suggested Diagnosis
+
+> 6.5
+
+> 48
+
+Diabetic
+
+5.7 - 6.4
+
+39 - 47
+
+Pre- Diabetic
+
+< 5.7
+
+< 39
+
+Non - Diabetic
+
+HbA1C provides a useful index of average glycaemia over the preceding 6-8 weeks.
+It is suggested that HbA1c is measured every 6 months in stable patients, every 3 months in patients with unstable metabolic control and every month in
+pregnancy.
+Increased Glycated hemoglobin is a reflection of Hyperglycemia.
+
+Kindly correlate with clinical findings
+*** End Of Report ***
+
+Page 5 of 23
+
+SIN No:B2B798100, Test Performed at :585 - Max Hospital - Gurugram, Opposite HUDA City Centre Metro Station, B - Block
+Booking Centre :903 - Max Lab, Sector 40, Gurugram, H.No C 2 GF Sector 40,Gurgaon, 9971264353
+
+Laboratory Investigation Report
+Patient Name
+
+: Mrs. Indu Nagpal
+
+Centre
+
+: 903 - Max Lab, Sector 40, Gurugram
+
+Age/Gender
+
+: 51 Y 6 M 2 D /F
+
+OP/IP No
+
+:/
+
+Max ID/Mobile
+
+: ML00234145/9811333921
+
+Collection Date/Time : 28/May/2021 10:53AM
+
+Lab ID
+
+: 0591052101036~2
+
+Receiving Date
+
+: 28/May/2021
+
+Ref Doctor
+
+: SELF
+
+Reporting Date
+
+: 28/May/2021
+
+Clinical Biochemistry
+WellWise Exclusive Profile-Female
+
+Page 6 of 23
+
+SIN No:B2B798100, Test Performed at :585 - Max Hospital - Gurugram, Opposite HUDA City Centre Metro Station, B - Block
+Booking Centre :903 - Max Lab, Sector 40, Gurugram, H.No C 2 GF Sector 40,Gurgaon, 9971264353
+
+Laboratory Investigation Report
+Patient Name
+
+: Mrs. Indu Nagpal
+
+Centre
+
+: 903 - Max Lab, Sector 40, Gurugram
+
+Age/Gender
+
+: 51 Y 6 M 2 D /F
+
+OP/IP No
+
+:/
+
+Max ID/Mobile
+
+: ML00234145/9811333921
+
+Collection Date/Time : 28/May/2021 10:53AM
+
+Lab ID
+
+: 0591052101036~2
+
+Receiving Date
+
+: 28/May/2021
+
+Ref Doctor
+
+: SELF
+
+Reporting Date
+
+: 28/May/2021
+
+Immunoassay
+WellWise Exclusive Profile-Female
+
+Ferritin,Serum*
+
+Date
+Ferritin
+
+28/May/2021 24/Nov/18
+10:53AM
+10:45AM
+
+Unit
+
+Bio Ref Interval
+
+10.5
+
+ng/mL
+
+13 - 150
+
+28/May/2021 17/May/20 24/Nov/18
+10:53AM
+09:50AM 10:45AM
+
+Unit
+
+Bio Ref Interval
+
+3.94
+
+3.13
+
+3.66
+
+pg/mL
+
+2.6 - 4.2
+
+0.91
+
+0.77
+
+0.76
+
+ng/dL
+
+0.58 - 1.64
+
+3.82
+
+3.16
+
+3.96
+
+µIU/mL
+
+0.34 - 5.6
+
+5
+
+ECLIA
+
+Thyroid Profile*,Serum*
+
+Date
+Free Triiodothyronine
+(FT3)
+CLIA
+
+Free Thyroxine (FT4)
+CLIA
+
+Thyroid Stimulating
+Hormone
+CLIA
+
+Comment
+Cord Blood
+Upto 2
+(> 37
+Month
+weeks)
+
+Adult
+
+1st
+Trimester
+
+2nd
+Trimester
+
+3rd
+Trimester
+
+Pg/mL
+
+0.15 - 3.91 2.4 - 5.6
+
+2.6 - 4.2
+
+2.11 - 3.83
+
+1.96 - 3.38
+
+1.96 - 3.38
+
+FT4
+
+ng/dl
+
+0.89 - 1.53 0.58 - 1.64 0.58 - 1.64 0.7 - 2.0
+
+0.5 - 1.6
+
+0.5 - 1.6
+
+TSH
+
+uIU/ml
+
+2.3 - 13.2
+
+0.2 - 3.0
+
+0.3 - 3.0
+
+Parameter
+
+Unit
+
+FT3
+
+Premature
+(28 - 36
+weeks)
+
+0.7 - 27.0
+
+0.5 - 10
+
+0.38 - 5.33 0.1 - 2.5
+
+Note : TSH levels are subject to circadian variation, reaching peak levels between 2 – 4 am
+and at a minimum between 6 – 10 pm. The variation is of the order of 50% - 206 %, hence
+time of the day has influence on the measured serum TSH concentrations.
+
+Page 7 of 23
+
+SIN No:B2B798100, Test Performed at :585 - Max Hospital - Gurugram, Opposite HUDA City Centre Metro Station, B - Block
+Booking Centre :903 - Max Lab, Sector 40, Gurugram, H.No C 2 GF Sector 40,Gurgaon, 9971264353
+
+Laboratory Investigation Report
+Patient Name
+
+: Mrs. Indu Nagpal
+
+Centre
+
+: 903 - Max Lab, Sector 40, Gurugram
+
+Age/Gender
+
+: 51 Y 6 M 2 D /F
+
+OP/IP No
+
+:/
+
+Max ID/Mobile
+
+: ML00234145/9811333921
+
+Collection Date/Time : 28/May/2021 10:53AM
+
+Lab ID
+
+: 0591052101036~2
+
+Receiving Date
+
+: 28/May/2021
+
+Ref Doctor
+
+: SELF
+
+Reporting Date
+
+: 28/May/2021
+
+Immunoassay
+WellWise Exclusive Profile-Female
+
+Vitamin B12, Serum*
+
+Date
+Vitamin B12
+
+28/May/2021 17/May/20 24/Nov/18
+10:53AM
+09:50AM 10:45AM
+
+Unit
+
+Bio Ref Interval
+
+508.0
+
+pg/mL
+
+120 - 914
+
+480.0
+
+181.0
+
+CLIA
+
+Interpretation
+Note:- Vitamin B12 (Cobalamin)
+Vitamin B12 is tested for patients with GIT disease, Neurological disease, psychiatric disturbances, malnutrition, alcohol abuse.
+Increased in chronic renal failure, severe CHF.
+Decreased in megaloblastic anemia.
+Advise: CBC, peripheral smear, serum folate levels, intrinsic factor antibodies (IFA), bone marrow examination, if Vit B12 deficient.
+
+Page 8 of 23
+
+SIN No:B2B798100, Test Performed at :585 - Max Hospital - Gurugram, Opposite HUDA City Centre Metro Station, B - Block
+Booking Centre :903 - Max Lab, Sector 40, Gurugram, H.No C 2 GF Sector 40,Gurgaon, 9971264353
+
+Laboratory Investigation Report
+Patient Name
+
+: Mrs. Indu Nagpal
+
+Centre
+
+: 903 - Max Lab, Sector 40, Gurugram
+
+Age/Gender
+
+: 51 Y 6 M 2 D /F
+
+OP/IP No
+
+:/
+
+Max ID/Mobile
+
+: ML00234145/9811333921
+
+Collection Date/Time : 28/May/2021 10:53AM
+
+Lab ID
+
+: 0591052101036~2
+
+Receiving Date
+
+: 28/May/2021
+
+Ref Doctor
+
+: SELF
+
+Reporting Date
+
+: 28/May/2021
+
+Immunoassay
+WellWise Exclusive Profile-Female
+
+25 Hydroxy Vitamin D Level,Serum*
+
+Date
+25 Hydroxy, Vitamin D
+
+28/May/2021 17/May/20 24/Nov/18
+10:53AM
+09:50AM 10:45AM
+
+Unit
+
+Bio Ref Interval
+
+26.07
+
+ng/mL
+
+30-100
+
+20.67
+
+25.72
+
+CLIA
+
+Ref Range
+
+Vitamin D Status
+
+25 (OH) Vitamin D Concentration Range
+(ng/ml)
+
+Sufficiency
+
+30-100
+
+Insufficiency
+
+20-29
+
+Deficiency
+
+<20
+
+Potential Toxicity
+
+>100
+
+Interpretation
+Vitamin D toxicity can be due to
+1.
+Use of high doses of vitamin D for prophylaxis or treatment
+2.
+Taking vitamin D supplements with existing health problems such as kidney disease, liver disease , tuberculosis and hyperparathyroidism
+Vitamin D deficiency can be due to:
+1.
+Inadequate exposure to sunlight,
+2.
+Diet deficient in vitamin D
+3.
+Malabsorption
+Advice: Serum calcium, phosphorus and PTH
+
+Page 9 of 23
+
+SIN No:B2B798100, Test Performed at :585 - Max Hospital - Gurugram, Opposite HUDA City Centre Metro Station, B - Block
+Booking Centre :903 - Max Lab, Sector 40, Gurugram, H.No C 2 GF Sector 40,Gurgaon, 9971264353
+
+Laboratory Investigation Report
+Patient Name
+
+: Mrs. Indu Nagpal
+
+Centre
+
+: 903 - Max Lab, Sector 40, Gurugram
+
+Age/Gender
+
+: 51 Y 6 M 2 D /F
+
+OP/IP No
+
+:/
+
+Max ID/Mobile
+
+: ML00234145/9811333921
+
+Collection Date/Time : 28/May/2021 10:53AM
+
+Lab ID
+
+: 0591052101036~2
+
+Receiving Date
+
+: 28/May/2021
+
+Ref Doctor
+
+: SELF
+
+Reporting Date
+
+: 28/May/2021
+
+Immunoassay
+WellWise Exclusive Profile-Female
+
+Folate , Serum*
+
+Date
+Folate Serum
+
+28/May/2021 24/Nov/18
+10:53AM
+10:45AM
+
+Unit
+
+Bio Ref Interval
+
+>47
+
+ng/mL
+
+>5.9
+
+40.0
+
+CLIA
+
+Rechecked
+
+Ref Range
+Folate (Normal)
+
+>5.9
+
+Folate (Indeterminate)
+
+4.0 - 5.9
+
+Folate (Deficient)
+
+<4.0
+
+Interpretation
+A folate deficiency can lead to megaloblastic anemia and ultimately to severe neurological problems. Folate deficiency can be caused by insufficient dietary intake,
+malabsorption or excessive folate utilization, which is common during pregnancy, alcoholism, hepatitis, or other liver-damaging diseases.
+
+Kindly correlate with clinical findings
+*** End Of Report ***
+
+Page 10 of 23
+
+SIN No:B2B798100, Test Performed at :585 - Max Hospital - Gurugram, Opposite HUDA City Centre Metro Station, B - Block
+Booking Centre :903 - Max Lab, Sector 40, Gurugram, H.No C 2 GF Sector 40,Gurgaon, 9971264353
+
+Laboratory Investigation Report
+Patient Name
+
+: Mrs. Indu Nagpal
+
+Centre
+
+: 903 - Max Lab, Sector 40, Gurugram
+
+Age/Gender
+
+: 51 Y 6 M 2 D /F
+
+OP/IP No
+
+:/
+
+Max ID/Mobile
+
+: ML00234145/9811333921
+
+Collection Date/Time : 28/May/2021 10:53AM
+
+Lab ID
+
+: 0591052101036~2
+
+Receiving Date
+
+: 28/May/2021
+
+Ref Doctor
+
+: SELF
+
+Reporting Date
+
+: 28/May/2021
+
+Clinical Biochemistry
+WellWise Exclusive Profile-Female
+
+Blood Sugar Fasting,Fluoride Plasma
+
+Date
+Glucose (Fasting)
+
+28/May/2021 17/May/20 24/Nov/18
+10:53AM
+09:50AM 10:45AM
+
+Unit
+
+Bio Ref Interval
+
+119
+
+mg/dL
+
+74 - 99
+
+28/May/2021 24/Nov/18
+10:53AM
+10:45AM
+
+Unit
+
+Bio Ref Interval
+
+0.63
+
+mg/dL
+
+386
+
+176
+
+Hexokinase
+
+CRP (C-Reactive Protein), High Sensitive, Serum
+
+Date
+C-Reactive Protein, High
+Sensitive
+
+0.28
+
+Latex particle Immunoturbidimetric
+
+Reference Values in the table given below are recommended cardiovascular risk groups, in primary prevention settings by AHA/CDC and NACB expert panel.
+
+Risk Level
+
+CRP (mg/L)
+
+CRP (mg/dL)
+
+Low
+
+< 1.0
+
+< 0.10
+
+Average
+
+1.0 - 3.0
+
+0.10 - 0.30
+
+High
+
+> 3.0
+
+>0.30
+
+Increase in CRP levels is non – specific, and interpretation must be undertaken in comparison with previous Hs CRP values or other cardiac risk indicators
+(Cholesterol, HDL etc.) Single measurement may lead to an erroneous assessment of early cardiac inflammation.
+
+Lipid Profile,Serum
+
+Date
+Cholesterol
+
+28/May/2021 17/May/20 24/Nov/18
+10:53AM
+09:50AM 10:45AM
+
+Unit
+
+Bio Ref Interval
+
+191
+
+215
+
+183
+
+mg/dL
+
+< 200
+
+46.0
+
+38.0
+
+44.0
+
+mg/dL
+
+> 40
+
+140.0
+
+157.0
+
+139.0
+
+mg/dL
+
+< 100
+
+Cholesterol oxidase, esterase,
+peroxidase
+
+HDL Cholesterol
+Direct measure, immunoinhibition
+
+LDL Cholesterol
+
+Page 11 of 23
+
+SIN No:B2B798100, Test Performed at :585 - Max Hospital - Gurugram, Opposite HUDA City Centre Metro Station, B - Block
+Booking Centre :903 - Max Lab, Sector 40, Gurugram, H.No C 2 GF Sector 40,Gurgaon, 9971264353
+
+Laboratory Investigation Report
+Patient Name
+
+: Mrs. Indu Nagpal
+
+Centre
+
+: 903 - Max Lab, Sector 40, Gurugram
+
+Age/Gender
+
+: 51 Y 6 M 2 D /F
+
+OP/IP No
+
+:/
+
+Max ID/Mobile
+
+: ML00234145/9811333921
+
+Collection Date/Time : 28/May/2021 10:53AM
+
+Lab ID
+
+: 0591052101036~2
+
+Receiving Date
+
+: 28/May/2021
+
+Ref Doctor
+
+: SELF
+
+Reporting Date
+
+: 28/May/2021
+
+Clinical Biochemistry
+WellWise Exclusive Profile-Female
+Direct measure
+
+Triglyceride
+
+144.0
+
+238.0
+
+103.0
+
+mg/dL
+
+< 150
+
+28.8
+
+47.6
+
+20.6
+
+mg/dl
+
+< 30
+
+4.2
+
+5.7
+
+4.2
+
+..
+
+0.0-4.9
+
+145.00
+
+177.00
+
+mg/dL
+
+< 130
+
+Ratio
+
+0.3 - 0.4
+
+Enzymatic, end point
+
+VLDL Cholesterol
+Calculated
+
+Total Cholesterol/HDL
+Ratio
+Calculated
+
+Non-HDL Cholesterol
+Calculated
+
+HDL/LDL
+
+0.33
+
+Calculated
+
+Interpretation
+
+Total
+Cholesterol
+
+HDL-C
+
+Desirable: < 200 mg/dL
+Borderline High: 200-239
+mg/dL
+High ≥ 240 mg/dL
+
+Low HDL: < 40 mg/dL
+High HDL: ≥ 60 mg/dL
+
+LDL-C
+
+Optimal: < 100 mg/dL
+Near Optimal/ Above Optimal: 100129
+mg/dL
+Borderline High: 130-159 mg/dL
+High: 160-189 mg/dL
+Very High: ≥ 190 mg/dL
+
+Normal: <150 mg/dL
+Borderline High: 150-199 mg/dL
+Triglyceride
+High: 200-499 mg/dL
+Very High: ≥ 500 mg/dL
+
+Page 12 of 23
+
+SIN No:B2B798100, Test Performed at :585 - Max Hospital - Gurugram, Opposite HUDA City Centre Metro Station, B - Block
+Booking Centre :903 - Max Lab, Sector 40, Gurugram, H.No C 2 GF Sector 40,Gurgaon, 9971264353
+
+Laboratory Investigation Report
+Patient Name
+
+: Mrs. Indu Nagpal
+
+Centre
+
+: 903 - Max Lab, Sector 40, Gurugram
+
+Age/Gender
+
+: 51 Y 6 M 2 D /F
+
+OP/IP No
+
+:/
+
+Max ID/Mobile
+
+: ML00234145/9811333921
+
+Collection Date/Time : 28/May/2021 10:53AM
+
+Lab ID
+
+: 0591052101036~2
+
+Receiving Date
+
+: 28/May/2021
+
+Ref Doctor
+
+: SELF
+
+Reporting Date
+
+: 28/May/2021
+
+Clinical Biochemistry
+WellWise Exclusive Profile-Female
+
+Inorganic Phosphorus, Serum
+
+Date
+Phosphorus(inorg)
+
+28/May/2021 17/May/20 24/Nov/18
+10:53AM
+09:50AM 10:45AM
+
+Unit
+
+Bio Ref Interval
+
+4.43
+
+mg/dL
+
+2.5 - 4.5
+
+4.27
+
+3.6
+
+Phosphomolybdate-UV
+
+Interpretation
+Increased in Osteolytic metastatic bone tumors, myelogenous leukemia, sarcoidosis, milk-alkali syndrome, vitamin D intoxcation, healing fractures, renal failure,
+hyperparathyroidism, PTH resistance (Pseudohypoparathyroidism) and diabetes mellitus with ketosis.
+Decreased in Osteomalacia, steatorrhea, renal tubular acidosis, growth hormone deficiency, acute alcoholism, gram-negative bacterial septicemia, hypokalemia,
+familial hypophosphatemic rickets, Vitamin D deficiency, severe malnutrition, malabsorption, secondary diarrhea, vomiting, nasogastric suction, primary
+hyperthyroidism and PTH producing tumors.
+
+Page 13 of 23
+
+SIN No:B2B798100, Test Performed at :585 - Max Hospital - Gurugram, Opposite HUDA City Centre Metro Station, B - Block
+Booking Centre :903 - Max Lab, Sector 40, Gurugram, H.No C 2 GF Sector 40,Gurgaon, 9971264353
+
+Laboratory Investigation Report
+Patient Name
+
+: Mrs. Indu Nagpal
+
+Centre
+
+: 903 - Max Lab, Sector 40, Gurugram
+
+Age/Gender
+
+: 51 Y 6 M 2 D /F
+
+OP/IP No
+
+:/
+
+Max ID/Mobile
+
+: ML00234145/9811333921
+
+Collection Date/Time : 28/May/2021 10:53AM
+
+Lab ID
+
+: 0591052101036~2
+
+Receiving Date
+
+: 28/May/2021
+
+Ref Doctor
+
+: SELF
+
+Reporting Date
+
+: 28/May/2021
+
+Clinical Biochemistry
+WellWise Exclusive Profile-Female
+
+KFT Profile with Calcium,Uric Acid, Serum
+
+Date
+Urea
+
+28/May/2021 17/May/20 24/Nov/18
+10:53AM
+09:50AM 10:45AM
+
+Unit
+
+Bio Ref Interval
+
+19.0
+
+22.0
+
+20.0
+
+mg/dL
+
+17.0 - 43.0
+
+0.56
+
+0.64
+
+0.46
+
+mg/dL
+
+0.6 - 1.1
+
+113.90
+
+98.04
+
+144.38
+
+4.7
+
+3.5
+
+4
+
+ml/min/1.73
+m²
+mg/dL
+2.6 - 6.0
+
+8.96
+
+9.70
+
+8.92
+
+mg/dL
+
+8.8 - 10.6
+
+139.5
+
+134.2
+
+138.8
+
+mmol/L
+
+136 - 146
+
+3.8
+
+4.3
+
+4.16
+
+mmol/L
+
+3.5 - 5.1
+
+105.7
+
+100.6
+
+104.6
+
+mmol/L
+
+101 - 109
+
+19.8
+
+23.1
+
+26.4
+
+mmol/L
+
+21 - 31
+
+Urease, UV
+
+Creatinine
+Alkaline picrate kinetic
+
+eGFR
+MDRD
+
+Uric Acid
+Uricase, Colorimetric
+
+Calcium (Total)
+Arsenazo III
+
+Sodium
+ISE indirect
+
+Potassium
+ISE indirect
+
+Chloride
+ISE indirect
+
+Bicarbonate
+Enzymatic
+
+Interpretation Ref. Range
+
+eGFR - Estimated Glomerular Filteration Rate is calculated by MDRD equation which is most accurate for GFRs ≤ 60ml / min
+/1.73 m².MDRD equation is used for adult population only.
+<60ml / min / 1.73 m² - Chronic Kidney Disease
+<15 ml / min /1.73 m² - Kidney failure
+
+Page 14 of 23
+
+SIN No:B2B798100, Test Performed at :585 - Max Hospital - Gurugram, Opposite HUDA City Centre Metro Station, B - Block
+Booking Centre :903 - Max Lab, Sector 40, Gurugram, H.No C 2 GF Sector 40,Gurgaon, 9971264353
+
+Laboratory Investigation Report
+Patient Name
+
+: Mrs. Indu Nagpal
+
+Centre
+
+: 903 - Max Lab, Sector 40, Gurugram
+
+Age/Gender
+
+: 51 Y 6 M 2 D /F
+
+OP/IP No
+
+:/
+
+Max ID/Mobile
+
+: ML00234145/9811333921
+
+Collection Date/Time : 28/May/2021 10:53AM
+
+Lab ID
+
+: 0591052101036~2
+
+Receiving Date
+
+: 28/May/2021
+
+Ref Doctor
+
+: SELF
+
+Reporting Date
+
+: 28/May/2021
+
+Clinical Biochemistry
+WellWise Exclusive Profile-Female
+
+Liver Function Test Profile,Serum
+
+Date
+Total Protein
+
+28/May/2021 17/May/20 24/Nov/18
+10:53AM
+09:50AM 10:45AM
+
+Unit
+
+Bio Ref Interval
+
+6.43
+
+7.02
+
+6.28
+
+g/dL
+
+6.6 - 8.3
+
+4.0
+
+4.2
+
+3.8
+
+g/dL
+
+3.5 - 5.2
+
+2.4
+
+2.8
+
+2.5
+
+g/dl
+
+2.3 - 3.5
+
+1.6
+
+1.5
+
+1.5
+
+0.51
+
+0.46
+
+0.51
+
+mg/dL
+
+0.3 - 1.2
+
+0.10
+
+0.08
+
+0.1
+
+mg/dL
+
+0.0 - 0.2
+
+0.41
+
+0.38
+
+0.41
+
+mg/dL
+
+0.1 - 1.0
+
+18
+
+15
+
+15
+
+U/L
+
+< 35
+
+21
+
+26
+
+20
+
+U/L
+
+< 35
+
+66
+
+93
+
+77
+
+U/L
+
+30 - 120
+
+15.0
+
+17.0
+
+13.0
+
+U/L
+
+< 38
+
+Biuret
+
+Albumin
+Bromcresol Green (BCG)
+
+Globulin
+Calculated
+
+A.G. ratio
+
+1.2 - 1.5
+
+Calculated
+
+Bilirubin (Total)
+DPD
+
+Bilirubin (Direct)
+Diazotization
+
+Bilirubin (Indirect)
+Calculated
+
+SGOT- Aspartate
+Transaminase (AST)
+UV without P5P
+
+SGPT- Alanine
+Transaminase (ALT)
+UV without P5P
+
+Alkaline Phosphatase
+PNPP, AMP Buffer
+
+GGTP (Gamma GT),
+Serum
+Enzymatic Rate
+
+Kindly correlate with clinical findings
+*** End Of Report ***
+
+Page 15 of 23
+
+SIN No:B2B798100, Test Performed at :585 - Max Hospital - Gurugram, Opposite HUDA City Centre Metro Station, B - Block
+Booking Centre :903 - Max Lab, Sector 40, Gurugram, H.No C 2 GF Sector 40,Gurgaon, 9971264353
+
+Laboratory Investigation Report
+Patient Name
+
+: Mrs. Indu Nagpal
+
+Centre
+
+: 903 - Max Lab, Sector 40, Gurugram
+
+Age/Gender
+
+: 51 Y 6 M 2 D /F
+
+OP/IP No
+
+:/
+
+Max ID/Mobile
+
+: ML00234145/9811333921
+
+Collection Date/Time : 28/May/2021 10:53AM
+
+Lab ID
+
+: 0591052101036~2
+
+Receiving Date
+
+: 28/May/2021
+
+Ref Doctor
+
+: SELF
+
+Reporting Date
+
+: 28/May/2021
+
+Clinical Biochemistry
+WellWise Exclusive Profile-Female
+
+Page 16 of 23
+
+SIN No:B2B798100, Test Performed at :585 - Max Hospital - Gurugram, Opposite HUDA City Centre Metro Station, B - Block
+Booking Centre :903 - Max Lab, Sector 40, Gurugram, H.No C 2 GF Sector 40,Gurgaon, 9971264353
+
+Laboratory Investigation Report
+Patient Name
+
+: Mrs. Indu Nagpal
+
+Centre
+
+: 903 - Max Lab, Sector 40, Gurugram
+
+Age/Gender
+
+: 51 Y 6 M 2 D /F
+
+OP/IP No
+
+:/
+
+Max ID/Mobile
+
+: ML00234145/9811333921
+
+Collection Date/Time : 28/May/2021 10:53AM
+
+Lab ID
+
+: 0591052101036~2
+
+Receiving Date
+
+: 28/May/2021
+
+Ref Doctor
+
+: SELF
+
+Reporting Date
+
+: 28/May/2021
+
+Clinical Pathology
+WellWise Exclusive Profile-Female
+
+Urine Routine And Microscopy
+
+Date
+
+28/May/2021 24/Nov/18
+10:53AM
+10:45AM
+
+Unit
+
+Bio Ref Interval
+
+Macroscopy
+Reflectance photometry
+
+Colour
+PH
+Specific Gravity
+Protein
+Glucose.
+Ketones
+Blood
+Bilirubin
+Urobilinogen
+Nitrite
+
+Yellow
+5.0
+1.026
+Nil
++
+Nil
+Nil
+Nil
+Normal
+Positive
+
+Yellow
+5.0
+1.023
+Nil
+Nil
+Nil
+Nil
+Nil
+Normal
+Negative
+
+..
+
+Pale Yellow
+5-6
+1.015 - 1.025
+Nil
+Nil
+Nil
+Nil
+Nil
+Normal
+
+Microscopy
+Light Microscopy/Image capture microscopy
+
+Red Blood Cells (RBC)
+White Blood Cells
+Squamous Epithelial Cells
+Cast
+Crystals
+Bacteria
+
+Nil
+10 - 15
+5-7
+Nil
+Nil
++
+
+Nil
+3-5
+2-3
+Nil
+Nil
+Nil
+
+/HPF
+/HPF
+/HPF
+/LPF
+..
+/HPF
+
+Nil
+0.0-5.0
+Nil
+Nil
+Nil
+
+Kindly correlate with clinical findings
+*** End Of Report ***
+
+Page 17 of 23
+
+SIN No:B2B798100, Test Performed at :585 - Max Hospital - Gurugram, Opposite HUDA City Centre Metro Station, B - Block
+Booking Centre :903 - Max Lab, Sector 40, Gurugram, H.No C 2 GF Sector 40,Gurgaon, 9971264353
+
+Laboratory Investigation Report
+Patient Name
+
+: Mrs. Indu Nagpal
+
+Centre
+
+: 903 - Max Lab, Sector 40, Gurugram
+
+Age/Gender
+
+: 51 Y 6 M 2 D /F
+
+OP/IP No
+
+:/
+
+Max ID/Mobile
+
+: ML00234145/9811333921
+
+Collection Date/Time : 28/May/2021 10:53AM
+
+Lab ID
+
+: 0591052101036~2
+
+Receiving Date
+
+: 28/May/2021
+
+Ref Doctor
+
+: SELF
+
+Reporting Date
+
+: 28/May/2021
+
+Clinical Pathology
+WellWise Exclusive Profile-Female
+
+Page 18 of 23
+
+SIN No:B2B798100, Test Performed at :585 - Max Hospital - Gurugram, Opposite HUDA City Centre Metro Station, B - Block
+Booking Centre :903 - Max Lab, Sector 40, Gurugram, H.No C 2 GF Sector 40,Gurgaon, 9971264353
+
+Laboratory Investigation Report
+Patient Name
+
+: Mrs. Indu Nagpal
+
+Centre
+
+: 903 - Max Lab, Sector 40, Gurugram
+
+Age/Gender
+
+: 51 Y 6 M 2 D /F
+
+OP/IP No
+
+:/
+
+Max ID/Mobile
+
+: ML00234145/9811333921
+
+Collection Date/Time : 28/May/2021 10:53AM
+
+Lab ID
+
+: 0591052101036~2
+
+Receiving Date
+
+: 28/May/2021
+
+Ref Doctor
+
+: SELF
+
+Reporting Date
+
+: 28/May/2021
+
+Hematology
+WellWise Exclusive Profile-Female
+
+Complete Haemogram, Peripheral Smear and ESR,EDTA
+
+Date
+Haemoglobin
+
+28/May/2021 17/May/20 24/Nov/18
+10:53AM
+09:50AM 10:45AM
+
+Unit
+
+Bio Ref Interval
+
+10.6
+
+11.4
+
+9.9
+
+g/dl
+
+12.0 - 15.0
+
+34.4
+
+36.1
+
+31.3
+
+%
+
+40-50
+
+8.3
+
+9.7
+
+7.7
+
+10~9/L
+
+4.0-10.0
+
+4.73
+
+4.88
+
+4.11
+
+10~12/L 3.8-4.8
+
+72.8
+
+74.1
+
+76
+
+fL
+
+83-101
+
+22.5
+
+23.4
+
+24.1
+
+pg
+
+27-32
+
+30.9
+
+31.6
+
+31.7
+
+g/dl
+
+31.5-34.5
+
+226
+
+290
+
+290
+
+10~9/L
+
+150-410
+
+9.0
+
+8.2
+
+7.8
+
+fl
+
+7.8-11.2
+
+20.6
+
+14.8
+
+16.7
+
+%
+
+11.5-14.5
+
+65.4
+24.4
+8.1
+1.4
+0.7
+
+65.0
+26.8
+5.9
+1.1
+1.2
+
+61.5
+28.1
+8.2
+1.5
+0.7
+
+%
+%
+%
+%
+%
+
+40-80
+20-40
+2-10
+1-6
+0-2
+
+6.31
+2.6
+
+4.74
+2.2
+
+10~9/L
+10~9/L
+
+2.0-7.0
+1.0-3.0
+
+Modified cyanmethemoglobin
+
+Packed Cell, Volume
+Calculated
+
+Total Leucocyte Count
+(TLC)
+Electrical Impedance
+
+RBC Count
+Electrical Impedance
+
+MCV
+Electrical Impedance
+
+MCH
+Calculated
+
+MCHC
+Calculated
+
+Platelet Count
+Electrical Impedance
+
+MPV
+Calculated
+
+RDW
+Calculated
+
+Differential Cell Count
+VCS / Light Microscopy
+
+Neutrophils
+Lymphocytes
+Monocytes
+Eosinophils
+Basophils
+
+Absolute Leukocyte Count
+Calculated from TLC & DLC
+
+Absolute Neutrophil Count 5.43
+Absolute Lymphocyte
+2.0
+
+Page 19 of 23
+
+SIN No:B2B798100, Test Performed at :585 - Max Hospital - Gurugram, Opposite HUDA City Centre Metro Station, B - Block
+Booking Centre :903 - Max Lab, Sector 40, Gurugram, H.No C 2 GF Sector 40,Gurgaon, 9971264353
+
+Laboratory Investigation Report
+Patient Name
+
+: Mrs. Indu Nagpal
+
+Centre
+
+: 903 - Max Lab, Sector 40, Gurugram
+
+Age/Gender
+
+: 51 Y 6 M 2 D /F
+
+OP/IP No
+
+:/
+
+Max ID/Mobile
+
+: ML00234145/9811333921
+
+Collection Date/Time : 28/May/2021 10:53AM
+
+Lab ID
+
+: 0591052101036~2
+
+Receiving Date
+
+: 28/May/2021
+
+Ref Doctor
+
+: SELF
+
+Reporting Date
+
+: 28/May/2021
+
+Hematology
+WellWise Exclusive Profile-Female
+
+Count
+Absolute Monocyte Count
+Absolute Eosinophil Count
+Absolute Basophil Count
+ESR (Westergren)
+Peripheral Smear
+Examination
+
+0.67
+0.12
+0.06
+32
+
+0.57
+0.11
+0.12
+10
+
+0.63
+0.12
+0.05
+16
+
+10~9/L
+10~9/L
+10~9/L
+mm/hr
+
+0.2-1.0
+0.02-0.5
+0.02-0.1
+<=19
+
+RBC: - Anisocytosis(+++) Microcytosis(+) Hypochromia(+)
+WBC: - Counts within normal limits
+Platelet: - Adequate
+IMPMicrocytic Hypochromic Anaemia
+Advice- Iron Tibc
+
+Kindly correlate with clinical findings
+*** End Of Report ***
+
+Page 20 of 23
+
+SIN No:B2B798100, Test Performed at :585 - Max Hospital - Gurugram, Opposite HUDA City Centre Metro Station, B - Block
+Booking Centre :903 - Max Lab, Sector 40, Gurugram, H.No C 2 GF Sector 40,Gurgaon, 9971264353
+
+Laboratory Investigation Report
+Patient Name
+
+: Mrs. Indu Nagpal
+
+Centre
+
+: 903 - Max Lab, Sector 40, Gurugram
+
+Age/Gender
+
+: 51 Y 6 M 2 D /F
+
+OP/IP No
+
+:/
+
+Max ID/Mobile
+
+: ML00234145/9811333921
+
+Collection Date/Time : 28/May/2021 11:05AM
+
+Lab ID
+
+: 0591052101036~2
+
+Receiving Date
+
+: 28/May/2021
+
+Ref Doctor
+
+: SELF
+
+Reporting Date
+
+: 28/May/2021
+
+Immunoassay
+Test Name
+
+Result
+
+Unit
+
+Bio Ref Interval
+
+8.42
+
+μg/dL
+
+6.7-22.6
+
+Cortisol (Morning Sample),Serum
+Cortisol , Serum (Morning)
+CLIA
+
+Interpretation Highly increased in Ectopic ACTH syndrome, Increased in Cushing’s (pituitary) disease, adrenal adenoma,
+
+carcinoma
+Decreased in Addison’s disease, congenital adrenal hyperplasia (adrenogenital syndromes), hypopituitarism
+There is diurnal variation in secretion of cortisol; the level at 8:00 PM is normally half of the level at 8:00 AM. Loss of diurnal
+variation is often seen in Cushing’s syndrome.
+
+Page 21 of 23
+
+SIN No:B2B798100, Test Performed at :910 - Max Hospital - Saket M S S H, Press Enclave Road, Mandir Marg, Saket, New Delhi, Delhi 110017
+Booking Centre :903 - Max Lab, Sector 40, Gurugram, H.No C 2 GF Sector 40,Gurgaon, 9971264353
+
+Laboratory Investigation Report
+Patient Name
+
+: Mrs. Indu Nagpal
+
+Centre
+
+: 903 - Max Lab, Sector 40, Gurugram
+
+Age/Gender
+
+: 51 Y 6 M 2 D /F
+
+OP/IP No
+
+:/
+
+Max ID/Mobile
+
+: ML00234145/9811333921
+
+Collection Date/Time : 28/May/2021 11:05AM
+
+Lab ID
+
+: 0591052101036~2
+
+Receiving Date
+
+: 28/May/2021
+
+Ref Doctor
+
+: SELF
+
+Reporting Date
+
+: 28/May/2021
+
+Immunoassay
+Prolactin, Serum
+
+Date
+Prolactin
+
+28/May/2021
+11:05AM
+
+Unit
+
+37.26
+
+ng/mL
+
+Bio Ref Interval
+
+CLIA
+
+Ref Range
+
+Males :
+2.64 - 13.13
+Females :
+Premenopausal
+(<50 years of
+3.34 - 26.74
+age):
+Postmenopausal
+(>50 years of
+2.74 - 19.64
+age):
+Interpretation
+Increased in prolactin-secreting pituitary tumors, amenorrhea and/or galactorrhea, Chiari-Frommel and Argonz Del Cstillo syndromes,
+various types of hypothalamic-pitutary disease (e.g. sarcoidosis, granulomatous diseases, crangiopharyngioma, metastatic cancer,
+empty sella syndrome), primary hypothyroidism, anorexia nervosa, polycystic ovary syndrome, renal failure, insulin-induced
+hypoglycemia, chest wall injury, adrenal insufficiency, and pituitary stalk section surgery
+Decreased in pituitary apoplexy (Sheehan’s Syndrome)
+Kindly correlate with clinical findings
+*** End Of Report ***
+
+Page 22 of 23
+
+SIN No:B2B798100, Test Performed at :910 - Max Hospital - Saket M S S H, Press Enclave Road, Mandir Marg, Saket, New Delhi, Delhi 110017
+Booking Centre :903 - Max Lab, Sector 40, Gurugram, H.No C 2 GF Sector 40,Gurgaon, 9971264353
+
+Laboratory Investigation Report
+Patient Name
+
+: Mrs. Indu Nagpal
+
+Centre
+
+: 903 - Max Lab, Sector 40, Gurugram
+
+Age/Gender
+
+: 51 Y 6 M 2 D /F
+
+OP/IP No
+
+:/
+
+Max ID/Mobile
+
+: ML00234145/9811333921
+
+Collection Date/Time : 28/May/2021 11:05AM
+
+Lab ID
+
+: 0591052101036~2
+
+Receiving Date
+
+: 28/May/2021
+
+Ref Doctor
+
+: SELF
+
+Reporting Date
+
+: 28/May/2021
+
+Immunoassay
+
+Page 23 of 23
+
+SIN No:B2B798100, Test Performed at :910 - Max Hospital - Saket M S S H, Press Enclave Road, Mandir Marg, Saket, New Delhi, Delhi 110017
+Booking Centre :903 - Max Lab, Sector 40, Gurugram, H.No C 2 GF Sector 40,Gurgaon, 9971264353
+
+

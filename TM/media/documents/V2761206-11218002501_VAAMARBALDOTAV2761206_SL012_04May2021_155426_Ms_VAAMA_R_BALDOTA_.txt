@@ -1,0 +1,143 @@
+Reference: Dr.HORTIKAR A H
+Sample Collected At:
+R v diagnostics laboratory
+# 76/10 4th main 15 cross malleshwaram
+bangalore 560003 zone: out-01(os)
+PROCESSING LOCATION:- Metropolis
+Healthcare Ltd, Unit No. 409- 416, 4th
+Floor, Commercial Building-1, Kohinoor
+Mall, Mumbai-70
+
+VAAMA R BALDOTA V2761206
+
+PID NO: P11210033110
+Age: 24 Year(s)
+Sex: Female
+
+VID: 11218002501
+Registered On:
+04/05/2021 03:54 PM
+Collected On:
+04/05/2021
+Reported On:
+06/05/2021 05:16 PM
+
+Investigation
+
+Observed Value
+
+Unit
+
+Biological Reference Interval
+
+Vitamin A (All Trans Retinol), Serum
+/EDTA Plasma by HPLC
+
+0.32
+
+mg/L
+
+0.3-0.6
+
+(EDTA Blood, Serum)
+
+Remark:
+According to WHO guidelines a beginning deficiency in adults is indicated by concentrations between 0.1 to 0.19 mg/l, whereas
+concentrations < 0.1 mg/l indicate a minifest deficiency, Concentrations > 1.4 mg/l are considered as toxic.
+Description Of Test
+Vitamin A is the nutritional term for the group of compounds with a 20 carbon structure containing a methyl -substituted cyclohexenyl
+ring (Beta -ionone ring) & an isoprenoid side chain, with either a hydroxyl group (retinol ),an aldehyde group (retinal), a carboxylic
+acid group(retinoic acid) or an ester group (retinyl ester) at the terminal C 15. Vitamin A deficiency causes degenerative changes in
+eyes & skin, & poor dark adaptation or night blindness (nyctalopia). More serious effects of deficiency are xerophthalmia, in which
+the conjunctiva becomes dry with small gray plaques with foamy surfaces (bitots spot), keratomalacia.The skin changes include
+dryness, roughness,papular eruption & follicular hyperkeratosis.
+Technique: HPLC
+Decreased IN
+1. Preterm infants specially infants with birth weight less than 1500g (< 30 weeks of gestation).
+2. Nutritional deficiency
+3. Fat malabsorption, particularly caused by celiac disease or chronic pancreatitis.
+4. Hepatic disease or alcohol abuse.
+Increased IN
+Hypervitaminosis A results as a side effect of inappropriate therapy or ingestion of excess Vitamin A.
+
+Page 1 of 2
+
+Dr. Varsha Birla
+MD, DNB (BIOCHEMISTRY)
+
+Reference: Dr.HORTIKAR A H
+Sample Collected At:
+R v diagnostics laboratory
+# 76/10 4th main 15 cross malleshwaram
+bangalore 560003 zone: out-01(os)
+PROCESSING LOCATION:- Metropolis
+Healthcare Ltd, Unit No. 409- 416, 4th
+Floor, Commercial Building-1, Kohinoor
+Mall, Mumbai-70
+
+VAAMA R BALDOTA V2761206
+
+PID NO: P11210033110
+Age: 24 Year(s)
+Sex: Female
+
+VID: 11218002501
+Registered On:
+04/05/2021 03:54 PM
+Collected On:
+04/05/2021
+Reported On:
+06/05/2021 05:16 PM
+
+Investigation
+
+Observed Value
+
+Unit
+
+Biological Reference Interval
+
+Vitamin E (Tocopherol) Serum /EDTA
+Plasma by HPLC
+
+10.23
+
+mg/L
+
+5-18
+
+(Serum/EDTA Plasma)
+
+DESCRIPTION OF TEST :
+Vitamin E is the nutritional term for the group of naturally occurring tocopherols & tocotrienols that have biological activity similar to
+RRR -alpha -tocopherol.
+Vitamin E is considered necessary for (1) neurological & reproductive functions, (2) protecting the RBCs from hemolysis, (3)
+prevention of retinopathy in premature infants, (4) inhibition of free radical chain reactions of lipid peroxidation.
+The signs of Vitamin E deficiency are (1) irritability, (2) edema & (3) hemolytic anaemia.
+TECHNIQUE : HPLC
+DECREASED IN
+1. Premature & Low birth weight infants are particularly susceptible to development of Vitamin E deficiency because transplacental
+transfer is poor & infants have limited adipose tissue.
+2. Fat malabsorption such as in Cystic fibrosis & chronic cholestasis has been known to cause neuropathy & hemolytic anaemia.
+3. Rare genetic disorder Abetalipoproteinemia.
+INCREASED IN
+Vitamin E toxicity is usually rare & can be due to excess dietary supplementation & may cause Vitamin D & K deficiency by
+competing for the absorption.
+
+Reports to follow - Kindly await following pending reports :
+Investigation :
+
+Status
+
+Vitamin K1**
+
+Pending
+
+-- End of Report --
+
+Page 2 of 2
+
+Dr. Varsha Birla
+MD, DNB (BIOCHEMISTRY)
+
+

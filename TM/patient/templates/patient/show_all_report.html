@@ -22,9 +22,11 @@
 
         <ul class="responsive-table__var GB">
           <li class="table-header__var GB">
-            <div class="col__var col-1__tt__var GB">Report Name</div>
-            <div class="col__var col-2__tt__var GB">Date</div>
-            <div class="col__var col-3__tt__var GB">View Report</div>
+            <div class="col__var col-1__tt__var" style="width:50px;position: static;left: 0px;padding-right:0px;">Report Name</div>
+            <div class="col__var col-2__tt__var" style="width:50px;position: absolute;left: 610px;padding-right:0px;">Date</div>
+            <div class="col__var col-3__tt__var" style="width:140px;position: absolute;left: 795px;padding-right:0px;">Show Pdf</div>
+            <div class="col__var col-4__tt__var" style="width:140px;position: absolute;left: 950px;padding-right:0px;">View Report</div>
+            <div class="col__var col-5__tt__var" style="width:50px;position: absolute;left: 1150px;padding-right:0px;">Delete</div>
           </li>
           <!-- ================category label =============== -->
           <h3 class="heading-tertiary tt_h3_st_1">Generated Report</h3>
@@ -39,8 +41,18 @@
               {{report.created_time}}
             </div>
             <div class="col col-3__tt__var GB"  __vardata-label="Label">
-                <button class = "btn btn--green" onclick="window.location='{% url "show-saved-report" report.id patient.id %}';">
+                <button class = "btn btn--green" style="font-size: 15px; margin-right: 10px" onclick="location.href='/media/Generated_reports/{{report.id}}.pdf';">
+                    Show Pdf
+                </button>
+            </div>
+            <div class="col col-3__tt__var GB"  __vardata-label="Label">
+                <button class = "btn btn--green" style="font-size: 15px; margin-right: 10px" onclick="window.location='{% url "show-saved-report" report.id patient.id %}';">
                     Show Report
+                </button>
+            </div>
+            <div class="col col-4__tt__var GB" __vardata-label="Before">
+            <button class = "btn btn--green" style="font-size: 15px; margin-right: 10px" onclick="window.location='{% url "final-generated-report-delete" report.id %}';">
+                    Delete Report
                 </button>
             </div>
           </li>
@@ -75,9 +87,14 @@
               {{report.uploaded_at}}
             </div>
             <div class="col col-3__tt__var GB" __vardata-label="Before">
-              <button class="btn btn--green" onclick="window.location='{{report.document.url}}';">
+              <button class="btn btn--green" style="font-size: 15px; margin-right: 10px" onclick="window.location='{{report.document.url}}';">
                     <td>Show Report</td>
                 </button>
+           </div>
+           <div class="col col-4__tt__var GB" __vardata-label="Before">
+              <button class="btn btn--green" style="font-size: 15px; margin-right: 10px" onclick="window.location='{% url "document-delete" report.id%}';">
+                      <td>Delete Report</td>
+                  </button>
             </div>
           </li>
         {% endfor %}

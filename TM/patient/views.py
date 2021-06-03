@@ -1202,3 +1202,19 @@ class ShowReadDataView(LoginRequiredMixin,View):
         }
         return render(request, self.template_name, context=context)
 
+class DocumentDeleteView(LoginRequiredMixin, DeleteView):
+    model = Document
+    template_name = 'patient/delete_report.html'
+    fields = ('__all__')
+
+    def get_success_url(self):
+        return reverse('show-all-report', kwargs={'pk':self.object.patient.id})
+
+class FinalGeneratedReportDeleteView(LoginRequiredMixin, DeleteView):
+    model = FinalGeneratedReport
+    template_name = 'patient/delete_report.html'
+    fields = ('__all__')
+
+    def get_success_url(self):
+        print(self.object,self.object.id)
+        return reverse('show-all-report', kwargs={'pk':self.object.patient.id})
