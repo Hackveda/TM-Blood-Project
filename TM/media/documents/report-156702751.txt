@@ -1,0 +1,1432 @@
+.
+S07 - PUNJABI BAGH HOME VISIT
+DELHI,
+DELHI
+
+Name
+
+: Ms. RASHMI SINGH.
+
+Lab No.
+
+:
+
+156702751
+
+Age: 53 Years
+
+A/c Status
+
+:
+
+P
+
+Ref By :
+
+Test Name
+
+Gender:
+
+Female
+
+SELF
+
+Collected
+Received
+Reported
+
+: 21/3/2021 8:09:00AM
+: 21/3/2021 8:13:12AM
+: 22/3/2021 2:38:19PM
+
+Report Status
+
+: Final
+
+Results
+
+Units
+
+Bio. Ref. Interval
+
+Hemoglobin
+
+11.70
+
+g/dL
+
+12.00 - 15.00
+
+Packed Cell Volume (PCV)
+
+35.70
+
+%
+
+36.00 - 46.00
+
+RBC Count
+
+3.91
+
+mill/mm3
+
+3.80 - 4.80
+
+MCV
+
+91.30
+
+fL
+
+83.00 - 101.00
+
+MCH
+
+30.00
+
+pg
+
+27.00 - 32.00
+
+MCHC
+
+32.90
+
+g/dL
+
+31.50 - 34.50
+
+Red Cell Distribution Width (RDW)
+
+14.70
+
+%
+
+11.60 - 14.00
+
+Total Leukocyte Count (TLC)
+
+5.00
+
+thou/mm3
+
+4.00 - 10.00
+
+Segmented Neutrophils
+
+40.60
+
+%
+
+40.00 - 80.00
+
+Lymphocytes
+
+42.80
+
+%
+
+20.00 - 40.00
+
+Monocytes
+
+12.40
+
+%
+
+2.00 - 10.00
+
+Eosinophils
+
+2.90
+
+%
+
+1.00 - 6.00
+
+Basophils
+
+1.30
+
+%
+
+<2.00
+
+Neutrophils
+
+2.03
+
+thou/mm3
+
+2.00 - 7.00
+
+Lymphocytes
+
+2.14
+
+thou/mm3
+
+1.00 - 3.00
+
+Monocytes
+
+0.62
+
+thou/mm3
+
+0.20 - 1.00
+
+Eosinophils
+
+0.15
+
+thou/mm3
+
+0.02 - 0.50
+
+Basophils
+
+0.07
+
+thou/mm3
+
+0.02 - 0.10
+
+Platelet Count
+
+303.0
+
+thou/mm3
+
+150.00 - 410.00
+
+HEMOGRAM @
+
+(Photometry)
+(Calculated)
+
+(Electrical Impedence)
+(Electrical Impedence)
+(Calculated)
+(Calculated)
+(Electrical Impedence)
+(Electrical Impedence)
+
+Differential Leucocyte Count (DLC)
+(VCS Technology)
+
+Absolute Leucocyte Count
+(Calculated)
+
+(Electrical impedence)
+
+*156702751*
+
+Page 1 of 11
+
+.
+S07 - PUNJABI BAGH HOME VISIT
+DELHI,
+DELHI
+
+Name
+
+: Ms. RASHMI SINGH.
+
+Lab No.
+
+:
+
+156702751
+
+Age: 53 Years
+
+A/c Status
+
+:
+
+P
+
+Ref By :
+
+Gender:
+
+Female
+
+SELF
+
+Collected
+Received
+Reported
+
+: 21/3/2021 8:09:00AM
+: 21/3/2021 8:13:12AM
+: 22/3/2021 2:38:19PM
+
+Report Status
+
+: Final
+
+Test Name
+
+Results
+
+Units
+
+Bio. Ref. Interval
+
+Mean Platelet Volume
+
+8.7
+
+fL
+
+6.5 - 12.0
+
+ESR
+
+10
+
+mm/hr
+
+0.00 - 30.00
+
+(Electrical Impedence)
+
+(Capillary photometry)
+Note
+
+1. As per the recommendation of International council for Standardization in Hematology, the differential
+leucocyte counts are additionally being reported as absolute numbers of each cell in per unit volume of
+blood
+2. Test conducted on EDTA whole blood
+
+*156702751*
+
+Page 2 of 11
+
+.
+S07 - PUNJABI BAGH HOME VISIT
+DELHI,
+DELHI
+
+Name
+
+: Ms. RASHMI SINGH.
+
+Lab No.
+
+: 156702751
+
+Age: 53 Years
+
+A/c Status
+
+: P
+
+Ref By :
+
+Gender:
+
+Female
+
+SELF
+
+Test Name
+
+Collected
+Received
+Reported
+
+: 21/3/2021 8:09:00AM
+: 21/3/2021 8:13:12AM
+: 22/3/2021 2:38:19PM
+
+Report Status
+
+: Final
+
+Results
+
+Units
+
+Bio. Ref. Interval
+
+22
+
+U/L
+
+13.00 - 35.00
+
+11
+
+U/L
+
+10.00 - 49.00
+
+LIVER PANEL 1; LFT,SERUM @
+
+AST (SGOT)
+(IFCC without P5P)
+
+ALT (SGPT)
+(IFCC without P5P)
+
+2.00
+
+AST:ALT Ratio
+
+<1.00
+
+(Calculated)
+
+GGTP
+
+12
+
+U/L
+
+0 - 38
+
+89
+
+U/L
+
+30.00 - 120.00
+
+0.82
+
+mg/dL
+
+0.30 - 1.20
+
+0.31
+
+mg/dL
+
+<0.3
+
+0.51
+
+mg/dL
+
+<1.10
+
+6.60
+
+g/dL
+
+5.70 - 8.20
+
+4.40
+
+g/dL
+
+3.20 - 4.80
+
+(IFCC)
+
+Alkaline Phosphatase (ALP)
+(IFCC-AMP)
+
+Bilirubin Total
+(DPD)
+
+Bilirubin Direct
+(DPD)
+
+Bilirubin Indirect
+(Calculated)
+
+Total Protein
+(Biuret)
+
+Albumin
+(BCG)
+
+2.00
+
+A : G Ratio
+
+0.90 - 2.00
+
+(Calculated)
+
+Note
+
+1. In an asymptomatic patient, Non alcoholic fatty liver disease (NAFLD) is the most common cause of
+increased AST, ALT levels. NAFLD is considered as hepatic manifestation of metabolic syndrome.
+PatientReportSCSuperPanel.GENERAL_PANEL_ANALYTE_SC (Version: 6)
+
+*156702751*
+
+Page 3 of 11
+
+.
+S07 - PUNJABI BAGH HOME VISIT
+DELHI,
+DELHI
+
+Name
+
+: Ms. RASHMI SINGH.
+
+Lab No.
+
+: 156702751
+
+Age: 53 Years
+
+A/c Status
+
+: P
+
+Ref By :
+
+Gender:
+
+Female
+
+SELF
+
+Test Name
+
+Results
+
+Collected
+Received
+Reported
+
+: 21/3/2021 8:09:00AM
+: 21/3/2021 8:13:12AM
+: 22/3/2021 2:38:19PM
+
+Report Status
+
+: Final
+
+Units
+
+Bio. Ref. Interval
+
+2. In most type of liver disease, ALT activity is higher than that of AST; exception may be seen in Alcoholic
+Hepatitis, Hepatic Cirrhosis, and Liver neoplasia. In a patient with Chronic liver disease, AST:ALT
+ratio>1 is highly suggestive of advanced liver fibrosis.
+3. In known cases of Chronic Liver disease due to Viral Hepatitis B & C, Alcoholic liver disease or NAFLD,
+Enhanced liver fibrosis (ELF) test may be used to evaluate liver fibrosis.
+4. In a patient with Chronic Liver disease, AFP and Des-gamma carboxyprothrombin (DCP)/PIVKA II can
+be used to assess risk for development of Hepatocellular Carcinoma.
+
+KIDNEY PANEL; KFT,SERUM @
+
+Urea
+
+16.00
+
+mg/dL
+
+13.00 - 43.00
+
+0.58
+
+mg/dL
+
+0.55 - 1.02
+
+4.40
+
+mg/dL
+
+2.60 - 6.00
+
+9.20
+
+mg/dL
+
+8.70 - 10.40
+
+5.37
+
+mg/dL
+
+2.40 - 5.10
+
+89
+
+U/L
+
+30.00 - 120.00
+
+6.60
+
+g/dL
+
+5.70 - 8.20
+
+4.40
+
+g/dL
+
+3.20 - 4.80
+
+(Urease UV)
+
+Creatinine
+(Modified Jaffe,Kinetic)
+
+Uric Acid
+(Uricase)
+
+Calcium, Total
+(Arsenazo III)
+
+Phosphorus
+(Molybdate UV)
+
+Alkaline Phosphatase (ALP)
+(IFCC-AMP)
+
+Total Protein
+(Biuret)
+
+Albumin
+(BCG)
+
+2.00
+
+A : G Ratio
+
+0.90 - 2.00
+
+(Calculated)
+
+PatientReportSCSuperPanel.GENERAL_PANEL_ANALYTE_SC (Version: 6)
+
+*156702751*
+
+Page 4 of 11
+
+.
+S07 - PUNJABI BAGH HOME VISIT
+DELHI,
+DELHI
+
+Name
+
+: Ms. RASHMI SINGH.
+
+Lab No.
+
+: 156702751
+
+Age: 53 Years
+
+A/c Status
+
+: P
+
+Ref By :
+
+Gender:
+
+Female
+
+SELF
+
+Test Name
+
+Sodium
+
+Collected
+Received
+Reported
+
+: 21/3/2021 8:09:00AM
+: 21/3/2021 8:13:12AM
+: 22/3/2021 2:38:19PM
+
+Report Status
+
+: Final
+
+Results
+141.00
+
+Units
+
+Bio. Ref. Interval
+
+mEq/L
+
+136.00 - 145.00
+
+4.21
+
+mEq/L
+
+3.50 - 5.10
+
+107.00
+
+mEq/L
+
+98.00 - 107.00
+
+(Indirect ISE)
+
+Potassium
+(Indirect ISE)
+
+Chloride
+(Indirect ISE)
+
+PatientReportSCSuperPanel.GENERAL_PANEL_ANALYTE_SC (Version: 6)
+
+*156702751*
+
+Page 5 of 11
+
+.
+
+S07 - PUNJABI BAGH HOME VISIT
+DELHI,
+DELHI
+
+Name
+
+:
+
+Ms. RASHMI SINGH.
+
+Lab No.
+
+:
+
+156702751
+
+Age: 53 Years
+
+A/c Status
+
+:
+
+P
+
+Ref By :
+
+Gender:
+
+Female
+
+SELF
+
+Collected
+Received
+Reported
+
+: 21/3/2021 8:09:00AM
+: 21/3/2021 8:13:12AM
+: 22/3/2021 2:38:19PM
+
+Report Status
+
+: Final
+
+Test Name
+
+Results
+
+Units
+
+Bio. Ref. Interval
+
+ANTI NUCLEAR ANTIBODY / FACTOR (ANA/ANF),
+SERUM @
+(EIA)
+
+25.08
+
+Units
+
+<20.00
+
+Interpretation
+--------------------------------------------| RESULT IN UNITS
+| REMARKS
+|
+|-------------------|-------------------------|
+| <20
+| Negative
+|
+|-------------------|-------------------------|
+| 20-60
+| Moderate positive
+|
+|-------------------|-------------------------|
+| >60
+| Strong positive
+|
+---------------------------------------------
+
+Comments
+
+Antinuclear antibodies are the most sensitive screening test for autoantibodies in patients suspected of
+connective tissue diseases. They are a heterogenous group of autoantibodies directed against ds-DNA,
+histones, SSA / Ro, SSB / La, Sm, Sm / RNP, Scl-70, Jo-1 & Centromere. ANA ‘s have also been detected in
+patients with Autoimmune Hepatitis (80%),Primary biliary cirrhosis (60%), Alcohol related liver disease (50%),
+Viral hepatitis B (40%). Presence of ANA has also been detected in individuals taking certain drugs like
+Hydrallazine, Isoniazid, Chlorpromazine; family of SLE patients; healthy and elderly persons
+
+GLUCOSE, FASTING (F), PLASMA @
+(Hexokinase)
+
+80.00
+
+mg/dL
+
+70 - 100
+
+CHOLESTEROL, TOTAL, SERUM @
+(Spectrophotometry)
+
+158.00
+
+mg/dL
+
+<200.00
+
+Interpretation
+--------------------------------------------------------------------| NCEP
+| CHOLESTEROL IN
+| CHOLESTEROL IN
+|
+| RECOMMENDATIONS | mg/dL in adults
+| mg/dL in children
+|
+|------------------|-------------------------|------------------------|
+| Desirable level | < 200
+| < 170
+|
+|------------------|-------------------------|------------------------|
+| Borderline High | 200-239
+| 171-199
+|
+|------------------|-------------------------|------------------------|
+| High
+| >or = 240
+| >or = 200
+|
+---------------------------------------------------------------------
+
+Note
+PatientReportSCSuperPanel.SP_GENERAL_TEMPLATE01_SC (Version: 7)
+
+*156702751*
+
+Page 6 of 11
+
+.
+
+S07 - PUNJABI BAGH HOME VISIT
+DELHI,
+DELHI
+
+Name
+
+:
+
+Ms. RASHMI SINGH.
+
+Lab No.
+
+:
+
+156702751
+
+Age: 53 Years
+
+A/c Status
+
+:
+
+P
+
+Ref By :
+
+Gender:
+
+Female
+
+SELF
+
+Test Name
+
+Results
+
+Collected
+Received
+Reported
+
+: 21/3/2021 8:09:00AM
+: 21/3/2021 8:13:12AM
+: 22/3/2021 2:38:19PM
+
+Report Status
+
+: Final
+
+Units
+
+Bio. Ref. Interval
+
+1. Measurements in the same patient can show physiological & analytical variations. Three serial
+samples 1 week apart are recommended for Total Cholesterol, Triglycerides, HDL & LDL Cholesterol.
+2. As per NCEP guidelines, all adults above the age of 20 years should be screened for lipid status.
+Selective screening of children above the age of 2 years with a family history of premature
+cardiovascular disease or those with at least one parent with high total cholesterol is recommended.
+<0.50
+
+ANTI CCP (CYCLIC CITRULLINATED PEPTIDE),
+SERUM @
+(CMIA)
+
+U/mL
+
+<5.00
+
+Note
+
+1. Sensitivity of this assay is 70.6% and specificity is 98.2%
+2. Specificity of Anti CCP antibodies in Juvenile arthritis patients has not been established
+Comments
+
+Anti CCP antibodies are useful for evaluating patients suspected of Rheumatoid arthritis. Positive results
+occur in 60-80% of Rheumatoid arthritis patients depending on disease severity. The positive predictive value
+of Anti CCP antibodies for Rheumatoid arthritis is far greater than Rheumatoid factor. False positive results
+are uncommon. Upto 30% patients with seronegative Rheumatoid arthritis also show Anti CCP antibodies.
+Clinical Uses
+·
+
+For diagnosis of early Rheumatoid arthritis - Anti CCP antibodies are detected in approximately 50-60%
+patients of Rheumatoid arthritis usually after 3-6 months of symptoms
+
+·
+
+Prediction of severity of disease - Early Rheumatoid arthritis patients with Anti CCP positivity may
+develop a more erosive form of the disease as compared with Anti CCP negative patients
+
+·
+
+To differentiate elderly onset Rheumatoid arthritis from Polymyalgia rheumatica and erosive SLE
+<0.50
+
+C-REACTIVE PROTEIN; CRP, SERUM @
+(Immunoturbidimetry)
+
+mg/L
+
+<5.00
+
+Comments
+
+CRP is an acute phase reactant which is used in inflammatory disorders for monitoring course and effect of
+therapy. It is most useful as an indicator of activity in Rheumatoid arthritis, Rheumatic fever, tissue injury or
+necrosis and infections. As compared to ESR, CRP shows an earlier rise in inflammatory disorders which
+begins in 4-6 hrs, the intensity of the rise being higher than ESR and the recovery being earlier than ESR.
+Unlike ESR, CRP levels are not influenced by hematologic conditions like Anemia, Polycythemia etc.
+PatientReportSCSuperPanel.SP_GENERAL_TEMPLATE01_SC (Version: 7)
+
+*156702751*
+
+Page 7 of 11
+
+.
+
+S07 - PUNJABI BAGH HOME VISIT
+DELHI,
+DELHI
+
+Name
+
+:
+
+Ms. RASHMI SINGH.
+
+Lab No.
+
+:
+
+156702751
+
+Age: 53 Years
+
+A/c Status
+
+:
+
+P
+
+Ref By :
+
+Gender:
+
+Female
+
+SELF
+
+Collected
+Received
+Reported
+
+: 21/3/2021 8:09:00AM
+: 21/3/2021 8:13:12AM
+: 22/3/2021 2:38:19PM
+
+Report Status
+
+: Final
+
+Test Name
+
+Results
+
+Units
+
+Bio. Ref. Interval
+
+RHEUMATOID FACTOR (RA), SERUM @
+(Immunoturbidimetry)
+
+<10.00
+
+IU/mL
+
+<14.00
+
+Comments
+
+Rheumatoid factor is an antibody directed against the Fc portion of the IgG molecule. Polyreactive RF has
+binding specificity for substances other than IgG like nuclear components. This polyreactive RF is usually of
+the IgM class with low affinity. RF is not specific only for Rheumatoid arthritis, but it is often seen in cases of
+chronic infection and other systemic inflammatory conditions. Healthy individuals > 65 years of age may also
+show positive RF results. In addition to the common IgM RF, both IgA RF & IgG RF have been detected. IgA
+RF has been related to the more severe form of the disease with erosions.
+299.00
+
+VITAMIN B12; CYANOCOBALAMIN, SERUM @
+(CLIA)
+
+pg/mL
+
+211.00 - 911.00
+
+Notes
+
+1. Interpretation of the result should be considered in relation to clinical circumstances.
+2. It is recommended to consider supplementary testing with plasma Methylmalonic acid (MMA) or
+plasma homocysteine levels to determine biochemical cobalamin deficiency in presence of clinical
+suspicion of deficiency but indeterminate levels. Homocysteine levels are more sensitive but MMA is
+more specific
+3. False increase in Vitamin B12 levels may be observed in patients with intrinsic factor blocking
+antibodies, MMA measurement should be considered in such patients
+4. The concentration of Vitamin B12 obtained with different assay methods cannot be used
+interchangeably due to differences in assay methods and reagent specificity
+87.15
+
+VITAMIN D, 25 - HYDROXY, SERUM @
+(CLIA)
+
+nmol/L
+
+75.00 - 250.00
+
+Interpretation
+------------------------------------------------------------| LEVEL
+| REFERENCE RANGE | COMMENTS
+|
+|
+| IN nmol/L
+|
+|
+|---------------|-----------------|---------------------------|
+| Deficient
+| < 50
+| High risk for developing |
+|
+|
+| bone disease
+|
+|---------------|-----------------|---------------------------|
+| Insufficient | 50-74
+| Vitamin D concentration
+|
+|
+|
+| which normalizes
+|
+|
+|
+| Parathyroid hormone
+|
+|
+|
+| concentration
+|
+|---------------|-----------------|---------------------------|
+PatientReportSCSuperPanel.SP_GENERAL_TEMPLATE01_SC (Version: 7)
+
+*156702751*
+
+Page 8 of 11
+
+.
+
+S07 - PUNJABI BAGH HOME VISIT
+DELHI,
+DELHI
+
+Name
+
+:
+
+Ms. RASHMI SINGH.
+
+Lab No.
+
+:
+
+156702751
+
+Age: 53 Years
+
+A/c Status
+
+:
+
+P
+
+Ref By :
+
+Gender:
+
+Female
+
+SELF
+
+Collected
+Received
+Reported
+
+: 21/3/2021 8:09:00AM
+: 21/3/2021 8:13:12AM
+: 22/3/2021 2:38:19PM
+
+Report Status
+
+: Final
+
+Test Name
+Results
+Units
+| Sufficient
+| 75-250
+| Optimal concentration
+|
+|
+|
+| for maximal health benefit|
+|---------------|-----------------|---------------------------|
+| Potential
+| >250
+| High risk for toxic
+|
+| intoxication |
+| effects
+|
+-------------------------------------------------------------
+
+Bio. Ref. Interval
+
+Note
+·
+
+The assay measures both D2 (Ergocalciferol) and D3 (Cholecalciferol) metabolites of vitamin D.
+
+·
+
+25 (OH)D is influenced by sunlight, latitude, skin pigmentation, sunscreen use and hepatic function.
+
+·
+
+Optimal calcium absorption requires vitamin D 25 (OH) levels exceeding 75 nmol/L.
+
+·
+
+It shows seasonal variation, with values being 40-50% lower in winter than in summer.
+
+·
+
+Levels vary with age and are increased in pregnancy.
+
+·
+
+A new test Vitamin D, Ultrasensitive by LC-MS/MS is also available
+
+Comments
+
+Vitamin D promotes absorption of calcium and phosphorus and mineralization of bones and teeth. Deficiency
+in children causes Rickets and in adults leads to Osteomalacia. It can also lead to Hypocalcemia and
+Tetany. Vitamin D status is best determined by measurement of 25 hydroxy vitamin D, as it is the major
+circulating form and has longer half life (2-3 weeks) than 1,25 Dihydroxy vitamin D (5-8 hrs).
+Decreased Levels
+·
+
+Inadequate exposure to sunlight
+
+·
+
+Dietary deficiency
+
+·
+
+Vitamin D malabsorption
+
+·
+
+Severe Hepatocellular disease
+
+·
+
+Drugs like Anticonvulsants
+
+·
+
+Nephrotic syndrome
+
+Increased levels
+
+Vitamin D intoxication
+
+PatientReportSCSuperPanel.SP_GENERAL_TEMPLATE01_SC (Version: 7)
+
+*156702751*
+
+Page 9 of 11
+
+.
+S07 - PUNJABI BAGH HOME VISIT
+DELHI,
+DELHI
+
+Name
+
+: Ms. RASHMI SINGH.
+
+Lab No.
+
+: 156702751
+
+Age: 53 Years
+
+A/c Status
+
+: P
+
+Ref By :
+
+Gender:
+
+Female
+
+SELF
+
+Test Name
+
+Collected
+Received
+Reported
+
+: 21/3/2021 8:09:00AM
+: 21/3/2021 8:13:12AM
+: 22/3/2021 2:38:19PM
+
+Report Status
+
+: Final
+
+Results
+
+Units
+
+Bio. Ref. Interval
+
+T3, Total
+
+1.16
+
+ng/mL
+
+0.60 - 1.81
+
+T4, Total
+
+9.50
+
+µg/dL
+
+5.01 - 12.45
+
+TSH
+
+3.58
+
+µIU/mL
+
+0.35 - 5.50
+
+THYROID PROFILE,TOTAL, SERUM @
+(CLIA)
+
+Note
+
+1. TSH levels are subject to circadian variation, reaching peak levels between 2 - 4.a.m. and at a
+minimum between 6-10 pm . The variation is of the order of 50% . hence time of the day has
+influence on the measured serum TSH concentrations.
+2. Alteration in concentration of Thyroid hormone binding protein can profoundly affect Total T3 and/or
+Total T4 levels especially in pregnancy and in patients on steroid therapy.
+3. Unbound fraction ( Free,T4 /Free,T3) of thyroid hormone is biologically active form and correlate
+more closely with clinical status of the patient than total T4/T3 concentration
+4. Values <0.03 uIU/mL need to be clinically correlated due to presence of a rare TSH variant in some
+individuals
+
+Interpretation
+---------------------------------------------------------------| PREGNANCY
+| REFERENCE RANGE FOR
+TSH IN µIU/mL (
+|
+|
+| As per American Thyroid
+Association)
+|
+|--------------------|-------------------------------------------|
+| 1st Trimester
+| 0.100 - 2.500
+|
+|
+|
+|
+| 2nd
+Trimester
+| 0.200 - 3.000
+|
+|
+|
+|
+| 3rd
+Trimester
+| 0.300- 3.000
+|
+----------------------------------------------------------------
+
+PatientReportSCSuperPanel.GENERAL_PANEL_ANALYTE_SC (Version: 6)
+
+*156702751*
+
+Page 10 of 11
+
+.
+S07 - PUNJABI BAGH HOME VISIT
+DELHI,
+DELHI
+
+Name
+
+: Ms. RASHMI SINGH.
+
+Lab No.
+
+: 156702751
+
+Age: 53 Years
+
+A/c Status
+
+: P
+
+Ref By :
+
+Gender:
+
+Female
+
+SELF
+
+Test Name
+
+Results
+
+Dr Himangshu Mazumdar
+MD, Biochemistry
+Senior Consultant - Clinical Chemistry
+& Biochemical Genetics
+NRL - Dr Lal PathLabs Ltd
+
+Dr.Kamal Modi
+MD, Biochemistry
+Consultant Biochemist
+NRL - Dr Lal PathLabs Ltd
+
+Collected
+Received
+Reported
+
+: 21/3/2021 8:09:00AM
+: 21/3/2021 8:13:12AM
+: 22/3/2021 2:38:19PM
+
+Report Status
+
+: Final
+
+Units
+
+Dr Nimmi Kansal
+MD, Biochemistry
+National Head - Clinical Chemistry &
+Biochemical Genetics
+NRL - Dr Lal PathLabs Ltd
+
+Bio. Ref. Interval
+
+Dr Anil Arora
+MD, Pathology
+HOD Hematology &
+Immunohematology
+NRL - Dr Lal PathLabs Ltd
+
+Dr Sunanda
+MD, Pathology
+Consultant
+NRL - Dr Lal PathLabs Ltd
+
+-------------------------------End of report --------------------------------
+
+IMPORTANT INSTRUCTIONS
+
+*Test results released pertain to the specimen submitted .*All test results are dependent on the quality of the sample received by the Laboratory .
+*Laboratory investigations are only a tool to facilitate in arriving at a diagnosis and should be clinically correlated by the Referring Physician .*Sample
+repeats are accepted on request of Referring Physician within 7 days post reporting.*Report delivery may be delayed due to unforeseen
+circumstances. Inconvenience is regretted.*Certain tests may require further testing at additional cost for derivation of exact value. Kindly submit
+request within 72 hours post reporting.*Test results may show interlaboratory variations .*The Courts/Forum at Delhi shall have exclusive
+jurisdiction in all disputes/claims concerning the test(s) & or results of test(s).*Test results are not valid for medico legal purposes. * Contact
+customer care Tel No. +91-11-39885050 for all queries related to test results.
+(#) Sample drawn from outside source.
+
+PatientReportSCSuperPanel.GENERAL_PANEL_ANALYTE_SC (Version: 6)
+
+*156702751*
+
+Page 11 of 11
+
+

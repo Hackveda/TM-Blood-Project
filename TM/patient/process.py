@@ -542,6 +542,14 @@ def main(file_path,report=None, extraction_type = None , document_object=None ,k
             except Exception as e:
                 print(e)
                 range1=['','']
+            try :
+                abc = float(range1[0])
+            except :
+                range1[0]=''
+            try:
+                abc = float(range1[1])
+            except:
+                range1[1]=''
             temp_response = {"name":main_key.lower(), "Value":value_found.lower(), "Unit":unit.lower(),"Range":range1, "ReadIndex":second_half_of_line.lower(), "TempSent":second_half_of_line.lower()}
             # print(temp_response)
             # print(range1)

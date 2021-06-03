@@ -1,0 +1,921 @@
+Laboratory Investigation Report
+Patient Name
+
+: Mr. Jatin Jain
+
+Centre
+
+: 1590 - Max@Home
+
+Age/Gender
+
+: 39 Y 4 M 30 D /M
+
+OP/IP No
+
+: OP/
+
+Max ID/Mobile
+
+: SHBG.347795/9811088277
+
+Collection Date/Time
+
+: 18/May/2021 07:18AM
+
+Lab ID
+
+: 1322052103601
+
+Receiving Date
+
+: 18/May/2021
+
+Ref Doctor
+
+: Dr.Vikas Mittal
+
+Reporting Date
+
+: 18/May/2021
+
+Clinical Biochemistry
+
+CRP- C-REACTIVE PROTEIN*, Serum
+
+Date
+CRP
+
+18/May/2021 01/May/21
+07:18AM
+08:30AM
+
+Unit
+
+Bio Ref Interval
+
+0.90
+
+mg/dL
+
+0.0 - 0.5
+
+0.11
+
+Latex Particle Immunoturbidimetric
+
+Interpretation This helps in detecting neonatal septicemia, meningitis and useful to assess the activity of inflammatory diseases like rheumatoid arthritis. It
+is increased after myocardial infarction, stress, trauma, infection, inflammation, surgery, or neoplastic proliferation. The increase with inflammation occurs within 6
+-12 hours and peaks at about 48 hours.
+
+Kindly correlate with clinical findings
+*** End Of Report ***
+
+Page 1 of 9
+
+SIN No:SB1304927
+Booking Centre :1590 - MAX@Home, 21, 0000000000
+Test Performed at :1060 - Max Hospital Shalimar Bagh, Max Lab
+
+Laboratory Investigation Report
+Patient Name
+
+: Mr. Jatin Jain
+
+Centre
+
+: 1590 - Max@Home
+
+Age/Gender
+
+: 39 Y 4 M 30 D /M
+
+OP/IP No
+
+: OP/
+
+Max ID/Mobile
+
+: SHBG.347795/9811088277
+
+Collection Date/Time
+
+: 18/May/2021 07:18AM
+
+Lab ID
+
+: 1322052103601
+
+Receiving Date
+
+: 18/May/2021
+
+Ref Doctor
+
+: Dr.Vikas Mittal
+
+Reporting Date
+
+: 18/May/2021
+
+Hematology
+
+D-Dimer, (Quantitative),Citrate Plasma*, Sodium Citrate
+
+Date
+D-Dimer, (Quantitative)
+
+18/May/2021 01/May/21
+07:18AM
+08:30AM
+
+Unit
+
+Bio Ref Interval
+
+164
+
+134
+
+ng/mL
+
+0-243
+
+0.33
+
+0.27
+
+ug
+FEU/ml
+
+0.0 - 0.5
+
+Latex enhanced Immunoassay
+
+.
+
+Comment D Dimer is a fibrin degradation product, a small fragment of protein present in blood after a blood clot is degraded by fibrinolysis.
+D-dimer is increased in deep venous thrombosis (DVT), pulmonary embolism(PE) or disseminated intravascular coagulation (DIC).
+In cases of high D-dimer result further testings for DVT and pulmonary embolism should be performed – mainly including radiological tests.
+Negative D-dimer report virtually rules out thromboembolism.
+False positive readings can be due to various causes: liver disease, high rheumatoid factor, inflammation, malignancy, trauma, pregnancy, recent surgery as well as
+advanced age.
+
+Kindly correlate with clinical findings
+*** End Of Report ***
+
+Page 2 of 9
+
+SIN No:SB1304927
+Booking Centre :1590 - MAX@Home, 21, 0000000000
+Test Performed at :1060 - Max Hospital Shalimar Bagh, Max Lab
+
+Laboratory Investigation Report
+Patient Name
+
+: Mr. Jatin Jain
+
+Centre
+
+: 1590 - Max@Home
+
+Age/Gender
+
+: 39 Y 4 M 30 D /M
+
+OP/IP No
+
+: OP/
+
+Max ID/Mobile
+
+: SHBG.347795/9811088277
+
+Collection Date/Time
+
+: 18/May/2021 07:18AM
+
+Lab ID
+
+: 1322052103601
+
+Receiving Date
+
+: 18/May/2021
+
+Ref Doctor
+
+: Dr.Vikas Mittal
+
+Reporting Date
+
+: 18/May/2021
+
+Clinical Biochemistry
+
+Blood Sugar Fasting,Fluoride Plasma
+
+Date
+Glucose (Fasting)
+
+18/May/2021 01/May/21
+07:18AM
+08:30AM
+
+Unit
+
+Bio Ref Interval
+
+67
+
+mg/dL
+
+74 - 99
+
+99
+
+Page 3 of 9
+
+SIN No:SB1304927
+Booking Centre :1590 - MAX@Home, 21, 0000000000
+Test Performed at :1060 - Max Hospital Shalimar Bagh, Max Lab
+
+Laboratory Investigation Report
+Patient Name
+
+: Mr. Jatin Jain
+
+Centre
+
+: 1590 - Max@Home
+
+Age/Gender
+
+: 39 Y 4 M 30 D /M
+
+OP/IP No
+
+: OP/
+
+Max ID/Mobile
+
+: SHBG.347795/9811088277
+
+Collection Date/Time
+
+: 18/May/2021 07:18AM
+
+Lab ID
+
+: 1322052103601
+
+Receiving Date
+
+: 18/May/2021
+
+Ref Doctor
+
+: Dr.Vikas Mittal
+
+Reporting Date
+
+: 18/May/2021
+
+Clinical Biochemistry
+
+KFT Profile with Calcium,Uric Acid, Serum
+
+Date
+Urea
+
+18/May/2021 01/May/21
+07:18AM
+08:30AM
+
+Unit
+
+Bio Ref
+Interval
+
+30.2
+
+39.0
+
+mg/dL
+
+17.12 - 55.64
+
+0.73
+
+0.68
+
+mg/dL
+
+0.9 - 1.3
+
+119.36
+
+129.57
+
+6.74
+
+4.88
+
+ml/min/1.73
+m²
+mg/dl
+3.5 - 7.2
+
+9.46
+
+9.01
+
+mg/dl
+
+8.9 - 10.3
+
+145.0
+
+137.2
+
+mmol/L
+
+136 - 144
+
+3.85
+
+4.20
+
+mmol/L
+
+3.6 - 5.1
+
+106.9
+
+103.8
+
+mmol/l
+
+101-111
+
+28.7
+
+22.3
+
+mmol/l
+
+22-29
+
+Enzymatic Rate (Urease)
+
+Creatinine
+Alkaline picrate kinetic
+
+eGFR
+MDRD
+
+Uric Acid
+Uricase, Colorimetric
+
+Calcium (Total)
+Arsenazo III
+
+Sodium
+ISE Indirect
+
+Potassium
+ISE Indirect
+
+Chloride
+ISE Indirect
+
+Bicarbonate
+Colorimetric, PEP-C
+
+Interpretation Ref. Range
+
+eGFR - Estimated Glomerular Filteration Rate is calculated by MDRD equation which is most accurate for GFRs ≤ 60ml / min
+/1.73 m².MDRD equation is used for adult population only.
+<60ml / min / 1.73 m² - Chronic Kidney Disease
+<15 ml / min /1.73 m² - Kidney failure
+Kindly correlate with clinical findings
+*** End Of Report ***
+
+Page 4 of 9
+
+SIN No:SB1304927
+Booking Centre :1590 - MAX@Home, 21, 0000000000
+Test Performed at :1060 - Max Hospital Shalimar Bagh, Max Lab
+
+Laboratory Investigation Report
+Patient Name
+
+: Mr. Jatin Jain
+
+Centre
+
+: 1590 - Max@Home
+
+Age/Gender
+
+: 39 Y 4 M 30 D /M
+
+OP/IP No
+
+: OP/
+
+Max ID/Mobile
+
+: SHBG.347795/9811088277
+
+Collection Date/Time
+
+: 18/May/2021 07:18AM
+
+Lab ID
+
+: 1322052103601
+
+Receiving Date
+
+: 18/May/2021
+
+Ref Doctor
+
+: Dr.Vikas Mittal
+
+Reporting Date
+
+: 18/May/2021
+
+Clinical Biochemistry
+
+Page 5 of 9
+
+SIN No:SB1304927
+Booking Centre :1590 - MAX@Home, 21, 0000000000
+Test Performed at :1060 - Max Hospital Shalimar Bagh, Max Lab
+
+Laboratory Investigation Report
+Patient Name
+
+: Mr. Jatin Jain
+
+Centre
+
+: 1590 - Max@Home
+
+Age/Gender
+
+: 39 Y 4 M 30 D /M
+
+OP/IP No
+
+: OP/
+
+Max ID/Mobile
+
+: SHBG.347795/9811088277
+
+Collection Date/Time
+
+: 18/May/2021 07:18AM
+
+Lab ID
+
+: 1322052103601
+
+Receiving Date
+
+: 18/May/2021
+
+Ref Doctor
+
+: Dr.Vikas Mittal
+
+Reporting Date
+
+: 18/May/2021
+
+Clinical Pathology
+
+Urine Routine And Microscopy
+
+Date
+
+18/May/2021 01/May/21
+07:18AM
+08:30AM
+
+Unit
+
+Bio Ref Interval
+
+Macroscopy
+Reflectance photometry
+
+Colour
+
+Pale Yellow
+
+PH
+Specific Gravity
+Protein
+Glucose.
+Ketones
+Blood
+Bilirubin
+Urobilinogen
+
+6.5
+1.010
+Negative
+Negative
+Negative
+Negative
+Negative
+Normal
+
+LightYellow
+7.0
+1.014
+Negative
+Negative
+Negative
+Negative
+Negative
+Normal
+
+Pale Yellow
+..
+
+5-6
+1.015 - 1.025
+Nil
+Nil
+Nil
+Nil
+Nil
+Normal
+
+/HPF
+/HPF
+/HPF
+/LPF
+..
+/HPF
+
+Nil
+0.0-5.0
+
+Microscopy
+Light Microscopy/Image capture microscopy
+
+Red Blood Cells (RBC)
+White Blood Cells
+Squamous Epithelial Cells
+Cast
+Crystals
+Bacteria
+
+Nil
+0-1
+Nil
+Nil
+Nil
+Nil
+
+Nil
+1-2
+Nil
+Nil
+Nil
+
+Nil
+Nil
+Nil
+
+Kindly correlate with clinical findings
+*** End Of Report ***
+
+Page 6 of 9
+
+SIN No:SB1304927
+Booking Centre :1590 - MAX@Home, 21, 0000000000
+Test Performed at :1060 - Max Hospital Shalimar Bagh, Max Lab
+
+Laboratory Investigation Report
+Patient Name
+
+: Mr. Jatin Jain
+
+Centre
+
+: 1590 - Max@Home
+
+Age/Gender
+
+: 39 Y 4 M 30 D /M
+
+OP/IP No
+
+: OP/
+
+Max ID/Mobile
+
+: SHBG.347795/9811088277
+
+Collection Date/Time
+
+: 18/May/2021 07:18AM
+
+Lab ID
+
+: 1322052103601
+
+Receiving Date
+
+: 18/May/2021
+
+Ref Doctor
+
+: Dr.Vikas Mittal
+
+Reporting Date
+
+: 18/May/2021
+
+Clinical Pathology
+
+Page 7 of 9
+
+SIN No:SB1304927
+Booking Centre :1590 - MAX@Home, 21, 0000000000
+Test Performed at :1060 - Max Hospital Shalimar Bagh, Max Lab
+
+Laboratory Investigation Report
+Patient Name
+
+: Mr. Jatin Jain
+
+Centre
+
+: 1590 - Max@Home
+
+Age/Gender
+
+: 39 Y 4 M 30 D /M
+
+OP/IP No
+
+: OP/
+
+Max ID/Mobile
+
+: SHBG.347795/9811088277
+
+Collection Date/Time
+
+: 18/May/2021 07:18AM
+
+Lab ID
+
+: 1322052103601
+
+Receiving Date
+
+: 18/May/2021
+
+Ref Doctor
+
+: Dr.Vikas Mittal
+
+Reporting Date
+
+: 18/May/2021
+
+Hematology
+CBC (Complete Blood Count), Whole Blood EDTA
+
+Date
+Haemoglobin
+Packed Cell, Volume
+
+18/May/2021 01/May/21
+07:18AM
+08:30AM
+
+Unit
+
+Bio Ref Interval
+
+14.4
+44.7
+
+15.4
+50.0
+
+g/dl
+%
+
+13.0 - 17.0
+40-50
+
+7.2
+
+12.9
+
+10~9/L
+
+4.0-10.0
+
+5.04
+
+5.57
+
+10~12/L 4.5-5.5
+
+88.7
+
+89.9
+
+fL
+
+83-101
+
+28.6
+
+27.7
+
+pg
+
+27-32
+
+32.2
+
+30.9
+
+g/dl
+
+31.5-34.5
+
+152
+
+200
+
+10~9/L
+
+150-410
+
+17.2
+
+15.3
+
+%
+
+11.5-14.5
+
+51
+41
+06
+02
+
+86
+10
+03
+01
+
+%
+%
+%
+%
+
+40-80
+20-40
+2-10
+1-6
+
+3.67
+3.0
+
+11.09
+1.3
+
+10~9/L
+10~9/L
+
+2.0-7.0
+1.0-3.0
+
+0.43
+0.14
+
+0.39
+0.13
+
+10~9/L
+10~9/L
+
+0.2-1.0
+0.02-0.5
+
+Calculated
+
+Total Leucocyte Count
+(TLC)
+Electrical Impedance
+
+RBC Count
+Electrical Impedance
+
+MCV
+Electrical Impedance
+
+MCH
+Calculated
+
+MCHC
+Calculated
+
+Platelet Count
+Electrical Impedance
+
+RDW
+Calculated
+
+Differential Cell Count
+VCS / Light Microscopy
+
+Neutrophils
+Lymphocytes
+Monocytes
+Eosinophils
+
+Absolute Leukocyte Count
+Calculated from TLC & DLC
+
+Absolute Neutrophil Count
+Absolute Lymphocyte
+Count
+Absolute Monocyte Count
+Absolute Eosinophil Count
+
+Page 8 of 9
+
+SIN No:SB1304927
+Booking Centre :1590 - MAX@Home, 21, 0000000000
+Test Performed at :1060 - Max Hospital Shalimar Bagh, Max Lab
+
+Laboratory Investigation Report
+Patient Name
+
+: Mr. Jatin Jain
+
+Centre
+
+: 1590 - Max@Home
+
+Age/Gender
+
+: 39 Y 4 M 30 D /M
+
+OP/IP No
+
+: OP/
+
+Max ID/Mobile
+
+: SHBG.347795/9811088277
+
+Collection Date/Time
+
+: 18/May/2021 07:18AM
+
+Lab ID
+
+: 1322052103601
+
+Receiving Date
+
+: 18/May/2021
+
+Ref Doctor
+
+: Dr.Vikas Mittal
+
+Reporting Date
+
+: 18/May/2021
+
+Hematology
+
+Kindly correlate with clinical findings
+*** End Of Report ***
+
+Page 9 of 9
+
+SIN No:SB1304927
+Booking Centre :1590 - MAX@Home, 21, 0000000000
+Test Performed at :1060 - Max Hospital Shalimar Bagh, Max Lab
+
+
